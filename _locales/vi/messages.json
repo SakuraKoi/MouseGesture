@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Cử Chỉ Chuột",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "Tiện ích mở rộng Chrome/Edge hỗ trợ cử chỉ chuột, tính năng kéo thả siêu tốc và xem trước liên kết",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "Cử Chỉ Chuột",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "Cử Chỉ Mặc Định",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "Tính Năng Kéo Thả Siêu Tốc",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "Kéo Lên",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "Kéo Phải",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "Kéo Xuống",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "Kéo Trái",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "Mở Liên Kết Ở Nền Trước",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "Mở Liên Kết Ở Nền Sau",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "Tính năng kéo thả siêu tốc hoạt động với liên kết, hình ảnh và văn bản được chọn. Khi văn bản được chọn là URL, nó sẽ mở như một liên kết; nếu không, nó sẽ được tìm kiếm. Hướng kéo xác định cách mở tab mới.",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "Trái",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "Phải",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "Lên",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "Xuống",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "Xuống rồi Phải",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "Trái rồi Lên",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "Phải rồi Lên",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "Phải rồi Xuống",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "Lên rồi Trái",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "Lên rồi Phải",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "Xuống rồi Trái",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "Trái rồi Xuống",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "Lên rồi Xuống",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "Xuống rồi Lên",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "Trái rồi Phải",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "Phải rồi Trái",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "Quay Lại",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "Tiến Tới",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "Cuộn Lên",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "Cuộn Xuống",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "Cuộn sang trái",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Cuộn sang phải",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Buộc làm mới",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Đóng Tab",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "Mở Lại Tab Đã Đóng",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "Tab Mới",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "Làm Mới",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "Tab Trước",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "Tab Tiếp",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "Dừng Tải",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "Đóng Tất Cả Tab",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "Cuộn Xuống Cuối",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "Cuộn Lên Đầu",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "Cuộn đến cạnh trái",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Cuộn đến cạnh phải",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "Không Có Hành Động",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Cửa Sổ Mới",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Cửa Sổ Riêng Tư Mới",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Đóng Tab Khác",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Đóng Tab Bên Phải",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Chuyển Đổi Toàn Màn Hình",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Đóng Tab Bên Trái",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Tải Lại Tất Cả Tab",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Ghim/Bỏ Ghim Tab",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Tắt/Bật Âm Thanh Tab",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Tắt Âm Thanh Tab Khác",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Phóng To/Thu Nhỏ Cửa Sổ",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Thu Nhỏ Cửa Sổ",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Cài Đặt",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "Bật Cử Chỉ Chuột",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "Hiển Thị Đường Cử Chỉ",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "Hiển Thị Gợi Ý Cử Chỉ",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "Màu Đường Cử Chỉ",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "Độ Rộng Đường Cử Chỉ",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "Bật Kéo Thả Siêu Tốc",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "Bật Tìm Kiếm Văn Bản Kéo Thả",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "Bật Xem Trước Hình Ảnh",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "Phát Hiện Tab Trùng Lặp",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "Tự Động Đóng Tab Trùng Lặp",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "Bật cuộn mượt",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Đã Áp Dụng Cài Đặt",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "Đặt Lại",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "Đã Áp Dụng Cài Đặt",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "Đã Đặt Lại Hoàn Tất",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "Đang Đặt Lại...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "Không Thể Tải Cài Đặt",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "Không Thể Lưu Cài Đặt",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "Không Thể Đặt Lại Cài Đặt",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "Sáng",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "Tối",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "Mua cho tôi một ly cà phê",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "Chuyển đổi giao diện",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "Chuyển đổi ngôn ngữ",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "Nếu bạn thích công việc này, xin hãy ủng hộ tôi. Cảm ơn :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "Giữ nút chuột phải",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "Giữ nút chuột trái",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "Mở Ở Nền Trước",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "Mở Ở Nền Sau",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "URL Công Cụ Tìm Kiếm Kéo Thả",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "Xem Trước",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "Trái: Chuyển đến {next} | Phải: Chuyển đến {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Di Chuột + Phím để Hiển Thị Cửa Sổ",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "Bật Xem Trước",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "Bật Tìm Kiếm Văn Bản Được Chọn",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "Phím Kích Hoạt",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Phím Ctrl",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Phím Alt",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Phím Shift",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "Không Cần Phím",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "Độ Trễ Xem Trước (ms)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "Số Cửa Sổ Xem Trước Tối Đa",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "Chiều Rộng Cửa Sổ",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "Chiều Cao Cửa Sổ",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "Vị Trí Cửa Sổ",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "Vị Trí Con Trỏ",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "Giữa Màn Hình",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "Góc Màn Hình",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "URL Công Cụ Tìm Kiếm Xem Trước",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "Sử dụng {q} cho từ khóa tìm kiếm, ví dụ:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Tìm kiếm Google: https://www.google.com.vn/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google Dịch: https://translate.google.com.vn/?sl=auto&tl=vi&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "Tìm kiếm CocCoc: https://coccoc.com/search?query={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Tìm kiếm Bing: https://www.bing.com/search?q={q}&setlang=vi",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "Sử dụng bánh xe chuột để điều chỉnh giá trị",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Khi sử dụng phím kích hoạt, độ trễ tối đa bị giới hạn ở 300ms",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "Chào Mừng Đến Với Tiện ích Cử Chỉ Chuột",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "Cảm ơn bạn đã cài đặt Tiện ích Cử chỉ Chuột! Tiện ích này cung cấp chức năng cử chỉ chuột phong phú, quản lý tab thông minh, khả năng xem popup và trải nghiệm hình ảnh nâng cao để giúp bạn duyệt web hiệu quả hơn. Chúng tôi đã tối ưu hóa thuật toán nhận dạng cử chỉ với khả năng chịu lỗi cao hơn, cho phép cử chỉ được nhận dạng chính xác ngay cả khi chúng không được vẽ hoàn hảo. Tính năng cửa sổ popup mới cho phép bạn xem nội dung liên kết trong cửa sổ popup mà không cần chuyển tab. Tiện ích cũng hỗ trợ 29 ngôn ngữ và chủ đề sáng/tối để mang lại trải nghiệm người dùng tốt hơn.",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "Dưới đây là các cử chỉ chuột mặc định mà bạn có thể sử dụng bằng cách kéo với nút chuột phải:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "Tiện ích Cử Chỉ Chuột",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "Tính Năng Chính",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "Công Cụ Tiện ích",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "Mẹo Sử Dụng",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "Nhận dạng cử chỉ thông minh: Nhận dạng chính xác cử chỉ ngay cả khi không hoàn hảo, hoạt động trong khi tải trang",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "Quản Lý Tab",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": Phát hiện trùng lặp thông minh, tự động đóng tùy chọn, tối ưu hóa bộ nhớ định kỳ",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "Kéo Thả Siêu Tốc",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": Kéo liên kết và hình ảnh vào tab mới, kéo văn bản được chọn để tìm kiếm",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "Xem Trước",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": Giữ phím kích hoạt (mặc định: Shift) khi di chuột qua liên kết để xem trước trang đích trong cửa sổ popup",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "Chọn văn bản và nhấn phím kích hoạt để tìm kiếm ngay lập tức trong cửa sổ popup, hỗ trợ công cụ tìm kiếm tùy chỉnh",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "Bạn có thể mở nhiều cửa sổ popup cùng lúc",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "Tùy chỉnh hướng kéo để xác định cách mở tab: mặc định mở ở nền sau",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "Thông Tin Gỡ Lỗi Cử Chỉ Chuột",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": Nhấn Alt+D để mở, phân tích thông tin cử chỉ theo thời gian thực, duy trì trạng thái",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "Sao chép thông tin gỡ lỗi một lần nhấp để dễ dàng chia sẻ, hỗ trợ đa ngôn ngữ",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "Xem trước phương tiện nâng cao: Cải thiện hiệu ứng di chuột hình ảnh và tối ưu hóa hình ảnh poster video",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "Giao diện thích ứng: Điều chỉnh kiểu hình ảnh dựa trên nền trang, hỗ trợ chế độ sáng/tối",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "Đường cử chỉ hiển thị trên màn hình với màu sắc và độ rộng tùy chỉnh",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "Nhấp vào biểu tượng tiện ích để bật/tắt tính năng, đặt ngôn ngữ, giao diện và hơn thế nữa",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "Hỗ trợ 29 ngôn ngữ, tự động thích ứng với ngôn ngữ trình duyệt",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "Bật tính năng tự động đóng tab trùng lặp để giảm đáng kể việc sử dụng tài nguyên trình duyệt",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "Trên hệ thống Linux và macOS, nhấp chuột phải hai lần để hiển thị menu ngữ cảnh trình duyệt",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "Nhân bản tab",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "Đã tìm thấy $1 tab trùng lặp",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "Có $1 tab trùng lặp",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "Có 1 tab trùng lặp",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "Đã tự động đóng $1 tab trùng lặp",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "Đóng Tab Trùng Lặp",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "Bỏ Qua",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "Tab không có tiêu đề",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...và $1 trang nữa",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Lỗi hiển thị thông báo tab trùng lặp:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "Lỗi gửi yêu cầu đóng:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Lỗi đóng tab trùng lặp:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Lỗi gửi yêu cầu bỏ qua:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Lỗi bỏ qua tab trùng lặp:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Lỗi cập nhật bảng gỡ lỗi:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Lỗi phát hiện màu nền:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "Lỗi phát hiện bo góc hình ảnh:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "Lỗi thiết lập mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Lỗi kiểm tra khả năng hiển thị phần tử:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Lỗi xử lý bo góc:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "Lỗi phát hiện nền hình ảnh:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Lỗi hiển thị thông báo đóng tự động thành công:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "Không có trang tiếp theo trong lịch sử",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "Không có trang trước trong lịch sử",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "Điều hướng thất bại",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "Đang thử trang tiếp theo...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "Đã điều hướng đến trang tiếp theo",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "Không tìm thấy liên kết trang tiếp theo",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "Cử Chỉ Không Hợp Lệ",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "Trang Tiếp Theo",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "Lỗi đọc pixel:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "Lỗi đọc canvas:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "Lỗi vẽ trên canvas:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "Lỗi truy cập iframe:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "Lỗi thiết lập mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "Lỗi kiểm tra khả năng hiển thị:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "Lỗi xử lý góc:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "Đã thay đổi ngôn ngữ từ $1 sang $2",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "Đã chuyển sang tiếng Trung",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "Đã chuyển sang tiếng Anh",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "Cài Đặt Hệ Thống",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "Ngưỡng Góc",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Ngưỡng Thay Đổi Hướng",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "Khoảng Cách Cử Chỉ Tối Thiểu",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Độ Dài Đoạn Hướng Tối Thiểu",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Độ Phức Tạp Cử Chỉ Tối Thiểu",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Thông Tin Cử Chỉ Mới Nhất",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "Điểm",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "sau khi đơn giản hóa",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "Tổng Khoảng Cách",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "Nhận Dạng Hướng",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "Hướng Ban Đầu",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Đã Phát Hiện Mẫu Lặp Lại",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Loại Mẫu Lặp Lại",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "Hợp Nhất Hướng",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "Hướng Đã Hợp Nhất",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "Khoảng Cách Hướng",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "Kết Quả Cuối Cùng",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "Cử Chỉ Đã Nhận Dạng",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "Độ Tương Đồng",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "Có",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "Không",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "Không Có",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "Cử Chỉ Không Hợp Lệ",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Đang chờ dữ liệu cử chỉ...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "Sao Chép Thông Tin",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "Đã sao chép vào bộ nhớ tạm!",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "Sao chép thất bại, vui lòng chọn và sao chép thủ công",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Tìm kiếm: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Cửa Sổ Popup Bị Chặn",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Vui lòng cho phép popup cho trang web này để kích hoạt chức năng xem trước liên kết.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Chế độ cử chỉ đã sẵn sàng",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...và $1 trang nữa",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Hỗ trợ tác giả bằng cách mua hàng qua liên kết này",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Hiển thị số lượng tab",
+    "description": "Show tab count badge option"
+  }
+}

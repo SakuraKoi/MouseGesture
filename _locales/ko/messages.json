@@ -1,0 +1,879 @@
+{
+  "extName": {
+    "message": "마우스 제스처",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "마우스 제스처, 슈퍼 드래그 기능 및 팝업 보기를 지원하는 Chrome/Edge 확장 프로그램",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "마우스 제스처",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "내장 제스처",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "슈퍼 드래그 기능",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "위로 드래그",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "오른쪽으로 드래그",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "아래로 드래그",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "왼쪽으로 드래그",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "포그라운드에서 링크 열기",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "백그라운드에서 링크 열기",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "슈퍼 드래그 기능은 링크, 이미지 및 선택된 텍스트에 작동합니다. 선택된 텍스트가 URL인 경우 링크로 열리고, 그렇지 않으면 검색됩니다. 드래그 방향에 따라 새 탭이 열리는 방식이 결정됩니다.",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "왼쪽",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "오른쪽",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "위",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "아래",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "아래 다음 오른쪽",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "왼쪽 다음 위",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "오른쪽 다음 위",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "오른쪽 다음 아래",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "위 다음 왼쪽",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "위 다음 오른쪽",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "아래 다음 왼쪽",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "왼쪽 다음 아래",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "위 다음 아래",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "아래 다음 위",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "왼쪽 다음 오른쪽",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "오른쪽 다음 왼쪽",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "뒤로 가기",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "앞으로 가기",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "위로 스크롤",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "아래로 스크롤",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "왼쪽으로 스크롤",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "오른쪽으로 스크롤",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "강제 새로고침",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "탭 닫기",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "닫힌 탭 다시 열기",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "새 탭",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "새로고침",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "이전 탭",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "다음 탭",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "로딩 중지",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "모든 탭 닫기",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "맨 아래로 스크롤",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "맨 위로 스크롤",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "왼쪽 가장자리로 스크롤",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "오른쪽 가장자리로 스크롤",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "작업 없음",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "새 창",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "새 시크릿 창",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "다른 탭 닫기",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "오른쪽 탭 닫기",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "전체 화면 전환",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "왼쪽 탭 닫기",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "모든 탭 새로고침",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "탭 고정/고정 해제",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "탭 음소거/음소거 해제",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "다른 탭 음소거",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "창 최대화/복원",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "창 최소화",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "설정",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "마우스 제스처 활성화",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "제스처 궤적 표시",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "제스처 힌트 표시",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "궤적 색상",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "궤적 너비",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "슈퍼 드래그 활성화",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "드래그 텍스트 검색 활성화",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "이미지 미리보기 활성화",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "중복 탭 감지",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "중복 탭 자동 닫기",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "부드러운 스크롤 활성화",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "설정 적용됨",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "초기화",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "설정 적용됨",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "초기화 완료",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "초기화 중...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "설정 로드 실패",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "설정 저장 실패",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "설정 초기화 실패",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "밝음",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "어둠",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "커피 한잔 사주세요",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "테마 전환",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "언어 전환",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "이 작업이 마음에 드시면 지원해 주세요. 감사합니다 :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "마우스 오른쪽 버튼을 누르고 있으세요",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "마우스 왼쪽 버튼을 누르고 있으세요",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "포그라운드에서 열기",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "백그라운드에서 열기",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "드래그 검색 엔진 URL",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "팝업 뷰",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "왼쪽: {next} | 오른쪽: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "마우스오버 + 키로 팝업 표시",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "팝업 뷰 활성화",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "텍스트 선택 검색 활성화",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "트리거 키",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Ctrl 키",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Alt 키",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Shift 키",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "키 필요 없음",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "팝업 지연시간 (밀리초)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "최대 팝업 창 수",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "창 너비",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "창 높이",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "창 위치",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "커서 위치",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "화면 중앙",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "화면 모서리",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "팝업 검색 엔진 URL",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "검색어에 {q}를 사용하세요, 예시 형식:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Google 검색: https://www.google.co.kr/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google 번역: https://translate.google.co.kr/?sl=auto&tl=ko&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "네이버 검색: https://search.naver.com/search.naver?query={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Bing 검색: https://www.bing.com/search?q={q}&setlang=ko",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "마우스 휠로 값을 조정하세요",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "트리거 키 사용시 최대 지연시간은 300밀리초로 제한됩니다",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "마우스 제스처 확장에 오신 것을 환영합니다",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "마우스 제스처 확장을 설치해 주셔서 감사합니다! 이 확장 프로그램은 웹을 더 효율적으로 탐색할 수 있도록 풍부한 마우스 제스처 기능, 지능형 탭 관리, 팝업 보기 기능 및 향상된 시각적 경험을 제공합니다. 우리는 오류 허용도를 높여 제스처 인식 알고리즘을 최적화했으며, 제스처가 완벽하게 그려지지 않았더라도 올바르게 인식될 수 있도록 했습니다. 새로운 팝업 창 기능을 사용하면 탭을 전환하지 않고도 팝업 창에서 링크 내용을 볼 수 있습니다. 이 확장 프로그램은 29개 언어와 라이트/다크 테마도 지원하여 더 나은 사용자 경험을 제공합니다.",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "다음은 마우스 오른쪽 버튼으로 드래그하여 사용할 수 있는 사전 설정된 마우스 제스처입니다:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "마우스 제스처 확장",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "핵심 기능",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "유틸리티 도구",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "사용 팁",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "스마트 제스처 인식: 불완전해도 제스처를 올바르게 식별하며, 페이지 로딩 중에도 작동합니다",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "탭 관리",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": 스마트 중복 탐지, 선택적 자동 닫기, 주기적 메모리 최적화",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "슈퍼 드래그",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": 링크와 이미지를 새 탭으로 드래그, 선택된 텍스트를 드래그하여 검색",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "팝업 뷰",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": 링크 위에 마우스를 올린 상태에서 수정 키(기본값: Shift)를 누르면 팝업 창에서 대상 페이지를 미리볼 수 있습니다",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "텍스트를 선택하고 수정 키를 눌러 즉시 팝업 창에서 검색할 수 있으며, 사용자 정의 검색 엔진을 지원합니다",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "여러 팝업 창을 동시에 열 수 있습니다",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "탭 열기 방법을 결정하기 위해 드래그 방향을 사용자 정의하세요: 기본적으로 백그라운드에서 열기",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "마우스 제스처 디버그 정보",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": Alt+D를 눌러서 열기, 실시간으로 제스처 정보 분석, 상태 유지",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "간편한 공유를 위한 디버그 정보 원클릭 복사, 다국어 지원 포함",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "향상된 미디어 미리보기: 개선된 이미지 호버 효과 및 최적화된 비디오 포스터 이미지",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "적응형 테마: 페이지 배경에 따라 시각적 스타일을 조정하며, 밝음/어둠 모드를 지원합니다",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "사용자 정의 가능한 색상과 너비로 화면에 표시되는 제스처 궤적",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "확장 아이콘을 클릭하여 기능 활성화/비활성화, 언어, 테마 등을 설정하세요",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "29개 언어를 지원하며, 브라우저 언어에 자동으로 적응합니다",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "브라우저 리소스 사용량을 크게 줄이기 위해 중복 탭 자동 닫기 기능을 활성화하세요",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "Linux 및 macOS 시스템에서는 브라우저 컨텍스트 메뉴를 표시하려면 더블 우클릭하세요",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "중복 탭",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "$1개의 중복 탭을 찾았습니다",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "$1개의 중복 탭이 있습니다",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "1개의 중복 탭이 있습니다",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "$1개의 중복 탭을 자동으로 닫았습니다",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "중복 탭 닫기",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "무시",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "제목 없는 탭",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...및 $1개 더 많은 페이지",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "중복 탭 알림 표시 오류:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "닫기 요청 전송 오류:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "중복 탭 닫기 오류:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "무시 요청 전송 오류:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "중복 탭 무시 오류:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "디버그 패널 업데이트 오류:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "배경색 감지 오류:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "이미지 테두리 반지름 감지 오류:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "뮤테이션 옵저버 설정 오류:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "요소 가시성 확인 오류:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "테두리 반지름 처리 오류:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "이미지 배경 감지 오류:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "자동 닫기 성공 알림 표시 오류:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "기록에 다음 페이지가 없습니다",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "기록에 이전 페이지가 없습니다",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "탐색 실패",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "다음 페이지 시도 중...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "다음 페이지로 이동했습니다",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "다음 페이지 링크를 찾을 수 없습니다",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "잘못된 제스처",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "다음 페이지",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "픽셀 읽기 오류:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "캔버스 읽기 오류:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "캔버스 그리기 오류:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "iframe 접근 오류:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "뮤테이션 옵저버 설정 오류:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "요소 가시성 확인 오류:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "모서리 처리 오류:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "언어가 $1에서 $2로 변경되었습니다",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "중국어로 전환되었습니다",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "영어로 전환되었습니다",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "시스템 설정",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "각도 임계값",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "방향 변경 임계값",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "최소 제스처 거리",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "최소 방향 세그먼트 길이",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "최소 제스처 복잡도",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "최신 제스처 정보",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "포인트",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "단순화 후",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "총 거리",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "방향 인식",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "원본 방향",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "반복 패턴 감지됨",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "반복 패턴 유형",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "방향 병합",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "병합된 방향",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "방향 거리",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "최종 결과",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "인식된 제스처",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "유사도",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "예",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "아니오",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "없음",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "잘못된 제스처",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "제스처 데이터 기다리는 중...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "디버그 정보 복사",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "클립보드에 복사됨",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "복사 실패, 수동으로 선택하고 복사하세요",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "검색: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "팝업 차단됨",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "링크 미리보기 기능을 활성화하려면 이 사이트의 팝업을 허용하세요.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "제스처 모드 준비됨",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...및 $1개 더 많은 페이지",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "이 링크를 통해 구매하여 작성자를 지원하세요",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "탭 수 표시",
+    "description": "Show tab count badge option"
+  }
+}
+

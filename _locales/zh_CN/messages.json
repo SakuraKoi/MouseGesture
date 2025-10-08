@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "鼠标手势",
+    "description": "扩展名称"
+  },
+  "extDesc": {
+    "message": "支持鼠标手势、超级拖拽功能和小窗视图的Chrome/Edge扩展",
+    "description": "扩展描述"
+  },
+  "title": {
+    "message": "鼠标手势",
+    "description": "扩展标题"
+  },
+  "builtInGestures": {
+    "message": "内置手势",
+    "description": "内置手势标题"
+  },
+  "superDragFeature": {
+    "message": "超级拖拽功能",
+    "description": "超级拖拽功能标题"
+  },
+  "dragUp": {
+    "message": "向上拖拽",
+    "description": "向上拖拽操作"
+  },
+  "dragRight": {
+    "message": "向右拖拽",
+    "description": "向右拖拽操作"
+  },
+  "dragDown": {
+    "message": "向下拖拽",
+    "description": "向下拖拽操作"
+  },
+  "dragLeft": {
+    "message": "向左拖拽",
+    "description": "向左拖拽操作"
+  },
+  "openInForeground": {
+    "message": "在前台打开链接",
+    "description": "在前台打开链接"
+  },
+  "openInBackground": {
+    "message": "在后台打开链接",
+    "description": "在后台打开链接"
+  },
+  "superDragDescription": {
+    "message": "超级拖拽功能可用于链接、图片和选中的文本。当选中的文本是URL时，会直接打开链接；否则会进行搜索。拖拽方向决定新标签页的打开方式。",
+    "description": "超级拖拽功能描述"
+  },
+  "left": {
+    "message": "左",
+    "description": "左方向"
+  },
+  "right": {
+    "message": "右",
+    "description": "右方向"
+  },
+  "up": {
+    "message": "上",
+    "description": "上方向"
+  },
+  "down": {
+    "message": "下",
+    "description": "下方向"
+  },
+  "downThenRight": {
+    "message": "下然后右",
+    "description": "下然后右手势"
+  },
+  "leftThenUp": {
+    "message": "左然后上",
+    "description": "左然后上手势"
+  },
+  "rightThenUp": {
+    "message": "右然后上",
+    "description": "右然后上手势"
+  },
+  "rightThenDown": {
+    "message": "右然后下",
+    "description": "右然后下手势"
+  },
+  "upThenLeft": {
+    "message": "上然后左",
+    "description": "上然后左手势"
+  },
+  "upThenRight": {
+    "message": "上然后右",
+    "description": "上然后右手势"
+  },
+  "downThenLeft": {
+    "message": "下然后左",
+    "description": "下然后左手势"
+  },
+  "leftThenDown": {
+    "message": "左然后下",
+    "description": "左然后下手势"
+  },
+  "upThenDown": {
+    "message": "上然后下",
+    "description": "上然后下手势"
+  },
+  "downThenUp": {
+    "message": "下然后上",
+    "description": "下然后上手势"
+  },
+  "leftThenRight": {
+    "message": "左然后右",
+    "description": "左然后右手势"
+  },
+  "rightThenLeft": {
+    "message": "右然后左",
+    "description": "右然后左手势"
+  },
+  "back": {
+    "message": "后退",
+    "description": "后退动作"
+  },
+  "forward": {
+    "message": "前进",
+    "description": "前进动作"
+  },
+  "scrollUp": {
+    "message": "向上滚动",
+    "description": "向上滚动动作"
+  },
+  "scrollDown": {
+    "message": "向下滚动",
+    "description": "向下滚动动作"
+  },
+  "scrollLeft": {
+    "message": "向左滚动",
+    "description": "向左滚动动作"
+  },
+  "scrollRight": {
+    "message": "向右滚动",
+    "description": "向右滚动动作"
+  },
+  "forceRefresh": {
+    "message": "强制刷新",
+    "description": "强制刷新动作"
+  },
+  "closeTab": {
+    "message": "关闭标签页",
+    "description": "关闭标签页动作"
+  },
+  "reopenTab": {
+    "message": "重新打开关闭的标签页",
+    "description": "重新打开关闭的标签页动作"
+  },
+  "newTab": {
+    "message": "打开新标签页",
+    "description": "打开新标签页动作"
+  },
+  "refresh": {
+    "message": "刷新",
+    "description": "刷新动作"
+  },
+  "prevTab": {
+    "message": "切换到左侧标签页",
+    "description": "切换到左侧标签页动作"
+  },
+  "nextTab": {
+    "message": "切换到右侧标签页",
+    "description": "切换到右侧标签页动作"
+  },
+  "stopLoading": {
+    "message": "停止加载",
+    "description": "停止加载动作"
+  },
+  "closeAllTabs": {
+    "message": "关闭所有标签页",
+    "description": "关闭所有标签页动作"
+  },
+  "scrollToBottom": {
+    "message": "滚动到底部",
+    "description": "滚动到底部动作"
+  },
+  "scrollToTop": {
+    "message": "滚动到顶部",
+    "description": "滚动到顶部动作"
+  },
+  "scrollToLeft": {
+    "message": "滚动到左侧边缘",
+    "description": "滚动到左侧边缘动作"
+  },
+  "scrollToRight": {
+    "message": "滚动到右侧边缘",
+    "description": "滚动到右侧边缘动作"
+  },
+  "noAction": {
+    "message": "不执行操作",
+    "description": "不执行操作"
+  },
+  "newWindow": {
+    "message": "新窗口",
+    "description": "新窗口动作"
+  },
+  "newInPrivateWindow": {
+    "message": "新建隐私窗口",
+    "description": "新建隐私窗口动作"
+  },
+  "closeOtherTabs": {
+    "message": "关闭其他标签页",
+    "description": "关闭其他标签页动作"
+  },
+  "closeTabsToRight": {
+    "message": "关闭右侧标签页",
+    "description": "关闭右侧标签页动作"
+  },
+  "toggleFullscreen": {
+    "message": "切换全屏",
+    "description": "切换全屏动作"
+  },
+  "closeTabsToLeft": {
+    "message": "关闭左侧标签页",
+    "description": "关闭左侧标签页动作"
+  },
+  "reloadAllTabs": {
+    "message": "全部重新加载",
+    "description": "全部重新加载动作"
+  },
+  "togglePinTab": {
+    "message": "固定/取消固定标签页",
+    "description": "固定/取消固定标签页动作"
+  },
+  "toggleMuteTab": {
+    "message": "静音/取消静音标签页",
+    "description": "静音/取消静音标签页动作"
+  },
+  "muteOtherTabs": {
+    "message": "静音其他标签页",
+    "description": "静音其他标签页动作"
+  },
+  "toggleMaximize": {
+    "message": "最大化/还原窗口",
+    "description": "最大化/还原窗口动作"
+  },
+  "minimizeWindow": {
+    "message": "最小化窗口",
+    "description": "最小化窗口动作"
+  },
+  "settings": {
+    "message": "设置",
+    "description": "设置标题"
+  },
+  "enableGesture": {
+    "message": "启用鼠标手势",
+    "description": "启用鼠标手势选项"
+  },
+  "showGestureTrail": {
+    "message": "显示手势轨迹",
+    "description": "显示手势轨迹选项"
+  },
+  "showGestureHint": {
+    "message": "显示手势提示",
+    "description": "显示手势提示选项"
+  },
+  "trailColor": {
+    "message": "轨迹颜色",
+    "description": "轨迹颜色选项"
+  },
+  "trailWidth": {
+    "message": "轨迹宽度",
+    "description": "轨迹宽度选项"
+  },
+  "enableSuperDrag": {
+    "message": "启用超级拖拽",
+    "description": "启用超级拖拽选项"
+  },
+  "enableDragTextSearch": {
+    "message": "启用拖拽文本搜索",
+    "description": "启用拖拽文本搜索选项"
+  },
+  "enableImagePreview": {
+    "message": "启用图片预览",
+    "description": "启用图片预览选项"
+  },
+  "enableDuplicateCheck": {
+    "message": "检测重复标签",
+    "description": "检测重复标签选项"
+  },
+  "autoCloseDuplicates": {
+    "message": "自动关闭重复标签",
+    "description": "自动关闭重复标签选项"
+  },
+  "enableSmoothScroll": {
+    "message": "启用平滑滚动",
+    "description": "启用手势动作的平滑滚动效果"
+  },
+  "save": {
+    "message": "设置已生效",
+    "description": "保存设置按钮"
+  },
+  "reset": {
+    "message": "重置",
+    "description": "重置设置按钮"
+  },
+  "settingsSaved": {
+    "message": "设置已生效",
+    "description": "设置已保存提示"
+  },
+  "settingsReset": {
+    "message": "已重置",
+    "description": "设置已重置提示"
+  },
+  "resetting": {
+    "message": "正在重置...",
+    "description": "重置中提示"
+  },
+  "loadError": {
+    "message": "加载设置失败",
+    "description": "加载设置失败提示"
+  },
+  "saveError": {
+    "message": "保存设置失败",
+    "description": "保存设置失败提示"
+  },
+  "resetError": {
+    "message": "重置设置失败",
+    "description": "重置设置失败提示"
+  },
+  "themeLight": {
+    "message": "浅色",
+    "description": "浅色主题"
+  },
+  "themeDark": {
+    "message": "深色",
+    "description": "深色主题"
+  },
+  "buyMeACoffee": {
+    "message": "请我喝咖啡",
+    "description": "捐赠按钮"
+  },
+  "toggleTheme": {
+    "message": "切换主题",
+    "description": "切换主题按钮"
+  },
+  "toggleLanguage": {
+    "message": "切换语言",
+    "description": "切换语言按钮"
+  },
+  "donationTooltip": {
+    "message": "如果你喜欢这个作品，请支持我，谢谢：）",
+    "description": "捐赠提示"
+  },
+  "rightButtonHint": {
+    "message": "按住鼠标右键操作",
+    "description": "鼠标右键提示"
+  },
+  "leftButtonHint": {
+    "message": "按住鼠标左键操作",
+    "description": "鼠标左键提示"
+  },
+  "foregroundAction": {
+    "message": "前台打开",
+    "description": "前台打开操作"
+  },
+  "backgroundAction": {
+    "message": "后台打开",
+    "description": "后台打开操作"
+  },
+  "dragSearchEngine": {
+    "message": "拖拽搜索引擎URL",
+    "description": "拖拽搜索引擎URL设置"
+  },
+  "linkPreview": {
+    "message": "小窗视图",
+    "description": "小窗视图标题"
+  },
+  "quickNavTooltip": {
+    "message": "左键: 跳转到 {next} | 右键: 跳转到 {prev}",
+    "description": "快速导航悬停提示"
+  },
+  "linkPreviewHint": {
+    "message": "悬停 + 按键 显示小窗",
+    "description": "小窗视图提示"
+  },
+  "enableLinkPreview": {
+    "message": "启用小窗视图",
+    "description": "启用小窗视图选项"
+  },
+  "enableTextSearchPreview": {
+    "message": "启用选中文字搜索",
+    "description": "启用选中文字搜索选项"
+  },
+  "modifierKey": {
+    "message": "触发按键",
+    "description": "触发按键设置"
+  },
+  "controlKey": {
+    "message": "Ctrl 键",
+    "description": "Ctrl键选项"
+  },
+  "altKey": {
+    "message": "Alt 键",
+    "description": "Alt键选项"
+  },
+  "shiftKey": {
+    "message": "Shift 键",
+    "description": "Shift键选项"
+  },
+  "noKey": {
+    "message": "无需按键",
+    "description": "无需按键选项"
+  },
+  "previewDelay": {
+    "message": "小窗延迟 (毫秒)",
+    "description": "小窗延迟设置"
+  },
+  "maxPreviewWindows": {
+    "message": "最大小窗数量",
+    "description": "最大小窗数量设置"
+  },
+  "previewWidth": {
+    "message": "默认小窗宽度",
+    "description": "默认小窗宽度设置"
+  },
+  "previewHeight": {
+    "message": "默认小窗高度",
+    "description": "默认小窗高度设置"
+  },
+  "previewPosition": {
+    "message": "小窗位置",
+    "description": "小窗位置设置"
+  },
+  "cursorPosition": {
+    "message": "鼠标位置",
+    "description": "鼠标位置选项"
+  },
+  "centerScreen": {
+    "message": "屏幕中心",
+    "description": "屏幕中心选项"
+  },
+  "cornerScreen": {
+    "message": "屏幕角落",
+    "description": "屏幕角落选项"
+  },
+  "searchEngine": {
+    "message": "小窗搜索引擎 URL",
+    "description": "小窗搜索引擎URL设置"
+  },
+  "searchEngineExamples": {
+    "message": "使用{q}表示搜索词位置，示例格式:",
+    "description": "搜索引擎示例说明"
+  },
+  "googleExample": {
+    "message": "Google搜索: https://www.google.com/search?q={q}",
+    "description": "Google搜索示例"
+  },
+  "googleTranslateExample": {
+    "message": "Google翻译: https://translate.google.com/?sl=auto&tl=zh-CN&text={q}&op=translate",
+    "description": "Google翻译示例"
+  },
+  "localSearchExample": {
+    "message": "百度搜索: https://www.baidu.com/s?wd={q}",
+    "description": "百度搜索示例"
+  },
+  "bingExample": {
+    "message": "必应搜索: https://www.bing.com/search?q={q}",
+    "description": "必应搜索示例"
+  },
+  "wheelTip": {
+    "message": "可使用鼠标滚轮调整数值",
+    "description": "滚轮提示"
+  },
+  "modifierKeyDelayTip": {
+    "message": "当使用触发按键时，最大延迟限制为300毫秒",
+    "description": "触发按键延迟提示"
+  },
+  "welcomeTitle": {
+    "message": "欢迎使用鼠标手势扩展",
+    "description": "欢迎页面标题"
+  },
+  "welcomeDescription": {
+    "message": "感谢您安装鼠标手势扩展！本扩展提供丰富的鼠标手势功能、智能标签页管理、小窗视图功能和增强的视觉体验，帮助您更高效地浏览网页。我们优化了手势识别算法，提高了容错性，即使手势绘制不够完美也能正确识别。新增的小窗视图功能通过弹出窗口让您直接查看链接内容，无需切换标签页。同时支持29种语言和明暗主题切换，为您提供更好的使用体验。",
+    "description": "欢迎页面描述"
+  },
+  "gesturesDescription": {
+    "message": "以下是预设的鼠标手势，您可以通过右键拖动来使用这些手势：",
+    "description": "手势说明"
+  },
+  "extensionName": {
+    "message": "鼠标手势扩展",
+    "description": "扩展全名"
+  },
+  "coreFeatures": {
+    "message": "核心功能",
+    "description": "核心功能标题"
+  },
+  "utilitiesFeatures": {
+    "message": "实用工具",
+    "description": "实用工具标题"
+  },
+  "usageTips": {
+    "message": "使用小贴士",
+    "description": "使用小贴士标题"
+  },
+  "smartGestureRecognition": {
+    "message": "智能手势识别：支持自定义手势动作选择，即使手势不够精确也能正确识别",
+    "description": "智能手势识别描述"
+  },
+  "tabManagementTitle": {
+    "message": "标签页管理",
+    "description": "标签页管理标题"
+  },
+  "tabManagementDesc": {
+    "message": "：智能检测重复标签页，可选自动关闭，定期内存优化",
+    "description": "标签页管理描述"
+  },
+  "superDragTitle": {
+    "message": "超级拖拽",
+    "description": "超级拖拽标题"
+  },
+  "superDragDesc": {
+    "message": "：拖拽链接、图片到新标签页，选中文本拖拽搜索",
+    "description": "超级拖拽描述"
+  },
+  "linkPreviewTitle": {
+    "message": "小窗视图",
+    "description": "小窗视图标题"
+  },
+  "linkPreviewDesc": {
+    "message": "：按住触发按键(默认Shift)同时鼠标悬停在链接上，通过弹出窗口直接预览目标页面内容",
+    "description": "小窗视图描述"
+  },
+  "textSelectionPreview": {
+    "message": "选中文本后按触发按键，将在弹出窗口中即时搜索内容，支持自定义搜索引擎",
+    "description": "文本选择预览描述"
+  },
+  "previewTip": {
+    "message": "可同时打开多个小窗口浏览不同内容",
+    "description": "预览提示"
+  },
+  "dragDirection": {
+    "message": "自定义拖拽方向决定标签页打开方式：默认后台打开",
+    "description": "拖拽方向描述"
+  },
+  "debugPanelTitle": {
+    "message": "鼠标手势调试信息",
+    "description": "调试面板标题"
+  },
+  "debugPanelDesc": {
+    "message": "：按Alt+D快速打开，实时分析手势信息，自动保持状态",
+    "description": "调试面板描述"
+  },
+  "oneClickCopy": {
+    "message": "一键复制调试信息，方便分享问题报告，多语言支持",
+    "description": "一键复制描述"
+  },
+  "mediaPreview": {
+    "message": "优化的媒体预览：改进图片悬停效果，优化视频封面图",
+    "description": "媒体预览描述"
+  },
+  "adaptiveTheme": {
+    "message": "自适应主题：根据页面背景调整视觉风格，支持明暗主题切换",
+    "description": "自适应主题描述"
+  },
+  "gestureTrail": {
+    "message": "手势轨迹会显示在屏幕上，可自定义轨迹颜色和宽度",
+    "description": "手势轨迹描述"
+  },
+  "clickIcon": {
+    "message": "点击扩展图标开启/关闭功能，设置界面语言、主题等",
+    "description": "点击图标描述"
+  },
+  "languageSupport": {
+    "message": "支持29种语言，自动适配浏览器语言",
+    "description": "语言支持描述"
+  },
+  "enableAutoClose": {
+    "message": "开启自动关闭重复标签页功能可大幅减少浏览器资源占用",
+    "description": "开启自动关闭描述"
+  },
+  "rightClickMacLinux": {
+    "message": "在 Linux 和 macOS 系统中，双击右键可以显示浏览器的上下文菜单",
+    "description": "右键操作提示"
+  },
+  "duplicateTab": {
+    "message": "重复的标签页",
+    "description": "重复标签页"
+  },
+  "duplicateTabsDetected": {
+    "message": "发现$1个重复标签页",
+    "description": "检测到重复标签页通知标题"
+  },
+  "duplicateTabsCount": {
+    "message": "有$1个重复标签页",
+    "description": "重复标签页数量消息"
+  },
+  "duplicateTabsSingle": {
+    "message": "有1个重复标签页",
+    "description": "单个重复标签页消息"
+  },
+  "autoClosedTabs": {
+    "message": "已自动关闭$1个重复标签页",
+    "description": "自动关闭标签页通知"
+  },
+  "closeBtn": {
+    "message": "关闭重复标签",
+    "description": "关闭重复标签按钮"
+  },
+  "ignoreBtn": {
+    "message": "忽略",
+    "description": "忽略按钮"
+  },
+  "untitledTab": {
+    "message": "未命名标签页",
+    "description": "未命名标签页"
+  },
+  "morePages": {
+    "message": "...还有$1个页面",
+    "description": "更多页面提示"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "显示重复标签页通知错误:",
+    "description": "显示重复标签页通知错误"
+  },
+  "errorSendCloseRequest": {
+    "message": "发送关闭请求错误:",
+    "description": "发送关闭请求错误"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "关闭重复标签页错误:",
+    "description": "关闭重复标签页错误"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "发送忽略请求错误:",
+    "description": "发送忽略请求错误"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "忽略重复标签页错误:",
+    "description": "忽略重复标签页错误"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "更新调试面板内容时出错:",
+    "description": "更新调试面板内容时出错"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "检测背景颜色错误:",
+    "description": "检测背景颜色错误"
+  },
+  "errorDetectImageBorder": {
+    "message": "检测图片圆角时出错:",
+    "description": "检测图片圆角时出错"
+  },
+  "errorSetMutationObserver": {
+    "message": "设置变异观察器时出错:",
+    "description": "设置变异观察器时出错"
+  },
+  "errorCheckElementVisibility": {
+    "message": "检查元素可见性时出错:",
+    "description": "检查元素可见性时出错"
+  },
+  "errorProcessBorderRadius": {
+    "message": "处理圆角时出错:",
+    "description": "处理圆角时出错"
+  },
+  "errorDetectImageBackground": {
+    "message": "检测图片背景时出错:",
+    "description": "检测图片背景时出错"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "显示自动关闭成功通知错误:",
+    "description": "显示自动关闭成功通知错误"
+  },
+  "noForwardPage": {
+    "message": "没有可前进的页面",
+    "description": "没有可前进的页面提示"
+  },
+  "noBackPage": {
+    "message": "没有可后退的页面",
+    "description": "没有可后退的页面提示"
+  },
+  "navigationFailed": {
+    "message": "导航操作失败",
+    "description": "导航操作失败提示"
+  },
+  "tryingNextPage": {
+    "message": "尝试下一页...",
+    "description": "尝试下一页提示"
+  },
+  "nextPageSuccess": {
+    "message": "跳转到下一页",
+    "description": "跳转到下一页提示"
+  },
+  "noNextPage": {
+    "message": "没有找到下一页链接",
+    "description": "没有找到下一页链接提示"
+  },
+  "invalidGesture": {
+    "message": "无效手势",
+    "description": "无效手势提示"
+  },
+  "nextPage": {
+    "message": "下一页",
+    "description": "下一页操作"
+  },
+  "errorReadPixel": {
+    "message": "读取像素错误:",
+    "description": "读取像素错误提示"
+  },
+  "errorCanvasRead": {
+    "message": "读取Canvas错误:",
+    "description": "读取Canvas错误提示"
+  },
+  "errorCanvasDraw": {
+    "message": "Canvas绘制错误:",
+    "description": "Canvas绘制错误提示"
+  },
+  "errorAccessIframe": {
+    "message": "访问iframe错误:",
+    "description": "访问iframe错误提示"
+  },
+  "errorMutationObserver": {
+    "message": "设置变异观察器时出错:",
+    "description": "设置变异观察器时出错"
+  },
+  "errorCheckVisibility": {
+    "message": "检查元素可见性时出错:",
+    "description": "检查元素可见性时出错"
+  },
+  "errorProcessCorners": {
+    "message": "处理圆角时出错:",
+    "description": "处理圆角时出错"
+  },
+  "languageChanged": {
+    "message": "语言已从 $1 切换到 $2",
+    "description": "语言切换提示"
+  },
+  "switchedToChinese": {
+    "message": "已切换到中文",
+    "description": "切换到中文提示"
+  },
+  "switchedToEnglish": {
+    "message": "已切换到英文",
+    "description": "切换到英文提示"
+  },
+  "debugSystemSettings": {
+    "message": "系统设置",
+    "description": "调试面板系统设置部分"
+  },
+  "debugAngleThreshold": {
+    "message": "角度阈值",
+    "description": "调试面板角度阈值设置"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "方向变化阈值",
+    "description": "调试面板方向变化阈值设置"
+  },
+  "debugMinGestureDistance": {
+    "message": "最小手势距离",
+    "description": "调试面板最小手势距离设置"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "最小方向段长度",
+    "description": "调试面板最小方向段长度设置"
+  },
+  "debugMinGestureComplexity": {
+    "message": "最小手势复杂度",
+    "description": "调试面板最小手势复杂度设置"
+  },
+  "debugLatestGestureInfo": {
+    "message": "最新手势信息",
+    "description": "调试面板最新手势信息部分"
+  },
+  "debugPoints": {
+    "message": "点数",
+    "description": "调试面板点数"
+  },
+  "debugSimplifiedAfter": {
+    "message": "简化后",
+    "description": "调试面板简化后文本"
+  },
+  "debugTotalDistance": {
+    "message": "总距离",
+    "description": "调试面板总距离"
+  },
+  "debugDirectionRecognition": {
+    "message": "方向识别",
+    "description": "调试面板方向识别部分"
+  },
+  "debugOriginalDirections": {
+    "message": "原始方向",
+    "description": "调试面板原始方向"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "检测到重复模式",
+    "description": "调试面板检测到重复模式"
+  },
+  "debugRepetitivePatternType": {
+    "message": "重复模式类型",
+    "description": "调试面板重复模式类型"
+  },
+  "debugDirectionMerging": {
+    "message": "方向合并",
+    "description": "调试面板方向合并部分"
+  },
+  "debugMergedDirections": {
+    "message": "合并后方向",
+    "description": "调试面板合并后方向"
+  },
+  "debugDirectionDistances": {
+    "message": "方向距离",
+    "description": "调试面板方向距离"
+  },
+  "debugFinalResult": {
+    "message": "最终结果",
+    "description": "调试面板最终结果部分"
+  },
+  "debugRecognizedGesture": {
+    "message": "识别的手势",
+    "description": "调试面板识别的手势"
+  },
+  "debugSimilarity": {
+    "message": "相似度",
+    "description": "调试面板相似度"
+  },
+  "debugYes": {
+    "message": "是",
+    "description": "调试面板是"
+  },
+  "debugNo": {
+    "message": "否",
+    "description": "调试面板否"
+  },
+  "debugNone": {
+    "message": "无",
+    "description": "调试面板无"
+  },
+  "debugInvalidGesture": {
+    "message": "无效手势",
+    "description": "调试面板无效手势"
+  },
+  "debugWaitingForGestureData": {
+    "message": "等待手势数据...",
+    "description": "调试面板等待手势数据"
+  },
+  "debugCopyButton": {
+    "message": "复制信息",
+    "description": "调试面板复制按钮"
+  },
+  "debugCopySuccess": {
+    "message": "已复制到剪贴板！",
+    "description": "调试面板复制成功消息"
+  },
+  "debugCopyFailed": {
+    "message": "复制失败，请手动选择并复制",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "搜索：",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "弹出窗口被阻止",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "请允许此网站的弹出窗口以启用链接预览功能。",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "手势模式已就绪",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...还有$1个页面",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "通过该网站/链接购买商品支持作者",
+    "description": "赞助作者提示"
+  },
+  "showTabCountBadge": {
+    "message": "显示标签页数量徽章",
+    "description": "显示标签页数量徽章设置"
+  }
+}

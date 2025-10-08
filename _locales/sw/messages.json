@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Vivyo vya Panya",
+    "description": "Jina la kifaa cha nyongeza"
+  },
+  "extDesc": {
+    "message": "Kifaa cha nyongeza cha Chrome/Edge kinachounga mkono vivyo vya panya na utendaji wa kuburuta na onyesho la kiungo",
+    "description": "Maelezo ya kifaa cha nyongeza"
+  },
+  "title": {
+    "message": "Vivyo vya Panya",
+    "description": "Kichwa cha kifaa cha nyongeza"
+  },
+  "builtInGestures": {
+    "message": "Vivyo Vilivyojengwa Ndani",
+    "description": "Kichwa cha vivyo vilivyojengwa ndani"
+  },
+  "superDragFeature": {
+    "message": "Kipengele cha Kuburuta",
+    "description": "Kichwa cha kipengele cha kuburuta"
+  },
+  "dragUp": {
+    "message": "Buruta Juu",
+    "description": "Kitendo cha kuburuta juu"
+  },
+  "dragRight": {
+    "message": "Buruta Kulia",
+    "description": "Kitendo cha kuburuta kulia"
+  },
+  "dragDown": {
+    "message": "Buruta Chini",
+    "description": "Kitendo cha kuburuta chini"
+  },
+  "dragLeft": {
+    "message": "Buruta Kushoto",
+    "description": "Kitendo cha kuburuta kushoto"
+  },
+  "openInForeground": {
+    "message": "Fungua Kiungo kwa Mazingira ya Juu",
+    "description": "Fungua kiungo kwa mazingira ya juu"
+  },
+  "openInBackground": {
+    "message": "Fungua Kiungo kwa Mazingira ya Nyuma",
+    "description": "Fungua kiungo kwa mazingira ya nyuma"
+  },
+  "superDragDescription": {
+    "message": "Utendaji wa kuburuta unafanya kazi kwa viungo, picha na maandishi yaliyochaguliwa. Wakati maandishi yaliyochaguliwa ni URL, yanafungua kama kiungo; vinginevyo yanatafuta. Mwelekeo wa kuburuta unaamua jinsi tabo mpya zinafunguliwa.",
+    "description": "Maelezo ya utendaji wa kuburuta"
+  },
+  "left": {
+    "message": "Kushoto",
+    "description": "Mwelekeo wa kushoto"
+  },
+  "right": {
+    "message": "Kulia",
+    "description": "Mwelekeo wa kulia"
+  },
+  "up": {
+    "message": "Juu",
+    "description": "Mwelekeo wa juu"
+  },
+  "down": {
+    "message": "Chini",
+    "description": "Mwelekeo wa chini"
+  },
+  "downThenRight": {
+    "message": "Chini Kisha Kulia",
+    "description": "Kivyo chini kisha kulia"
+  },
+  "leftThenUp": {
+    "message": "Kushoto Kisha Juu",
+    "description": "Kivyo kushoto kisha juu"
+  },
+  "rightThenUp": {
+    "message": "Kulia Kisha Juu",
+    "description": "Kivyo kulia kisha juu"
+  },
+  "rightThenDown": {
+    "message": "Kulia Kisha Chini",
+    "description": "Kivyo kulia kisha chini"
+  },
+  "upThenLeft": {
+    "message": "Juu Kisha Kushoto",
+    "description": "Kivyo juu kisha kushoto"
+  },
+  "upThenRight": {
+    "message": "Juu Kisha Kulia",
+    "description": "Kivyo juu kisha kulia"
+  },
+  "downThenLeft": {
+    "message": "Chini Kisha Kushoto",
+    "description": "Kivyo chini kisha kushoto"
+  },
+  "leftThenDown": {
+    "message": "Kushoto Kisha Chini",
+    "description": "Kivyo kushoto kisha chini"
+  },
+  "upThenDown": {
+    "message": "Juu Kisha Chini",
+    "description": "Kivyo juu kisha chini"
+  },
+  "downThenUp": {
+    "message": "Chini Kisha Juu",
+    "description": "Kivyo chini kisha juu"
+  },
+  "leftThenRight": {
+    "message": "Kushoto Kisha Kulia",
+    "description": "Kivyo kushoto kisha kulia"
+  },
+  "rightThenLeft": {
+    "message": "Kulia Kisha Kushoto",
+    "description": "Kivyo kulia kisha kushoto"
+  },
+  "back": {
+    "message": "Rudi Nyuma",
+    "description": "Kitendo cha kurudi nyuma"
+  },
+  "forward": {
+    "message": "Endelea Mbele",
+    "description": "Kitendo cha kuendelea mbele"
+  },
+  "scrollUp": {
+    "message": "Peleka Juu",
+    "description": "Kitendo cha kupeleka juu"
+  },
+  "scrollDown": {
+    "message": "Peleka Chini",
+    "description": "Kitendo cha kupeleka chini"
+  },
+  "scrollLeft": {
+    "message": "Onyesha kushoto",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Onyesha kulia",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Lazimisha Onyesha upya",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Funga Tabo",
+    "description": "Kitendo cha kufunga tabo"
+  },
+  "reopenTab": {
+    "message": "Fungua Tabo Iliyofungwa",
+    "description": "Kitendo cha kufungua tabo iliyofungwa"
+  },
+  "newTab": {
+    "message": "Tabo Mpya",
+    "description": "Kitendo cha tabo mpya"
+  },
+  "refresh": {
+    "message": "Sasisha",
+    "description": "Kitendo cha kusasisha"
+  },
+  "prevTab": {
+    "message": "Tabo Iliyopita",
+    "description": "Kitendo cha tabo iliyopita"
+  },
+  "nextTab": {
+    "message": "Tabo Inayofuata",
+    "description": "Kitendo cha tabo inayofuata"
+  },
+  "stopLoading": {
+    "message": "Simamisha Kupakia",
+    "description": "Kitendo cha kusimamisha kupakia"
+  },
+  "closeAllTabs": {
+    "message": "Funga Tabo Zote",
+    "description": "Kitendo cha kufunga tabo zote"
+  },
+  "scrollToBottom": {
+    "message": "Peleka Chini",
+    "description": "Kitendo cha kupeleka chini"
+  },
+  "scrollToTop": {
+    "message": "Peleka Juu",
+    "description": "Kitendo cha kupeleka juu"
+  },
+  "scrollToLeft": {
+    "message": "Onyesha mpaka kushoto",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Onyesha mpaka kulia",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "Hakuna Kitendo",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Dirisha Jipya",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Dirisha la Faragha Jipya",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Funga Tabo Nyingine",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Funga Tabo za Kulia",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Badilisha Skrini Kamili",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Funga Tabo za Kushoto",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Pakia Upya Tabo Zote",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Funga/Ondoa Kufunga Tabo",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Nyamaza/Wezesha Sauti ya Tabo",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Nyamaza Tabo Nyingine",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Kubwa/Rudisha Dirisha",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Punguza Dirisha",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Mipangilio",
+    "description": "Kichwa cha mipangilio"
+  },
+  "enableGesture": {
+    "message": "Washa Vivyo vya Panya",
+    "description": "Chaguo la kuwasha vivyo vya panya"
+  },
+  "showGestureTrail": {
+    "message": "Onyesha Njia ya Kivyo",
+    "description": "Chaguo la kuonyesha njia ya kivyo"
+  },
+  "showGestureHint": {
+    "message": "Onyesha Kidokezo cha Kivyo",
+    "description": "Chaguo la kuonyesha kidokezo cha kivyo"
+  },
+  "trailColor": {
+    "message": "Rangi ya Njia",
+    "description": "Chaguo la rangi ya njia"
+  },
+  "trailWidth": {
+    "message": "Upana wa Njia",
+    "description": "Chaguo la upana wa njia"
+  },
+  "enableSuperDrag": {
+    "message": "Washa Kuburuta",
+    "description": "Chaguo la kuwasha kuburuta"
+  },
+  "enableDragTextSearch": {
+    "message": "Washa Kutafuta Maandishi ya Kuburuta",
+    "description": "Chaguo la kuwasha kutafuta maandishi ya kuburuta"
+  },
+  "enableImagePreview": {
+    "message": "Washa Onyesho la Picha",
+    "description": "Chaguo la kuwasha onyesho la picha"
+  },
+  "enableDuplicateCheck": {
+    "message": "Gundua Tabo Zilizorudiwa",
+    "description": "Chaguo la kugundua tabo zilizorudiwa"
+  },
+  "autoCloseDuplicates": {
+    "message": "Funga Tabo Zilizorudiwa Moja kwa Moja",
+    "description": "Chaguo la kufunga tabo zilizorudiwa moja kwa moja"
+  },
+  "enableSmoothScroll": {
+    "message": "Washa Onyesha laini",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Mipangilio Imetumika",
+    "description": "Kitufe cha kuhifadhi mipangilio"
+  },
+  "reset": {
+    "message": "Weka Upya",
+    "description": "Kitufe cha kuweka upya mipangilio"
+  },
+  "settingsSaved": {
+    "message": "Mipangilio Imetumika",
+    "description": "Ujumbe wa mipangilio iliyohifadhiwa"
+  },
+  "settingsReset": {
+    "message": "Weka Upya Imekamilika",
+    "description": "Ujumbe wa mipangilio iliyowekwa upya"
+  },
+  "resetting": {
+    "message": "Inaweka upya...",
+    "description": "Ujumbe wa kuweka upya"
+  },
+  "loadError": {
+    "message": "Imeshindwa Kupakia Mipangilio",
+    "description": "Ujumbe wa hitilafu ya kupakia mipangilio"
+  },
+  "saveError": {
+    "message": "Imeshindwa Kuhifadhi Mipangilio",
+    "description": "Ujumbe wa hitilafu ya kuhifadhi mipangilio"
+  },
+  "resetError": {
+    "message": "Imeshindwa Kuweka Upya Mipangilio",
+    "description": "Ujumbe wa hitilafu ya kuweka upya mipangilio"
+  },
+  "themeLight": {
+    "message": "Mwanga",
+    "description": "Mada ya mwanga"
+  },
+  "themeDark": {
+    "message": "Giza",
+    "description": "Mada ya giza"
+  },
+  "buyMeACoffee": {
+    "message": "Nunua kahawa",
+    "description": "Kitufe cha mchango"
+  },
+  "toggleTheme": {
+    "message": "Badilisha Mada",
+    "description": "Kitufe cha kubadilisha mada"
+  },
+  "toggleLanguage": {
+    "message": "Badilisha Lugha",
+    "description": "Kitufe cha kubadilisha lugha"
+  },
+  "donationTooltip": {
+    "message": "Ikiwa unapenda kazi hii, tafadhali nisaidie. Asante :)",
+    "description": "Kidokezo cha mchango"
+  },
+  "rightButtonHint": {
+    "message": "Shika kitufe cha kulia cha panya",
+    "description": "Kidokezo cha kitufe cha kulia"
+  },
+  "leftButtonHint": {
+    "message": "Shika kitufe cha kushoto cha panya",
+    "description": "Kidokezo cha kitufe cha kushoto"
+  },
+  "foregroundAction": {
+    "message": "Fungua kwa Mazingira ya Juu",
+    "description": "Kitendo cha kufungua kwa mazingira ya juu"
+  },
+  "backgroundAction": {
+    "message": "Fungua kwa Mazingira ya Nyuma",
+    "description": "Kitendo cha kufungua kwa mazingira ya nyuma"
+  },
+  "dragSearchEngine": {
+    "message": "URL ya Injini ya Utafutaji ya Kuburuta",
+    "description": "Mpangilio wa URL ya injini ya utafutaji ya kuburuta"
+  },
+  "linkPreview": {
+    "message": "Onyesho la Dirisha",
+    "description": "Kichwa cha onyesho la dirisha"
+  },
+  "quickNavTooltip": {
+    "message": "Kushoto: {next} | Kulia: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Pita juu + Kibonye cha Kubadilisha ili Kuonyesha Dirisha",
+    "description": "Kidokezo cha onyesho la dirisha"
+  },
+  "enableLinkPreview": {
+    "message": "Washa Onyesho la Dirisha",
+    "description": "Chaguo la kuwasha onyesho la dirisha"
+  },
+  "enableTextSearchPreview": {
+    "message": "Washa Utafutaji wa Maandishi Yaliyochaguliwa",
+    "description": "Chaguo la kuwasha utafutaji wa maandishi yaliyochaguliwa"
+  },
+  "modifierKey": {
+    "message": "Kibonye cha Kuanzisha",
+    "description": "Mpangilio wa kibonye cha kuanzisha"
+  },
+  "controlKey": {
+    "message": "Kibonye cha Ctrl",
+    "description": "Chaguo la kibonye cha Ctrl"
+  },
+  "altKey": {
+    "message": "Kibonye cha Alt",
+    "description": "Chaguo la kibonye cha Alt"
+  },
+  "shiftKey": {
+    "message": "Kibonye cha Shift",
+    "description": "Chaguo la kibonye cha Shift"
+  },
+  "noKey": {
+    "message": "Hakuna Kibonye Kinachohitajika",
+    "description": "Chaguo la hakuna kibonye kinachohitajika"
+  },
+  "previewDelay": {
+    "message": "Ucheleweshaji wa Dirisha (ms)",
+    "description": "Mpangilio wa ucheleweshaji wa dirisha"
+  },
+  "maxPreviewWindows": {
+    "message": "Madirisha ya Juu ya Onyesho",
+    "description": "Mpangilio wa madirisha ya juu ya onyesho"
+  },
+  "previewWidth": {
+    "message": "Upana wa Dirisha",
+    "description": "Mpangilio wa upana wa dirisha"
+  },
+  "previewHeight": {
+    "message": "Urefu wa Dirisha",
+    "description": "Mpangilio wa urefu wa dirisha"
+  },
+  "previewPosition": {
+    "message": "Mahali pa Dirisha",
+    "description": "Mpangilio wa mahali pa dirisha"
+  },
+  "cursorPosition": {
+    "message": "Mahali pa Kielelezo",
+    "description": "Chaguo la mahali pa kielelezo"
+  },
+  "centerScreen": {
+    "message": "Katikati ya Skrini",
+    "description": "Chaguo la katikati ya skrini"
+  },
+  "cornerScreen": {
+    "message": "Kona ya Skrini",
+    "description": "Chaguo la kona ya skrini"
+  },
+  "searchEngine": {
+    "message": "URL ya Injini ya Utafutaji ya Dirisha",
+    "description": "Mpangilio wa URL ya injini ya utafutaji ya dirisha"
+  },
+  "searchEngineExamples": {
+    "message": "Tumia {q} kwa neno la utafutaji, muundo wa mfano:",
+    "description": "Maelezo ya mifano ya injini ya utafutaji"
+  },
+  "googleExample": {
+    "message": "Utafutaji wa Google: https://www.google.com/search?q={q}",
+    "description": "Mfano wa utafutaji wa Google"
+  },
+  "googleTranslateExample": {
+    "message": "Tafsiri ya Google: https://translate.google.com/?sl=auto&tl=sw&text={q}&op=translate",
+    "description": "Mfano wa tafsiri ya Google"
+  },
+  "localSearchExample": {
+    "message": "Mfano: https://www.google.co.tz/search?q={q}",
+    "description": "Mfano wa URL ya utafutaji wa ndani"
+  },
+  "bingExample": {
+    "message": "Utafutaji wa Bing: https://www.bing.com/search?q={q}",
+    "description": "Mfano wa utafutaji wa Bing"
+  },
+  "wheelTip": {
+    "message": "Tumia gurudumu la panya ili kurekebisha thamani",
+    "description": "Kidokezo cha gurudumu"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Wakati wa kutumia kibonye cha kuanzisha, ucheleweshaji wa juu umewekwa kwa 300ms",
+    "description": "Kidokezo cha ucheleweshaji wa kibonye cha kubadilisha"
+  },
+  "welcomeTitle": {
+    "message": "Karibu kwenye Kifaa cha Nyongeza cha Vivyo vya Panya",
+    "description": "Kichwa cha ukurasa wa kukaribisha"
+  },
+  "welcomeDescription": {
+    "message": "Asante kwa kusakinisha Kiendelezi cha Vivyo vya Panya! Kiendelezi hiki kinatoa utendaji wa vivyo vya panya ulio na utajiri, usimamizi wa tabu wa busara, uwezo wa mtazamo wa popup na uzoefu wa kuona ulioimarishwa kukusaidia kuvinjari mtandao kwa ufanisi zaidi. Tumeimarisha algorithm ya utambuzi wa vivyo na uvumilivu wa makosa ulioongezeka, kuruhusu vivyo kutambuliwa kwa usahihi hata wakati havijachorwa kikamilifu. Kipengele kipya cha dirisha la popup kinakuruhusu kuona maudhui ya kiungo katika madirisha ya popup bila kubadilisha tabu. Kiendelezi pia kinaunga mkono lugha 29 na mandhari angavu/giza kwa matumizi bora zaidi.",
+    "description": "Maelezo ya ukurasa wa kukaribisha"
+  },
+  "gesturesDescription": {
+    "message": "Yafuatayo ni vivyo vya panya vilivyowekwa awali ambavyo unaweza kutumia kwa kuburuta na kitufe cha kulia cha panya:",
+    "description": "Maelezo ya vivyo"
+  },
+  "extensionName": {
+    "message": "Kifaa cha Nyongeza cha Vivyo vya Panya",
+    "description": "Jina kamili la kifaa cha nyongeza"
+  },
+  "coreFeatures": {
+    "message": "Vipengele Vikuu",
+    "description": "Kichwa cha vipengele vikuu"
+  },
+  "utilitiesFeatures": {
+    "message": "Zana",
+    "description": "Kichwa cha zana"
+  },
+  "usageTips": {
+    "message": "Vidokezo vya Matumizi",
+    "description": "Kichwa cha vidokezo vya matumizi"
+  },
+  "smartGestureRecognition": {
+    "message": "Utambuzi wa vivyo vya panya: Inatambua vivyo kwa usahihi hata kama havijakamilika, inafanya kazi wakati wa kupakia kurasa",
+    "description": "Maelezo ya utambuzi wa vivyo vya panya"
+  },
+  "tabManagementTitle": {
+    "message": "Usimamizi wa Tabo",
+    "description": "Kichwa cha usimamizi wa tabo"
+  },
+  "tabManagementDesc": {
+    "message": ": Ugunduzi wa tabo zilizorudiwa, kufunga moja kwa moja, uboreshaji wa kumbukumbu ya mara kwa mara",
+    "description": "Maelezo ya usimamizi wa tabo"
+  },
+  "superDragTitle": {
+    "message": "Kuburuta",
+    "description": "Kichwa cha kuburuta"
+  },
+  "superDragDesc": {
+    "message": ": Buruta viungo na picha kwa tabo mpya, buruta maandishi yaliyochaguliwa kutafuta",
+    "description": "Maelezo ya kuburuta"
+  },
+  "linkPreviewTitle": {
+    "message": "Onyesho la Dirisha",
+    "description": "Kichwa cha onyesho la kiungo"
+  },
+  "linkPreviewDesc": {
+    "message": ": Shika kibonye cha kubadilisha (chaguo-msingi: Shift) wakati wa kupita juu ya viungo kutazama kurasa za lengwa katika madirisha ya dirisha",
+    "description": "Maelezo ya onyesho la kiungo"
+  },
+  "textSelectionPreview": {
+    "message": "Chagua maandishi na bonyeza kibonye cha kubadilisha kutafuta mara moja katika dirisha la dirisha, na msaada wa injini ya utafutaji ya desturi",
+    "description": "Maelezo ya onyesho la uchaguzi wa maandishi"
+  },
+  "previewTip": {
+    "message": "Unaweza kufungua madirisha mengi ya dirisha wakati mmoja",
+    "description": "Kidokezo cha onyesho"
+  },
+  "dragDirection": {
+    "message": "Badilisha mwelekeo wa kuburuta ili kuamua njia ya kufungua tabo: fungua kwa mazingira ya nyuma kwa chaguo-msingi",
+    "description": "Maelezo ya mwelekeo wa kuburuta"
+  },
+  "debugPanelTitle": {
+    "message": "Maelezo ya Uboreshaji ya Vivyo vya Panya",
+    "description": "Kichwa cha jopo la uboreshaji"
+  },
+  "debugPanelDesc": {
+    "message": ": Bofya Alt+D kufungua, chambua maelezo ya kivyo kwa wakati halisi, inahifadhi hali",
+    "description": "Maelezo ya jopo la uboreshaji"
+  },
+  "oneClickCopy": {
+    "message": "Nakili ya kubofya moja ya maelezo ya uboreshaji kwa kushiriki rahisi, na msaada wa lugha nyingi",
+    "description": "Maelezo ya nakili ya kubofya moja"
+  },
+  "mediaPreview": {
+    "message": "Onyesho la vyombo vya habari lililoboreshwa: Athari za kupita juu za picha zilizoboreshwa na picha za video zilizoboreshwa",
+    "description": "Maelezo ya onyesho la vyombo vya habari"
+  },
+  "adaptiveTheme": {
+    "message": "Mada zinazobadilika: Zinarekebisha mtindo wa kuona kulingana na mandharinyuma ya ukurasa, zinaunga mkono hali ya mwanga/giza",
+    "description": "Maelezo ya mada inayobadilika"
+  },
+  "gestureTrail": {
+    "message": "Njia za vivyo zinaonyeshwa kwenye skrini na rangi na upana unaoweza kubadilishwa",
+    "description": "Maelezo ya njia ya kivyo"
+  },
+  "clickIcon": {
+    "message": "Bofya ikoni ya kifaa cha nyongeza kuwasha/kuzima vipengele, kuweka lugha, mada na zaidi",
+    "description": "Maelezo ya kubofya ikoni"
+  },
+  "languageSupport": {
+    "message": "Inaunga mkono 29 lugha, inajirekebisha moja kwa moja kwa lugha ya kivinjari",
+    "description": "Maelezo ya msaada wa lugha"
+  },
+  "enableAutoClose": {
+    "message": "Washa kipengele cha kufunga tabo zilizorudiwa moja kwa moja ili kupunguza kwa kiasi kikubwa matumizi ya rasilimali ya kivinjari",
+    "description": "Maelezo ya kuwasha kufunga moja kwa moja"
+  },
+  "rightClickMacLinux": {
+    "message": "Kwenye mifumo ya Linux na macOS, bofya mara mbili kitufe cha kulia kuonyesha orodha ya mazingira ya kivinjari",
+    "description": "Kidokezo cha kubofya kulia kwa Mac/Linux"
+  },
+  "duplicateTab": {
+    "message": "Tabo iliyorudiwa",
+    "description": "Tabo iliyorudiwa"
+  },
+  "duplicateTabsDetected": {
+    "message": "Imepatikana tabo $1 zilizorudiwa",
+    "description": "Kichwa cha taarifa ya tabo zilizorudiwa zilizogunduliwa"
+  },
+  "duplicateTabsCount": {
+    "message": "Kuna tabo $1 zilizorudiwa",
+    "description": "Ujumbe wa idadi ya tabo zilizorudiwa"
+  },
+  "duplicateTabsSingle": {
+    "message": "Kuna tabo 1 iliyorudiwa",
+    "description": "Ujumbe wa tabo moja iliyorudiwa"
+  },
+  "autoClosedTabs": {
+    "message": "Imefungwa moja kwa moja tabo $1 zilizorudiwa",
+    "description": "Taarifa ya tabo zilizofungwa moja kwa moja"
+  },
+  "closeBtn": {
+    "message": "Funga Zilizorudiwa",
+    "description": "Kitufe cha kufunga zilizorudiwa"
+  },
+  "ignoreBtn": {
+    "message": "Puuza",
+    "description": "Kitufe cha kupuuza"
+  },
+  "untitledTab": {
+    "message": "Tabo isiyo na jina",
+    "description": "Tabo isiyo na jina"
+  },
+  "morePages": {
+    "message": "...na kurasa $1 zaidi",
+    "description": "Kidokezo cha kurasa zaidi"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Hitilafu katika kuonyesha taarifa ya tabo zilizorudiwa:",
+    "description": "Ujumbe wa hitilafu wa kuonyesha taarifa ya tabo zilizorudiwa"
+  },
+  "errorSendCloseRequest": {
+    "message": "Hitilafu katika kutuma ombi la kufunga:",
+    "description": "Ujumbe wa hitilafu wa kutuma ombi la kufunga"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Hitilafu katika kufunga tabo zilizorudiwa:",
+    "description": "Ujumbe wa hitilafu wa kufunga tabo zilizorudiwa"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Hitilafu katika kutuma ombi la kupuuza:",
+    "description": "Ujumbe wa hitilafu wa kutuma ombi la kupuuza"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Hitilafu katika kupuuza tabo zilizorudiwa:",
+    "description": "Ujumbe wa hitilafu wa kupuuza tabo zilizorudiwa"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Hitilafu katika kusasisha jopo la uboreshaji:",
+    "description": "Ujumbe wa hitilafu wa kusasisha jopo la uboreshaji"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Hitilafu katika kugundua rangi ya mandharinyuma:",
+    "description": "Ujumbe wa hitilafu wa kugundua rangi ya mandharinyuma"
+  },
+  "errorDetectImageBorder": {
+    "message": "Hitilafu katika kugundua radius ya mpaka wa picha:",
+    "description": "Ujumbe wa hitilafu wa kugundua radius ya mpaka wa picha"
+  },
+  "errorSetMutationObserver": {
+    "message": "Hitilafu katika kuweka mwangalizi wa mabadiliko:",
+    "description": "Ujumbe wa hitilafu wa kuweka mwangalizi wa mabadiliko"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Hitilafu katika kuangalia kuonekana kwa kipengele:",
+    "description": "Ujumbe wa hitilafu wa kuangalia kuonekana"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Hitilafu katika kusindika radius ya mpaka:",
+    "description": "Ujumbe wa hitilafu wa kusindika radius ya mpaka"
+  },
+  "errorDetectImageBackground": {
+    "message": "Hitilafu katika kugundua mandharinyuma ya picha:",
+    "description": "Ujumbe wa hitilafu wa kugundua mandharinyuma ya picha"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Hitilafu katika kuonyesha taarifa ya mafanikio ya kufunga moja kwa moja:",
+    "description": "Ujumbe wa hitilafu wa kuonyesha taarifa ya mafanikio ya kufunga moja kwa moja"
+  },
+  "noForwardPage": {
+    "message": "Hakuna kurasa inayofuata katika historia",
+    "description": "Ujumbe wa hakuna kurasa inayofuata"
+  },
+  "noBackPage": {
+    "message": "Hakuna kurasa iliyopita katika historia",
+    "description": "Ujumbe wa hakuna kurasa iliyopita"
+  },
+  "navigationFailed": {
+    "message": "Uelekezaji umeshindwa",
+    "description": "Ujumbe wa kushindwa kwa uelekezaji"
+  },
+  "tryingNextPage": {
+    "message": "Inajaribu kurasa inayofuata...",
+    "description": "Ujumbe wa kujaribu kurasa inayofuata"
+  },
+  "nextPageSuccess": {
+    "message": "Imeelekezwa kwa kurasa inayofuata",
+    "description": "Ujumbe wa mafanikio ya kurasa inayofuata"
+  },
+  "noNextPage": {
+    "message": "Hakuna kiungo cha kurasa inayofuata kilichopatikana",
+    "description": "Ujumbe wa hakuna kiungo cha kurasa inayofuata"
+  },
+  "invalidGesture": {
+    "message": "Kivyo Batili",
+    "description": "Ujumbe wa kivyo batili"
+  },
+  "nextPage": {
+    "message": "Kurasa Inayofuata",
+    "description": "Kitendo cha kurasa inayofuata"
+  },
+  "errorReadPixel": {
+    "message": "Hitilafu katika kusoma pixel:",
+    "description": "Ujumbe wa hitilafu wa kusoma pixel"
+  },
+  "errorCanvasRead": {
+    "message": "Hitilafu katika kusoma canvas:",
+    "description": "Ujumbe wa hitilafu wa kusoma canvas"
+  },
+  "errorCanvasDraw": {
+    "message": "Hitilafu katika kuchora kwenye canvas:",
+    "description": "Ujumbe wa hitilafu wa kuchora canvas"
+  },
+  "errorAccessIframe": {
+    "message": "Hitilafu katika kufikia iframe:",
+    "description": "Ujumbe wa hitilafu wa kufikia iframe"
+  },
+  "errorMutationObserver": {
+    "message": "Hitilafu katika kuweka mwangalizi wa mabadiliko:",
+    "description": "Ujumbe wa hitilafu wa kuweka mwangalizi wa mabadiliko"
+  },
+  "errorCheckVisibility": {
+    "message": "Hitilafu katika kuangalia kuonekana kwa kipengele:",
+    "description": "Ujumbe wa hitilafu wa kuangalia kuonekana"
+  },
+  "errorProcessCorners": {
+    "message": "Hitilafu katika kusindika pembe:",
+    "description": "Ujumbe wa hitilafu wa kusindika pembe"
+  },
+  "languageChanged": {
+    "message": "Lugha imebadilishwa kutoka $1 hadi $2",
+    "description": "Taarifa ya mabadiliko ya lugha"
+  },
+  "switchedToChinese": {
+    "message": "Imegeuzwa kwa Kichina",
+    "description": "Taarifa ya kugeuzwa kwa Kichina"
+  },
+  "switchedToEnglish": {
+    "message": "Imegeuzwa kwa Kiingereza",
+    "description": "Taarifa ya kugeuzwa kwa Kiingereza"
+  },
+  "debugSystemSettings": {
+    "message": "Mipangilio ya Mfumo",
+    "description": "Sehemu ya mipangilio ya mfumo ya jopo la uboreshaji"
+  },
+  "debugAngleThreshold": {
+    "message": "Kizingiti cha Pembe",
+    "description": "Mpangilio wa kizingiti cha pembe wa jopo la uboreshaji"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Kizingiti cha Mabadiliko ya Mwelekeo",
+    "description": "Mpangilio wa kizingiti cha mabadiliko ya mwelekeo wa jopo la uboreshaji"
+  },
+  "debugMinGestureDistance": {
+    "message": "Umbali wa Chini wa Kivyo",
+    "description": "Mpangilio wa umbali wa chini wa kivyo wa jopo la uboreshaji"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Urefu wa Chini wa Sehemu ya Mwelekeo",
+    "description": "Mpangilio wa urefu wa chini wa sehemu ya mwelekeo wa jopo la uboreshaji"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Utafitifu wa Chini wa Kivyo",
+    "description": "Mpangilio wa utafitifu wa chini wa kivyo wa jopo la uboreshaji"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Maelezo ya Hivi Karibuni ya Kivyo",
+    "description": "Sehemu ya maelezo ya hivi karibuni ya kivyo ya jopo la uboreshaji"
+  },
+  "debugPoints": {
+    "message": "Pointi",
+    "description": "Idadi ya pointi ya jopo la uboreshaji"
+  },
+  "debugSimplifiedAfter": {
+    "message": "baada ya kurahisisha",
+    "description": "Nakala ya jopo la uboreshaji iliyorahisishwa baada ya"
+  },
+  "debugTotalDistance": {
+    "message": "Jumla ya Umbali",
+    "description": "Jumla ya umbali ya jopo la uboreshaji"
+  },
+  "debugDirectionRecognition": {
+    "message": "Utambuzi wa Mwelekeo",
+    "description": "Sehemu ya utambuzi wa mwelekeo ya jopo la uboreshaji"
+  },
+  "debugOriginalDirections": {
+    "message": "Mwelekeo wa Asili",
+    "description": "Mwelekeo wa asili wa jopo la uboreshaji"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Muundo wa Kurudia Umegunduliwa",
+    "description": "Muundo wa kurudia uliogunduliwa wa jopo la uboreshaji"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Aina ya Muundo wa Kurudia",
+    "description": "Aina ya muundo wa kurudia wa jopo la uboreshaji"
+  },
+  "debugDirectionMerging": {
+    "message": "Kuunganisha Mwelekeo",
+    "description": "Sehemu ya kuunganisha mwelekeo ya jopo la uboreshaji"
+  },
+  "debugMergedDirections": {
+    "message": "Mwelekeo Uliounganishwa",
+    "description": "Mwelekeo uliounganishwa wa jopo la uboreshaji"
+  },
+  "debugDirectionDistances": {
+    "message": "Umbali wa Mwelekeo",
+    "description": "Umbali wa mwelekeo wa jopo la uboreshaji"
+  },
+  "debugFinalResult": {
+    "message": "Matokeo ya Mwisho",
+    "description": "Sehemu ya matokeo ya mwisho ya jopo la uboreshaji"
+  },
+  "debugRecognizedGesture": {
+    "message": "Kivyo Kilichotambuliwa",
+    "description": "Kivyo kilichotambuliwa cha jopo la uboreshaji"
+  },
+  "debugSimilarity": {
+    "message": "Ufanano",
+    "description": "Ufanano wa jopo la uboreshaji"
+  },
+  "debugYes": {
+    "message": "Ndiyo",
+    "description": "Ndiyo ya jopo la uboreshaji"
+  },
+  "debugNo": {
+    "message": "Hapana",
+    "description": "Hapana ya jopo la uboreshaji"
+  },
+  "debugNone": {
+    "message": "Hakuna",
+    "description": "Hakuna ya jopo la uboreshaji"
+  },
+  "debugInvalidGesture": {
+    "message": "Kivyo Batili",
+    "description": "Kivyo batili cha jopo la uboreshaji"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Inasubiri data ya kivyo...",
+    "description": "Jopo la uboreshaji linasubiri data ya kivyo"
+  },
+  "debugCopyButton": {
+    "message": "Nakili Maelezo ya Uboreshaji",
+    "description": "Kitufe cha kunakili cha jopo la uboreshaji"
+  },
+  "debugCopySuccess": {
+    "message": "Imenakiliwa kwenye ubao wa kunakilia!",
+    "description": "Ujumbe wa mafanikio ya kunakili ya jopo la uboreshaji"
+  },
+  "debugCopyFailed": {
+    "message": "Kopiering misslyckades, välj och kopiera manuellt",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Sök: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Popup Blockerad",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Tillåt popup-fönster för denna webbplats för att aktivera länkförhandsvisningsfunktionen.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Gesterläge redo",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...och $1 fler sidor",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Msaada mwandishi kwa kununua kupitia kiungo hiki",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Onyesha Idadi ya Tabo",
+    "description": "Show tab count badge option"
+  }
+}

@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Hiiren Eleet",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "Chrome/Edge-laajennos, joka tukee hiiren eleitä, super-raahausta ja popup-näkymää",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "Hiiren Eleet",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "Sisäänrakennetut Eleet",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "Super-raahaus Toiminto",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "Raahaa Ylös",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "Raahaa Oikealle",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "Raahaa Alas",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "Raahaa Vasemmalle",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "Avaa Linkki Etualalla",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "Avaa Linkki Taustalla",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "Super-raahaus toiminto toimii linkeille, kuville ja valitulle tekstille. Kun valittu teksti on URL, se avataan linkkinä; muuten siitä haetaan. Raahaussuunta määrittää, miten uudet välilehdet avataan.",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "Vasemmalle",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "Oikealle",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "Ylös",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "Alas",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "Alas Sitten Oikea",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "Vasen Sitten Ylös",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "Oikea Sitten Ylös",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "Oikea Sitten Alas",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "Ylös Sitten Vasen",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "Ylös Sitten Oikea",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "Alas Sitten Vasen",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "Vasen Sitten Alas",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "Ylös Sitten Alas",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "Alas Sitten Ylös",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "Vasen Sitten Oikea",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "Oikea Sitten Vasen",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "Takaisin",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "Eteenpäin",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "Vieritä Ylös",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "Vieritä Alas",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "Vieritä vasemmalle",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Vieritä oikealle",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Pakota päivitys",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Sulje Välilehti",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "Avaa Suljettu Välilehti Uudelleen",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "Uusi Välilehti",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "Päivitä",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "Edellinen Välilehti",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "Seuraava Välilehti",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "Pysäytä Lataus",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "Sulje Kaikki Välilehdet",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "Vieritä Alas",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "Vieritä Ylös",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "Vieritä vasempaan reunaan",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Vieritä oikeaan reunaan",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "Ei Toimintoa",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Uusi Ikkuna",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Uusi Yksityinen Ikkuna",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Sulje Muut Välilehdet",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Sulje Välilehdet Oikealle",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Vaihda Koko Näyttö",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Sulje Välilehdet Vasemmalle",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Lataa Kaikki Välilehdet Uudelleen",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Kiinnitä/Poista Kiinnitys Välilehti",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Mykistä/Poista Mykistys Välilehti",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Mykistä Muut Välilehdet",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Maksimoi/Palauta Ikkuna",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Minimoi Ikkuna",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Asetukset",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "Ota Hiiren Eleet Käyttöön",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "Näytä Elet Jälki",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "Näytä Elet Vihje",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "Jälki Väri",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "Jälki Leveys",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "Ota Super-raahaus Käyttöön",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "Ota Raahaa Teksti Haku Käyttöön",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "Ota Kuva Esikatselu Käyttöön",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "Havaitse Duplikaatti Välilehdet",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "Sulje Duplikaatti Välilehdet Automaattisesti",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "Ota käyttöön sujuva vieritys",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Asetukset Sovellettu",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "Palauta",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "Asetukset Sovellettu",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "Palautus Valmis",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "Palautetaan...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "Ei Voinut Ladata Asetuksia",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "Ei Voinut Tallentaa Asetuksia",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "Ei Voinut Palauttaa Asetuksia",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "Vaalea",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "Tumma",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "Osta minulle kahvi",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "Vaihda teemaa",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "Vaihda kieltä",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "Jos pidät tästä työstä, tue kiitos. Kiitos :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "Pidä oikea hiiren nappi pohjassa",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "Pidä vasen hiiren nappi pohjassa",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "Avaa Etualalla",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "Avaa Taustalla",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "Raahaa Hakukone URL",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "Popup Esikatselu",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "Vasemmalle: {next} | Oikealle: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Hover + Näppäin Näyttääksesi Popup",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "Ota Popup Esikatselu Käyttöön",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "Ota Valittu Teksti Haku Käyttöön",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "Laukaisunäppäin",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Ctrl-näppäin",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Alt-näppäin",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Shift-näppäin",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "Ei Näppäintä Vaadita",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "Popup Viive (ms)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "Maksimi Popup Ikkunat",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "Ikkuna Leveys",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "Ikkuna Korkeus",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "Ikkuna Sijainti",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "Kohdistin Sijainti",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "Näytön Keskus",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "Näytön Kulma",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "Popup Hakukone URL",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "Käytä {q} hakutermille, esimerkki muoto:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Google Haku: https://www.google.fi/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google Kääntäjä: https://translate.google.com/?sl=auto&tl=fi&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "Esimerkki: https://www.google.fi/search?q={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Bing Haku: https://www.bing.com/search?q={q}&setlang=fi-FI",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "Käytä hiiren pyörää säätääksesi arvoa",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Laukaisunäppäimen käytössä maksimi viive on rajoitettu 300ms",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "Tervetuloa Hiiren Elet Laajennokseen",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "Kiitos Hiiren Elet Laajennoksen asentamisesta! Tämä laajennos tarjoaa rikkaan hiiren elet toiminnallisuuden, älykkään välilehtien hallinnan, popup esikatselu kapasiteetin ja parannellun visuaalisen kokemuksen auttaaksesi sinua navigoimaan verkossa tehokkaammin. Olemme optimoineet elet tunnistus algoritmin suuremmalla virhe toleranssilla, mikä sallii elet tunnistetaan oikein vaikka niitä ei piirretä täydellisesti. Uusi popup esikatselu toiminto antaa sinun nähdä linkin sisällön popup ikkunoissa vaihtamatta välilehtiä. Laajennos tukee myös 24 kieltä ja vaalea/tumma teemaa paremman käyttökokemuksen vuoksi.",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "Seuraavat ovat esiasetettu hiiren elet, joita voit käyttää raahaamalla oikealla hiiren napalla:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "Hiiren Elet Laajennos",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "Ydin Toiminnot",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "Työkalut",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "Käyttövinkit",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "Älykäs elet tunnistus: Tunnistaa elet oikein vaikka epätäydellisiä, toimii sivun latauksen aikana",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "Välilehtien Hallinta",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": Älykäs duplikaatti tunnistus, automaattinen sulkeminen, jaksollinen muisti optimointi",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "Super-raahaus",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": Raahaa linkkejä ja kuvia uusille välilehdille, raahaa valittua tekstiä hakuun",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "Popup Esikatselu",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": Pidä laukaisunäppäin (oletus: Shift) pohjassa kun hoveraat linkkien päällä esikatsellaksesi kohdesivun popup ikkunoissa",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "Valitse teksti ja paina laukaisunäppäin hakeaksesi heti popup ikkunassa, mukautetun hakukoneen tuella",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "Voit avata useita popup ikkunoita samanaikaisesti",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "Mukauta raahaussuuntaa määrittääksesi välilehden avaus menetelmän: avaa taustalla oletuksena",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "Hiiren Elet Debug Tiedot",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": Paina Alt+D avataksesi, analysoi elet tiedot reaaliajassa, säilyttää tilan",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "Yhden klikkauksen kopiointi debug tiedoista helppoa jakamista varten, monikielisellä tuella",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "Paranneltu media esikatselu: Parannellut hover efektit kuville ja optimoidut video poster kuvat",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "Adaptiiviset teemat: Säätää visuaalista tyyliä sivun taustan perusteella, tukee vaalea/tumma tilaa",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "Elet jälki näytetään näytöllä mukautettavalla värillä ja leveydellä",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "Klikkaa laajennoksen ikonia ottaaksesi toiminnat käyttöön/pois, asettaaksesi kielen, teeman ja enemmän",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "Tukee 24 kieltä, mukautuu automaattisesti selaimen kieleen",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "Ota automaattinen duplikaatti välilehtien sulkeminen käyttöön vähentääksesi selaimen resurssien käyttöä merkittävästi",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "Linux ja macOS järjestelmissä, kaksoisklikkaa oikea hiiren nappi näyttääksesi selaimen kontekstivalikon",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "Duplikaatti välilehti",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "Löydetty $1 duplikaatti välilehtiä",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "On $1 duplikaatti välilehtiä",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "On 1 duplikaatti välilehti",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "Automaattisesti suljettu $1 duplikaatti välilehtiä",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "Sulje Duplikaatit",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "Jätä Huomiotta",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "Nimeämätön välilehti",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...ja $1 muuta sivua",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Virhe näytettäessä duplikaatti välilehtien ilmoitusta:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "Virhe lähetettäessä sulkemis pyyntöä:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Virhe suljettaessa duplikaatti välilehtiä:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Virhe lähetettäessä jätä huomiotta pyyntöä:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Virhe jätettäessä duplikaatti välilehtiä huomiotta:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Virhe päivitettäessä debug paneelia:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Virhe havaittaessa taustaväriä:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "Virhe havaittaessa kuvan reunan säde:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "Virhe asetettaessa mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Virhe tarkistettaessa elementin näkyvyyttä:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Virhe käsiteltäessä reunan säde:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "Virhe havaittaessa kuvan taustaa:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Virhe näytettäessä automaattisen sulkemisen onnistumis ilmoitusta:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "Ei seuraavaa sivua historiassa",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "Ei edellistä sivua historiassa",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "Navigointi epäonnistui",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "Yritetään seuraavaa sivua...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "Navigoitu seuraavalle sivulle",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "Ei seuraavan sivun linkkiä löytynyt",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "Virheellinen Ele",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "Seuraava Sivu",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "Virhe luettaessa pikseliä:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "Virhe luettaessa canvas:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "Virhe piirrettäessä canvas:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "Virhe päästäessä iframe:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "Virhe asetettaessa mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "Virhe tarkistettaessa elementin näkyvyyttä:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "Virhe käsiteltäessä kulmia:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "Kieli vaihdettu $1:stä $2:een",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "Vaihdettu kiinaan",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "Vaihdettu englantiin",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "Järjestelmä Asetukset",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "Kulma Kynnys",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Suunta Muutos Kynnys",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "Minimi Ele Etäisyys",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Minimi Suunta Segmentti Pituus",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Minimi Ele Monimutkaisuus",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Viimeisin Ele Tiedot",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "Pisteet",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "yksinkertaistamisen jälkeen",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "Kokonais Etäisyys",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "Suunta Tunnistus",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "Alkuperäiset Suunnat",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Toistuva Kuvio Havaittu",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Toistuva Kuvio Tyyppi",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "Suunta Yhdistäminen",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "Yhdistetyt Suunnat",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "Suunta Etäisyydet",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "Lopullinen Tulos",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "Tunnistettu Ele",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "Samankaltaisuus",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "Kyllä",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "Ei",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "Ei mitään",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "Virheellinen Ele",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Odotetaan elet tietoja...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "Kopioi Debug Tiedot",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "Kopioitu leikepöydälle!",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "Kopiointi epäonnistui, valitse ja kopioi manuaalisesti",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Haku: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Popup Estetty",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Salli popup ikkunat tälle verkkosivulle ottaaksesi linkin esikatselu toiminnon käyttöön.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Elet tila valmis",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...ja $1 muuta sivua",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Tue tekijää ostamalla tämän linkin kautta",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Näytä Välilehtien Luku",
+    "description": "Show tab count badge option"
+  }
+}

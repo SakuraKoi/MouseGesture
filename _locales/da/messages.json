@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Musegestus",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "En Chrome/Edge-udvidelse der understøtter musegestus, super-træk funktionalitet og popup view",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "Musegestus",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "Indbyggede Gestus",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "Super-Træk Funktion",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "Træk Op",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "Træk Højre",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "Træk Ned",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "Træk Venstre",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "Åbn Link i Forgrunden",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "Åbn Link i Baggrunden",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "Super-træk funktionen virker for links, billeder og valgt tekst. Når valgt tekst er en URL, åbnes den som et link; ellers søges der. Trækretningen bestemmer hvordan nye faner åbnes.",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "Venstre",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "Højre",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "Op",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "Ned",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "Ned Derefter Højre",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "Venstre Derefter Op",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "Højre Derefter Op",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "Højre Derefter Ned",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "Op Derefter Venstre",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "Op Derefter Højre",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "Ned Derefter Venstre",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "Venstre Derefter Ned",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "Op Derefter Ned",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "Ned Derefter Op",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "Venstre Derefter Højre",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "Højre Derefter Venstre",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "Tilbage",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "Frem",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "Rul Op",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "Rul Ned",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "Rul til venstre",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Rul til højre",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Tving opdatering",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Luk Fane",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "Genåbn Lukket Fane",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "Ny Fane",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "Opdater",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "Forrige Fane",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "Næste Fane",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "Stop Indlæsning",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "Luk Alle Faner",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "Rul til Bund",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "Rul til Top",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "Rul til venstre kant",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Rul til højre kant",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "Ingen Handling",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Nyt Vindue",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Nyt Privat Vindue",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Luk Andre Faner",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Luk Faner til Højre",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Skift Fuldskærm",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Luk Faner til Venstre",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Genindlæs Alle Faner",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Fastgør/Frigør Fane",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Dæmp/Fjern Dæmpning af Fane",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Dæmp Andre Faner",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Maksimer/Gendan Vindue",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Minimer Vindue",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Indstillinger",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "Aktiver Musegestus",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "Vis Gestus Spor",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "Vis Gestus Tip",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "Spor Farve",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "Spor Bredde",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "Aktiver Super-Træk",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "Aktiver Træk Tekst Søgning",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "Aktiver Billede Forhåndsvisning",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "Registrer Duplikerede Faner",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "Luk Duplikerede Faner Automatisk",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "Aktiver glat rulning",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Indstillinger Anvendt",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "Nulstil",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "Indstillinger Anvendt",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "Nulstil Gennemført",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "Nulstiller...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "Kunne Ikke Indlæse Indstillinger",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "Kunne Ikke Gemme Indstillinger",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "Kunne Ikke Nulstille Indstillinger",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "Lys",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "Mørk",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "Køb mig en kaffe",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "Skift tema",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "Skift sprog",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "Hvis du kan lide dette arbejde, støt venligst. Tak :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "Hold højre museknap nede",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "Hold venstre museknap nede",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "Åbn i Forgrund",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "Åbn i Baggrund",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "Træk Søgemaskine URL",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "Popup Forhåndsvisning",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "Venstre: {next} | Højre: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Hover + Tast for at Vise Popup",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "Aktiver Popup Forhåndsvisning",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "Aktiver Valgt Tekst Søgning",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "Aktiveringstast",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Ctrl-tast",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Alt-tast",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Shift-tast",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "Ingen Tast Påkrævet",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "Popup Forsinkelse (ms)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "Maksimale Popup Vinduer",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "Vindue Bredde",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "Vindue Højde",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "Vindue Position",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "Markør Position",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "Skærm Centrum",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "Skærm Hjørne",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "Popup Søgemaskine URL",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "Brug {q} for søgeterm, eksempel format:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Google Søgning: https://www.google.dk/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google Oversætter: https://translate.google.com/?sl=auto&tl=da&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "Eksempel: https://www.google.dk/search?q={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Bing Søgning: https://www.bing.com/search?q={q}&setlang=da-DK",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "Brug musehjulet til at justere værdi",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Ved brug af aktiveringstast er maksimal forsinkelse begrænset til 300ms",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "Velkommen til Musegestus Udvidelse",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "Tak for at installere Musegestus Udvidelsen! Denne udvidelse leverer rig musegestus funktionalitet, intelligent fanestyring, popup forhåndsvisning kapaciteter og forbedret visuel oplevelse for at hjælpe dig med at navigere på nettet mere effektivt. Vi har optimeret gestus genkendelses algoritmen med større fejltolerance, hvilket tillader gestus at blive genkendt korrekt selv når de ikke er tegnet perfekt. Den nye popup forhåndsvisning funktion lader dig se link indhold i popup vinduer uden at skifte faner. Udvidelsen understøtter også 24 sprog og lyst/mørkt tema for bedre brugeroplevelse.",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "Følgende er forudindstillede musegestus du kan bruge ved at trække med højre museknap:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "Musegestus Udvidelse",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "Kernefunktioner",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "Værktøjer",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "Brugstips",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "Intelligent gestus genkendelse: Genkender gestus korrekt selv når uperfekte, virker under sideindlæsning",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "Fanestyring",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": Intelligent duplikat registrering, automatisk lukning, periodisk hukommelse optimering",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "Super-Træk",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": Træk links og billeder til nye faner, træk valgt tekst til søgning",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "Popup Forhåndsvisning",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": Hold aktiveringstasten (standard: Shift) nede mens du hover over links for at forhåndsvise målside i popup vinduer",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "Vælg tekst og tryk aktiveringstasten for at søge øjeblikkeligt i popup vindue, med understøttelse af tilpasset søgemaskine",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "Du kan åbne multiple popup vinduer samtidigt",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "Tilpas trækretning for at bestemme fane åbnings metode: åbn i baggrund som standard",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "Musegestus Debug Information",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": Tryk Alt+D for at åbne, analyser gestus information i realtid, bevarer tilstand",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "En-klik kopiering af debug information for nem deling, med flersproget understøttelse",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "Forbedret medie forhåndsvisning: Forbedrede hover effekter for billeder og optimerede video poster billeder",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "Adaptive temaer: Justerer visuel stil baseret på side baggrund, understøtter lyst/mørkt tilstand",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "Gestus spor vises på skærm med tilpasselig farve og bredde",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "Klik på udvidelse ikon for at aktivere/deaktivere funktioner, sæt sprog, tema og mere",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "Understøtter 24 sprog, tilpasser automatisk til browser sprog",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "Aktiver automatisk lukning af duplikerede faner for at reducere browser ressourceforbrug betydeligt",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "På Linux og macOS systemer, dobbeltklik højre museknap for at vise browser kontekstmenu",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "Duplikerede fane",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "Fundet $1 duplikerede faner",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "Der er $1 duplikerede faner",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "Der er 1 duplikerede fane",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "Automatisk lukket $1 duplikerede faner",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "Luk Duplikerede",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "Ignorer",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "Unavngivet fane",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...og $1 flere sider",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Fejl ved visning af duplikerede faner notifikation:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "Fejl ved afsendelse af luk anmodning:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Fejl ved lukning af duplikerede faner:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Fejl ved afsendelse af ignorer anmodning:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Fejl ved ignorering af duplikerede faner:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Fejl ved opdatering af debug panel:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Fejl ved registrering af baggrundsfarve:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "Fejl ved registrering af billede kant radius:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "Fejl ved indstilling af mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Fejl ved kontrol af element synlighed:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Fejl ved behandling af kant radius:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "Fejl ved registrering af billede baggrund:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Fejl ved visning af automatisk lukning succes notifikation:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "Ingen næste side i historik",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "Ingen forrige side i historik",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "Navigation mislykkedes",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "Forsøger næste side...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "Navigeret til næste side",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "Intet næste side link fundet",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "Ugyldig Gestus",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "Næste Side",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "Fejl ved læsning af pixel:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "Fejl ved læsning af canvas:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "Fejl ved tegning på canvas:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "Fejl ved adgang til iframe:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "Fejl ved indstilling af mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "Fejl ved kontrol af element synlighed:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "Fejl ved behandling af hjørner:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "Sprog ændret fra $1 til $2",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "Skiftet til kinesisk",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "Skiftet til engelsk",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "System Indstillinger",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "Vinkel Tærskel",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Retningsændring Tærskel",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "Minimum Gestus Afstand",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Minimum Retningssegment Længde",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Minimum Gestus Kompleksitet",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Seneste Gestus Information",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "Punkter",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "efter forenkling",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "Total Afstand",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "Retningsgenkendelse",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "Oprindelige Retninger",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Gentagende Mønster Registreret",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Gentagende Mønster Type",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "Retningssammenlægning",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "Sammenlagte Retninger",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "Retningsafstande",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "Endelig Resultat",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "Genkendt Gestus",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "Lighed",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "Ja",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "Nej",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "Ingen",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "Ugyldig Gestus",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Venter på gestus data...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "Kopier Debug Information",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "Kopieret til udklipsholder!",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "Kopiering mislykkedes, vælg og kopier manuelt",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Søg: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Popup Blokeret",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Tillad venligst popup vinduer for denne hjemmeside for at aktivere link forhåndsvisning funktionen.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Gestus tilstand klar",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...og $1 flere sider",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Støt forfatteren ved at købe via dette link",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Vis Tab Antal",
+    "description": "Show tab count badge option"
+  }
+}

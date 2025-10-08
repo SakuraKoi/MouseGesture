@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "滑鼠手勢",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "支援滑鼠手勢、超級拖曳功能和小窗視圖的 Chrome/Edge 擴充功能",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "滑鼠手勢",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "內建手勢",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "超級拖曳功能",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "向上拖曳",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "向右拖曳",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "向下拖曳",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "向左拖曳",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "在前景開啟連結",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "在背景開啟連結",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "超級拖曳功能適用於連結、圖片和選取的文字。當選取的文字是 URL 時，會作為連結開啟；否則會進行搜尋。拖曳方向決定新分頁的開啟方式。",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "左",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "右",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "上",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "下",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "下然後右",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "左然後上",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "右然後上",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "右然後下",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "上然後左",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "上然後右",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "下然後左",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "左然後下",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "上然後下",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "下然後上",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "左然後右",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "右然後左",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "返回",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "前進",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "向上捲動",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "向下捲動",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "向左滾動",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "向右滾動",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "強制重新整理",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "關閉分頁",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "重新開啟關閉的分頁",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "新分頁",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "重新整理",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "上一個分頁",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "下一個分頁",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "停止載入",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "關閉所有分頁",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "捲動到底部",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "捲動到頂部",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "滾動到左邊緣",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "滾動到右邊緣",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "無動作",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "新視窗",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "新無痕視窗",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "關閉其他分頁",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "關閉右側分頁",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "切換全螢幕",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "關閉左側分頁",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "全部重新載入",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "釘選/取消釘選分頁",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "靜音/取消靜音分頁",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "靜音其他分頁",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "最大化/還原視窗",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "最小化視窗",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "設定",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "啟用滑鼠手勢",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "顯示手勢軌跡",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "顯示手勢提示",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "軌跡顏色",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "軌跡寬度",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "啟用超級拖曳",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "啟用拖曳文字搜尋",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "啟用圖片預覽",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "檢測重複分頁",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "自動關閉重複分頁",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "啟用平滑滾動",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "設定已套用",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "重設",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "設定已套用",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "重設完成",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "重設中...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "載入設定失敗",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "儲存設定失敗",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "重設設定失敗",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "淺色",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "深色",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "請我喝咖啡",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "切換主題",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "切換語言",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "如果您喜歡這個作品，請支持我。謝謝 :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "按住滑鼠右鍵",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "按住滑鼠左鍵",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "在前景開啟",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "在背景開啟",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "拖曳搜尋引擎 URL",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "彈出視窗",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "左鍵: 跳轉到 {next} | 右鍵: 跳轉到 {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "懸停 + 按鍵顯示彈出視窗",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "啟用彈出視窗",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "啟用選取文字搜尋",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "觸發按鍵",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Ctrl 鍵",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Alt 鍵",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Shift 鍵",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "無需按鍵",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "彈出延遲 (毫秒)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "最大彈出視窗數",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "視窗寬度",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "視窗高度",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "視窗位置",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "滑鼠位置",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "螢幕中央",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "螢幕角落",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "彈出搜尋引擎 URL",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "使用 {q} 表示搜尋詞位置，範例格式：",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Google 搜尋：https://www.google.com/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google 翻譯：https://translate.google.com/?sl=auto&tl=zh-TW&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "Google 台灣搜尋：https://www.google.com.tw/search?q={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Bing 搜尋：https://www.bing.com/search?q={q}",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "使用滑鼠滾輪調整數值",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "使用觸發按鍵時，最大延遲限制為 300 毫秒",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "歡迎使用滑鼠手勢擴充功能",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "感謝您安裝滑鼠手勢擴充功能！本擴充功能提供豐富的滑鼠手勢功能、智慧分頁管理、彈出視窗功能和增強的視覺體驗，幫助您更高效地瀏覽網頁。我們優化了手勢識別演算法，提高了容錯性，即使手勢繪製不夠完美也能正確識別。新的彈出視窗功能讓您可以在彈出視窗中檢視連結內容，無需切換分頁。同時支援29種語言以及明暗主題切換，為您提供更好的使用體驗。",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "以下是預設的滑鼠手勢，您可以透過右鍵拖曳來使用這些手勢：",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "滑鼠手勢擴充功能",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "核心功能",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "實用工具",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "使用技巧",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "智慧手勢識別：即使手勢不夠精確也能正確識別，頁面載入中也可使用",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "分頁管理",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": "：智慧重複檢測，可選自動關閉，定期記憶體優化",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "超級拖曳",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": "：拖曳連結和圖片到新分頁，拖曳選取文字進行搜尋",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "彈出視窗",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": "：按住修飾鍵（預設：Shift）並懸停在連結上，在彈出視窗中預覽目標頁面",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "選取文字並按下修飾鍵，立即在彈出視窗中搜尋，支援自訂搜尋引擎",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "您可以同時開啟多個彈出視窗",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "自訂拖曳方向來決定分頁開啟方式：預設在背景開啟",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "滑鼠手勢除錯資訊",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": "：按 Alt+D 開啟，即時分析手勢資訊，保持狀態",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "一鍵複製除錯資訊便於分享，支援多語言",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "增強媒體預覽：改善圖片懸停效果並優化影片縮圖",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "自適應主題：根據頁面背景調整視覺樣式，支援明暗模式",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "手勢軌跡顯示在螢幕上，可自訂軌跡顏色和寬度",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "點擊擴充功能圖示啟用/停用功能，設定語言、主題等",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "支援 29 種語言，自動適配瀏覽器語言",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "啟用自動關閉重複分頁功能可大幅減少瀏覽器資源使用",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "在 Linux 和 macOS 系統中，雙擊右鍵可顯示瀏覽器內容選單",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "重複的分頁",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "發現 $1 個重複分頁",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "有 $1 個重複分頁",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "有 1 個重複分頁",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "已自動關閉 $1 個重複分頁",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "關閉重複分頁",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "忽略",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "未命名分頁",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...還有 $1 個頁面",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "顯示重複分頁通知錯誤：",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "發送關閉請求錯誤：",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "關閉重複分頁錯誤：",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "發送忽略請求錯誤：",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "忽略重複分頁錯誤：",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "更新除錯面板錯誤：",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "檢測背景顏色錯誤：",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "檢測圖片圓角錯誤：",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "設定變異觀察器錯誤：",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "檢查元素可見性錯誤：",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "處理圓角錯誤：",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "檢測圖片背景錯誤：",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "顯示自動關閉成功通知錯誤：",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "歷史記錄中沒有可前進的頁面",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "歷史記錄中沒有可後退的頁面",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "導航失敗",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "嘗試下一頁...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "已導航到下一頁",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "未找到下一頁連結",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "無效手勢",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "下一頁",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "讀取像素錯誤：",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "讀取畫布錯誤：",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "在畫布上繪製錯誤：",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "存取 iframe 錯誤：",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "設定變異觀察器錯誤：",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "檢查元素可見性錯誤：",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "處理圓角錯誤：",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "語言已從 $1 更改為 $2",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "已切換為中文",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "已切換為英文",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "系統設定",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "角度閾值",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "方向變化閾值",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "最小手勢距離",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "最小方向段長度",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "最小手勢複雜度",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "最新手勢資訊",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "點數",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "簡化後",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "總距離",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "方向識別",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "原始方向",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "檢測到重複模式",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "重複模式類型",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "方向合併",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "合併方向",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "方向距離",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "最終結果",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "識別的手勢",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "相似度",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "是",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "否",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "無",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "無效手勢",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "等待手勢資料...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "複製資訊",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "已複製到剪貼簿！",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "複製失敗，請手動選取並複製",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "搜尋：",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "彈出視窗被封鎖",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "請允許此網站的彈出視窗以啟用連結預覽功能。",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "手勢模式已準備就緒",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...還有 $1 個頁面",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "透過該網站/連結購買商品支持作者",
+    "description": "贊助作者提示"
+  },
+  "showTabCountBadge": {
+    "message": "顯示分頁數量徽章",
+    "description": "Show tab count badge option"
+  }
+} 

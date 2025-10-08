@@ -1,0 +1,879 @@
+{
+  "extName": {
+    "message": "マウスジェスチャー",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "マウスジェスチャー、スーパードラッグ機能、およびポップアップビューをサポートするChrome/Edge拡張機能",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "マウスジェスチャー",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "組み込みジェスチャー",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "スーパードラッグ機能",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "上にドラッグ",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "右にドラッグ",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "下にドラッグ",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "左にドラッグ",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "フォアグラウンドでリンクを開く",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "バックグラウンドでリンクを開く",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "スーパードラッグ機能は、リンク、画像、選択したテキストに対して動作します。選択したテキストがURLの場合はリンクとして開き、そうでなければ検索されます。ドラッグ方向によって新しいタブの開き方が決まります。",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "左",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "右",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "上",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "下",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "下から右",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "左から上",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "右から上",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "右から下",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "上から左",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "上から右",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "下から左",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "左から下",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "上から下",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "下から上",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "左から右",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "右から左",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "戻る",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "進む",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "上にスクロール",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "下にスクロール",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "左にスクロール",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "右にスクロール",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "強制更新",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "タブを閉じる",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "閉じたタブを復元",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "新しいタブ",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "更新",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "前のタブ",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "次のタブ",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "読み込み停止",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "すべてのタブを閉じる",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "最下部にスクロール",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "最上部にスクロール",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "左端までスクロール",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "右端までスクロール",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "アクションなし",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "新しいウィンドウ",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "新しいプライベートウィンドウ",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "他のタブを閉じる",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "右のタブを閉じる",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "フルスクリーン切り替え",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "左のタブを閉じる",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "すべてのタブを再読み込み",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "タブを固定/固定解除",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "タブをミュート/ミュート解除",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "他のタブをミュート",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "ウィンドウを最大化/復元",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "ウィンドウを最小化",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "設定",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "マウスジェスチャーを有効化",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "ジェスチャー軌跡を表示",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "ジェスチャーヒントを表示",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "軌跡の色",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "軌跡の幅",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "スーパードラッグを有効化",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "ドラッグテキスト検索を有効化",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "画像プレビューを有効化",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "重複タブを検出",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "重複タブを自動で閉じる",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "スムーススクロールを有効にする",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "設定が適用されました",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "リセット",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "設定が適用されました",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "リセット完了",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "リセット中...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "設定の読み込みに失敗しました",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "設定の保存に失敗しました",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "設定のリセットに失敗しました",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "ライト",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "ダーク",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "コーヒーをご支援ください",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "テーマを切り替え",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "言語を切り替え",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "この作品を気に入っていただけましたら、ぜひサポートをお願いします。ありがとうございます :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "マウスの右ボタンを押し続けてください",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "マウスの左ボタンを押し続けてください",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "フォアグラウンドで開く",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "バックグラウンドで開く",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "ドラッグ検索エンジンURL",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "ポップアップビュー",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "左: {next} | 右: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "ホバー + キーでポップアップを表示",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "ポップアップビューを有効化",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "テキスト選択検索を有効化",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "トリガーキー",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Ctrlキー",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Altキー",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Shiftキー",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "キー不要",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "ポップアップ遅延（ミリ秒）",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "最大ポップアップウィンドウ数",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "ウィンドウ幅",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "ウィンドウ高さ",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "ウィンドウ位置",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "カーソル位置",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "画面中央",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "画面の角",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "ポップアップ検索エンジンURL",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "検索語に{q}を使用してください。例の形式:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Google検索: https://www.google.co.jp/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google翻訳: https://translate.google.co.jp/?sl=auto&tl=ja&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "Yahoo Japan検索: https://search.yahoo.co.jp/search?p={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Bing検索: https://www.bing.com/search?q={q}&setlang=ja",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "マウスホイールで値を調整してください",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "トリガーキー使用時、最大遅延は300ミリ秒に制限されます",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "マウスジェスチャー拡張機能へようこそ",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "マウスジェスチャー拡張機能をインストールしていただき、ありがとうございます！この拡張機能は、ウェブをより効率的に閲覧できるよう、豊富なマウスジェスチャー機能、インテリジェントなタブ管理、ポップアップ表示機能、そして向上した視覚的体験を提供します。ジェスチャー認識アルゴリズムをエラー耐性を高めて最適化し、ジェスチャーが完璧に描かれていなくても正しく認識されるようにしました。新しいポップアップウィンドウ機能により、タブを切り替えることなくポップアップウィンドウでリンク内容を表示できます。この拡張機能は29言語とライト/ダークテーマにも対応しており、より良いユーザー体験を実現します。",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "以下は、マウス右ボタンでドラッグして使用できる事前設定されたマウスジェスチャーです:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "マウスジェスチャー拡張機能",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "コア機能",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "ユーティリティツール",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "使用方法のヒント",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "スマートジェスチャー認識: 不完全でもジェスチャーを正しく識別し、ページ読み込み中でも動作します",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "タブ管理",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": スマート重複検出、オプションの自動クローズ、定期的なメモリ最適化",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "スーパードラッグ",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": リンクと画像を新しいタブにドラッグ、選択したテキストをドラッグして検索",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "ポップアップビュー",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": リンクにマウスオーバーしながら修飾キー（デフォルト: Shift）を押すとポップアップウィンドウでターゲットページをプレビューできます",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "テキストを選択して修飾キーを押すと、ポップアップウィンドウで即座に検索できます。カスタム検索エンジンサポート付き",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "複数のポップアップウィンドウを同時に開くことができます",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "タブの開き方を決めるドラッグ方向をカスタマイズ: デフォルトではバックグラウンドで開く",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "マウスジェスチャーデバッグ情報",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": Alt+Dで開く、リアルタイムでジェスチャー情報を分析、状態を維持",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "簡単な共有のためのデバッグ情報のワンクリックコピー、多言語サポート付き",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "強化されたメディアプレビュー: 改善された画像ホバーエフェクトと最適化されたビデオポスター画像",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "適応型テーマ: ページの背景に基づいて視覚スタイルを調整、ライト/ダークモードをサポート",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "カスタマイズ可能な色と幅で画面に表示されるジェスチャー軌跡",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "拡張機能アイコンをクリックして機能を有効/無効化、言語、テーマなどを設定",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "29言語をサポート、ブラウザ言語に自動適応",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "ブラウザリソース使用量を大幅に削減するため、重複タブの自動クローズ機能を有効化",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "LinuxとmacOSシステムでは、ブラウザコンテキストメニューを表示するためにダブル右クリック",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "重複タブ",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "$1個の重複タブが見つかりました",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "$1個の重複タブがあります",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "1個の重複タブがあります",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "$1個の重複タブを自動的に閉じました",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "重複タブを閉じる",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "無視",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "無題のタブ",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...および他に$1ページ",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "重複タブ通知の表示エラー:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "クローズリクエスト送信エラー:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "重複タブのクローズエラー:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "無視リクエスト送信エラー:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "重複タブの無視エラー:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "デバッグパネル更新エラー:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "背景色検出エラー:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "画像ボーダー半径検出エラー:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "ミューテーションオブザーバー設定エラー:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "要素可視性チェックエラー:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "ボーダー半径処理エラー:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "画像背景検出エラー:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "自動クローズ成功通知表示エラー:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "履歴に進むページがありません",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "履歴に戻るページがありません",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "ナビゲーション失敗",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "次のページを試行中...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "次のページにナビゲートしました",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "次のページリンクが見つかりません",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "無効なジェスチャー",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "次のページ",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "ピクセル読み取りエラー:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "キャンバス読み取りエラー:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "キャンバス描画エラー:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "iframeアクセスエラー:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "ミューテーションオブザーバー設定エラー:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "要素可視性チェックエラー:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "コーナー処理エラー:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "言語が$1から$2に変更されました",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "中国語に切り替えました",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "英語に切り替えました",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "システム設定",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "角度しきい値",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "方向変更しきい値",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "最小ジェスチャー距離",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "最小方向セグメント長",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "最小ジェスチャー複雑度",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "最新ジェスチャー情報",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "ポイント",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "簡略化後",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "総距離",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "方向認識",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "元の方向",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "反復パターンが検出されました",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "反復パターンタイプ",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "方向マージ",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "マージされた方向",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "方向距離",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "最終結果",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "認識されたジェスチャー",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "類似度",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "はい",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "いいえ",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "なし",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "無効なジェスチャー",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "ジェスチャーデータを待機中...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "デバッグ情報をコピー",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "クリップボードにコピーされました",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "コピーに失敗しました。手動で選択してコピーしてください",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "検索: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "ポップアップがブロックされました",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "リンクプレビュー機能を有効にするには、このサイトのポップアップを許可してください。",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "ジェスチャーモードの準備完了",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...他に$1ページ",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "このリンクから購入して作者をサポートしてください",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "タブ数を表示",
+    "description": "Show tab count badge option"
+  }
+} 
+

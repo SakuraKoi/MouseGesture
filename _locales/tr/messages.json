@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Fare Hareketleri",
+    "description": "Eklentinin adı"
+  },
+  "extDesc": {
+    "message": "Fare hareketleri, süper sürükleme işlevselliği ve popup görünümünü destekleyen bir Chrome/Edge eklentisi",
+    "description": "Eklenti açıklaması"
+  },
+  "title": {
+    "message": "Fare Hareketleri",
+    "description": "Eklenti başlığı"
+  },
+  "builtInGestures": {
+    "message": "Yerleşik Hareketler",
+    "description": "Yerleşik hareketler başlığı"
+  },
+  "superDragFeature": {
+    "message": "Süper Sürükleme",
+    "description": "Süper sürükleme başlığı"
+  },
+  "dragUp": {
+    "message": "Yukarı Sürükle",
+    "description": "Yukarı sürükleme eylemi"
+  },
+  "dragRight": {
+    "message": "Sağa Sürükle",
+    "description": "Sağa sürükleme eylemi"
+  },
+  "dragDown": {
+    "message": "Aşağı Sürükle",
+    "description": "Aşağı sürükleme eylemi"
+  },
+  "dragLeft": {
+    "message": "Sola Sürükle",
+    "description": "Sola sürükleme eylemi"
+  },
+  "openInForeground": {
+    "message": "Bağlantıyı Ön Planda Aç",
+    "description": "Bağlantıyı ön planda açma eylemi"
+  },
+  "openInBackground": {
+    "message": "Bağlantıyı Arka Planda Aç",
+    "description": "Bağlantıyı arka planda açma eylemi"
+  },
+  "superDragDescription": {
+    "message": "Süper sürükleme işlevi bağlantılar, resimler ve seçili metinler için çalışır. Seçili metin bir URL ise, bağlantı olarak açılır; değilse aranır. Sürükleme yönü, yeni sekmelerin nasıl açılacağını belirler.",
+    "description": "Süper sürükleme açıklaması"
+  },
+  "left": {
+    "message": "Sol",
+    "description": "Sol yön"
+  },
+  "right": {
+    "message": "Sağ",
+    "description": "Sağ yön"
+  },
+  "up": {
+    "message": "Yukarı",
+    "description": "Yukarı yön"
+  },
+  "down": {
+    "message": "Aşağı",
+    "description": "Aşağı yön"
+  },
+  "downThenRight": {
+    "message": "Aşağı Sonra Sağ",
+    "description": "Aşağı sonra sağ hareketi"
+  },
+  "leftThenUp": {
+    "message": "Sol Sonra Yukarı",
+    "description": "Sol sonra yukarı hareketi"
+  },
+  "rightThenUp": {
+    "message": "Sağ Sonra Yukarı",
+    "description": "Sağ sonra yukarı hareketi"
+  },
+  "rightThenDown": {
+    "message": "Sağ Sonra Aşağı",
+    "description": "Sağ sonra aşağı hareketi"
+  },
+  "upThenLeft": {
+    "message": "Yukarı Sonra Sol",
+    "description": "Yukarı sonra sol hareketi"
+  },
+  "upThenRight": {
+    "message": "Yukarı Sonra Sağ",
+    "description": "Yukarı sonra sağ hareketi"
+  },
+  "downThenLeft": {
+    "message": "Aşağı Sonra Sol",
+    "description": "Aşağı sonra sol hareketi"
+  },
+  "leftThenDown": {
+    "message": "Sol Sonra Aşağı",
+    "description": "Sol sonra aşağı hareketi"
+  },
+  "upThenDown": {
+    "message": "Yukarı Sonra Aşağı",
+    "description": "Yukarı sonra aşağı hareketi"
+  },
+  "downThenUp": {
+    "message": "Aşağı Sonra Yukarı",
+    "description": "Aşağı sonra yukarı hareketi"
+  },
+  "leftThenRight": {
+    "message": "Sol Sonra Sağ",
+    "description": "Sol sonra sağ hareketi"
+  },
+  "rightThenLeft": {
+    "message": "Sağ Sonra Sol",
+    "description": "Sağ sonra sol hareketi"
+  },
+  "back": {
+    "message": "Geri",
+    "description": "Geri gitme eylemi"
+  },
+  "forward": {
+    "message": "İleri",
+    "description": "İleri gitme eylemi"
+  },
+  "scrollUp": {
+    "message": "Yukarı Kaydır",
+    "description": "Yukarı kaydırma eylemi"
+  },
+  "scrollDown": {
+    "message": "Aşağı Kaydır",
+    "description": "Aşağı kaydırma eylemi"
+  },
+  "scrollLeft": {
+    "message": "Sola kaydır",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Sağa kaydır",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Zorla yenile",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Sekmeyi Kapat",
+    "description": "Sekme kapatma eylemi"
+  },
+  "reopenTab": {
+    "message": "Kapatılan Sekmeyi Aç",
+    "description": "Kapatılan sekmeyi açma eylemi"
+  },
+  "newTab": {
+    "message": "Yeni Sekme",
+    "description": "Yeni sekme eylemi"
+  },
+  "refresh": {
+    "message": "Yenile",
+    "description": "Yenileme eylemi"
+  },
+  "prevTab": {
+    "message": "Önceki Sekme",
+    "description": "Önceki sekme eylemi"
+  },
+  "nextTab": {
+    "message": "Sonraki Sekme",
+    "description": "Sonraki sekme eylemi"
+  },
+  "stopLoading": {
+    "message": "Yüklemeyi Durdur",
+    "description": "Yüklemeyi durdurma eylemi"
+  },
+  "closeAllTabs": {
+    "message": "Tüm Sekmeleri Kapat",
+    "description": "Tüm sekmeleri kapatma eylemi"
+  },
+  "scrollToBottom": {
+    "message": "En Alta Kaydır",
+    "description": "En alta kaydırma eylemi"
+  },
+  "scrollToTop": {
+    "message": "En Üste Kaydır",
+    "description": "En üste kaydırma eylemi"
+  },
+  "scrollToLeft": {
+    "message": "Sol kenara kaydır",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Sağ kenara kaydır",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "İşlem Yok",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Yeni Pencere",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Yeni Gizli Pencere",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Diğer Sekmeleri Kapat",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Sağdaki Sekmeleri Kapat",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Tam Ekranı Aç/Kapat",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Soldaki Sekmeleri Kapat",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Tüm Sekmeleri Yeniden Yükle",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Sekmeyi Sabitle/Sabitlemeyi Kaldır",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Sekmeyi Sessize Al/Sesi Aç",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Diğer Sekmeleri Sessize Al",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Pencereyi Büyüt/Geri Yükle",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Pencereyi Küçült",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Ayarlar",
+    "description": "Ayarlar başlığı"
+  },
+  "enableGesture": {
+    "message": "Fare Hareketlerini Etkinleştir",
+    "description": "Fare hareketlerini etkinleştirme seçeneği"
+  },
+  "showGestureTrail": {
+    "message": "Hareket İzini Göster",
+    "description": "Hareket izini gösterme seçeneği"
+  },
+  "showGestureHint": {
+    "message": "Hareket İpucunu Göster",
+    "description": "Hareket ipucunu gösterme seçeneği"
+  },
+  "trailColor": {
+    "message": "İz Rengi",
+    "description": "İz rengi seçeneği"
+  },
+  "trailWidth": {
+    "message": "İz Genişliği",
+    "description": "İz genişliği seçeneği"
+  },
+  "enableSuperDrag": {
+    "message": "Süper Sürüklemeyi Etkinleştir",
+    "description": "Süper sürüklemeyi etkinleştirme seçeneği"
+  },
+  "enableDragTextSearch": {
+    "message": "Sürükleme Metin Aramasını Etkinleştir",
+    "description": "Sürükleme metin aramasını etkinleştirme seçeneği"
+  },
+  "enableImagePreview": {
+    "message": "Resim Önizlemeyi Etkinleştir",
+    "description": "Resim önizlemeyi etkinleştirme seçeneği"
+  },
+  "enableDuplicateCheck": {
+    "message": "Yinelenen Sekmeleri Algıla",
+    "description": "Yinelenen sekmeleri algılama seçeneği"
+  },
+  "autoCloseDuplicates": {
+    "message": "Yinelenen Sekmeleri Otomatik Kapat",
+    "description": "Yinelenen sekmeleri otomatik kapatma seçeneği"
+  },
+  "enableSmoothScroll": {
+    "message": "Yumuşak kaydırmayı etkinleştir",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Kaydet",
+    "description": "Kaydetme düğmesi"
+  },
+  "reset": {
+    "message": "Sıfırla",
+    "description": "Sıfırlama düğmesi"
+  },
+  "settingsSaved": {
+    "message": "Ayarlar Kaydedildi",
+    "description": "Ayarların kaydedildiği bildirimi"
+  },
+  "settingsReset": {
+    "message": "Sıfırlama Tamamlandı",
+    "description": "Ayarların sıfırlandığı bildirimi"
+  },
+  "resetting": {
+    "message": "Sıfırlanıyor...",
+    "description": "Sıfırlama bildirimi"
+  },
+  "loadError": {
+    "message": "Ayarlar Yüklenemedi",
+    "description": "Ayarların yüklenemediği hata mesajı"
+  },
+  "saveError": {
+    "message": "Ayarlar Kaydedilemedi",
+    "description": "Ayarların kaydedilemediği hata mesajı"
+  },
+  "resetError": {
+    "message": "Ayarlar Sıfırlanamadı",
+    "description": "Ayarların sıfırlanamadığı hata mesajı"
+  },
+  "themeLight": {
+    "message": "Açık",
+    "description": "Açık tema"
+  },
+  "themeDark": {
+    "message": "Koyu",
+    "description": "Koyu tema"
+  },
+  "buyMeACoffee": {
+    "message": "Bana Bir Kahve Al",
+    "description": "Bağış düğmesi"
+  },
+  "toggleTheme": {
+    "message": "Temayı Değiştir",
+    "description": "Tema değiştirme düğmesi"
+  },
+  "toggleLanguage": {
+    "message": "Dili Değiştir",
+    "description": "Dil değiştirme düğmesi"
+  },
+  "donationTooltip": {
+    "message": "Eğer bu işi beğendiyseniz, lütfen bana destek olun. Teşekkürler :)",
+    "description": "Bağış ipucu"
+  },
+  "rightButtonHint": {
+    "message": "Farenin sağ düğmesini basılı tutun",
+    "description": "Sağ düğme ipucu"
+  },
+  "leftButtonHint": {
+    "message": "Farenin sol düğmesini basılı tutun",
+    "description": "Sol düğme ipucu"
+  },
+  "foregroundAction": {
+    "message": "Ön Planda Aç",
+    "description": "Ön planda açma eylemi"
+  },
+  "backgroundAction": {
+    "message": "Arka Planda Aç",
+    "description": "Arka planda açma eylemi"
+  },
+  "dragSearchEngine": {
+    "message": "Sürükleme Arama Motoru URL'si",
+    "description": "Sürükleme arama motoru URL'si ayarı"
+  },
+  "linkPreview": {
+    "message": "Pencere Önizleme",
+    "description": "Pencere önizleme başlığı"
+  },
+  "quickNavTooltip": {
+    "message": "Sol: {next} | Sağ: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Üzerine gel + Değiştirici Tuşu ile Pencereyi Göster",
+    "description": "Pencere önizleme ipucu"
+  },
+  "enableLinkPreview": {
+    "message": "Pencere Önizlemeyi Etkinleştir",
+    "description": "Pencere önizlemeyi etkinleştirme seçeneği"
+  },
+  "enableTextSearchPreview": {
+    "message": "Seçili Metin Aramasını Etkinleştir",
+    "description": "Seçili metin aramasını etkinleştirme seçeneği"
+  },
+  "modifierKey": {
+    "message": "Değiştirici Tuşu",
+    "description": "Değiştirici tuşu ayarı"
+  },
+  "controlKey": {
+    "message": "Ctrl Tuşu",
+    "description": "Ctrl tuşu seçeneği"
+  },
+  "altKey": {
+    "message": "Alt Tuşu",
+    "description": "Alt tuşu seçeneği"
+  },
+  "shiftKey": {
+    "message": "Shift Tuşu",
+    "description": "Shift tuşu seçeneği"
+  },
+  "noKey": {
+    "message": "Tuş Gerekmez",
+    "description": "Tuş gerekmez seçeneği"
+  },
+  "previewDelay": {
+    "message": "Pencere Gecikmesi (ms)",
+    "description": "Pencere gecikmesi ayarı"
+  },
+  "maxPreviewWindows": {
+    "message": "Maksimum Önizleme Pencereleri",
+    "description": "Maksimum önizleme pencereleri ayarı"
+  },
+  "previewWidth": {
+    "message": "Pencere Genişliği",
+    "description": "Pencere genişliği ayarı"
+  },
+  "previewHeight": {
+    "message": "Pencere Yüksekliği",
+    "description": "Pencere yüksekliği ayarı"
+  },
+  "previewPosition": {
+    "message": "Pencere Konumu",
+    "description": "Pencere konumu ayarı"
+  },
+  "cursorPosition": {
+    "message": "İmleç Konumu",
+    "description": "İmleç konumu seçeneği"
+  },
+  "centerScreen": {
+    "message": "Ekranın Ortası",
+    "description": "Ekranın ortası seçeneği"
+  },
+  "cornerScreen": {
+    "message": "Ekranın Köşesi",
+    "description": "Ekranın köşesi seçeneği"
+  },
+  "searchEngine": {
+    "message": "Pencere Arama Motoru URL'si",
+    "description": "Pencere arama motoru URL'si ayarı"
+  },
+  "searchEngineExamples": {
+    "message": "Arama terimi için {q} kullanın, örnek format:",
+    "description": "Arama motoru örnekleri açıklaması"
+  },
+  "googleExample": {
+    "message": "Google Arama: https://www.google.com/search?q={q}",
+    "description": "Google arama örneği"
+  },
+  "googleTranslateExample": {
+    "message": "Google Çeviri: https://translate.google.com/?sl=auto&tl=tr&text={q}&op=translate",
+    "description": "Google çeviri örneği"
+  },
+  "localSearchExample": {
+    "message": "Örnek: https://www.google.com.tr/search?q={q}",
+    "description": "Yerel arama URL'si örneği"
+  },
+  "bingExample": {
+    "message": "Bing Arama: https://www.bing.com/search?q={q}",
+    "description": "Bing arama örneği"
+  },
+  "wheelTip": {
+    "message": "Değeri ayarlamak için fare tekerleğini kullanın",
+    "description": "Tekerlek ipucu"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Değiştirici tuşu kullanıldığında, maksimum gecikme 300ms'ye ayarlanır",
+    "description": "Değiştirici tuşu gecikmesi ipucu"
+  },
+  "welcomeTitle": {
+    "message": "Fare Hareketleri Eklentisine Hoş Geldiniz",
+    "description": "Karşılama sayfası başlığı"
+  },
+  "welcomeDescription": {
+    "message": "Fare Hareketleri Eklentisini yüklediğiniz için teşekkürler! Bu eklenti, web'de daha verimli gezinmenize yardımcı olmak için zengin fare hareketi işlevselliği, akıllı sekme yönetimi, popup görüntüleme özellikleri ve gelişmiş görsel deneyim sağlar. Hareket tanıma algoritmasını daha yüksek hata toleransı ile optimize ettik, hareketler mükemmel çizilmese bile doğru şekilde tanınmasına izin veriyor. Yeni popup pencere özelliği, sekmeler arasında geçiş yapmadan popup pencerelerde bağlantı içeriğini görüntülemenize olanak tanır. Uzantı ayrıca daha iyi bir kullanıcı deneyimi için 29 dili ve açık/koyu temaları destekler.",
+    "description": "Karşılama sayfası açıklaması"
+  },
+  "gesturesDescription": {
+    "message": "Aşağıda, farenin sağ düğmesiyle sürükleyerek kullanabileceğiniz varsayılan fare hareketleri bulunmaktadır:",
+    "description": "Hareketler açıklaması"
+  },
+  "extensionName": {
+    "message": "Fare Hareketleri Eklentisi",
+    "description": "Tam eklenti adı"
+  },
+  "coreFeatures": {
+    "message": "Temel Özellikler",
+    "description": "Temel özellikler başlığı"
+  },
+  "utilitiesFeatures": {
+    "message": "Araçlar",
+    "description": "Araçlar başlığı"
+  },
+  "usageTips": {
+    "message": "Kullanım İpuçları",
+    "description": "Kullanım ipuçları başlığı"
+  },
+  "smartGestureRecognition": {
+    "message": "Akıllı hareket tanıma: Hareketler tam olarak tamamlanmasa bile doğru şekilde tanınır, sayfa yüklenirken çalışır",
+    "description": "Akıllı hareket tanıma açıklaması"
+  },
+  "tabManagementTitle": {
+    "message": "Sekme Yönetimi",
+    "description": "Sekme yönetimi başlığı"
+  },
+  "tabManagementDesc": {
+    "message": ": Yinelenen sekme algılama, otomatik kapatma, düzenli bellek optimizasyonu",
+    "description": "Sekme yönetimi açıklaması"
+  },
+  "superDragTitle": {
+    "message": "Süper Sürükleme",
+    "description": "Süper sürükleme başlığı"
+  },
+  "superDragDesc": {
+    "message": ": Bağlantıları ve resimleri yeni sekmelerde sürükleyin, seçili metni aramak için sürükleyin",
+    "description": "Süper sürükleme açıklaması"
+  },
+  "linkPreviewTitle": {
+    "message": "Pencere Önizleme",
+    "description": "Bağlantı önizleme başlığı"
+  },
+  "linkPreviewDesc": {
+    "message": ": Bağlantıların üzerine gelirken değiştirici tuşunu (varsayılan: Shift) basılı tutarak hedef sayfaları pencere pencerelerinde görüntüleyin",
+    "description": "Bağlantı önizleme açıklaması"
+  },
+  "textSelectionPreview": {
+    "message": "Metni seçin ve değiştirici tuşuna basarak özel arama motoru desteğiyle pencere penceresinde anında arayın",
+    "description": "Metin seçimi önizleme açıklaması"
+  },
+  "previewTip": {
+    "message": "Aynı anda birden fazla pencere penceresi açabilirsiniz",
+    "description": "Önizleme ipucu"
+  },
+  "dragDirection": {
+    "message": "Sekme açma yöntemini belirlemek için sürükleme yönünü özelleştirin: varsayılan olarak arka planda açın",
+    "description": "Sürükleme yönü açıklaması"
+  },
+  "debugPanelTitle": {
+    "message": "Fare Hareketleri Hata Ayıklama Bilgileri",
+    "description": "Hata ayıklama paneli başlığı"
+  },
+  "debugPanelDesc": {
+    "message": ": Açmak için Alt+D'ye basın, gerçek zamanlı hareket bilgilerini analiz edin, durumu korur",
+    "description": "Hata ayıklama paneli açıklaması"
+  },
+  "oneClickCopy": {
+    "message": "Kolay paylaşım için hata ayıklama bilgilerinin tek tıklamayla kopyalanması ve çoklu dil desteği",
+    "description": "Tek tıklamayla kopyalama açıklaması"
+  },
+  "mediaPreview": {
+    "message": "Gelişmiş medya önizleme: Geliştirilmiş resim üzerine gelme efektleri ve geliştirilmiş video önizlemeleri",
+    "description": "Medya önizleme açıklaması"
+  },
+  "adaptiveTheme": {
+    "message": "Uyarlanabilir temalar: Sayfa arka planına göre görünüm stilini otomatik ayarlar, açık/koyu mod desteği",
+    "description": "Uyarlanabilir tema açıklaması"
+  },
+  "gestureTrail": {
+    "message": "Hareket izleri ekranda özelleştirilebilir renk ve genişlikle gösterilir",
+    "description": "Hareket izi açıklaması"
+  },
+  "clickIcon": {
+    "message": "Özellikleri açıp kapatmak, dil, tema ve daha fazlasını ayarlamak için eklenti simgesine tıklayın",
+    "description": "Simge tıklama açıklaması"
+  },
+  "languageSupport": {
+    "message": "29 dil desteği, tarayıcı diline otomatik olarak uyum sağlar",
+    "description": "Dil desteği açıklaması"
+  },
+  "enableAutoClose": {
+    "message": "Tarayıcı kaynak kullanımını önemli ölçüde azaltmak için yinelenen sekmeleri otomatik kapatma özelliğini etkinleştirin",
+    "description": "Otomatik kapatmayı etkinleştirme açıklaması"
+  },
+  "rightClickMacLinux": {
+    "message": "Linux ve macOS sistemlerinde, tarayıcı bağlam menüsünü göstermek için sağ düğmeye çift tıklayın",
+    "description": "Mac/Linux sağ tıklama ipucu"
+  },
+  "duplicateTab": {
+    "message": "Yinelenen sekme",
+    "description": "Yinelenen sekme"
+  },
+  "duplicateTabsDetected": {
+    "message": "$1 yinelenen sekme bulundu",
+    "description": "Yinelenen sekmelerin algılandığı bildirim başlığı"
+  },
+  "duplicateTabsCount": {
+    "message": "$1 yinelenen sekme var",
+    "description": "Yinelenen sekme sayısı mesajı"
+  },
+  "duplicateTabsSingle": {
+    "message": "1 yinelenen sekme var",
+    "description": "Tek yinelenen sekme mesajı"
+  },
+  "autoClosedTabs": {
+    "message": "$1 yinelenen sekme otomatik olarak kapatıldı",
+    "description": "Otomatik kapatılan sekmeler bildirimi"
+  },
+  "closeBtn": {
+    "message": "Yinelenenleri Kapat",
+    "description": "Yinelenenleri kapatma düğmesi"
+  },
+  "ignoreBtn": {
+    "message": "Yoksay",
+    "description": "Yoksayma düğmesi"
+  },
+  "untitledTab": {
+    "message": "Başlıksız sekme",
+    "description": "Başlıksız sekme"
+  },
+  "morePages": {
+    "message": "...ve $1 sayfa daha",
+    "description": "Daha fazla sayfa ipucu"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Yinelenen sekmeler bildirimi gösterilirken hata:",
+    "description": "Yinelenen sekmeler bildirimini gösterme hatası mesajı"
+  },
+  "errorSendCloseRequest": {
+    "message": "Kapatma isteği gönderilirken hata:",
+    "description": "Kapatma isteği gönderme hatası mesajı"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Yinelenen sekmeler kapatılırken hata:",
+    "description": "Yinelenen sekmeleri kapatma hatası mesajı"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Yoksayma isteği gönderilirken hata:",
+    "description": "Yoksayma isteği gönderme hatası mesajı"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Yinelenen sekmeler yoksayılırken hata:",
+    "description": "Yinelenen sekmeleri yoksayma hatası mesajı"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Hata ayıklama paneli güncellenirken hata:",
+    "description": "Hata ayıklama panelini güncelleme hatası mesajı"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Arka plan rengi algılanırken hata:",
+    "description": "Arka plan rengini algılama hatası mesajı"
+  },
+  "errorDetectImageBorder": {
+    "message": "Resim kenarlık yarıçapı algılanırken hata:",
+    "description": "Resim kenarlık yarıçapını algılama hatası mesajı"
+  },
+  "errorSetMutationObserver": {
+    "message": "Değişiklik gözlemcisi ayarlanırken hata:",
+    "description": "Değişiklik gözlemcisini ayarlama hatası mesajı"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Öğe görünürlüğü kontrol edilirken hata:",
+    "description": "Öğe görünürlüğünü kontrol etme hatası mesajı"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Kenarlık yarıçapı işlenirken hata:",
+    "description": "Kenarlık yarıçapını işleme hatası mesajı"
+  },
+  "errorDetectImageBackground": {
+    "message": "Resim arka planı algılanırken hata:",
+    "description": "Resim arka planını algılama hatası mesajı"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Otomatik kapatma başarı bildirimi gösterilirken hata:",
+    "description": "Otomatik kapatma başarı bildirimini gösterme hatası mesajı"
+  },
+  "noForwardPage": {
+    "message": "Geçmişte ileri sayfa yok",
+    "description": "İleri sayfa yok mesajı"
+  },
+  "noBackPage": {
+    "message": "Geçmişte geri sayfa yok",
+    "description": "Geri sayfa yok mesajı"
+  },
+  "navigationFailed": {
+    "message": "Gezinme başarısız oldu",
+    "description": "Gezinme başarısız mesajı"
+  },
+  "tryingNextPage": {
+    "message": "Sonraki sayfa deneniyor...",
+    "description": "Sonraki sayfa deneniyor mesajı"
+  },
+  "nextPageSuccess": {
+    "message": "Sonraki sayfaya yönlendirildi",
+    "description": "Sonraki sayfa başarı mesajı"
+  },
+  "noNextPage": {
+    "message": "Sonraki sayfa bağlantısı bulunamadı",
+    "description": "Sonraki sayfa bağlantısı yok mesajı"
+  },
+  "invalidGesture": {
+    "message": "Geçersiz Hareket",
+    "description": "Geçersiz hareket mesajı"
+  },
+  "nextPage": {
+    "message": "Sonraki Sayfa",
+    "description": "Sonraki sayfa eylemi"
+  },
+  "errorReadPixel": {
+    "message": "Piksel okunurken hata:",
+    "description": "Piksel okuma hatası mesajı"
+  },
+  "errorCanvasRead": {
+    "message": "Tuval okunurken hata:",
+    "description": "Tuval okuma hatası mesajı"
+  },
+  "errorCanvasDraw": {
+    "message": "Tuvale çizilirken hata:",
+    "description": "Tuvale çizme hatası mesajı"
+  },
+  "errorAccessIframe": {
+    "message": "iframe'e erişilirken hata:",
+    "description": "iframe'e erişim hatası mesajı"
+  },
+  "errorMutationObserver": {
+    "message": "Değişiklik gözlemcisi ayarlanırken hata:",
+    "description": "Değişiklik gözlemcisini ayarlama hatası mesajı"
+  },
+  "errorCheckVisibility": {
+    "message": "Öğe görünürlüğü kontrol edilirken hata:",
+    "description": "Öğe görünürlüğünü kontrol etme hatası mesajı"
+  },
+  "errorProcessCorners": {
+    "message": "Köşeler işlenirken hata:",
+    "description": "Köşeleri işleme hatası mesajı"
+  },
+  "languageChanged": {
+    "message": "Dil $1'den $2'ye değiştirildi",
+    "description": "Dil değişikliği bildirimi"
+  },
+  "switchedToChinese": {
+    "message": "Çince'ye geçildi",
+    "description": "Çince'ye geçiş bildirimi"
+  },
+  "switchedToEnglish": {
+    "message": "İngilizce'ye geçildi",
+    "description": "İngilizce'ye geçiş bildirimi"
+  },
+  "debugSystemSettings": {
+    "message": "Sistem Ayarları",
+    "description": "Hata ayıklama paneli sistem ayarları bölümü"
+  },
+  "debugAngleThreshold": {
+    "message": "Açı Eşiği",
+    "description": "Hata ayıklama paneli açı eşiği ayarı"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Yön Değişimi Eşiği",
+    "description": "Hata ayıklama paneli yön değişimi eşiği ayarı"
+  },
+  "debugMinGestureDistance": {
+    "message": "Minimum Hareket Mesafesi",
+    "description": "Hata ayıklama paneli minimum hareket mesafesi ayarı"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Minimum Yön Segment Uzunluğu",
+    "description": "Hata ayıklama paneli minimum yön segment uzunluğu ayarı"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Minimum Hareket Karmaşıklığı",
+    "description": "Hata ayıklama paneli minimum hareket karmaşıklığı ayarı"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Son Hareket Bilgileri",
+    "description": "Hata ayıklama paneli son hareket bilgileri bölümü"
+  },
+  "debugPoints": {
+    "message": "Noktalar",
+    "description": "Hata ayıklama paneli nokta sayısı"
+  },
+  "debugSimplifiedAfter": {
+    "message": "sadeleştirmeden sonra",
+    "description": "Hata ayıklama paneli sadeleştirme sonrası metni"
+  },
+  "debugTotalDistance": {
+    "message": "Toplam Mesafe",
+    "description": "Hata ayıklama paneli toplam mesafe"
+  },
+  "debugDirectionRecognition": {
+    "message": "Yön Tanıma",
+    "description": "Hata ayıklama paneli yön tanıma bölümü"
+  },
+  "debugOriginalDirections": {
+    "message": "Orijinal Yönler",
+    "description": "Hata ayıklama paneli orijinal yönler"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Tekrarlayan Desen Algılandı",
+    "description": "Hata ayıklama paneli tekrarlayan desen algılandı"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Tekrarlayan Desen Tipi",
+    "description": "Hata ayıklama paneli tekrarlayan desen tipi"
+  },
+  "debugDirectionMerging": {
+    "message": "Yön Birleştirme",
+    "description": "Hata ayıklama paneli yön birleştirme bölümü"
+  },
+  "debugMergedDirections": {
+    "message": "Birleştirilmiş Yönler",
+    "description": "Hata ayıklama paneli birleştirilmiş yönler"
+  },
+  "debugDirectionDistances": {
+    "message": "Yön Mesafeleri",
+    "description": "Hata ayıklama paneli yön mesafeleri"
+  },
+  "debugFinalResult": {
+    "message": "Son Sonuç",
+    "description": "Hata ayıklama paneli son sonuç bölümü"
+  },
+  "debugRecognizedGesture": {
+    "message": "Tanınan Hareket",
+    "description": "Hata ayıklama paneli tanınan hareket"
+  },
+  "debugSimilarity": {
+    "message": "Benzerlik",
+    "description": "Hata ayıklama paneli benzerlik"
+  },
+  "debugYes": {
+    "message": "Evet",
+    "description": "Hata ayıklama paneli evet"
+  },
+  "debugNo": {
+    "message": "Hayır",
+    "description": "Hata ayıklama paneli hayır"
+  },
+  "debugNone": {
+    "message": "Yok",
+    "description": "Hata ayıklama paneli yok"
+  },
+  "debugInvalidGesture": {
+    "message": "Geçersiz Hareket",
+    "description": "Hata ayıklama paneli geçersiz hareket"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Hareket verisi bekleniyor...",
+    "description": "Hata ayıklama paneli hareket verisi bekliyor"
+  },
+  "debugCopyButton": {
+    "message": "Hata Ayıklama Bilgilerini Kopyala",
+    "description": "Hata ayıklama paneli kopyalama düğmesi"
+  },
+  "debugCopySuccess": {
+    "message": "Panoya kopyalandı!",
+    "description": "Hata ayıklama paneli kopyalama başarı mesajı"
+  },
+  "debugCopyFailed": {
+    "message": "Kopyalama başarısız oldu, lütfen manuel olarak seçin ve kopyalayın",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Ara: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Popup Engellendi",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Bağlantı önizleme işlevini etkinleştirmek için bu site için popup'lara izin verin.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Hareket modu hazır",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...ve $1 sayfa daha",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Bu bağlantı üzerinden satın alarak yazarı destekleyin",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Sekme Sayısı Göster",
+    "description": "Show tab count badge option"
+  }
+}

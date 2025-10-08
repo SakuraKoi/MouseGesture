@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Musgestus",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "En Chrome/Edge-tillägg som stöder musgestus, super-drag funktionalitet och popup view",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "Musgestus",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "Inbyggda Gestus",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "Super-Drag Funktion",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "Dra Upp",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "Dra Höger",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "Dra Ner",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "Dra Vänster",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "Öppna Länk i Förgrund",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "Öppna Länk i Bakgrund",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "Super-drag funktionen fungerar för länkar, bilder och markerad text. När markerad text är en URL öppnas den som en länk; annars söks den. Dragriktningen avgör hur nya flikar öppnas.",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "Vänster",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "Höger",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "Upp",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "Ner",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "Ner Sedan Höger",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "Vänster Sedan Upp",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "Höger Sedan Upp",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "Höger Sedan Ner",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "Upp Sedan Vänster",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "Upp Sedan Höger",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "Ner Sedan Vänster",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "Vänster Sedan Ner",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "Upp Sedan Ner",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "Ner Sedan Upp",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "Vänster Sedan Höger",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "Höger Sedan Vänster",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "Tillbaka",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "Framåt",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "Scrolla Upp",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "Scrolla Ner",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "Rulla åt vänster",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Rulla åt höger",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Tvinga uppdatering",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Stäng Flik",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "Återöppna Stängd Flik",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "Ny Flik",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "Uppdatera",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "Föregående Flik",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "Nästa Flik",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "Stoppa Laddning",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "Stäng Alla Flikar",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "Scrolla till Botten",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "Scrolla till Toppen",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "Rulla till vänster kant",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Rulla till höger kant",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "Ingen Åtgärd",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Nytt Fönster",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Nytt Privat Fönster",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Stäng Andra Flikar",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Stäng Flikar till Höger",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Växla Helskärm",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Stäng Flikar till Vänster",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Ladda Om Alla Flikar",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Fäst/Lös Fliken",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Tysta/Aktivera Ljud för Fliken",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Tysta Andra Flikar",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Maximera/Återställ Fönster",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Minimera Fönster",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Inställningar",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "Aktivera Musgestus",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "Visa Gestus Spår",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "Visa Gestus Tips",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "Spår Färg",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "Spår Bredd",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "Aktivera Super-Drag",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "Aktivera Drag Text Sökning",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "Aktivera Bild Förhandsvisning",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "Upptäck Duplicerade Flikar",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "Stäng Duplicerade Flikar Automatiskt",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "Aktivera smidig rullning",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Inställningar Tillämpade",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "Återställ",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "Inställningar Tillämpade",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "Återställning Genomförd",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "Återställer...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "Kunde Inte Ladda Inställningar",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "Kunde Inte Spara Inställningar",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "Kunde Inte Återställa Inställningar",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "Ljus",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "Mörk",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "Köp mig en kaffe",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "Byt tema",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "Bytt språk",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "Om du gillar detta arbete, stöd gärna. Tack :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "Håll höger musknapp ned",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "Håll vänster musknapp ned",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "Öppna i Förgrund",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "Öppna i Bakgrund",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "Drag Sökmotor URL",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "Popup Förhandsvisning",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "Vänster: {next} | Höger: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Hover + Tangent för att Visa Popup",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "Aktivera Popup Förhandsvisning",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "Aktivera Markerad Text Sökning",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "Aktiveringstangent",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Ctrl-tangent",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Alt-tangent",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Shift-tangent",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "Ingen Tangent Krävs",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "Popup Fördröjning (ms)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "Maksimala Popup Fönster",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "Fönster Bredd",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "Fönster Höjd",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "Fönster Position",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "Markör Position",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "Skärm Centrum",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "Skärm Hörn",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "Popup Sökmotor URL",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "Använd {q} för sökterm, exempel format:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Google Sökning: https://www.google.se/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google Översätt: https://translate.google.com/?sl=auto&tl=sv&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "Exempel: https://www.google.se/search?q={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Bing Sökning: https://www.bing.com/search?q={q}&setlang=sv-SE",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "Använd mushjulet för att justera värde",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Vid användning av aktiveringstangent är maximal fördröjning begränsad till 300ms",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "Välkommen till Musgestus Tillägg",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "Tack för att du installerar Musgestus Tillägget! Detta tillägg levererar rik musgestus funktionalitet, intelligent flikhantering, popup förhandsvisning kapacitet och förbättrad visuell upplevelse för att hjälpa dig navigera på webben mer effektivt. Vi har optimalisert gestus igenkännings algoritmen med större fel tolerans, vilket tillåter gestus att bli igenkända korrekt även när de inte ritas perfekt. Den nya popup förhandsvisning funktionen låter dig se länk innehåll i popup fönster utan att byta flikar. Tillägget stöder också 24 språk och ljus/mörk tema för bättre användarupplevelse.",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "Följande är förinställda musgestus som du kan använda genom att dra med höger musknapp:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "Musgestus Tillägg",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "Kärnfunktioner",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "Verktyg",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "Användningstips",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "Intelligent gestus igenkänning: Igenkänner gestus korrekt även när ofullkomliga, fungerar under sidladdning",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "Flikhantering",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": Intelligent duplikat upptäckt, automatisk stängning, periodisk minnes optimering",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "Super-Drag",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": Dra länkar och bilder till nya flikar, dra markerad text till sökning",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "Popup Förhandsvisning",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": Håll aktiveringstangenten (standard: Shift) ned medan du hovrar över länkar för att förhandsvisa målsida i popup fönster",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "Markera text och tryck aktiveringstangenten för att söka omedelbart i popup fönster, med stöd för anpassad sökmotor",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "Du kan öppna flera popup fönster samtidigt",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "Anpassa dragriktning för att bestämma flik öppnings metod: öppna i bakgrund som standard",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "Musgestus Debug Information",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": Tryck Alt+D för att öppna, analysera gestus information i realtid, bevarar tillstånd",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "En-klick kopiering av debug information för enkel delning, med flerspråks stöd",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "Förbättrad media förhandsvisning: Förbättrade hover effekter för bilder och optimaliserade video poster bilder",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "Adaptiva teman: Justerar visuell stil baserat på sid bakgrund, stöder ljus/mörk läge",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "Gestus spår visas på skärm med anpassningsbar färg och bredd",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "Klicka på tillägg ikon för att aktivera/inaktivera funktioner, sätt språk, tema och mer",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "Stöder 24 språk, anpassar automatiskt till webbläsare språk",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "Aktivera automatisk stängning av duplicerade flikar för att minska webbläsare resursanvändning avsevärt",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "På Linux och macOS system, dubbelklicka höger musknapp för att visa webbläsare kontextmeny",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "Duplicerad flik",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "Hittade $1 duplicerade flikar",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "Det finns $1 duplicerade flikar",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "Det finns 1 duplicerad flik",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "Automatiskt stängda $1 duplicerade flikar",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "Stäng Duplicerade",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "Ignorera",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "Namnlös flik",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...och $1 fler sidor",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Fel vid visning av duplicerade flikar notifikation:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "Fel vid sändning av stäng förfrågan:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Fel vid stängning av duplicerade flikar:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Fel vid sändning av ignorera förfrågan:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Fel vid ignorering av duplicerade flikar:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Fel vid uppdatering av debug panel:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Fel vid upptäckt av bakgrundsfärg:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "Fel vid upptäckt av bild kant radie:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "Fel vid inställning av mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Fel vid kontroll av element synlighet:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Fel vid bearbetning av kant radie:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "Fel vid upptäckt av bild bakgrund:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Fel vid visning av automatisk stängning framgång notifikation:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "Ingen nästa sida i historik",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "Ingen föregående sida i historik",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "Navigation misslyckades",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "Försöker nästa sida...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "Navigerade till nästa sida",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "Ingen nästa sida länk hittades",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "Ogiltig Gestus",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "Nästa Sida",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "Fel vid läsning av pixel:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "Fel vid läsning av canvas:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "Fel vid ritning på canvas:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "Fel vid åtkomst till iframe:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "Fel vid inställning av mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "Fel vid kontroll av element synlighet:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "Fel vid bearbetning av hörn:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "Språk ändrade från $1 till $2",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "Bytte till kinesiska",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "Bytte till engelska",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "System Inställningar",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "Vinkel Tröskel",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Riktning Ändring Tröskel",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "Minimal Gestus Avstånd",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Minimal Riktning Segment Längd",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Minimal Gestus Komplexitet",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Senaste Gestus Information",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "Punkter",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "efter förenkling",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "Total Avstånd",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "Riktning Igenkänning",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "Originala Riktningar",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Upprepande Mönster Upptäckt",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Upprepande Mönster Typ",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "Riktning Sammanfogning",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "Sammanfogade Riktningar",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "Riktning Avstånd",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "Slutligt Resultat",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "Igenkänd Gestus",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "Likhet",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "Ja",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "Nej",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "Ingen",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "Ogiltig Gestus",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Väntar på gestus data...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "Kopiera Debug Information",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "Kopierade till urklipp!",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "Kopiering misslyckades, välj och kopiera manuellt",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Sök: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Popup Blockerad",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Tillåt popup fönster för denna webbsida för att aktivera länk förhandsvisning funktionen.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Gestus tillstånd redo",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...och $1 fler sidor",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Stöd författaren genom att köpa via denna länk",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Visa Flikantal",
+    "description": "Show tab count badge option"
+  }
+}

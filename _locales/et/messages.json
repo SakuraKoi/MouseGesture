@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Hiire Žestid",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "Chrome/Edge laiend, mis toetab hiire žeste, super-halvimist ja popup-näkymä",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "Hiire Žestid",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "Sisseehitatud Žestid",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "Super-halvimise Funktsioon",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "Halvi Üles",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "Halvi Paremale",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "Halvi Alla",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "Halvi Vasakule",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "Avaa Link Eesplaanil",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "Avaa Link Taustal",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "Super-halvimise funktsioon töötab linkide, piltide ja valitud teksti jaoks. Kui valitud tekst on URL, avatakse see linkina; muidu otsitakse seda. Halvimise suund määrab, kuidas uued kaardid avatakse.",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "Vasakule",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "Paremale",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "Üles",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "Alla",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "Alla Siis Paremale",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "Vasakule Siis Üles",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "Paremale Siis Üles",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "Paremale Siis Alla",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "Üles Siis Vasakule",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "Üles Siis Paremale",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "Alla Siis Vasakule",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "Vasakule Siis Alla",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "Üles Siis Alla",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "Alla Siis Üles",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "Vasakule Siis Paremale",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "Paremale Siis Vasakule",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "Tagasi",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "Edasi",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "Kerri Üles",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "Kerri Alla",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "Kerige vasakule",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Kerige paremale",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Sunnitud värskendamine",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Sulge Kaart",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "Avaa Suletud Kaart Uuesti",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "Uus Kaart",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "Värskenda",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "Eelmine Kaart",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "Järgmine Kaart",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "Peata Laadimine",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "Sulge Kõik Kaardid",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "Kerri Põhja",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "Kerri Tippu",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "Kerige vasakusse serva",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Kerige paremasse serva",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "Ei Tegevust",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Uus Aken",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Uus Privaatne Aken",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Sulge Teised Kaardid",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Sulge Kaardid Paremale",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Vaheta Täisekraani",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Sulge Kaardid Vasakule",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Laadi Kõik Kaardid Uuesti",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Kinnita/Vabasta Kaart",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Vaigista/Vaigista Kaart",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Vaigista Teised Kaardid",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Maksimeeri/Taasta Aken",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Minimeeri Aken",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Seaded",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "Luba Hiire Žestid",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "Näita Žesti Jälge",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "Näita Žesti Vihjet",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "Jälje Värv",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "Jälje Laius",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "Luba Super-halvimine",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "Luba Halvi Teksti Otsing",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "Luba Pildi Eelvaade",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "Tuvasta Duplikaat Kaardid",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "Sulge Duplikaat Kaardid Automaatselt",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "Luba sujuv kerimine",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Seaded Rakendatud",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "Lähtesta",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "Seaded Rakendatud",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "Lähtestamine Lõpetatud",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "Lähtestatakse...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "Ei Õnnestunud Laadida Seadeid",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "Ei Õnnestunud Salvestada Seadeid",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "Ei Õnnestunud Lähtestada Seadeid",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "Hele",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "Tume",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "Osta mulle kohvi",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "Vaheta teemat",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "Vaheta keelt",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "Kui sulle meeldib see töö, toeta palun. Aitäh :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "Hoia paremat hiire nuppu all",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "Hoia vasakut hiire nuppu all",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "Avaa Eesplaanil",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "Avaa Taustal",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "Halvi Otsimootori URL",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "Popup Eelvaade",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "Vasakule: {next} | Paremale: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Hover + Klahv Näitamaks Popup",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "Luba Popup Eelvaade",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "Luba Valitud Teksti Otsing",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "Käivitamise Klahv",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Ctrl-klahv",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Alt-klahv",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Shift-klahv",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "Klahvi Ei Vajata",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "Popup Viivis (ms)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "Maksimaalsed Popup Aknad",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "Akna Laius",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "Akna Kõrgus",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "Akna Asukoht",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "Kursor Asukoht",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "Ekraani Keskus",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "Ekraani Nurk",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "Popup Otsimootori URL",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "Kasuta {q} otsingutermini jaoks, näide vorming:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Google Otsing: https://www.google.ee/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google Tõlge: https://translate.google.com/?sl=auto&tl=et&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "Näide: https://www.google.ee/search?q={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Bing Otsing: https://www.bing.com/search?q={q}&setlang=et-EE",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "Kasuta hiire ratta väärtuse reguleerimiseks",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Käivitamise klahvi kasutamisel on maksimaalne viivis piiratud 300ms",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "Tere tulemast Hiire Žestid Laiendisse",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "Täname Hiire Žestid Laiendi installimise eest! See laiend pakub rikkalikku hiire žesti funktsionaalsust, intelligentset kaartide haldamist, popup eelvaate võimalusi ja parandatud visuaalset kogemust, et aidata teil navigeerida veebis tõhusamalt. Oleme optimeerinud žesti tuvastamise algoritmi suurema vea tolerantsiga, mis võimaldab žestidel olla õigesti tuvastatud isegi siis, kui neid ei joonistata täiuslikult. Uus popup eelvaate funktsioon võimaldab teil näha lingi sisu popup akendes ilma kaartide vahetamata. Laiend toetab ka 24 keelt ja hele/tume teemat parema kasutajakogemuse jaoks.",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "Järgmised on eelseadistatud hiire žestid, mida saate kasutada parema hiire nupuga hoides:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "Hiire Žestid Laiend",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "Põhifunktsioonid",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "Utiliidid",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "Kasutamise Näpunäited",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "Intelligentne žesti tuvastamine: Tuvastab žestid õigesti isegi ebatäiuslikud, töötab lehe laadimise ajal",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "Kaartide Haldamine",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": Intelligentne duplikaat tuvastamine, automaatne sulgemine, perioodiline mälu optimeerimine",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "Super-halvimine",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": Halvi linke ja pilte uutele kaartidele, halvi valitud teksti otsingusse",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "Popup Eelvaade",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": Hoia käivitamise klahvi (vaikimisi: Shift) all, kui hõljud linkide kohal, et eelvaadata sihtlehte popup akendes",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "Vali tekst ja vajuta käivitamise klahvi, et otsida kohe popup aknas, kohandatud otsimootori toega",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "Saate avada mitu popup akent samaaegselt",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "Kohanda halvimise suunda, et määrata kaardi avamise meetod: ava taustal vaikimisi",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "Hiire Žestid Debug Info",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": Vajuta Alt+D avamiseks, analüüsi žesti infot reaalajas, säilitab oleku",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "Ühe klõpsuga kopeerimine debug infost lihtsa jagamise jaoks, mitmekeelse toega",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "Parandatud meedia eelvaade: Parandatud hover efektid piltidele ja optimeeritud video poster pildid",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "Adaptiivsed teemad: Reguleerib visuaalset stiili lehe tausta põhjal, toetab hele/tume režiimi",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "Žesti jälg kuvatakse ekraanil kohandatava värviga ja laiusega",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "Klõpsa laiendi ikoonil funktsioonide lubamiseks/keelamiseks, keele seadistamiseks, teema ja rohkem",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "Toetab 24 keelt, kohandub automaatselt brauseri keelele",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "Luba automaatne duplikaat kaartide sulgemine, et vähendada oluliselt brauseri ressursikasutust",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "Linux ja macOS süsteemides, topeltklõpsa paremat hiire nuppu brauseri kontekstimenüü kuvamiseks",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "Duplikaat kaart",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "Leitud $1 duplikaat kaarti",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "On $1 duplikaat kaarti",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "On 1 duplikaat kaart",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "Automaatselt suletud $1 duplikaat kaarti",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "Sulge Duplikaadid",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "Eira",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "Nimetu kaart",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...ja $1 muud lehte",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Viga duplikaat kaartide teate kuvamisel:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "Viga sulgemise päringu saatmisel:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Viga duplikaat kaartide sulgemisel:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Viga eira päringu saatmisel:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Viga duplikaat kaartide eirata:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Viga debug paneeli uuendamisel:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Viga tausta värvi tuvastamisel:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "Viga pildi äärise raadiuse tuvastamisel:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "Viga mutation observer seadistamisel:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Viga elemendi nähtavuse kontrollimisel:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Viga äärise raadiuse töötlemisel:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "Viga pildi tausta tuvastamisel:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Viga automaatse sulgemise õnnestumise teate kuvamisel:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "Ei järgmist lehte ajaloos",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "Ei eelmist lehte ajaloos",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "Navigeerimine ebaõnnestus",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "Proovitakse järgmist lehte...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "Navigeeritud järgmisele lehele",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "Ei leitud järgmise lehe linki",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "Vigane Žest",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "Järgmine Leht",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "Viga pikseli lugemisel:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "Viga canvas lugemisel:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "Viga canvas joonistamisel:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "Viga iframe juurdepääsul:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "Viga mutation observer seadistamisel:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "Viga elemendi nähtavuse kontrollimisel:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "Viga nurkade töötlemisel:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "Keel muudetud $1-lt $2-le",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "Vahetatud hiina keelele",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "Vahetatud inglise keelele",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "Süsteemi Seaded",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "Nurga Lävi",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Suuna Muutuse Lävi",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "Minimaalne Žesti Kaugus",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Minimaalne Suuna Segmendi Pikkus",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Minimaalne Žesti Keerukus",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Viimane Žesti Info",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "Punktid",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "pärast lihtsustamist",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "Kogukaugus",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "Suuna Tuvastamine",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "Originaalsed Suunad",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Korduv Mustri Tuvastatud",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Korduv Mustri Tüüp",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "Suuna Ühendamine",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "Ühendatud Suunad",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "Suuna Kaugused",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "Lõplik Tulemus",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "Tuvastatud Žest",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "Sarnasus",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "Jah",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "Ei",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "Puudub",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "Vigane Žest",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Oodatakse žesti andmeid...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "Kopeeri Debug Info",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "Kopeeritud lõikelauale!",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "Kopeerimine ebaõnnestus, vali ja kopeeri käsitsi",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Otsing: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Popup Blokeeritud",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Luba popup aknad sellele veebilehele lingi eelvaate funktsiooni lubamiseks.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Žesti olek valmis",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...ja $1 muud lehte",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Toeta autoriid selle lingi kaudu ostes",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Näita Kaartide Arvu",
+    "description": "Show tab count badge option"
+  }
+}

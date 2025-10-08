@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Gesti del Mouse",
+    "description": "Il nome dell'estensione"
+  },
+  "extDesc": {
+    "message": "Un'estensione Chrome/Edge che supporta i gesti del mouse, la funzionalità super drag e la visualizzazione in popup",
+    "description": "La descrizione dell'estensione"
+  },
+  "title": {
+    "message": "Gesti del Mouse",
+    "description": "Titolo dell'estensione"
+  },
+  "builtInGestures": {
+    "message": "Gesti Incorporati",
+    "description": "Titolo gesti incorporati"
+  },
+  "superDragFeature": {
+    "message": "Funzione Super Drag",
+    "description": "Titolo funzione super drag"
+  },
+  "dragUp": {
+    "message": "Trascina Su",
+    "description": "Azione trascina su"
+  },
+  "dragRight": {
+    "message": "Trascina Destra",
+    "description": "Azione trascina destra"
+  },
+  "dragDown": {
+    "message": "Trascina Giù",
+    "description": "Azione trascina giù"
+  },
+  "dragLeft": {
+    "message": "Trascina Sinistra",
+    "description": "Azione trascina sinistra"
+  },
+  "openInForeground": {
+    "message": "Apri Link in Primo Piano",
+    "description": "Apri link in primo piano"
+  },
+  "openInBackground": {
+    "message": "Apri Link in Sfondo",
+    "description": "Apri link in sfondo"
+  },
+  "superDragDescription": {
+    "message": "La funzione Super Trascinamento funziona per link, immagini e testo selezionato. Quando il testo selezionato è un URL, si aprirà come link; altrimenti verrà cercato. La direzione del trascinamento determina come vengono aperte le nuove schede.",
+    "description": "Descrizione funzione super trascinamento"
+  },
+  "left": {
+    "message": "Sinistra",
+    "description": "Direzione sinistra"
+  },
+  "right": {
+    "message": "Destra",
+    "description": "Direzione destra"
+  },
+  "up": {
+    "message": "Su",
+    "description": "Direzione su"
+  },
+  "down": {
+    "message": "Giù",
+    "description": "Direzione giù"
+  },
+  "downThenRight": {
+    "message": "Giù poi Destra",
+    "description": "Gesto giù poi destra"
+  },
+  "leftThenUp": {
+    "message": "Sinistra poi Su",
+    "description": "Gesto sinistra poi su"
+  },
+  "rightThenUp": {
+    "message": "Destra poi Su",
+    "description": "Gesto destra poi su"
+  },
+  "rightThenDown": {
+    "message": "Destra poi Giù",
+    "description": "Gesto destra poi giù"
+  },
+  "upThenLeft": {
+    "message": "Su poi Sinistra",
+    "description": "Gesto su poi sinistra"
+  },
+  "upThenRight": {
+    "message": "Su poi Destra",
+    "description": "Gesto su poi destra"
+  },
+  "downThenLeft": {
+    "message": "Giù poi Sinistra",
+    "description": "Gesto giù poi sinistra"
+  },
+  "leftThenDown": {
+    "message": "Sinistra poi Giù",
+    "description": "Gesto sinistra poi giù"
+  },
+  "upThenDown": {
+    "message": "Su poi Giù",
+    "description": "Gesto su poi giù"
+  },
+  "downThenUp": {
+    "message": "Giù poi Su",
+    "description": "Gesto giù poi su"
+  },
+  "leftThenRight": {
+    "message": "Sinistra poi Destra",
+    "description": "Gesto sinistra poi destra"
+  },
+  "rightThenLeft": {
+    "message": "Destra poi Sinistra",
+    "description": "Gesto destra poi sinistra"
+  },
+  "back": {
+    "message": "Torna Indietro",
+    "description": "Azione torna indietro"
+  },
+  "forward": {
+    "message": "Vai Avanti",
+    "description": "Azione vai avanti"
+  },
+  "scrollUp": {
+    "message": "Scorri Su",
+    "description": "Azione scorri su"
+  },
+  "scrollDown": {
+    "message": "Scorri Giù",
+    "description": "Azione scorri giù"
+  },
+  "scrollLeft": {
+    "message": "Scorri a sinistra",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Scorri a destra",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Forza aggiornamento",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Chiudi Scheda",
+    "description": "Azione chiudi scheda"
+  },
+  "reopenTab": {
+    "message": "Riapri Scheda Chiusa",
+    "description": "Azione riapri scheda chiusa"
+  },
+  "newTab": {
+    "message": "Nuova Scheda",
+    "description": "Azione nuova scheda"
+  },
+  "refresh": {
+    "message": "Aggiorna",
+    "description": "Azione aggiorna"
+  },
+  "prevTab": {
+    "message": "Scheda Precedente",
+    "description": "Azione scheda precedente"
+  },
+  "nextTab": {
+    "message": "Scheda Successiva",
+    "description": "Azione scheda successiva"
+  },
+  "stopLoading": {
+    "message": "Ferma Caricamento",
+    "description": "Azione ferma caricamento"
+  },
+  "closeAllTabs": {
+    "message": "Chiudi Tutte le Schede",
+    "description": "Azione chiudi tutte le schede"
+  },
+  "scrollToBottom": {
+    "message": "Scorri in Basso",
+    "description": "Azione scorri in basso"
+  },
+  "scrollToTop": {
+    "message": "Scorri in Alto",
+    "description": "Azione scorri in alto"
+  },
+  "scrollToLeft": {
+    "message": "Scorri al bordo sinistro",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Scorri al bordo destro",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "Nessuna Azione",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Nuova Finestra",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Nuova Finestra Privata",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Chiudi Altri Tab",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Chiudi Tab a Destra",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Attiva/Disattiva Schermo Intero",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Chiudi Tab a Sinistra",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Ricarica Tutti i Tab",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Fissa/Rimuovi Tab",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Silenzia/Ripristina Audio Tab",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Silenzia Altri Tab",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Massimizza/Ripristina Finestra",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Minimizza Finestra",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Impostazioni",
+    "description": "Titolo impostazioni"
+  },
+  "enableGesture": {
+    "message": "Abilita Gesti del Mouse",
+    "description": "Opzione abilita gesti del mouse"
+  },
+  "showGestureTrail": {
+    "message": "Mostra Traccia Gesti",
+    "description": "Opzione mostra traccia gesti"
+  },
+  "showGestureHint": {
+    "message": "Mostra Suggerimento Gesti",
+    "description": "Opzione mostra suggerimento gesti"
+  },
+  "trailColor": {
+    "message": "Colore Traccia",
+    "description": "Opzione colore traccia"
+  },
+  "trailWidth": {
+    "message": "Larghezza Traccia",
+    "description": "Opzione larghezza traccia"
+  },
+  "enableSuperDrag": {
+    "message": "Abilita Super Drag",
+    "description": "Opzione abilita super drag"
+  },
+  "enableDragTextSearch": {
+    "message": "Abilita Ricerca Testo Trascinamento",
+    "description": "Opzione abilita ricerca testo trascinamento"
+  },
+  "enableImagePreview": {
+    "message": "Abilita Anteprima Immagini",
+    "description": "Opzione abilita anteprima immagini"
+  },
+  "enableDuplicateCheck": {
+    "message": "Rileva Schede Duplicate",
+    "description": "Opzione rileva schede duplicate"
+  },
+  "autoCloseDuplicates": {
+    "message": "Chiudi Automaticamente Schede Duplicate",
+    "description": "Opzione chiudi automaticamente schede duplicate"
+  },
+  "enableSmoothScroll": {
+    "message": "Abilita scorrimento fluido",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Impostazioni Applicate",
+    "description": "Pulsante salva impostazioni"
+  },
+  "reset": {
+    "message": "Ripristina",
+    "description": "Pulsante ripristina impostazioni"
+  },
+  "settingsSaved": {
+    "message": "Impostazioni Applicate",
+    "description": "Notifica impostazioni salvate"
+  },
+  "settingsReset": {
+    "message": "Ripristino Completato",
+    "description": "Notifica impostazioni ripristinate"
+  },
+  "resetting": {
+    "message": "Ripristinando...",
+    "description": "Notifica ripristino"
+  },
+  "loadError": {
+    "message": "Impossibile Caricare le Impostazioni",
+    "description": "Notifica errore caricamento impostazioni"
+  },
+  "saveError": {
+    "message": "Impossibile Salvare le Impostazioni",
+    "description": "Notifica errore salvataggio impostazioni"
+  },
+  "resetError": {
+    "message": "Impossibile Ripristinare le Impostazioni",
+    "description": "Notifica errore ripristino impostazioni"
+  },
+  "themeLight": {
+    "message": "Chiaro",
+    "description": "Tema chiaro"
+  },
+  "themeDark": {
+    "message": "Scuro",
+    "description": "Tema scuro"
+  },
+  "buyMeACoffee": {
+    "message": "Offrimi un caffè",
+    "description": "Pulsante donazione"
+  },
+  "toggleTheme": {
+    "message": "Cambia Tema",
+    "description": "Pulsante cambia tema"
+  },
+  "toggleLanguage": {
+    "message": "Cambia Lingua",
+    "description": "Pulsante cambia lingua"
+  },
+  "donationTooltip": {
+    "message": "Se ti piace questo lavoro, per favore sostienimi. Grazie :)",
+    "description": "Tooltip donazione"
+  },
+  "rightButtonHint": {
+    "message": "Tieni premuto il tasto destro del mouse",
+    "description": "Suggerimento tasto destro mouse"
+  },
+  "leftButtonHint": {
+    "message": "Tieni premuto il tasto sinistro del mouse",
+    "description": "Suggerimento tasto sinistro mouse"
+  },
+  "foregroundAction": {
+    "message": "Apri in Primo Piano",
+    "description": "Azione apri in primo piano"
+  },
+  "backgroundAction": {
+    "message": "Apri in Sfondo",
+    "description": "Azione apri in sfondo"
+  },
+  "dragSearchEngine": {
+    "message": "URL Motore di Ricerca Trascinamento",
+    "description": "Impostazione URL motore di ricerca trascinamento"
+  },
+  "linkPreview": {
+    "message": "Vista Popup",
+    "description": "Titolo vista popup"
+  },
+  "quickNavTooltip": {
+    "message": "Destra: {next} | Sinistra: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Hover + Tasto per Mostrare Popup",
+    "description": "Suggerimento vista popup"
+  },
+  "enableLinkPreview": {
+    "message": "Abilita Vista Popup",
+    "description": "Opzione abilita vista popup"
+  },
+  "enableTextSearchPreview": {
+    "message": "Abilita Ricerca Selezione Testo",
+    "description": "Opzione abilita ricerca selezione testo"
+  },
+  "modifierKey": {
+    "message": "Tasto Attivazione",
+    "description": "Impostazione tasto attivazione"
+  },
+  "controlKey": {
+    "message": "Tasto Ctrl",
+    "description": "Opzione tasto Ctrl"
+  },
+  "altKey": {
+    "message": "Tasto Alt",
+    "description": "Opzione tasto Alt"
+  },
+  "shiftKey": {
+    "message": "Tasto Shift",
+    "description": "Opzione tasto Shift"
+  },
+  "noKey": {
+    "message": "Nessun Tasto Richiesto",
+    "description": "Opzione nessun tasto richiesto"
+  },
+  "previewDelay": {
+    "message": "Ritardo Popup (ms)",
+    "description": "Impostazione ritardo popup"
+  },
+  "maxPreviewWindows": {
+    "message": "Massimo Finestre Popup",
+    "description": "Impostazione massimo finestre popup"
+  },
+  "previewWidth": {
+    "message": "Larghezza Finestra",
+    "description": "Impostazione larghezza finestra"
+  },
+  "previewHeight": {
+    "message": "Altezza Finestra",
+    "description": "Impostazione altezza finestra"
+  },
+  "previewPosition": {
+    "message": "Posizione Finestra",
+    "description": "Impostazione posizione finestra"
+  },
+  "cursorPosition": {
+    "message": "Posizione Cursore",
+    "description": "Opzione posizione cursore"
+  },
+  "centerScreen": {
+    "message": "Centro Schermo",
+    "description": "Opzione centro schermo"
+  },
+  "cornerScreen": {
+    "message": "Angolo Schermo",
+    "description": "Opzione angolo schermo"
+  },
+  "searchEngine": {
+    "message": "URL Motore di Ricerca Popup",
+    "description": "Impostazione URL motore di ricerca popup"
+  },
+  "searchEngineExamples": {
+    "message": "Usa {q} per il termine di ricerca, formato esempio:",
+    "description": "Descrizione esempi motore di ricerca"
+  },
+  "googleExample": {
+    "message": "Ricerca Google: https://www.google.it/search?q={q}",
+    "description": "Esempio ricerca Google"
+  },
+  "googleTranslateExample": {
+    "message": "Google Traduttore: https://translate.google.it/?sl=auto&tl=it&text={q}&op=translate",
+    "description": "Esempio Google Traduttore"
+  },
+  "localSearchExample": {
+    "message": "Ricerca Virgilio: https://www.virgilio.it/ricerca?q={q}",
+    "description": "Esempio di URL di ricerca locale"
+  },
+  "bingExample": {
+    "message": "Ricerca Bing: https://www.bing.com/search?q={q}&setlang=it",
+    "description": "Esempio ricerca Bing"
+  },
+  "wheelTip": {
+    "message": "Usa la rotella del mouse per regolare il valore",
+    "description": "Suggerimento rotella"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Quando si usa un tasto attivazione, il ritardo massimo è limitato a 300ms",
+    "description": "Suggerimento ritardo tasto modificatore"
+  },
+  "welcomeTitle": {
+    "message": "Benvenuto nell'Estensione Gesti del Mouse",
+    "description": "Titolo pagina di benvenuto"
+  },
+  "welcomeDescription": {
+    "message": "Grazie per aver installato l'estensione Gesture del Mouse! Questa estensione fornisce ricche funzionalità di gesti del mouse, gestione intelligente delle schede, capacità di visualizzazione popup ed esperienza visiva migliorata per aiutarti a navigare sul web in modo più efficiente. Abbiamo ottimizzato l'algoritmo di riconoscimento dei gesti con maggiore tolleranza agli errori, permettendo ai gesti di essere riconosciuti correttamente anche quando non sono disegnati perfettamente. La nuova funzionalità della finestra popup ti permette di visualizzare il contenuto dei link nelle finestre popup senza cambiare scheda. L'estensione supporta anche 29 lingue e temi chiaro/scuro per una migliore esperienza utente.",
+    "description": "Descrizione pagina di benvenuto"
+  },
+  "gesturesDescription": {
+    "message": "Le seguenti sono gesture del mouse preimpostate che puoi usare trascinando con il tasto destro del mouse:",
+    "description": "Descrizione delle gesture"
+  },
+  "extensionName": {
+    "message": "Estensione Gesti del Mouse",
+    "description": "Nome completo dell'estensione"
+  },
+  "coreFeatures": {
+    "message": "Funzionalità Principali",
+    "description": "Titolo funzionalità principali"
+  },
+  "utilitiesFeatures": {
+    "message": "Strumenti di Utilità",
+    "description": "Titolo strumenti di utilità"
+  },
+  "usageTips": {
+    "message": "Suggerimenti per l'Uso",
+    "description": "Titolo suggerimenti per l'uso"
+  },
+  "smartGestureRecognition": {
+    "message": "Riconoscimento intelligente gesti: Identifica correttamente i gesti anche quando imperfetti, funziona durante il caricamento delle pagine",
+    "description": "Descrizione riconoscimento intelligente gesti"
+  },
+  "tabManagementTitle": {
+    "message": "Gestione Schede",
+    "description": "Titolo gestione schede"
+  },
+  "tabManagementDesc": {
+    "message": ": Rilevamento intelligente duplicati, chiusura automatica opzionale, ottimizzazione periodica della memoria",
+    "description": "Descrizione gestione schede"
+  },
+  "superDragTitle": {
+    "message": "Super Trascinamento",
+    "description": "Titolo super trascinamento"
+  },
+  "superDragDesc": {
+    "message": ": Trascina link e immagini in nuove schede, trascina testo selezionato per cercarlo",
+    "description": "Descrizione super trascinamento"
+  },
+  "linkPreviewTitle": {
+    "message": "Visualizzazione Popup",
+    "description": "Titolo anteprima link"
+  },
+  "linkPreviewDesc": {
+    "message": ": Tieni premuto il tasto modificatore (default: Shift) mentre passi sui link per visualizzare l'anteprima delle pagine target in finestre popup",
+    "description": "Descrizione anteprima link"
+  },
+  "textSelectionPreview": {
+    "message": "Seleziona il testo e premi il tasto modificatore per cercarlo istantaneamente in una finestra popup, con supporto per motori di ricerca personalizzati",
+    "description": "Descrizione anteprima selezione testo"
+  },
+  "previewTip": {
+    "message": "Puoi aprire più finestre popup contemporaneamente",
+    "description": "Suggerimento anteprima"
+  },
+  "dragDirection": {
+    "message": "Personalizza la direzione di trascinamento per determinare il metodo di apertura della scheda: si apre in background per impostazione predefinita",
+    "description": "Descrizione direzione trascinamento"
+  },
+  "debugPanelTitle": {
+    "message": "Informazioni Debug Gesti Mouse",
+    "description": "Titolo pannello debug"
+  },
+  "debugPanelDesc": {
+    "message": "Premi Alt+D per aprire, analizza le informazioni sui gesti in tempo reale, mantiene lo stato",
+    "description": "Descrizione pannello debug"
+  },
+  "oneClickCopy": {
+    "message": "Copia con un clic delle informazioni di debug per una facile condivisione, con supporto multilingua",
+    "description": "Descrizione copia con un clic"
+  },
+  "mediaPreview": {
+    "message": "Anteprima media migliorata: effetti hover delle immagini migliorati e immagini poster dei video ottimizzate",
+    "description": "Descrizione anteprima media"
+  },
+  "adaptiveTheme": {
+    "message": "Temi adattivi: regola lo stile visivo in base allo sfondo della pagina, supporta modalità chiara/scura",
+    "description": "Descrizione tema adattivo"
+  },
+  "gestureTrail": {
+    "message": "Tracce dei gesti visualizzate sullo schermo con colore e larghezza personalizzabili",
+    "description": "Descrizione traccia gesti"
+  },
+  "clickIcon": {
+    "message": "Clicca sull'icona dell'estensione per abilitare/disabilitare funzionalità, impostare la lingua, il tema e altro",
+    "description": "Descrizione clic icona"
+  },
+  "languageSupport": {
+    "message": "Supporta 29 lingue, si adatta automaticamente alla lingua del browser",
+    "description": "Descrizione supporto lingue"
+  },
+  "enableAutoClose": {
+    "message": "Abilita la funzionalità di chiusura automatica delle schede duplicate per ridurre significativamente l'utilizzo delle risorse del browser",
+    "description": "Descrizione abilita chiusura automatica"
+  },
+  "rightClickMacLinux": {
+    "message": "Nei sistemi Linux e macOS, doppio clic destro per mostrare il menu contestuale del browser",
+    "description": "Suggerimento clic destro Mac/Linux"
+  },
+  "duplicateTab": {
+    "message": "Scheda duplicata",
+    "description": "Scheda duplicata"
+  },
+  "duplicateTabsDetected": {
+    "message": "Trovate $1 schede duplicate",
+    "description": "Titolo notifica schede duplicate rilevate"
+  },
+  "duplicateTabsCount": {
+    "message": "Ci sono $1 schede duplicate",
+    "description": "Messaggio conteggio schede duplicate"
+  },
+  "duplicateTabsSingle": {
+    "message": "C'è 1 scheda duplicata",
+    "description": "Messaggio singola scheda duplicata"
+  },
+  "autoClosedTabs": {
+    "message": "Chiuse automaticamente $1 schede duplicate",
+    "description": "Notifica schede chiuse automaticamente"
+  },
+  "closeBtn": {
+    "message": "Chiudi Duplicati",
+    "description": "Pulsante chiudi duplicati"
+  },
+  "ignoreBtn": {
+    "message": "Ignora",
+    "description": "Pulsante ignora"
+  },
+  "untitledTab": {
+    "message": "Scheda senza titolo",
+    "description": "Scheda senza titolo"
+  },
+  "morePages": {
+    "message": "...e altre $1 pagine",
+    "description": "Suggerimento altre pagine"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Errore durante la visualizzazione della notifica delle schede duplicate:",
+    "description": "Errore visualizzazione notifica schede duplicate"
+  },
+  "errorSendCloseRequest": {
+    "message": "Errore durante l'invio della richiesta di chiusura:",
+    "description": "Errore invio richiesta chiusura"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Errore durante la chiusura delle schede duplicate:",
+    "description": "Errore chiusura schede duplicate"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Errore durante l'invio della richiesta di ignorare:",
+    "description": "Errore invio richiesta ignorare"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Errore durante l'ignorare delle schede duplicate:",
+    "description": "Errore ignorare schede duplicate"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Errore durante l'aggiornamento del pannello di debug:",
+    "description": "Errore aggiornamento pannello debug"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Errore durante il rilevamento del colore di sfondo:",
+    "description": "Errore rilevamento colore sfondo"
+  },
+  "errorDetectImageBorder": {
+    "message": "Errore durante il rilevamento del raggio del bordo dell'immagine:",
+    "description": "Errore rilevamento raggio bordo immagine"
+  },
+  "errorSetMutationObserver": {
+    "message": "Errore durante l'impostazione dell'osservatore di mutazioni:",
+    "description": "Errore impostazione osservatore mutazioni"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Errore durante il controllo della visibilità dell'elemento:",
+    "description": "Errore controllo visibilità elemento"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Errore durante l'elaborazione del raggio del bordo:",
+    "description": "Errore elaborazione raggio bordo"
+  },
+  "errorDetectImageBackground": {
+    "message": "Errore durante il rilevamento dello sfondo dell'immagine:",
+    "description": "Errore rilevamento sfondo immagine"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Errore durante la visualizzazione della notifica di chiusura automatica:",
+    "description": "Errore visualizzazione notifica chiusura automatica"
+  },
+  "noForwardPage": {
+    "message": "Nessuna pagina successiva nella cronologia",
+    "description": "Messaggio nessuna pagina successiva"
+  },
+  "noBackPage": {
+    "message": "Nessuna pagina precedente nella cronologia",
+    "description": "Messaggio nessuna pagina precedente"
+  },
+  "navigationFailed": {
+    "message": "Navigazione fallita",
+    "description": "Messaggio navigazione fallita"
+  },
+  "tryingNextPage": {
+    "message": "Tentativo di passare alla pagina successiva...",
+    "description": "Messaggio tentativo pagina successiva"
+  },
+  "nextPageSuccess": {
+    "message": "Navigato alla pagina successiva",
+    "description": "Messaggio successo pagina successiva"
+  },
+  "noNextPage": {
+    "message": "Nessun link alla pagina successiva trovato",
+    "description": "Messaggio nessun link pagina successiva"
+  },
+  "invalidGesture": {
+    "message": "Gesto Non Valido",
+    "description": "Messaggio gesto non valido"
+  },
+  "nextPage": {
+    "message": "Pagina Successiva",
+    "description": "Azione pagina successiva"
+  },
+  "errorReadPixel": {
+    "message": "Errore durante la lettura del pixel:",
+    "description": "Messaggio errore lettura pixel"
+  },
+  "errorCanvasRead": {
+    "message": "Errore durante la lettura della canvas:",
+    "description": "Messaggio errore lettura canvas"
+  },
+  "errorCanvasDraw": {
+    "message": "Errore durante il disegno sulla canvas:",
+    "description": "Messaggio errore disegno canvas"
+  },
+  "errorAccessIframe": {
+    "message": "Errore durante l'accesso all'iframe:",
+    "description": "Messaggio errore accesso iframe"
+  },
+  "errorMutationObserver": {
+    "message": "Errore durante l'impostazione dell'osservatore di mutazioni:",
+    "description": "Errore impostazione osservatore mutazioni"
+  },
+  "errorCheckVisibility": {
+    "message": "Errore durante il controllo della visibilità dell'elemento:",
+    "description": "Errore controllo visibilità elemento"
+  },
+  "errorProcessCorners": {
+    "message": "Errore durante l'elaborazione degli angoli:",
+    "description": "Messaggio errore elaborazione angoli"
+  },
+  "languageChanged": {
+    "message": "Lingua cambiata da $1 a $2",
+    "description": "Notifica cambio lingua"
+  },
+  "switchedToChinese": {
+    "message": "Cambiato al cinese",
+    "description": "Notifica cambiato al cinese"
+  },
+  "switchedToEnglish": {
+    "message": "Cambiato all'inglese",
+    "description": "Notifica cambiato all'inglese"
+  },
+  "debugSystemSettings": {
+    "message": "Impostazioni di Sistema",
+    "description": "Sezione impostazioni sistema pannello debug"
+  },
+  "debugAngleThreshold": {
+    "message": "Soglia Angolare",
+    "description": "Impostazione soglia angolare pannello debug"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Soglia Cambiamento Direzione",
+    "description": "Impostazione soglia cambiamento direzione pannello debug"
+  },
+  "debugMinGestureDistance": {
+    "message": "Distanza Minima Gesto",
+    "description": "Impostazione distanza minima gesto pannello debug"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Lunghezza Minima Segmento Direzione",
+    "description": "Impostazione lunghezza minima segmento direzione pannello debug"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Complessità Minima Gesto",
+    "description": "Impostazione complessità minima gesto pannello debug"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Informazioni Ultimo Gesto",
+    "description": "Sezione informazioni ultimo gesto pannello debug"
+  },
+  "debugPoints": {
+    "message": "Punti",
+    "description": "Conteggio punti pannello debug"
+  },
+  "debugSimplifiedAfter": {
+    "message": "dopo semplificazione",
+    "description": "Testo dopo semplificazione pannello debug"
+  },
+  "debugTotalDistance": {
+    "message": "Distanza Totale",
+    "description": "Distanza totale pannello debug"
+  },
+  "debugDirectionRecognition": {
+    "message": "Riconoscimento Direzione",
+    "description": "Sezione riconoscimento direzione pannello debug"
+  },
+  "debugOriginalDirections": {
+    "message": "Direzioni Originali",
+    "description": "Direzioni originali pannello debug"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Pattern Ripetitivo Rilevato",
+    "description": "Pattern ripetitivo rilevato pannello debug"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Tipo Pattern Ripetitivo",
+    "description": "Tipo pattern ripetitivo pannello debug"
+  },
+  "debugDirectionMerging": {
+    "message": "Fusione Direzioni",
+    "description": "Sezione fusione direzioni pannello debug"
+  },
+  "debugMergedDirections": {
+    "message": "Direzioni Fuse",
+    "description": "Direzioni fuse pannello debug"
+  },
+  "debugDirectionDistances": {
+    "message": "Distanze Direzioni",
+    "description": "Distanze direzioni pannello debug"
+  },
+  "debugFinalResult": {
+    "message": "Risultato Finale",
+    "description": "Sezione risultato finale pannello debug"
+  },
+  "debugRecognizedGesture": {
+    "message": "Gesto Riconosciuto",
+    "description": "Gesto riconosciuto pannello debug"
+  },
+  "debugSimilarity": {
+    "message": "Somiglianza",
+    "description": "Somiglianza pannello debug"
+  },
+  "debugYes": {
+    "message": "Sì",
+    "description": "Sì pannello debug"
+  },
+  "debugNo": {
+    "message": "No",
+    "description": "No pannello debug"
+  },
+  "debugNone": {
+    "message": "Nessuno",
+    "description": "Nessuno pannello debug"
+  },
+  "debugInvalidGesture": {
+    "message": "Gesto Non Valido",
+    "description": "Gesto non valido pannello debug"
+  },
+  "debugWaitingForGestureData": {
+    "message": "In attesa dei dati del gesto...",
+    "description": "In attesa dei dati del gesto pannello debug"
+  },
+  "debugCopyButton": {
+    "message": "Copia Informazioni",
+    "description": "Pulsante copia informazioni pannello debug"
+  },
+  "debugCopySuccess": {
+    "message": "Copiato negli appunti!",
+    "description": "Messaggio successo copia pannello debug"
+  },
+  "debugCopyFailed": {
+    "message": "Copia fallita, seleziona e copia manualmente",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Cerca: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Popup Bloccato",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Consenti i popup per questo sito per abilitare la funzionalità di anteprima dei collegamenti.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Modalità gesti pronta",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...e altre $1 pagine",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Supporta l'autore acquistando tramite questo link",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Mostra Numero di Schede",
+    "description": "Show tab count badge option"
+  }
+}

@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "ماؤس جیسچرز",
+    "description": "توسیع کا نام"
+  },
+  "extDesc": {
+    "message": "کروم/ایج توسیع جو ماؤس جیسچرز اور سپر ڈریگ فنکشنلٹی اور پاپ اپ وڈو جی حمایت کرتی ہے",
+    "description": "توسیع کی تفصیل"
+  },
+  "title": {
+    "message": "ماؤس جیسچرز",
+    "description": "توسیع کا عنوان"
+  },
+  "builtInGestures": {
+    "message": "بلٹ ان جیسچرز",
+    "description": "بلٹ ان جیسچرز کا عنوان"
+  },
+  "superDragFeature": {
+    "message": "سپر ڈریگ",
+    "description": "سپر ڈریگ کا عنوان"
+  },
+  "dragUp": {
+    "message": "اوپر کھینچیں",
+    "description": "اوپر کھینچنے کا عمل"
+  },
+  "dragRight": {
+    "message": "دائیں کھینچیں",
+    "description": "دائیں کھینچنے کا عمل"
+  },
+  "dragDown": {
+    "message": "نیچے کھینچیں",
+    "description": "نیچے کھینچنے کا عمل"
+  },
+  "dragLeft": {
+    "message": "بائیں کھینچیں",
+    "description": "بائیں کھینچنے کا عمل"
+  },
+  "openInForeground": {
+    "message": "لنک کو فارگراؤنڈ میں کھولیں",
+    "description": "لنک کو فارگراؤنڈ میں کھولنے کا عمل"
+  },
+  "openInBackground": {
+    "message": "لنک کو بیک گراؤنڈ میں کھولیں",
+    "description": "لنک کو بیک گراؤنڈ میں کھولنے کا عمل"
+  },
+  "superDragDescription": {
+    "message": "سپر ڈریگ فنکشن لنکس، تصاویر اور منتخب متن کے لیے کام کرتا ہے۔ اگر منتخب متن URL ہے تو لنک کے طور پر کھلتا ہے، ورنہ تلاش کرتا ہے۔ ڈریگ کی سمت نئے ٹیبز کے کھلنے کے طریقے کا تعین کرتی ہے۔",
+    "description": "سپر ڈریگ کی تفصیل"
+  },
+  "left": {
+    "message": "بائیں",
+    "description": "بائیں سمت"
+  },
+  "right": {
+    "message": "دائیں",
+    "description": "دائیں سمت"
+  },
+  "up": {
+    "message": "اوپر",
+    "description": "اوپر کی سمت"
+  },
+  "down": {
+    "message": "نیچے",
+    "description": "نیچے کی سمت"
+  },
+  "downThenRight": {
+    "message": "نیچے پھر دائیں",
+    "description": "نیچے پھر دائیں جیسچر"
+  },
+  "leftThenUp": {
+    "message": "بائیں پھر اوپر",
+    "description": "بائیں پھر اوپر جیسچر"
+  },
+  "rightThenUp": {
+    "message": "دائیں پھر اوپر",
+    "description": "دائیں پھر اوپر جیسچر"
+  },
+  "rightThenDown": {
+    "message": "دائیں پھر نیچے",
+    "description": "دائیں پھر نیچے جیسچر"
+  },
+  "upThenLeft": {
+    "message": "اوپر پھر بائیں",
+    "description": "اوپر پھر بائیں جیسچر"
+  },
+  "upThenRight": {
+    "message": "اوپر پھر دائیں",
+    "description": "اوپر پھر دائیں جیسچر"
+  },
+  "downThenLeft": {
+    "message": "نیچے پھر بائیں",
+    "description": "نیچے پھر بائیں جیسچر"
+  },
+  "leftThenDown": {
+    "message": "بائیں پھر نیچے",
+    "description": "بائیں پھر نیچے جیسچر"
+  },
+  "upThenDown": {
+    "message": "اوپر پھر نیچے",
+    "description": "اوپر پھر نیچے جیسچر"
+  },
+  "downThenUp": {
+    "message": "نیچے پھر اوپر",
+    "description": "نیچے پھر اوپر جیسچر"
+  },
+  "leftThenRight": {
+    "message": "بائیں پھر دائیں",
+    "description": "بائیں پھر دائیں جیسچر"
+  },
+  "rightThenLeft": {
+    "message": "دائیں پھر بائیں",
+    "description": "دائیں پھر بائیں جیسچر"
+  },
+  "back": {
+    "message": "واپس",
+    "description": "واپس جانے کا عمل"
+  },
+  "forward": {
+    "message": "آگے",
+    "description": "آگے جانے کا عمل"
+  },
+  "scrollUp": {
+    "message": "اوپر اسکرول کریں",
+    "description": "اوپر اسکرول کرنے کا عمل"
+  },
+  "scrollDown": {
+    "message": "نیچے اسکرول کریں",
+    "description": "نیچے اسکرول کرنے کا عمل"
+  },
+  "scrollLeft": {
+    "message": "بائیں طرف سکرول کریں",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "دائیں طرف سکرول کریں",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "زبردستی ریفریش کریں",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "ٹیب بند کریں",
+    "description": "ٹیب بند کرنے کا عمل"
+  },
+  "reopenTab": {
+    "message": "بند شدہ ٹیب کھولیں",
+    "description": "بند شدہ ٹیب کھولنے کا عمل"
+  },
+  "newTab": {
+    "message": "نیا ٹیب",
+    "description": "نیا ٹیب کھولنے کا عمل"
+  },
+  "refresh": {
+    "message": "ریفریش",
+    "description": "ریفریش کرنے کا عمل"
+  },
+  "prevTab": {
+    "message": "پچھلا ٹیب",
+    "description": "پچھلے ٹیب پر جانے کا عمل"
+  },
+  "nextTab": {
+    "message": "اگلا ٹیب",
+    "description": "اگلے ٹیب پر جانے کا عمل"
+  },
+  "stopLoading": {
+    "message": "لوڈنگ روکیں",
+    "description": "لوڈنگ روکنے کا عمل"
+  },
+  "closeAllTabs": {
+    "message": "تمام ٹیبز بند کریں",
+    "description": "تمام ٹیبز بند کرنے کا عمل"
+  },
+  "scrollToBottom": {
+    "message": "سب سے نیچے اسکرول کریں",
+    "description": "سب سے نیچے اسکرول کرنے کا عمل"
+  },
+  "scrollToTop": {
+    "message": "سب سے اوپر اسکرول کریں",
+    "description": "سب سے اوپر اسکرول کرنے کا عمل"
+  },
+  "scrollToLeft": {
+    "message": "بائیں کنارے تک سکرول کریں",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "دائیں کنارے تک سکرول کریں",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "کوئی عمل نہیں",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "نیا ونڈو",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "نیا نجی ونڈو",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "دیگر ٹیبز بند کریں",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "دائیں طرف کے ٹیبز بند کریں",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "فل سکرین ٹوگل کریں",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "بائیں طرف کے ٹیبز بند کریں",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "تمام ٹیبز دوبارہ لوڈ کریں",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "ٹیب پن/انپن کریں",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "ٹیب کو خاموش/آواز کریں",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "دیگر ٹیبز کو خاموش کریں",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "ونڈو کو زیادہ سے زیادہ/بحال کریں",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "ونڈو کو کم سے کم کریں",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "ترتیبات",
+    "description": "ترتیبات کا عنوان"
+  },
+  "enableGesture": {
+    "message": "ماؤس جیسچرز فعال کریں",
+    "description": "ماؤس جیسچرز فعال کرنے کا آپشن"
+  },
+  "showGestureTrail": {
+    "message": "جیسچر ٹریل دکھائیں",
+    "description": "جیسچر ٹریل دکھانے کا آپشن"
+  },
+  "showGestureHint": {
+    "message": "جیسچر ہنٹ دکھائیں",
+    "description": "جیسچر ہنٹ دکھانے کا آپشن"
+  },
+  "trailColor": {
+    "message": "ٹریل کا رنگ",
+    "description": "ٹریل کے رنگ کی ترتیب"
+  },
+  "trailWidth": {
+    "message": "ٹریل کی چوڑائی",
+    "description": "ٹریل کی چوڑائی کی ترتیب"
+  },
+  "enableSuperDrag": {
+    "message": "سپر ڈریگ فعال کریں",
+    "description": "سپر ڈریگ فعال کرنے کا آپشن"
+  },
+  "enableDragTextSearch": {
+    "message": "ڈریگ ٹیکسٹ سرچ فعال کریں",
+    "description": "ڈریگ ٹیکسٹ سرچ فعال کرنے کا آپشن"
+  },
+  "enableImagePreview": {
+    "message": "تصویر پریویو فعال کریں",
+    "description": "تصویر پریویو فعال کرنے کا آپشن"
+  },
+  "enableDuplicateCheck": {
+    "message": "ڈپلیکیٹ ٹیبز کا پتہ لگائیں",
+    "description": "ڈپلیکیٹ ٹیبز کا پتہ لگانے کا آپشن"
+  },
+  "autoCloseDuplicates": {
+    "message": "ڈپلیکیٹ ٹیبز خودکار بند کریں",
+    "description": "ڈپلیکیٹ ٹیبز خودکار بند کرنے کا آپشن"
+  },
+  "enableSmoothScroll": {
+    "message": "ہموار سکرول کو فعال کریں",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "محفوظ کریں",
+    "description": "محفوظ کرنے کا بٹن"
+  },
+  "reset": {
+    "message": "ری سیٹ",
+    "description": "ری سیٹ کرنے کا بٹن"
+  },
+  "settingsSaved": {
+    "message": "ترتیبات محفوظ ہو گئیں",
+    "description": "ترتیبات کے محفوظ ہونے کی اطلاع"
+  },
+  "settingsReset": {
+    "message": "ری سیٹ مکمل ہو گیا",
+    "description": "ترتیبات کے ری سیٹ ہونے کی اطلاع"
+  },
+  "resetting": {
+    "message": "ری سیٹ ہو رہا ہے...",
+    "description": "ری سیٹ ہونے کی اطلاع"
+  },
+  "loadError": {
+    "message": "ترتیبات لوڈ نہیں ہو سکیں",
+    "description": "ترتیبات کے لوڈ نہ ہونے کی خرابی کا پیغام"
+  },
+  "saveError": {
+    "message": "ترتیبات محفوظ نہیں ہو سکیں",
+    "description": "ترتیبات کے محفوظ نہ ہونے کی خرابی کا پیغام"
+  },
+  "resetError": {
+    "message": "ترتیبات ری سیٹ نہیں ہو سکیں",
+    "description": "ترتیبات کے ری سیٹ نہ ہونے کی خرابی کا پیغام"
+  },
+  "themeLight": {
+    "message": "لائٹ",
+    "description": "لائٹ تھیم"
+  },
+  "themeDark": {
+    "message": "ڈارک",
+    "description": "ڈارک تھیم"
+  },
+  "buyMeACoffee": {
+    "message": "مجھے ایک کافی خریدیں",
+    "description": "عطیہ دینے کا بٹن"
+  },
+  "toggleTheme": {
+    "message": "تھیم تبدیل کریں",
+    "description": "تھیم تبدیل کرنے کا بٹن"
+  },
+  "toggleLanguage": {
+    "message": "زبان تبدیل کریں",
+    "description": "زبان تبدیل کرنے کا بٹن"
+  },
+  "donationTooltip": {
+    "message": "اگر آپ کو یہ کام پسند آیا تو، براہ کرم میری حمایت کریں۔ شکریہ :)",
+    "description": "عطیہ دینے کا ٹول ٹپ"
+  },
+  "rightButtonHint": {
+    "message": "ماؤس کا دایاں بٹن دبائے رکھیں",
+    "description": "دائیں بٹن کا ہنٹ"
+  },
+  "leftButtonHint": {
+    "message": "ماؤس کا بایاں بٹن دبائے رکھیں",
+    "description": "بائیں بٹن کا ہنٹ"
+  },
+  "foregroundAction": {
+    "message": "فارگراؤنڈ میں کھولیں",
+    "description": "فارگراؤنڈ میں کھولنے کا عمل"
+  },
+  "backgroundAction": {
+    "message": "بیک گراؤنڈ میں کھولیں",
+    "description": "بیک گراؤنڈ میں کھولنے کا عمل"
+  },
+  "dragSearchEngine": {
+    "message": "ڈریگ سرچ انجن URL",
+    "description": "ڈریگ سرچ انجن URL کی ترتیب"
+  },
+  "linkPreview": {
+    "message": "پاپ اپ ویو",
+    "description": "پاپ اپ ویو کا عنوان"
+  },
+  "quickNavTooltip": {
+    "message": "بائیں: {next} پر جائیں | دائیں: {prev} پر جائیں",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "ہوور + موڈیفائر کی کے ساتھ پاپ اپ دکھائیں",
+    "description": "پاپ اپ ویو کا ہنٹ"
+  },
+  "enableLinkPreview": {
+    "message": "پاپ اپ ویو فعال کریں",
+    "description": "پاپ اپ ویو فعال کرنے کا آپشن"
+  },
+  "enableTextSearchPreview": {
+    "message": "ٹیکسٹ سلیکشن سرچ فعال کریں",
+    "description": "ٹیکسٹ سلیکشن سرچ فعال کرنے کا آپشن"
+  },
+  "modifierKey": {
+    "message": "موڈیفائر کی",
+    "description": "موڈیفائر کی کی ترتیب"
+  },
+  "controlKey": {
+    "message": "کنٹرول کی",
+    "description": "کنٹرول کی کا آپشن"
+  },
+  "altKey": {
+    "message": "الٹ کی",
+    "description": "الٹ کی کا آپشن"
+  },
+  "shiftKey": {
+    "message": "شفٹ کی",
+    "description": "شفٹ کی کا آپشن"
+  },
+  "noKey": {
+    "message": "کوئی کی نہیں",
+    "description": "کوئی کی نہ ہونے کا آپشن"
+  },
+  "previewDelay": {
+    "message": "پاپ اپ ڈیلے (ms)",
+    "description": "پاپ اپ ڈیلے کی ترتیب"
+  },
+  "maxPreviewWindows": {
+    "message": "زیادہ سے زیادہ پاپ اپ ونڈوز",
+    "description": "زیادہ سے زیادہ پاپ اپ ونڈوز کی ترتیب"
+  },
+  "previewWidth": {
+    "message": "پاپ اپ کی چوڑائی",
+    "description": "پاپ اپ کی چوڑائی کی ترتیب"
+  },
+  "previewHeight": {
+    "message": "پاپ اپ کی اونچائی",
+    "description": "پاپ اپ کی اونچائی کی ترتیب"
+  },
+  "previewPosition": {
+    "message": "پاپ اپ کی پوزیشن",
+    "description": "پاپ اپ کی پوزیشن کی ترتیب"
+  },
+  "cursorPosition": {
+    "message": "کرسر پوزیشن",
+    "description": "کرسر پوزیشن کا آپشن"
+  },
+  "centerScreen": {
+    "message": "اسکرین کا مرکز",
+    "description": "اسکرین کے مرکز کا آپشن"
+  },
+  "cornerScreen": {
+    "message": "اسکرین کا کونہ",
+    "description": "اسکرین کے کونے کا آپشن"
+  },
+  "searchEngine": {
+    "message": "پاپ اپ سرچ انجن URL",
+    "description": "پاپ اپ سرچ انجن URL کی ترتیب"
+  },
+  "searchEngineExamples": {
+    "message": "سرچ ٹرم کے لیے {q} استعمال کریں، مثال فارمیٹ:",
+    "description": "سرچ انجن مثالوں کی تفصیل"
+  },
+  "googleExample": {
+    "message": "گوگل سرچ: https://www.google.com/search?q={q}",
+    "description": "گوگل سرچ کی مثال"
+  },
+  "googleTranslateExample": {
+    "message": "گوگل ٹرانسلیٹ: https://translate.google.com/?sl=auto&tl=ur&text={q}&op=translate",
+    "description": "گوگل ٹرانسلیٹ کی مثال"
+  },
+  "localSearchExample": {
+    "message": "مثال: https://www.google.com.pk/search?q={q}",
+    "description": "لوکل سرچ URL کی مثال"
+  },
+  "bingExample": {
+    "message": "بنگ سرچ: https://www.bing.com/search?q={q}",
+    "description": "بنگ سرچ کی مثال"
+  },
+  "wheelTip": {
+    "message": "ویلیو ایڈجسٹ کرنے کے لیے ماؤس وہیل استعمال کریں",
+    "description": "وہیل کا ٹپ"
+  },
+  "modifierKeyDelayTip": {
+    "message": "موڈیفائر کی استعمال کرتے وقت، زیادہ سے زیادہ ڈیلے 300ms پر سیٹ ہوتا ہے",
+    "description": "موڈیفائر کی ڈیلے کا ٹپ"
+  },
+  "welcomeTitle": {
+    "message": "ماؤس جیسچرز توسیع میں خوش آمدید",
+    "description": "خوش آمدید پیج کا عنوان"
+  },
+  "welcomeDescription": {
+    "message": "ماؤس جیسچرز توسیع انسٹال کرنے کے لیے شکریہ! یہ توسیع ماؤس جیسچرز کی بھرپور فعالیت، ذہین ٹیب مینجمنٹ، پاپ اپ ونڈو کی صلاحیتیں اور بہتر بصری تجربہ فراہم کرتی ہے تاکہ آپ ویب کو زیادہ مؤثر طریقے سے براؤز کر سکیں۔ ہم نے جیسچر ریکگنیشن الگورتھم کو زیادہ ایرر ٹالرنس کے ساتھ بہتر بنایا ہے، جس سے جیسچرز کو درست طور پر پہچانا جا سکتا ہے چاہے وہ مکمل طور پر درست نہ ہوں۔ نیا پاپ اپ ونڈو فیچر آپ کو ٹیبز سوئچ کیے بغیر لنک مواد پاپ اپ ونڈوز میں دیکھنے کی اجازت دیتا ہے۔ توسیع 29 زبانوں اور لائٹ/ڈارک تھیمز کی بھی حمایت کرتی ہے تاکہ صارف کا تجربہ مزید بہتر ہو سکے۔",
+    "description": "خوش آمدید پیج کی تفصیل"
+  },
+  "gesturesDescription": {
+    "message": "ذیل میں، ماؤس کے دائیں بٹن سے ڈریگ کر کے استعمال کرنے کے لیے پہلے سے سیٹ ماؤس جیسچرز ہیں:",
+    "description": "جیسچرز کی تفصیل"
+  },
+  "extensionName": {
+    "message": "ماؤس جیسچرز توسیع",
+    "description": "مکمل توسیع کا نام"
+  },
+  "coreFeatures": {
+    "message": "کور فیچرز",
+    "description": "کور فیچرز کا عنوان"
+  },
+  "utilitiesFeatures": {
+    "message": "یوٹیلیٹیز",
+    "description": "یوٹیلیٹیز کا عنوان"
+  },
+  "usageTips": {
+    "message": "استعمال کے ٹپس",
+    "description": "استعمال کے ٹپس کا عنوان"
+  },
+  "smartGestureRecognition": {
+    "message": "سمارٹ جیسچر ریکگنیشن: جیسچرز بالکل مکمل نہ ہونے پر بھی درست طریقے سے پہچانے جاتے ہیں، پیج لوڈ ہوتے وقت کام کرتا ہے",
+    "description": "سمارٹ جیسچر ریکگنیشن کی تفصیل"
+  },
+  "tabManagementTitle": {
+    "message": "ٹیب مینجمنٹ",
+    "description": "ٹیب مینجمنٹ کا عنوان"
+  },
+  "tabManagementDesc": {
+    "message": ": ڈپلیکیٹ ٹیب ڈٹیکشن، آپشنل آٹو کلوزنگ، پیریڈک میموری آپٹیمائزیشن",
+    "description": "ٹیب مینجمنٹ کی تفصیل"
+  },
+  "superDragTitle": {
+    "message": "سپر ڈریگ",
+    "description": "سپر ڈریگ کا عنوان"
+  },
+  "superDragDesc": {
+    "message": ": لنکس اور تصاویر کو نئے ٹیبز میں ڈریگ کریں، منتخب متن کو سرچ کے لیے ڈریگ کریں",
+    "description": "سپر ڈریگ کی تفصیل"
+  },
+  "linkPreviewTitle": {
+    "message": "پاپ اپ ویو",
+    "description": "لنک پریویو کا عنوان"
+  },
+  "linkPreviewDesc": {
+    "message": ": لنکس پر ہوور کرتے وقت موڈیفائر کی (ڈیفالٹ: شفٹ) دبائے رکھیں تاکہ ٹارگٹ پیجز کو پاپ اپ ونڈوز میں دیکھ سکیں",
+    "description": "لنک پریویو کی تفصیل"
+  },
+  "textSelectionPreview": {
+    "message": "متن منتخب کریں اور موڈیفائر کی دبا کر کسٹم سرچ انجن سپورٹ کے ساتھ پاپ اپ ونڈو میں فوری طور پر سرچ کریں",
+    "description": "ٹیکسٹ سلیکشن پریویو کی تفصیل"
+  },
+  "previewTip": {
+    "message": "آپ ایک ہی وقت میں متعدد پاپ اپ ونڈوز کھول سکتے ہیں",
+    "description": "پریویو کا ٹپ"
+  },
+  "dragDirection": {
+    "message": "ٹیب کھلنے کے طریقے کا تعین کرنے کے لیے ڈریگ کی سمت کسٹمائز کریں: ڈیفالٹ طور پر بیک گراؤنڈ میں کھولیں",
+    "description": "ڈریگ کی سمت کی تفصیل"
+  },
+  "debugPanelTitle": {
+    "message": "ماؤس جیسچرز ڈیبگ معلومات",
+    "description": "ڈیبگ پینل کا عنوان"
+  },
+  "debugPanelDesc": {
+    "message": ": کھولنے کے لیے Alt+D دبائیں، ریل ٹائم جیسچر معلومات کا تجزیہ کریں، حالت برقرار رکھیں",
+    "description": "ڈیبگ پینل کی تفصیل"
+  },
+  "oneClickCopy": {
+    "message": "آسان شیئرنگ کے لیے ڈیبگ معلومات کو ایک کلک میں کاپی کریں، ملٹی لینگویج سپورٹ کے ساتھ",
+    "description": "ایک کلک کاپی کی تفصیل"
+  },
+  "mediaPreview": {
+    "message": "بہتر میڈیا پریویو: بہتر تصویر ہوور افیکٹس اور آپٹیمائزڈ ویڈیو تھمب نیلز",
+    "description": "میڈیا پریویو کی تفصیل"
+  },
+  "adaptiveTheme": {
+    "message": "ایڈیپٹیو تھیمز: پیج بیک گراؤنڈ کے مطابق ویژوئل سٹائل ایڈجسٹ کرتا ہے، لائٹ/ڈارک موڈ سپورٹ",
+    "description": "ایڈیپٹیو تھیم کی تفصیل"
+  },
+  "gestureTrail": {
+    "message": "جیسچر ٹریلز اسکرین پر کسٹمائز ایبل رنگ اور چوڑائی کے ساتھ دکھائی جاتی ہیں",
+    "description": "جیسچر ٹریل کی تفصیل"
+  },
+  "clickIcon": {
+    "message": "فیچرز کو فعال/غیرفعال کرنے، زبان سیٹ کرنے، تھیم اور مزید کے لیے توسیع آئیکن پر کلک کریں",
+    "description": "آئیکن کلک کی تفصیل"
+  },
+  "languageSupport": {
+    "message": "29 زبان سپورٹ کرتا ہے، براؤزر کی زبان کے مطابق خودکار طور پر ایڈجسٹ ہوتا ہے",
+    "description": "زبان کی سپورٹ کی تفصیل"
+  },
+  "enableAutoClose": {
+    "message": "براؤزر ریسورس استعمال کو نمایاں طور پر کم کرنے کے لیے ڈپلیکیٹ ٹیبز کو خودکار بند کرنے کا فیچر فعال کریں",
+    "description": "آٹو کلوز فعال کرنے کی تفصیل"
+  },
+  "rightClickMacLinux": {
+    "message": "لینکس اور میکوس سسٹمز پر براؤزر کنٹیکسٹ مینو دکھانے کے لیے دائیں کلک کو ڈبل کریں",
+    "description": "میک/لینکس دائیں کلک کا ٹپ"
+  },
+  "duplicateTab": {
+    "message": "ڈپلیکیٹ ٹیب",
+    "description": "ڈپلیکیٹ ٹیب"
+  },
+  "duplicateTabsDetected": {
+    "message": "$1 ڈپلیکیٹ ٹیبز ملیں",
+    "description": "ڈپلیکیٹ ٹیبز کی ڈٹیکشن کی اطلاع کا عنوان"
+  },
+  "duplicateTabsCount": {
+    "message": "$1 ڈپلیکیٹ ٹیبز ہیں",
+    "description": "ڈپلیکیٹ ٹیبز کی تعداد کا پیغام"
+  },
+  "duplicateTabsSingle": {
+    "message": "1 ڈپلیکیٹ ٹیب ہے",
+    "description": "ایک ڈپلیکیٹ ٹیب کا پیغام"
+  },
+  "autoClosedTabs": {
+    "message": "$1 ڈپلیکیٹ ٹیبز خودکار طور پر بند ہو گئے",
+    "description": "آٹو کلوزڈ ٹیبز کی اطلاع"
+  },
+  "closeBtn": {
+    "message": "ڈپلیکیٹس بند کریں",
+    "description": "ڈپلیکیٹس بند کرنے کا بٹن"
+  },
+  "ignoreBtn": {
+    "message": "نظر انداز کریں",
+    "description": "نظر انداز کرنے کا بٹن"
+  },
+  "untitledTab": {
+    "message": "بے عنوان ٹیب",
+    "description": "بے عنوان ٹیب"
+  },
+  "morePages": {
+    "message": "...اور $1 مزید پیجز",
+    "description": "مزید پیجز کا ٹپ"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "ڈپلیکیٹ ٹیبز کی اطلاع دکھانے میں خرابی:",
+    "description": "ڈپلیکیٹ ٹیبز کی اطلاع دکھانے میں خرابی کا پیغام"
+  },
+  "errorSendCloseRequest": {
+    "message": "کلوز ریکویسٹ بھیجنے میں خرابی:",
+    "description": "کلوز ریکویسٹ بھیجنے میں خرابی کا پیغام"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "ڈپلیکیٹ ٹیبز بند کرنے میں خرابی:",
+    "description": "ڈپلیکیٹ ٹیبز بند کرنے میں خرابی کا پیغام"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "انور ریکویسٹ بھیجنے میں خرابی:",
+    "description": "انور ریکویسٹ بھیجنے میں خرابی کا پیغام"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "ڈپلیکیٹ ٹیبز نظر انداز کرنے میں خرابی:",
+    "description": "ڈپلیکیٹ ٹیبز نظر انداز کرنے میں خرابی کا پیغام"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "ڈیبگ پینل اپڈیٹ کرنے میں خرابی:",
+    "description": "ڈیبگ پینل اپڈیٹ کرنے میں خرابی کا پیغام"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "بیک گراؤنڈ کلر ڈٹیکٹ کرنے میں خرابی:",
+    "description": "بیک گراؤنڈ کلر ڈٹیکٹ کرنے میں خرابی کا پیغام"
+  },
+  "errorDetectImageBorder": {
+    "message": "تصویر بارڈر ریڈیس ڈٹیکٹ کرنے میں خرابی:",
+    "description": "تصویر بارڈر ریڈیس ڈٹیکٹ کرنے میں خرابی کا پیغام"
+  },
+  "errorSetMutationObserver": {
+    "message": "میوٹیشن آبزرور سیٹ کرنے میں خرابی:",
+    "description": "میوٹیشن آبزرور سیٹ کرنے میں خرابی کا پیغام"
+  },
+  "errorCheckElementVisibility": {
+    "message": "ایلیمنٹ وزیبلٹی چیک کرنے میں خرابی:",
+    "description": "ایلیمنٹ وزیبلٹی چیک کرنے میں خرابی کا پیغام"
+  },
+  "errorProcessBorderRadius": {
+    "message": "بارڈر ریڈیس پروسیس کرنے میں خرابی:",
+    "description": "بارڈر ریڈیس پروسیس کرنے میں خرابی کا پیغام"
+  },
+  "errorDetectImageBackground": {
+    "message": "تصویر بیک گراؤنڈ ڈٹیکٹ کرنے میں خرابی:",
+    "description": "تصویر بیک گراؤنڈ ڈٹیکٹ کرنے میں خرابی کا پیغام"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "آٹو کلوز کامیابی کی اطلاع دکھانے میں خرابی:",
+    "description": "آٹو کلوز کامیابی کی اطلاع دکھانے میں خرابی کا پیغام"
+  },
+  "noForwardPage": {
+    "message": "ہسٹری میں آگے کا پیج نہیں ہے",
+    "description": "آگے کا پیج نہ ہونے کا پیغام"
+  },
+  "noBackPage": {
+    "message": "ہسٹری میں پیچھے کا پیج نہیں ہے",
+    "description": "پیچھے کا پیج نہ ہونے کا پیغام"
+  },
+  "navigationFailed": {
+    "message": "نیویگیشن ناکام ہو گئی",
+    "description": "نیویگیشن ناکام ہونے کا پیغام"
+  },
+  "tryingNextPage": {
+    "message": "اگلا پیج کوشش کر رہا ہے...",
+    "description": "اگلا پیج کوشش کرنے کا پیغام"
+  },
+  "nextPageSuccess": {
+    "message": "اگلے پیج پر ری ڈائریکٹ ہو گیا",
+    "description": "اگلے پیج کی کامیابی کا پیغام"
+  },
+  "noNextPage": {
+    "message": "اگلے پیج کا لنک نہیں ملا",
+    "description": "اگلے پیج کا لنک نہ ہونے کا پیغام"
+  },
+  "invalidGesture": {
+    "message": "غلط جیسچر",
+    "description": "غلط جیسچر کا پیغام"
+  },
+  "nextPage": {
+    "message": "اگلا پیج",
+    "description": "اگلے پیج کا عمل"
+  },
+  "errorReadPixel": {
+    "message": "پکسل پڑھنے میں خرابی:",
+    "description": "پکسل پڑھنے میں خرابی کا پیغام"
+  },
+  "errorCanvasRead": {
+    "message": "کینوس پڑھنے میں خرابی:",
+    "description": "کینوس پڑھنے میں خرابی کا پیغام"
+  },
+  "errorCanvasDraw": {
+    "message": "کینوس پر ڈرا کرنے میں خرابی:",
+    "description": "کینوس پر ڈرا کرنے میں خرابی کا پیغام"
+  },
+  "errorAccessIframe": {
+    "message": "iframe تک رسائی میں خرابی:",
+    "description": "iframe تک رسائی میں خرابی کا پیغام"
+  },
+  "errorMutationObserver": {
+    "message": "میوٹیشن آبزرور سیٹ کرنے میں خرابی:",
+    "description": "میوٹیشن آبزرور سیٹ کرنے میں خرابی کا پیغام"
+  },
+  "errorCheckVisibility": {
+    "message": "ایلیمنٹ وزیبلٹی چیک کرنے میں خرابی:",
+    "description": "ایلیمنٹ وزیبلٹی چیک کرنے میں خرابی کا پیغام"
+  },
+  "errorProcessCorners": {
+    "message": "کونوں کو پروسیس کرنے میں خرابی:",
+    "description": "کونوں کو پروسیس کرنے میں خرابی کا پیغام"
+  },
+  "languageChanged": {
+    "message": "زبان $1 سے $2 میں تبدیل ہو گئی",
+    "description": "زبان کی تبدیلی کی اطلاع"
+  },
+  "switchedToChinese": {
+    "message": "چینی میں تبدیل ہو گیا",
+    "description": "چینی میں تبدیل ہونے کی اطلاع"
+  },
+  "switchedToEnglish": {
+    "message": "انگریزی میں تبدیل ہو گیا",
+    "description": "انگریزی میں تبدیل ہونے کی اطلاع"
+  },
+  "debugSystemSettings": {
+    "message": "سسٹم سیٹنگز",
+    "description": "ڈیبگ پینل سسٹم سیٹنگز سیکشن"
+  },
+  "debugAngleThreshold": {
+    "message": "اینگل تھریشولڈ",
+    "description": "ڈیبگ پینل اینگل تھریشولڈ سیٹنگ"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "ڈائریکشن چینج تھریشولڈ",
+    "description": "ڈیبگ پینل ڈائریکشن چینج تھریشولڈ سیٹنگ"
+  },
+  "debugMinGestureDistance": {
+    "message": "مینیمم جیسچر ڈسٹنس",
+    "description": "ڈیبگ پینل مینیمم جیسچر ڈسٹنس سیٹنگ"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "مینیمم ڈائریکشن سیگمنٹ لینتھ",
+    "description": "ڈیبگ پینل مینیمم ڈائریکشن سیگمنٹ لینتھ سیٹنگ"
+  },
+  "debugMinGestureComplexity": {
+    "message": "مینیمم جیسچر کمپلیکسٹی",
+    "description": "ڈیبگ پینل مینیمم جیسچر کمپلیکسٹی سیٹنگ"
+  },
+  "debugLatestGestureInfo": {
+    "message": "تازہ ترین جیسچر معلومات",
+    "description": "ڈیبگ پینل تازہ ترین جیسچر معلومات سیکشن"
+  },
+  "debugPoints": {
+    "message": "پوائنٹس",
+    "description": "ڈیبگ پینل پوائنٹس کی تعداد"
+  },
+  "debugSimplifiedAfter": {
+    "message": "سیمپلیفیکیشن کے بعد",
+    "description": "ڈیبگ پینل سیمپلیفیکیشن کے بعد کا ٹیکسٹ"
+  },
+  "debugTotalDistance": {
+    "message": "کل ڈسٹنس",
+    "description": "ڈیبگ پینل کل ڈسٹنس"
+  },
+  "debugDirectionRecognition": {
+    "message": "ڈائریکشن ریکگنیشن",
+    "description": "ڈیبگ پینل ڈائریکشن ریکگنیشن سیکشن"
+  },
+  "debugOriginalDirections": {
+    "message": "اصل ڈائریکشنز",
+    "description": "ڈیبگ پینل اصل ڈائریکشنز"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "ریپیٹیٹیو پیٹرن ڈٹیکٹ ہوا",
+    "description": "ڈیبگ پینل ریپیٹیٹیو پیٹرن ڈٹیکشن"
+  },
+  "debugRepetitivePatternType": {
+    "message": "ریپیٹیٹیو پیٹرن ٹائپ",
+    "description": "ڈیبگ پینل ریپیٹیٹیو پیٹرن ٹائپ"
+  },
+  "debugDirectionMerging": {
+    "message": "ڈائریکشن مرجنگ",
+    "description": "ڈیبگ پینل ڈائریکشن مرجنگ سیکشن"
+  },
+  "debugMergedDirections": {
+    "message": "مرجڈ ڈائریکشنز",
+    "description": "ڈیبگ پینل مرجڈ ڈائریکشنز"
+  },
+  "debugDirectionDistances": {
+    "message": "ڈائریکشن ڈسٹنسز",
+    "description": "ڈیبگ پینل ڈائریکشن ڈسٹنسز"
+  },
+  "debugFinalResult": {
+    "message": "فائنل ریزلٹ",
+    "description": "ڈیبگ پینل فائنل ریزلٹ سیکشن"
+  },
+  "debugRecognizedGesture": {
+    "message": "پہچانا گیا جیسچر",
+    "description": "ڈیبگ پینل پہچانا گیا جیسچر"
+  },
+  "debugSimilarity": {
+    "message": "سیمیلیئرٹی",
+    "description": "ڈیبگ پینل سیمیلیئرٹی"
+  },
+  "debugYes": {
+    "message": "ہاں",
+    "description": "ڈیبگ پینل ہاں"
+  },
+  "debugNo": {
+    "message": "نہیں",
+    "description": "ڈیبگ پینل نہیں"
+  },
+  "debugNone": {
+    "message": "کوئی نہیں",
+    "description": "ڈیبگ پینل کوئی نہیں"
+  },
+  "debugInvalidGesture": {
+    "message": "غیر معتبر حرکت",
+    "description": "ڈیبگ پینل غیر معتبر حرکت"
+  },
+  "debugWaitingForGestureData": {
+    "message": "جیسچر ڈیٹا کا انتظار کر رہا ہے...",
+    "description": "ڈیبگ پینل جیسچر ڈیٹا کا انتظار"
+  },
+  "debugCopyButton": {
+    "message": "ڈیبگ معلومات کاپی کریں",
+    "description": "ڈیبگ پینل کاپی بٹن"
+  },
+  "debugCopySuccess": {
+    "message": "کلپ بورڈ پر کاپی ہو گیا!",
+    "description": "ڈیبگ پینل کاپی کامیابی کا پیغام"
+  },
+  "debugCopyFailed": {
+    "message": "کاپی کرنا ناکام ہوا، براہ کرم دستی طور پر منتخب اور کاپی کریں",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "تلاش: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "پاپ اپ بلاک ہو گیا",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "لنک پریویو فنکشنلٹی کو فعال کرنے کے لیے اس سائٹ کے لیے پاپ اپس کی اجازت دیں۔",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "جسچر موڈ تیار ہے",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...اور $1 مزید صفحات",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "اس لنک کے ذریعے خریداری کر کے مصنف کی حمایت کریں",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "ٹیب کا ڈیگر لکھیں",
+    "description": "Show tab count badge option"
+  }
+}

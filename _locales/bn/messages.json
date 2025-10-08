@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "মাউস জেসচার",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "একটি Chrome/Edge এক্সটেনশন যা মাউস জেসচার, সুপার ড্র্যাগ কার্যকারিতা এবং পপআপ দৃশ্য সমর্থন করে",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "মাউস জেসচার",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "অন্তর্নির্মিত জেসচার",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "সুপার ড্র্যাগ বৈশিষ্ট্য",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "উপরে ড্র্যাগ করুন",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "ডানে ড্র্যাগ করুন",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "নিচে ড্র্যাগ করুন",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "বামে ড্র্যাগ করুন",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "সামনে লিঙ্ক খুলুন",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "পেছনে লিঙ্ক খুলুন",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "সুপার ড্র্যাগ বৈশিষ্ট্য লিঙ্ক, ছবি এবং নির্বাচিত টেক্সটের জন্য কাজ করে। যখন নির্বাচিত টেক্সট একটি URL হয়, এটি একটি লিঙ্ক হিসেবে খুলবে; অন্যথায় এটি অনুসন্ধান করা হবে। ড্র্যাগের দিক নির্ধারণ করে নতুন ট্যাব কিভাবে খোলা হয়।",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "বাম",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "ডান",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "উপর",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "নিচ",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "নিচ তারপর ডান",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "বাম তারপর উপর",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "ডান তারপর উপর",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "ডান তারপর নিচ",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "উপর তারপর বাম",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "উপর তারপর ডান",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "নিচ তারপর বাম",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "বাম তারপর নিচ",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "উপর তারপর নিচ",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "নিচ তারপর উপর",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "বাম তারপর ডান",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "ডান তারপর বাম",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "ফিরে যান",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "এগিয়ে যান",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "উপরে স্ক্রল করুন",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "নিচে স্ক্রল করুন",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "বামে স্ক্রল করুন",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "ডানে স্ক্রল করুন",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "জোরপূর্বক রিফ্রেশ করুন",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "ট্যাব বন্ধ করুন",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "বন্ধ ট্যাব পুনরায় খুলুন",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "নতুন ট্যাব",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "রিফ্রেশ",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "পূর্ববর্তী ট্যাব",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "পরবর্তী ট্যাব",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "লোডিং বন্ধ করুন",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "সব ট্যাব বন্ধ করুন",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "নিচে স্ক্রল করুন",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "উপরে স্ক্রল করুন",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "বাম প্রান্তে স্ক্রল করুন",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "ডান প্রান্তে স্ক্রল করুন",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "কোন কর্ম নেই",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "নতুন উইন্ডো",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "নতুন ব্যক্তিগত উইন্ডো",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "অন্যান্য ট্যাব বন্ধ করুন",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "ডানে ট্যাব বন্ধ করুন",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "ফুলস্ক্রিন টগল করুন",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "বামে ট্যাব বন্ধ করুন",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "সব ট্যাব পুনরায় লোড করুন",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "ট্যাব পিন/আনপিন করুন",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "ট্যাব নিঃশব্দ/শব্দ করুন",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "অন্যান্য ট্যাব নিঃশব্দ করুন",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "উইন্ডো সর্বোচ্চ/পুনরুদ্ধার করুন",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "উইন্ডো ছোট করুন",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "সেটিংস",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "মাউস জেসচার সক্রিয় করুন",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "জেসচার ট্রেইল দেখান",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "জেসচার ইঙ্গিত দেখান",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "ট্রেইল রং",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "ট্রেইল প্রস্থ",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "সুপার ড্র্যাগ সক্রিয় করুন",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "ড্র্যাগ টেক্সট অনুসন্ধান সক্রিয় করুন",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "ছবি প্রিভিউ সক্রিয় করুন",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "ডুপ্লিকেট ট্যাব শনাক্ত করুন",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "ডুপ্লিকেট ট্যাব স্বয়ংক্রিয়ভাবে বন্ধ করুন",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "স্মুথ স্ক্রল সক্রিয় করুন",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "সেটিংস প্রয়োগ করা হয়েছে",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "রিসেট",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "সেটিংস প্রয়োগ করা হয়েছে",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "রিসেট সম্পূর্ণ",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "রিসেট করা হচ্ছে...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "সেটিংস লোড করতে ব্যর্থ",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "সেটিংস সেভ করতে ব্যর্থ",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "সেটিংস রিসেট করতে ব্যর্থ",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "হালকা",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "গাঢ়",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "আমাকে একটি কফি কিনে দিন",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "থিম পরিবর্তন করুন",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "ভাষা পরিবর্তন করুন",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "এই কাজটি পছন্দ হলে অনুগ্রহ করে আমাকে সাহায্য করুন। ধন্যবাদ :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "মাউসের ডান বোতাম চেপে রাখুন",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "মাউসের বাম বোতাম চেপে রাখুন",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "সামনে খুলুন",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "পেছনে খুলুন",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "ড্র্যাগ অনুসন্ধান ইঞ্জিন URL",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "পপআপ ভিউ",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "বাম: {next} | ডান: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "হোভার + কী করে পপআপ দেখান",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "পপআপ ভিউ সক্রিয় করুন",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "টেক্সট নির্বাচন অনুসন্ধান সক্রিয় করুন",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "ট্রিগার কী",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Ctrl কী",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Alt কী",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Shift কী",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "কোন কী প্রয়োজন নেই",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "পপআপ বিলম্ব (মিলিসেকেন্ড)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "সর্বোচ্চ পপআপ উইন্ডো",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "উইন্ডো প্রস্থ",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "উইন্ডো উচ্চতা",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "উইন্ডো অবস্থান",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "কার্সর অবস্থান",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "স্ক্রিনের কেন্দ্র",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "স্ক্রিনের কোণ",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "পপআপ অনুসন্ধান ইঞ্জিন URL",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "অনুসন্ধান শব্দের জন্য {q} ব্যবহার করুন, উদাহরণ ফরম্যাট:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Google অনুসন্ধান: https://www.google.com.bd/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google অনুবাদ: https://translate.google.com.bd/?sl=auto&tl=bn&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "Bdnews24 অনুসন্ধান: https://bangla.bdnews24.com/search/?q={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Bing অনুসন্ধান: https://www.bing.com/search?q={q}&setlang=bn",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "মান সমন্বয় করতে মাউস হুইল ব্যবহার করুন",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "ট্রিগার কী ব্যবহার করার সময়, সর্বোচ্চ বিলম্ব ৩০০মিলিসেকেন্ডে সীমাবদ্ধ",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "মাউস জেসচার এক্সটেনশনে স্বাগতম",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "মাউস জেসচার এক্সটেনশন ইনস্টল করার জন্য ধন্যবাদ! এই এক্সটেনশনটি সমৃদ্ধ মাউস জেসচার কার্যকারিতা, বুদ্ধিমান ট্যাব ব্যবস্থাপনা, পপআপ ভিউ ক্ষমতা এবং উন্নত ভিজ্যুয়াল অভিজ্ঞতা প্রদান করে যা আপনাকে আরও দক্ষতার সাথে ওয়েব ব্রাউজ করতে সাহায্য করে। আমরা বৃদ্ধি ত্রুটি সহনশীলতার সাথে জেসচার স্বীকৃতি অ্যালগরিদম অপ্টিমাইজ করেছি, যা জেসচারগুলি নিখুঁতভাবে আঁকা না হলেও সঠিকভাবে স্বীকৃত হতে দেয়। নতুন পপআপ ভিউ বৈশিষ্ট্য আপনাকে ট্যাব পরিবর্তন ছাড়াই পপআপ উইন্ডোতে লিঙ্ক সামগ্রী দেখতে দেয়। এক্সটেনশনটি ২৩টি ভাষা এবং আলো/অন্ধকার থিম সমর্থন করে আরও ভাল ব্যবহারকারীর অভিজ্ঞতার জন্য।",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "নিম্নলিখিত প্রিসেট মাউস জেসচারগুলি আপনি ডান মাউস বোতাম দিয়ে ড্র্যাগ করে ব্যবহার করতে পারেন:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "মাউস জেসচার এক্সটেনশন",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "মূল বৈশিষ্ট্য",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "ইউটিলিটি টুলস",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "ব্যবহারের টিপস",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "স্মার্ট জেসচার স্বীকৃতি: অপূর্ণ হলেও সঠিকভাবে জেসচার চিহ্নিত করে, পেজ লোডিংয়ের সময় কাজ করে",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "ট্যাব ব্যবস্থাপনা",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": স্মার্ট ডুপ্লিকেট সনাক্তকরণ, ঐচ্ছিক স্বয়ংক্রিয় বন্ধ, পর্যায়ক্রমিক মেমরি অপ্টিমাইজেশন",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "সুপার ড্র্যাগ",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": লিঙ্ক এবং ছবি নতুন ট্যাবে ড্র্যাগ করুন, নির্বাচিত টেক্সট অনুসন্ধানের জন্য ড্র্যাগ করুন",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "পপআপ ভিউ",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": লিঙ্কের উপর হোভার করার সময় মডিফায়ার কী (ডিফল্ট: Shift) চেপে রাখুন পপআপ উইন্ডোতে লক্ষ্য পেজ প্রিভিউ করতে",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "টেক্সট নির্বাচন করুন এবং তাৎক্ষণিকভাবে পপআপ উইন্ডোতে অনুসন্ধান করতে মডিফায়ার কী চাপুন, কাস্টম অনুসন্ধান ইঞ্জিন সমর্থনসহ",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "আপনি একসাথে একাধিক পপআপ উইন্ডো খুলতে পারেন",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "ট্যাব খোলার পদ্ধতি নির্ধারণ করতে ড্র্যাগ দিক কাস্টমাইজ করুন: ডিফল্টভাবে পেছনে খোলা",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "মাউস জেসচার ডিবাগ তথ্য",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": খুলতে Alt+D চাপুন, রিয়েল-টাইমে জেসচার তথ্য বিশ্লেষণ করুন, অবস্থা বজায় রাখে",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "সহজ শেয়ারিংয়ের জন্য ডিবাগ তথ্যের এক-ক্লিক কপি, বহু-ভাষা সমর্থনসহ",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "উন্নত মিডিয়া প্রিভিউ: উন্নত ছবি হোভার এফেক্ট এবং অপ্টিমাইজড ভিডিও পোস্টার ছবি",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "অভিযোজিত থিম: পেজের পটভূমির ভিত্তিতে ভিজ্যুয়াল শৈলী সমন্বয় করে, আলো/অন্ধকার মোড সমর্থন করে",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "কাস্টমাইজযোগ্য রং এবং প্রস্থ সহ স্ক্রিনে প্রদর্শিত জেসচার ট্রেইল",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "বৈশিষ্ট্য সক্রিয়/নিষ্ক্রিয় করতে, ভাষা, থিম এবং আরও সেট করতে এক্সটেনশন আইকনে ক্লিক করুন",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "29 ভাষা সমর্থন করে, স্বয়ংক্রিয়ভাবে ব্রাউজার ভাষার সাথে খাপ খায়",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "ব্রাউজার রিসোর্স ব্যবহার উল্লেখযোগ্যভাবে কমাতে স্বয়ংক্রিয় বন্ধ ডুপ্লিকেট ট্যাব বৈশিষ্ট্য সক্রিয় করুন",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "Linux এবং macOS সিস্টেমে, ব্রাউজার কনটেক্সট মেনু দেখানোর জন্য ডাবল রাইট-ক্লিক করুন",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "ডুপ্লিকেট ট্যাব",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "$1টি ডুপ্লিকেট ট্যাব পাওয়া গেছে",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "$1টি ডুপ্লিকেট ট্যাব রয়েছে",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "১টি ডুপ্লিকেট ট্যাব রয়েছে",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "স্বয়ংক্রিয়ভাবে $1টি ডুপ্লিকেট ট্যাব বন্ধ করা হয়েছে",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "ডুপ্লিকেট বন্ধ করুন",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "উপেক্ষা করুন",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "শিরোনামহীন ট্যাব",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...এবং আরো $1টি পেজ",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "ডুপ্লিকেট ট্যাব বিজ্ঞপ্তি দেখানোর ত্রুটি:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "বন্ধ অনুরোধ পাঠানোর ত্রুটি:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "ডুপ্লিকেট ট্যাব বন্ধ করার ত্রুটি:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "উপেক্ষা অনুরোধ পাঠানোর ত্রুটি:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "ডুপ্লিকেট ট্যাব উপেক্ষা করার ত্রুটি:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "ডিবাগ প্যানেল আপডেট করার ত্রুটি:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "পটভূমি রং সনাক্ত করার ত্রুটি:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "ছবির বর্ডার ব্যাসার্ধ সনাক্ত করার ত্রুটি:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "মিউটেশন অবজারভার সেট করার ত্রুটি:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "এলিমেন্ট দৃশ্যমানতা পরীক্ষা করার ত্রুটি:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "বর্ডার ব্যাসার্ধ প্রক্রিয়াকরণের ত্রুটি:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "ছবির পটভূমি সনাক্ত করার ত্রুটি:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "স্বয়ংক্রিয় বন্ধ সফলতার বিজ্ঞপ্তি দেখানোর ত্রুটি:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "ইতিহাসে কোন এগিয়ে যাওয়ার পেজ নেই",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "ইতিহাসে কোন পূর্ববর্তী পেজ নেই",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "নেভিগেশন ব্যর্থ",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "পরবর্তী পেজের চেষ্টা করা হচ্ছে...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "পরবর্তী পেজে নেভিগেট করা হয়েছে",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "কোন পরবর্তী পেজ লিঙ্ক পাওয়া যায়নি",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "অবৈধ জেসচার",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "পরবর্তী পেজ",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "পিক্সেল পড়ার ত্রুটি:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "ক্যানভাস পড়ার ত্রুটি:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "ক্যানভাসে আঁকার ত্রুটি:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "আইফ্রেম অ্যাক্সেস করার ত্রুটি:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "মিউটেশন অবজারভার সেট করার ত্রুটি:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "এলিমেন্ট দৃশ্যমানতা পরীক্ষা করার ত্রুটি:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "কোণ প্রক্রিয়াকরণের ত্রুটি:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "ভাষা $1 থেকে $2 এ পরিবর্তিত হয়েছে",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "চীনা ভাষায় পরিবর্তিত হয়েছে",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "ইংরেজি ভাষায় পরিবর্তিত হয়েছে",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "সিস্টেম সেটিংস",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "কোণ থ্রেশহোল্ড",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "দিক পরিবর্তন থ্রেশহোল্ড",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "ন্যূনতম জেসচার দূরত্ব",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "ন্যূনতম দিক সেগমেন্ট দৈর্ঘ্য",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "ন্যূনতম জেসচার জটিলতা",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "সর্বশেষ জেসচার তথ্য",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "পয়েন্ট",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "সরলীকরণের পর",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "মোট দূরত্ব",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "দিক স্বীকৃতি",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "মূল দিকসমূহ",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "পুনরাবৃত্তিমূলক প্যাটার্ন সনাক্ত করা হয়েছে",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "পুনরাবৃত্তিমূলক প্যাটার্নের ধরন",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "দিক মার্জিং",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "মার্জ করা দিকসমূহ",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "দিক দূরত্বসমূহ",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "চূড়ান্ত ফলাফল",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "স্বীকৃত জেসচার",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "সাদৃশ্য",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "হ্যাঁ",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "না",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "কোনোটি নয়",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "অবৈধ অঙ্গভঙ্গি",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "অঙ্গভঙ্গির ডেটার জন্য অপেক্ষা করছে...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "ডিবাগ তথ্য কপি করুন",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "ক্লিপবোর্ডে কপি হয়েছে",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "কপি ব্যর্থ হয়েছে, অনুগ্রহ করে ম্যানুয়ালি নির্বাচন এবং কপি করুন",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "অনুসন্ধান: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "পপআপ ব্লক করা হয়েছে",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "লিঙ্ক প্রিভিউ ফাংশনালিটি সক্ষম করতে এই সাইটের জন্য পপআপগুলি অনুমতি দিন।",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "জেসচার মোড প্রস্তুত",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...এবং $1 টি পৃষ্ঠা আরও",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "এই সাইট/লিঙ্কের মাধ্যমে কেনাকাটা করে লেখককে সমর্থন করুন",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "ট্যাব সংখ্যা দেখান",
+    "description": "Show tab count badge option"
+  }
+}

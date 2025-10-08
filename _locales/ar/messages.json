@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "إيماءات الماوس",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "إضافة Chrome/Edge تدعم إيماءات الماوس ووظيفة السحب الفائق والنظرة الموجودة في الفتحة",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "إيماءات الماوس",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "الإيماءات المدمجة",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "ميزة السحب الفائق",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "سحب للأعلى",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "سحب لليمين",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "سحب للأسفل",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "سحب لليسار",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "فتح الرابط في المقدمة",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "فتح الرابط في الخلفية",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "تعمل ميزة السحب الفائق مع الروابط والصور والنص المحدد. عندما يكون النص المحدد عبارة عن رابط، سيتم فتحه كرابط؛ وإلا فسيتم البحث عنه. اتجاه السحب يحدد كيفية فتح علامات التبويب الجديدة.",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "يسار",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "يمين",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "أعلى",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "أسفل",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "أسفل ثم يمين",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "يسار ثم أعلى",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "يمين ثم أعلى",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "يمين ثم أسفل",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "أعلى ثم يسار",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "أعلى ثم يمين",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "أسفل ثم يسار",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "يسار ثم أسفل",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "أعلى ثم أسفل",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "أسفل ثم أعلى",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "يسار ثم يمين",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "يمين ثم يسار",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "الرجوع",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "التقدم",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "التمرير للأعلى",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "التمرير للأسفل",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "التمرير لليسار",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "التمرير لليمين",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "تحديث قسري",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "إغلاق علامة التبويب",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "إعادة فتح علامة التبويب المغلقة",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "علامة تبويب جديدة",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "تحديث",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "علامة التبويب السابقة",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "علامة التبويب التالية",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "إيقاف التحميل",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "إغلاق جميع علامات التبويب",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "التمرير إلى الأسفل",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "التمرير إلى الأعلى",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "التمرير إلى الحافة اليسرى",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "التمرير إلى الحافة اليمنى",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "لا إجراء",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "نافذة جديدة",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "نافذة خاصة جديدة",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "إغلاق علامات التبويب الأخرى",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "إغلاق علامات التبويب إلى اليمين",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "تبديل ملء الشاشة",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "إغلاق علامات التبويب إلى اليسار",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "إعادة تحميل جميع علامات التبويب",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "تثبيت/إلغاء تثبيت علامة التبويب",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "كتم/إلغاء كتم علامة التبويب",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "كتم علامات التبويب الأخرى",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "تكبير/استعادة النافذة",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "تصغير النافذة",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "الإعدادات",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "تمكين إيماءة الماوس",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "إظهار مسار الإيماءة",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "إظهار تلميح الإيماءة",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "لون المسار",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "عرض المسار",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "تمكين السحب الفائق",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "تمكين البحث بسحب النص",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "تمكين معاينة الصورة",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "اكتشاف علامات التبويب المكررة",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "إغلاق علامات التبويب المكررة تلقائيًا",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "تمكين التمرير السلس",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "تم تطبيق الإعدادات",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "إعادة تعيين",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "تم تطبيق الإعدادات",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "اكتملت إعادة التعيين",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "جاري إعادة التعيين...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "فشل في تحميل الإعدادات",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "فشل في حفظ الإعدادات",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "فشل في إعادة تعيين الإعدادات",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "فاتح",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "داكن",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "اشترِ لي قهوة",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "تبديل المظهر",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "تبديل اللغة",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "إذا أعجبك هذا العمل، يرجى دعمي. شكرًا :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "اضغط مع الاستمرار على زر الماوس الأيمن",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "اضغط مع الاستمرار على زر الماوس الأيسر",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "فتح في المقدمة",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "فتح في الخلفية",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "رابط محرك البحث للسحب",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "العرض المنبثق",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "يسار: {next} | يمين: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "التمرير + المفتاح لإظهار النافذة المنبثقة",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "تمكين العرض المنبثق",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "تمكين البحث بتحديد النص",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "مفتاح التشغيل",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "مفتاح Ctrl",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "مفتاح Alt",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "مفتاح Shift",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "لا حاجة لمفتاح",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "تأخير النافذة المنبثقة (ملي ثانية)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "أقصى عدد نوافذ منبثقة",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "عرض النافذة",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "ارتفاع النافذة",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "موضع النافذة",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "موضع المؤشر",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "وسط الشاشة",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "زاوية الشاشة",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "رابط محرك البحث للنافذة المنبثقة",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "استخدم {q} لمصطلح البحث، مثال على التنسيق:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "بحث Google: https://www.google.com.sa/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "ترجمة Google: https://translate.google.com.sa/?sl=auto&tl=ar&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "بحث Ayna: https://www.ayna.com/search?q={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "بحث Bing: https://www.bing.com/search?q={q}&setlang=ar",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "استخدم عجلة الماوس لضبط القيمة",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "عند استخدام مفتاح تشغيل، الحد الأقصى للتأخير محدود بـ 300 ملي ثانية",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "مرحبًا بك في إضافة إيماءات الماوس",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "شكراً لك على تثبيت إضافة إيماءات الماوس! توفر هذه الإضافة وظائف غنية لإيماءات الماوس، وإدارة ذكية للتبويبات، وقدرات عرض منبثق، وتجربة بصرية محسنة لمساعدتك في تصفح الويب بكفاءة أكبر. لقد حسّنا خوارزمية التعرف على الإيماءات مع تحمل أعلى للأخطاء، مما يسمح بالإيماءات بالتعرف عليها بشكل صحيح حتى عندما لا يتم رسمها بشكل مثالي. تتيح لك ميزة النافذة المنبثقة الجديدة عرض محتوى الروابط في النوافذ المنبثقة دون تبديل علامات التبويب. تدعم الإضافة أيضًا 29 لغة وسمات فاتحة/داكنة لتجربة مستخدم أفضل.",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "فيما يلي إيماءات الماوس المحددة مسبقًا التي يمكنك استخدامها بالسحب بزر الماوس الأيمن:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "إضافة إيماءات الماوس",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "الميزات الأساسية",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "أدوات المساعدة",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "نصائح الاستخدام",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "التعرف الذكي على الإيماءات: يحدد الإيماءات بشكل صحيح حتى عندما تكون غير مثالية، يعمل أثناء تحميل الصفحة",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "إدارة علامات التبويب",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": اكتشاف ذكي للتكرارات، إغلاق تلقائي اختياري، تحسين دوري للذاكرة",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "السحب الفائق",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": سحب الروابط والصور إلى علامات تبويب جديدة، سحب النص المحدد للبحث",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "العرض المنبثق",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": اضغط مع الاستمرار على مفتاح التعديل (افتراضي: Shift) أثناء التمرير فوق الروابط لمعاينة الصفحات المستهدفة في نوافذ منبثقة",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "حدد النص واضغط على مفتاح التعديل للبحث عنه فورًا في نافذة منبثقة، مع دعم محرك البحث المخصص",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "يمكنك فتح عدة نوافذ منبثقة في نفس الوقت",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "خصص اتجاه السحب لتحديد طريقة فتح علامة التبويب: الفتح في الخلفية افتراضيًا",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "معلومات تشخيص إيماءات الماوس",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": اضغط Alt+D للفتح، تحليل معلومات الإيماءات في الوقت الفعلي، يحافظ على الحالة",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "نسخ بنقرة واحدة لمعلومات التشخيص لسهولة المشاركة، مع دعم متعدد اللغات",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "معاينة وسائط محسنة: تأثيرات تمرير صور محسنة وصور ملصقات فيديو محسنة",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "مظاهر تكيفية: يضبط النمط البصري بناءً على خلفية الصفحة، يدعم الوضع الفاتح/الداكن",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "مسارات الإيماءات معروضة على الشاشة مع لون وعرض قابل للتخصيص",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "انقر على أيقونة الإضافة لتمكين/تعطيل الميزات، تعيين اللغة والمظهر والمزيد",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "يدعم 29 لغة، يتكيف تلقائيًا مع لغة المتصفح",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "تمكين ميزة الإغلاق التلقائي لعلامات التبويب المكررة لتقليل استخدام موارد المتصفح بشكل كبير",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "في أنظمة Linux وmacOS، انقر نقرًا مزدوجًا بالزر الأيمن لإظهار قائمة السياق للمتصفح",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "علامة تبويب مكررة",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "تم العثور على $1 علامة تبويب مكررة",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "يوجد $1 علامة تبويب مكررة",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "يوجد علامة تبويب مكررة واحدة",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "تم إغلاق $1 علامة تبويب مكررة تلقائيًا",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "إغلاق المكررات",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "تجاهل",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "علامة تبويب بلا عنوان",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...و $1 صفحة أخرى",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "خطأ في إظهار إشعار علامات التبويب المكررة:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "خطأ في إرسال طلب الإغلاق:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "خطأ في إغلاق علامات التبويب المكررة:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "خطأ في إرسال طلب التجاهل:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "خطأ في تجاهل علامات التبويب المكررة:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "خطأ في تحديث لوحة التشخيص:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "خطأ في اكتشاف لون الخلفية:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "خطأ في اكتشاف نصف قطر حدود الصورة:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "خطأ في تعيين مراقب التغيير:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "خطأ في فحص رؤية العنصر:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "خطأ في معالجة نصف قطر الحدود:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "خطأ في اكتشاف خلفية الصورة:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "خطأ في إظهار إشعار نجاح الإغلاق التلقائي:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "لا توجد صفحة تالية في السجل",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "لا توجد صفحة سابقة في السجل",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "فشل في التنقل",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "جاري المحاولة للصفحة التالية...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "تم الانتقال إلى الصفحة التالية",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "لم يتم العثور على رابط للصفحة التالية",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "إيماءة غير صالحة",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "الصفحة التالية",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "خطأ في قراءة البكسل:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "خطأ في قراءة اللوحة:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "خطأ في الرسم على اللوحة:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "خطأ في الوصول إلى iframe:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "خطأ في تعيين مراقب التغيير:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "خطأ في فحص رؤية العنصر:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "خطأ في معالجة الزوايا:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "تم تغيير اللغة من $1 إلى $2",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "تم التبديل إلى الصينية",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "تم التبديل إلى الإنجليزية",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "إعدادات النظام",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "عتبة الزاوية",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "عتبة تغيير الاتجاه",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "الحد الأدنى لمسافة الإيماءة",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "الحد الأدنى لطول قطعة الاتجاه",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "الحد الأدنى لتعقيد الإيماءة",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "معلومات أحدث إيماءة",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "النقاط",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "بعد التبسيط",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "المسافة الإجمالية",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "التعرف على الاتجاه",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "الاتجاهات الأصلية",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "تم اكتشاف نمط متكرر",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "نوع النمط المتكرر",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "دمج الاتجاهات",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "الاتجاهات المدمجة",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "مسافات الاتجاهات",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "النتيجة النهائية",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "الإيماءة المُعترف بها",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "التشابه",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "نعم",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "لا",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "لا شيء",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "إيماءة غير صالحة",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "في انتظار بيانات الإيماءة...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "نسخ المعلومات",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "تم النسخ إلى الحافظة!",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "فشل النسخ، يرجى التحديد والنسخ يدويًا",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "بحث: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "تم حظر النافذة المنبثقة",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "يرجى السماح بالنوافذ المنبثقة لهذا الموقع لتمكين وظيفة معاينة الروابط.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "وضع الإيماءات جاهز",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...و $1 صفحات أخرى",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "ادعم المؤلف من خلال الشراء عبر رابط هذا الموقع/الرابط",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "عرض عدد الألسنة",
+    "description": "Show tab count badge option"
+  }
+}

@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Gesty Myszy",
+    "description": "Nazwa rozszerzenia"
+  },
+  "extDesc": {
+    "message": "Rozszerzenie Chrome/Edge obsługujące gesty myszy, funkcję super przeciągania i widok popup",
+    "description": "Opis rozszerzenia"
+  },
+  "title": {
+    "message": "Gesty Myszy",
+    "description": "Tytuł rozszerzenia"
+  },
+  "builtInGestures": {
+    "message": "Wbudowane Gesty",
+    "description": "Tytuł wbudowanych gestów"
+  },
+  "superDragFeature": {
+    "message": "Funkcja Super Przeciągania",
+    "description": "Tytuł funkcji super przeciągania"
+  },
+  "dragUp": {
+    "message": "Przeciągnij w Górę",
+    "description": "Akcja przeciągnij w górę"
+  },
+  "dragRight": {
+    "message": "Przeciągnij w Prawo",
+    "description": "Akcja przeciągnij w prawo"
+  },
+  "dragDown": {
+    "message": "Przeciągnij w Dół",
+    "description": "Akcja przeciągnij w dół"
+  },
+  "dragLeft": {
+    "message": "Przeciągnij w Lewo",
+    "description": "Akcja przeciągnij w lewo"
+  },
+  "openInForeground": {
+    "message": "Otwórz Link na Pierwszym Planie",
+    "description": "Otwórz link na pierwszym planie"
+  },
+  "openInBackground": {
+    "message": "Otwórz Link w Tle",
+    "description": "Otwórz link w tle"
+  },
+  "superDragDescription": {
+    "message": "Funkcja Super Przeciągania działa dla linków, obrazów i zaznaczonego tekstu. Gdy zaznaczony tekst to URL, zostanie otwarty jako link; w przeciwnym razie będzie wyszukany. Kierunek przeciągnięcia określa sposób otwierania nowych kart.",
+    "description": "Opis funkcji super przeciągania"
+  },
+  "left": {
+    "message": "Lewo",
+    "description": "Kierunek w lewo"
+  },
+  "right": {
+    "message": "Prawo",
+    "description": "Kierunek w prawo"
+  },
+  "up": {
+    "message": "Góra",
+    "description": "Kierunek w górę"
+  },
+  "down": {
+    "message": "Dół",
+    "description": "Kierunek w dół"
+  },
+  "downThenRight": {
+    "message": "Dół potem Prawo",
+    "description": "Gest dół potem prawo"
+  },
+  "leftThenUp": {
+    "message": "Lewo potem Góra",
+    "description": "Gest lewo potem góra"
+  },
+  "rightThenUp": {
+    "message": "Prawo potem Góra",
+    "description": "Gest prawo potem góra"
+  },
+  "rightThenDown": {
+    "message": "Prawo potem Dół",
+    "description": "Gest prawo potem dół"
+  },
+  "upThenLeft": {
+    "message": "Góra potem Lewo",
+    "description": "Gest góra potem lewo"
+  },
+  "upThenRight": {
+    "message": "Góra potem Prawo",
+    "description": "Gest góra potem prawo"
+  },
+  "downThenLeft": {
+    "message": "Dół potem Lewo",
+    "description": "Gest dół potem lewo"
+  },
+  "leftThenDown": {
+    "message": "Lewo potem Dół",
+    "description": "Gest lewo potem dół"
+  },
+  "upThenDown": {
+    "message": "Góra potem Dół",
+    "description": "Gest góra potem dół"
+  },
+  "downThenUp": {
+    "message": "Dół potem Góra",
+    "description": "Gest dół potem góra"
+  },
+  "leftThenRight": {
+    "message": "Lewo potem Prawo",
+    "description": "Gest lewo potem prawo"
+  },
+  "rightThenLeft": {
+    "message": "Prawo potem Lewo",
+    "description": "Gest prawo potem lewo"
+  },
+  "back": {
+    "message": "Wróć",
+    "description": "Akcja powrotu"
+  },
+  "forward": {
+    "message": "Idź Dalej",
+    "description": "Akcja idź dalej"
+  },
+  "scrollUp": {
+    "message": "Przewiń w Górę",
+    "description": "Akcja przewiń w górę"
+  },
+  "scrollDown": {
+    "message": "Przewiń w Dół",
+    "description": "Akcja przewiń w dół"
+  },
+  "scrollLeft": {
+    "message": "Przewiń w lewo",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Przewiń w prawo",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Wymuś odświeżenie",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Zamknij Kartę",
+    "description": "Akcja zamknij kartę"
+  },
+  "reopenTab": {
+    "message": "Otwórz Ponownie Zamkniętą Kartę",
+    "description": "Akcja otwórz ponownie zamkniętą kartę"
+  },
+  "newTab": {
+    "message": "Nowa Karta",
+    "description": "Akcja nowa karta"
+  },
+  "refresh": {
+    "message": "Odśwież",
+    "description": "Akcja odśwież"
+  },
+  "prevTab": {
+    "message": "Poprzednia Karta",
+    "description": "Akcja poprzednia karta"
+  },
+  "nextTab": {
+    "message": "Następna Karta",
+    "description": "Akcja następna karta"
+  },
+  "stopLoading": {
+    "message": "Zatrzymaj Ładowanie",
+    "description": "Akcja zatrzymania ładowania"
+  },
+  "closeAllTabs": {
+    "message": "Zamknij Wszystkie Karty",
+    "description": "Akcja zamknięcia wszystkich kart"
+  },
+  "scrollToBottom": {
+    "message": "Przewiń do Dołu",
+    "description": "Akcja przewinięcia do dołu"
+  },
+  "scrollToTop": {
+    "message": "Przewiń do Góry",
+    "description": "Akcja przewinięcia do góry"
+  },
+  "scrollToLeft": {
+    "message": "Przewiń do lewej krawędzi",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Przewiń do prawej krawędzi",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "Brak Akcji",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Nowe Okno",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Nowe Okno Prywatne",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Zamknij Inne Karty",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Zamknij Karty po Prawej",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Przełącz Pełny Ekran",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Zamknij Karty po Lewej",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Przeładuj Wszystkie Karty",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Przypnij/Odepnij Kartę",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Wycisz/Włącz Dźwięk Karty",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Wycisz Inne Karty",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Maksymalizuj/Przywróć Okno",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Minimalizuj Okno",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Ustawienia",
+    "description": "Tytuł ustawień"
+  },
+  "enableGesture": {
+    "message": "Włącz Gesty Myszy",
+    "description": "Opcja włącz gesty myszy"
+  },
+  "showGestureTrail": {
+    "message": "Pokaż Ślad Gestów",
+    "description": "Opcja pokaż ślad gestów"
+  },
+  "showGestureHint": {
+    "message": "Pokaż Podpowiedź Gestów",
+    "description": "Opcja pokaż podpowiedź gestów"
+  },
+  "trailColor": {
+    "message": "Kolor Śladu",
+    "description": "Opcja koloru śladu"
+  },
+  "trailWidth": {
+    "message": "Szerokość Śladu",
+    "description": "Opcja szerokości śladu"
+  },
+  "enableSuperDrag": {
+    "message": "Włącz Super Przeciąganie",
+    "description": "Opcja włącz super przeciąganie"
+  },
+  "enableDragTextSearch": {
+    "message": "Włącz Wyszukiwanie Tekstu Przeciąganiem",
+    "description": "Opcja włącz wyszukiwanie tekstu przeciąganiem"
+  },
+  "enableImagePreview": {
+    "message": "Włącz Podgląd Obrazów",
+    "description": "Opcja włącz podgląd obrazów"
+  },
+  "enableDuplicateCheck": {
+    "message": "Wykrywaj Duplikaty Kart",
+    "description": "Opcja wykrywaj duplikaty kart"
+  },
+  "autoCloseDuplicates": {
+    "message": "Automatycznie Zamykaj Duplikaty Kart",
+    "description": "Opcja automatycznie zamykaj duplikaty kart"
+  },
+  "enableSmoothScroll": {
+    "message": "Włącz płynne przewijanie",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Ustawienia Zastosowane",
+    "description": "Przycisk zapisz ustawienia"
+  },
+  "reset": {
+    "message": "Resetuj",
+    "description": "Przycisk resetuj ustawienia"
+  },
+  "settingsSaved": {
+    "message": "Ustawienia Zastosowane",
+    "description": "Powiadomienie o zapisaniu ustawień"
+  },
+  "settingsReset": {
+    "message": "Reset Zakończony",
+    "description": "Powiadomienie o zresetowaniu ustawień"
+  },
+  "resetting": {
+    "message": "Resetowanie...",
+    "description": "Powiadomienie o resetowaniu"
+  },
+  "loadError": {
+    "message": "Nie Udało Się Załadować Ustawień",
+    "description": "Powiadomienie o błędzie ładowania ustawień"
+  },
+  "saveError": {
+    "message": "Nie Udało Się Zapisać Ustawień",
+    "description": "Powiadomienie o błędzie zapisywania ustawień"
+  },
+  "resetError": {
+    "message": "Nie Udało Się Zresetować Ustawień",
+    "description": "Powiadomienie o błędzie resetowania ustawień"
+  },
+  "themeLight": {
+    "message": "Jasny",
+    "description": "Jasny motyw"
+  },
+  "themeDark": {
+    "message": "Ciemny",
+    "description": "Ciemny motyw"
+  },
+  "buyMeACoffee": {
+    "message": "Postaw mi kawę",
+    "description": "Przycisk darowizny"
+  },
+  "toggleTheme": {
+    "message": "Przełącz Motyw",
+    "description": "Przycisk przełączania motywu"
+  },
+  "toggleLanguage": {
+    "message": "Przełącz Język",
+    "description": "Przycisk przełączania języka"
+  },
+  "donationTooltip": {
+    "message": "Jeśli podoba Ci się ta praca, proszę mnie wesprzeć. Dzięki :)",
+    "description": "Podpowiedź darowizny"
+  },
+  "rightButtonHint": {
+    "message": "Przytrzymaj prawy przycisk myszy",
+    "description": "Podpowiedź prawego przycisku myszy"
+  },
+  "leftButtonHint": {
+    "message": "Przytrzymaj lewy przycisk myszy",
+    "description": "Podpowiedź lewego przycisku myszy"
+  },
+  "foregroundAction": {
+    "message": "Otwórz na Pierwszym Planie",
+    "description": "Akcja otwórz na pierwszym planie"
+  },
+  "backgroundAction": {
+    "message": "Otwórz w Tle",
+    "description": "Akcja otwórz w tle"
+  },
+  "dragSearchEngine": {
+    "message": "URL Wyszukiwarki Przeciągania",
+    "description": "Ustawienie adresu URL wyszukiwarki przeciągania"
+  },
+  "linkPreview": {
+    "message": "Widok Popup",
+    "description": "Tytuł widoku popup"
+  },
+  "quickNavTooltip": {
+    "message": "Lewo: {next} | Prawo: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Najedź + Klawisz aby Pokazać Popup",
+    "description": "Podpowiedź widoku popup"
+  },
+  "enableLinkPreview": {
+    "message": "Włącz Widok Popup",
+    "description": "Opcja włączania widoku popup"
+  },
+  "enableTextSearchPreview": {
+    "message": "Włącz Wyszukiwanie Zaznaczonego Tekstu",
+    "description": "Opcja włączania wyszukiwania zaznaczonego tekstu"
+  },
+  "modifierKey": {
+    "message": "Klawisz Wyzwalacza",
+    "description": "Ustawienie klawisza wyzwalacza"
+  },
+  "controlKey": {
+    "message": "Klawisz Ctrl",
+    "description": "Opcja klawisza Ctrl"
+  },
+  "altKey": {
+    "message": "Klawisz Alt",
+    "description": "Opcja klawisza Alt"
+  },
+  "shiftKey": {
+    "message": "Klawisz Shift",
+    "description": "Opcja klawisza Shift"
+  },
+  "noKey": {
+    "message": "Brak Wymaganego Klawisza",
+    "description": "Opcja braku wymaganego klawisza"
+  },
+  "previewDelay": {
+    "message": "Opóźnienie Popup (ms)",
+    "description": "Ustawienie opóźnienia popup"
+  },
+  "maxPreviewWindows": {
+    "message": "Maksymalna Liczba Okien Popup",
+    "description": "Ustawienie maksymalnej liczby okien popup"
+  },
+  "previewWidth": {
+    "message": "Szerokość Okna",
+    "description": "Ustawienie szerokości okna"
+  },
+  "previewHeight": {
+    "message": "Wysokość Okna",
+    "description": "Ustawienie wysokości okna"
+  },
+  "previewPosition": {
+    "message": "Pozycja Okna",
+    "description": "Ustawienie pozycji okna"
+  },
+  "cursorPosition": {
+    "message": "Pozycja Kursora",
+    "description": "Opcja pozycji kursora"
+  },
+  "centerScreen": {
+    "message": "Środek Ekranu",
+    "description": "Opcja środka ekranu"
+  },
+  "cornerScreen": {
+    "message": "Róg Ekranu",
+    "description": "Opcja rogu ekranu"
+  },
+  "searchEngine": {
+    "message": "URL Wyszukiwarki Popup",
+    "description": "Ustawienie adresu URL wyszukiwarki popup"
+  },
+  "searchEngineExamples": {
+    "message": "Użyj {q} dla terminu wyszukiwania, przykładowy format:",
+    "description": "Opis przykładów wyszukiwarki"
+  },
+  "googleExample": {
+    "message": "Wyszukiwanie Google: https://www.google.pl/search?q={q}",
+    "description": "Przykład wyszukiwania Google"
+  },
+  "googleTranslateExample": {
+    "message": "Tłumacz Google: https://translate.google.pl/?sl=auto&tl=pl&text={q}&op=translate",
+    "description": "Przykład tłumacza Google"
+  },
+  "localSearchExample": {
+    "message": "Wyszukiwanie Onet: https://szukaj.onet.pl/?q={q}",
+    "description": "Przykład lokalnego adresu URL wyszukiwania"
+  },
+  "bingExample": {
+    "message": "Wyszukiwanie Bing: https://www.bing.com/search?q={q}&setlang=pl",
+    "description": "Przykład wyszukiwania Bing"
+  },
+  "wheelTip": {
+    "message": "Użyj kółka myszy aby dostosować wartość",
+    "description": "Podpowiedź kółka myszy"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Podczas używania klawisza wyzwalacza, maksymalne opóźnienie jest ograniczone do 300ms",
+    "description": "Podpowiedź opóźnienia klawisza modyfikatora"
+  },
+  "welcomeTitle": {
+    "message": "Witamy w Rozszerzeniu Gestów Myszy",
+    "description": "Tytuł strony powitalnej"
+  },
+  "welcomeDescription": {
+    "message": "Dziękujemy za zainstalowanie rozszerzenia Gesty Myszy! To rozszerzenie zapewnia bogatą funkcjonalność gestów myszy, inteligentne zarządzanie kartami, możliwości podglądu popup oraz ulepszone wrażenia wizualne, aby pomóc Ci bardziej efektywnie przeglądać internet. Zoptymalizowaliśmy algorytm rozpoznawania gestów z większą tolerancją na błędy, pozwalając gestom być poprawnie rozpoznawanymi nawet gdy nie są idealnie narysowane. Nowa funkcja okna popup pozwala Ci przeglądać zawartość linków w oknach popup bez przełączania kart. Rozszerzenie obsługuje również 29 języków oraz motywy jasny/ciemny dla lepszych wrażeń użytkownika.",
+    "description": "Opis strony powitalnej"
+  },
+  "gesturesDescription": {
+    "message": "Poniżej znajdują się wstępnie ustawione gesty myszy, których możesz używać przeciągając prawym przyciskiem myszy:",
+    "description": "Opis gestów"
+  },
+  "extensionName": {
+    "message": "Rozszerzenie Gestów Myszy",
+    "description": "Pełna nazwa rozszerzenia"
+  },
+  "coreFeatures": {
+    "message": "Podstawowe Funkcje",
+    "description": "Tytuł podstawowych funkcji"
+  },
+  "utilitiesFeatures": {
+    "message": "Narzędzia Pomocnicze",
+    "description": "Tytuł narzędzi pomocniczych"
+  },
+  "usageTips": {
+    "message": "Wskazówki Użytkowania",
+    "description": "Tytuł wskazówek użytkowania"
+  },
+  "smartGestureRecognition": {
+    "message": "Inteligentne rozpoznawanie gestów: Poprawnie identyfikuje gesty nawet gdy są niedoskonałe, działa podczas ładowania strony",
+    "description": "Opis inteligentnego rozpoznawania gestów"
+  },
+  "tabManagementTitle": {
+    "message": "Zarządzanie Kartami",
+    "description": "Tytuł zarządzania kartami"
+  },
+  "tabManagementDesc": {
+    "message": ": Inteligentne wykrywanie duplikatów, opcjonalne automatyczne zamykanie, okresowa optymalizacja pamięci",
+    "description": "Opis zarządzania kartami"
+  },
+  "superDragTitle": {
+    "message": "Super Przeciąganie",
+    "description": "Tytuł super przeciągania"
+  },
+  "superDragDesc": {
+    "message": ": Przeciągaj linki i obrazy do nowych kart, przeciągaj zaznaczony tekst do wyszukiwania",
+    "description": "Opis super przeciągania"
+  },
+  "linkPreviewTitle": {
+    "message": "Podgląd w Okienku",
+    "description": "Tytuł podglądu linków"
+  },
+  "linkPreviewDesc": {
+    "message": ": Przytrzymaj klawisz modyfikatora (domyślnie: Shift) najeżdżając na linki, aby podejrzeć strony docelowe w oknach popup",
+    "description": "Opis podglądu linków"
+  },
+  "textSelectionPreview": {
+    "message": "Zaznacz tekst i naciśnij klawisz modyfikatora, aby natychmiast wyszukać go w oknie popup, z obsługą niestandardowej wyszukiwarki",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "Możesz otworzyć wiele okien popup jednocześnie",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "Dostosuj kierunek przeciągania, aby określić metodę otwierania karty: domyślnie otwórz w tle",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "Informacje Debugowania Gestów Myszy",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": Naciśnij Alt+D, aby otworzyć, analizuj informacje o gestach w czasie rzeczywistym, zachowuje stan",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "Kopiowanie jednoklikowe informacji debugowania dla łatwego udostępniania, z obsługą wielu języków",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "Ulepszony podgląd multimediów: Ulepszone efekty najechania na obrazy i zoptymalizowane obrazy plakatów wideo",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "Adaptacyjne motywy: Dostosowuje styl wizualny na podstawie tła strony, obsługuje tryb jasny/ciemny",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "Ślady gestów wyświetlane na ekranie z konfigurowalnym kolorem i szerokością",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "Kliknij ikonę rozszerzenia, aby włączyć/wyłączyć funkcje, ustawić język, motyw i więcej",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "Obsługuje 29 języków, automatycznie dostosowuje się do języka przeglądarki",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "Włącz funkcję automatycznego zamykania zduplikowanych kart, aby znacząco zmniejszyć zużycie zasobów przeglądarki",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "W systemach Linux i macOS, kliknij dwukrotnie prawym przyciskiem myszy, aby wyświetlić menu kontekstowe przeglądarki",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "Duplikat karty",
+    "description": "Duplikat karty"
+  },
+  "duplicateTabsDetected": {
+    "message": "Znaleziono $1 zduplikowanych kart",
+    "description": "Powiadomienie o wykryciu zduplikowanych kart"
+  },
+  "duplicateTabsCount": {
+    "message": "Istnieje $1 zduplikowanych kart",
+    "description": "Komunikat o liczbie zduplikowanych kart"
+  },
+  "duplicateTabsSingle": {
+    "message": "Istnieje 1 zduplikowana karta",
+    "description": "Komunikat o pojedynczej zduplikowanej karcie"
+  },
+  "autoClosedTabs": {
+    "message": "Automatycznie zamknięto $1 zduplikowanych kart",
+    "description": "Powiadomienie o automatycznie zamkniętych kartach"
+  },
+  "closeBtn": {
+    "message": "Zamknij Duplikaty",
+    "description": "Przycisk zamykania duplikatów"
+  },
+  "ignoreBtn": {
+    "message": "Ignoruj",
+    "description": "Przycisk ignorowania"
+  },
+  "untitledTab": {
+    "message": "Karta bez tytułu",
+    "description": "Karta bez tytułu"
+  },
+  "morePages": {
+    "message": "...i $1 więcej stron",
+    "description": "Podpowiedź o większej liczbie stron"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Błąd podczas wyświetlania powiadomienia o zduplikowanych kartach:",
+    "description": "Błąd podczas wyświetlania powiadomienia o zduplikowanych kartach"
+  },
+  "errorSendCloseRequest": {
+    "message": "Błąd podczas wysyłania żądania zamknięcia:",
+    "description": "Błąd podczas wysyłania żądania zamknięcia"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Błąd podczas zamykania zduplikowanych kart:",
+    "description": "Błąd podczas zamykania zduplikowanych kart"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Błąd podczas wysyłania żądania ignorowania:",
+    "description": "Błąd podczas wysyłania żądania ignorowania"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Błąd podczas ignorowania zduplikowanych kart:",
+    "description": "Błąd podczas ignorowania zduplikowanych kart"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Błąd podczas aktualizacji panelu debugowania:",
+    "description": "Błąd podczas aktualizacji panelu debugowania"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Błąd podczas wykrywania koloru tła:",
+    "description": "Błąd podczas wykrywania koloru tła"
+  },
+  "errorDetectImageBorder": {
+    "message": "Błąd podczas wykrywania zaokrąglenia krawędzi obrazu:",
+    "description": "Błąd podczas wykrywania zaokrąglenia krawędzi obrazu"
+  },
+  "errorSetMutationObserver": {
+    "message": "Błąd podczas ustawiania obserwatora mutacji:",
+    "description": "Błąd podczas ustawiania obserwatora mutacji"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Błąd podczas sprawdzania widoczności elementu:",
+    "description": "Błąd podczas sprawdzania widoczności elementu"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Błąd podczas przetwarzania zaokrąglenia krawędzi:",
+    "description": "Błąd podczas przetwarzania zaokrąglenia krawędzi"
+  },
+  "errorDetectImageBackground": {
+    "message": "Błąd podczas wykrywania tła obrazu:",
+    "description": "Błąd podczas wykrywania tła obrazu"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Błąd podczas wyświetlania powiadomienia o automatycznym zamknięciu:",
+    "description": "Błąd podczas wyświetlania powiadomienia o automatycznym zamknięciu"
+  },
+  "noForwardPage": {
+    "message": "Brak następnej strony w historii",
+    "description": "Komunikat o braku następnej strony"
+  },
+  "noBackPage": {
+    "message": "Brak poprzedniej strony w historii",
+    "description": "Komunikat o braku poprzedniej strony"
+  },
+  "navigationFailed": {
+    "message": "Nawigacja nie powiodła się",
+    "description": "Komunikat o nieudanej nawigacji"
+  },
+  "tryingNextPage": {
+    "message": "Próba przejścia do następnej strony...",
+    "description": "Komunikat o próbie przejścia do następnej strony"
+  },
+  "nextPageSuccess": {
+    "message": "Przeszedł do następnej strony",
+    "description": "Komunikat o udanym przejściu do następnej strony"
+  },
+  "noNextPage": {
+    "message": "Nie znaleziono linku do następnej strony",
+    "description": "Komunikat o braku linku do następnej strony"
+  },
+  "invalidGesture": {
+    "message": "Nieprawidłowy Gest",
+    "description": "Komunikat o nieprawidłowym geście"
+  },
+  "nextPage": {
+    "message": "Następna Strona",
+    "description": "Akcja następnej strony"
+  },
+  "errorReadPixel": {
+    "message": "Błąd podczas odczytu piksela:",
+    "description": "Komunikat o błędzie odczytu piksela"
+  },
+  "errorCanvasRead": {
+    "message": "Błąd podczas odczytu płótna:",
+    "description": "Komunikat o błędzie odczytu płótna"
+  },
+  "errorCanvasDraw": {
+    "message": "Błąd podczas rysowania na płótnie:",
+    "description": "Komunikat o błędzie rysowania na płótnie"
+  },
+  "errorAccessIframe": {
+    "message": "Błąd podczas dostępu do ramki iframe:",
+    "description": "Komunikat o błędzie dostępu do ramki iframe"
+  },
+  "errorMutationObserver": {
+    "message": "Błąd podczas ustawiania obserwatora mutacji:",
+    "description": "Komunikat o błędzie ustawiania obserwatora mutacji"
+  },
+  "errorCheckVisibility": {
+    "message": "Błąd podczas sprawdzania widoczności elementu:",
+    "description": "Komunikat o błędzie sprawdzania widoczności elementu"
+  },
+  "errorProcessCorners": {
+    "message": "Błąd podczas przetwarzania rogów:",
+    "description": "Komunikat o błędzie przetwarzania rogów"
+  },
+  "languageChanged": {
+    "message": "Język zmieniony z $1 na $2",
+    "description": "Powiadomienie o zmianie języka"
+  },
+  "switchedToChinese": {
+    "message": "Przełączono na chiński",
+    "description": "Powiadomienie o przełączeniu na chiński"
+  },
+  "switchedToEnglish": {
+    "message": "Przełączono na angielski",
+    "description": "Powiadomienie o przełączeniu na angielski"
+  },
+  "debugSystemSettings": {
+    "message": "Ustawienia Systemu",
+    "description": "Sekcja ustawień systemowych panelu debugowania"
+  },
+  "debugAngleThreshold": {
+    "message": "Próg Kąta",
+    "description": "Ustawienie progu kąta panelu debugowania"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Próg Zmiany Kierunku",
+    "description": "Ustawienie progu zmiany kierunku panelu debugowania"
+  },
+  "debugMinGestureDistance": {
+    "message": "Minimalna Odległość Gestu",
+    "description": "Ustawienie minimalnej odległości gestu panelu debugowania"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Minimalna Długość Segmentu Kierunku",
+    "description": "Ustawienie minimalnej długości segmentu kierunku panelu debugowania"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Minimalna Złożoność Gestu",
+    "description": "Ustawienie minimalnej złożoności gestu panelu debugowania"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Informacje o Ostatnim Geście",
+    "description": "Sekcja informacji o ostatnim geście panelu debugowania"
+  },
+  "debugPoints": {
+    "message": "Punkty",
+    "description": "Liczba punktów panelu debugowania"
+  },
+  "debugSimplifiedAfter": {
+    "message": "po uproszczeniu",
+    "description": "Tekst po uproszczeniu panelu debugowania"
+  },
+  "debugTotalDistance": {
+    "message": "Całkowita Odległość",
+    "description": "Całkowita odległość panelu debugowania"
+  },
+  "debugDirectionRecognition": {
+    "message": "Rozpoznawanie Kierunku",
+    "description": "Sekcja rozpoznawania kierunku panelu debugowania"
+  },
+  "debugOriginalDirections": {
+    "message": "Oryginalne Kierunki",
+    "description": "Oryginalne kierunki panelu debugowania"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Wykryto Powtarzający się Wzorzec",
+    "description": "Wykryty powtarzający się wzorzec panelu debugowania"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Typ Powtarzającego się Wzorca",
+    "description": "Typ powtarzającego się wzorca panelu debugowania"
+  },
+  "debugDirectionMerging": {
+    "message": "Łączenie Kierunków",
+    "description": "Sekcja łączenia kierunków panelu debugowania"
+  },
+  "debugMergedDirections": {
+    "message": "Połączone Kierunki",
+    "description": "Połączone kierunki panelu debugowania"
+  },
+  "debugDirectionDistances": {
+    "message": "Odległości Kierunków",
+    "description": "Odległości kierunków panelu debugowania"
+  },
+  "debugFinalResult": {
+    "message": "Wynik Końcowy",
+    "description": "Sekcja wyniku końcowego panelu debugowania"
+  },
+  "debugRecognizedGesture": {
+    "message": "Rozpoznany Gest",
+    "description": "Rozpoznany gest panelu debugowania"
+  },
+  "debugSimilarity": {
+    "message": "Podobieństwo",
+    "description": "Podobieństwo panelu debugowania"
+  },
+  "debugYes": {
+    "message": "Tak",
+    "description": "Tak panelu debugowania"
+  },
+  "debugNo": {
+    "message": "Nie",
+    "description": "Nie panelu debugowania"
+  },
+  "debugNone": {
+    "message": "Brak",
+    "description": "Brak panelu debugowania"
+  },
+  "debugInvalidGesture": {
+    "message": "Nieprawidłowy Gest",
+    "description": "Nieprawidłowy gest panelu debugowania"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Oczekiwanie na dane gestu...",
+    "description": "Oczekiwanie na dane gestu panelu debugowania"
+  },
+  "debugCopyButton": {
+    "message": "Kopiuj Informacje",
+    "description": "Przycisk kopiowania panelu debugowania"
+  },
+  "debugCopySuccess": {
+    "message": "Skopiowano do schowka!",
+    "description": "Komunikat o udanym kopiowaniu panelu debugowania"
+  },
+  "debugCopyFailed": {
+    "message": "Kopiowanie nie powiodło się, wybierz i skopiuj ręcznie",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Szukaj: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Wyskakujące Okno Zablokowane",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Zezwól na wyskakujące okna dla tej witryny, aby włączyć funkcję podglądu linków.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Tryb gestów gotowy",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...i jeszcze $1 stron",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Wesprzyj autora kupując przez ten link",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Pokaż Liczbę Kart",
+    "description": "Show tab count badge option"
+  }
+}

@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Mouse Gesture",
+    "description": "The name of the extension"
+  },
+  "extDesc": {
+    "message": "A Chrome/Edge extension that supports mouse gestures, super drag functionality and popup view.",
+    "description": "The description of the extension"
+  },
+  "title": {
+    "message": "Mouse Gesture",
+    "description": "Extension title"
+  },
+  "builtInGestures": {
+    "message": "Built-in Gestures",
+    "description": "Built-in gestures title"
+  },
+  "superDragFeature": {
+    "message": "Super Drag Feature",
+    "description": "Super drag feature title"
+  },
+  "dragUp": {
+    "message": "Drag Up",
+    "description": "Drag up action"
+  },
+  "dragRight": {
+    "message": "Drag Right",
+    "description": "Drag right action"
+  },
+  "dragDown": {
+    "message": "Drag Down",
+    "description": "Drag down action"
+  },
+  "dragLeft": {
+    "message": "Drag Left",
+    "description": "Drag left action"
+  },
+  "openInForeground": {
+    "message": "Open Link in Foreground",
+    "description": "Open link in foreground"
+  },
+  "openInBackground": {
+    "message": "Open Link in Background",
+    "description": "Open link in background"
+  },
+  "superDragDescription": {
+    "message": "Super Drag feature works for links, images, and selected text. When selected text is a URL, it will open as a link; otherwise, it will be searched. Drag direction determines how new tabs are opened.",
+    "description": "Super drag feature description"
+  },
+  "left": {
+    "message": "Left",
+    "description": "Left direction"
+  },
+  "right": {
+    "message": "Right",
+    "description": "Right direction"
+  },
+  "up": {
+    "message": "Up",
+    "description": "Up direction"
+  },
+  "down": {
+    "message": "Down",
+    "description": "Down direction"
+  },
+  "downThenRight": {
+    "message": "Down then Right",
+    "description": "Down then right gesture"
+  },
+  "leftThenUp": {
+    "message": "Left then Up",
+    "description": "Left then up gesture"
+  },
+  "rightThenUp": {
+    "message": "Right then Up",
+    "description": "Right then up gesture"
+  },
+  "rightThenDown": {
+    "message": "Right then Down",
+    "description": "Right then down gesture"
+  },
+  "upThenLeft": {
+    "message": "Up then Left",
+    "description": "Up then left gesture"
+  },
+  "upThenRight": {
+    "message": "Up then Right",
+    "description": "Up then right gesture"
+  },
+  "downThenLeft": {
+    "message": "Down then Left",
+    "description": "Down then left gesture"
+  },
+  "leftThenDown": {
+    "message": "Left then Down",
+    "description": "Left then down gesture"
+  },
+  "upThenDown": {
+    "message": "Up then Down",
+    "description": "Up then down gesture"
+  },
+  "downThenUp": {
+    "message": "Down then Up",
+    "description": "Down then up gesture"
+  },
+  "leftThenRight": {
+    "message": "Left then Right",
+    "description": "Left then right gesture"
+  },
+  "rightThenLeft": {
+    "message": "Right then Left",
+    "description": "Right then left gesture"
+  },
+  "back": {
+    "message": "Go Back",
+    "description": "Back action"
+  },
+  "forward": {
+    "message": "Go Forward",
+    "description": "Forward action"
+  },
+  "scrollUp": {
+    "message": "Scroll Up",
+    "description": "Scroll up action"
+  },
+  "scrollDown": {
+    "message": "Scroll Down",
+    "description": "Scroll down action"
+  },
+  "scrollLeft": {
+    "message": "Scroll Left",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Scroll Right",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Force Refresh",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Close Tab",
+    "description": "Close tab action"
+  },
+  "reopenTab": {
+    "message": "Reopen Closed Tab",
+    "description": "Reopen closed tab action"
+  },
+  "newTab": {
+    "message": "New Tab",
+    "description": "New tab action"
+  },
+  "refresh": {
+    "message": "Refresh",
+    "description": "Refresh action"
+  },
+  "prevTab": {
+    "message": "Previous Tab",
+    "description": "Previous tab action"
+  },
+  "nextTab": {
+    "message": "Next Tab",
+    "description": "Next tab action"
+  },
+  "stopLoading": {
+    "message": "Stop Loading",
+    "description": "Stop loading action"
+  },
+  "closeAllTabs": {
+    "message": "Close All Tabs",
+    "description": "Close all tabs action"
+  },
+  "scrollToBottom": {
+    "message": "Scroll to Bottom",
+    "description": "Scroll to bottom action"
+  },
+  "scrollToTop": {
+    "message": "Scroll to Top",
+    "description": "Scroll to top action"
+  },
+  "scrollToLeft": {
+    "message": "Scroll to Left Edge",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Scroll to Right Edge",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "No Action",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "New Window",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "New Private Window",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Close Other Tabs",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Close Tabs to Right",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Toggle Fullscreen",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Close Tabs to Left",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Reload All Tabs",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Pin/Unpin Tab",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Mute/Unmute Tab",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Mute Other Tabs",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Maximize/Restore Window",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Minimize Window",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Settings",
+    "description": "Settings title"
+  },
+  "enableGesture": {
+    "message": "Enable Mouse Gesture",
+    "description": "Enable mouse gesture option"
+  },
+  "showGestureTrail": {
+    "message": "Show Gesture Trail",
+    "description": "Show gesture trail option"
+  },
+  "showGestureHint": {
+    "message": "Show Gesture Hint",
+    "description": "Show gesture hint option"
+  },
+  "trailColor": {
+    "message": "Trail Color",
+    "description": "Trail color option"
+  },
+  "trailWidth": {
+    "message": "Trail Width",
+    "description": "Trail width option"
+  },
+  "enableSuperDrag": {
+    "message": "Enable Super Drag",
+    "description": "Enable super drag option"
+  },
+  "enableDragTextSearch": {
+    "message": "Enable Drag Text Search",
+    "description": "Enable drag text search option"
+  },
+  "enableImagePreview": {
+    "message": "Enable Image Preview",
+    "description": "Enable image preview option"
+  },
+  "enableDuplicateCheck": {
+    "message": "Detect Duplicate Tabs",
+    "description": "Detect duplicate tabs option"
+  },
+  "autoCloseDuplicates": {
+    "message": "Auto Close Duplicate Tabs",
+    "description": "Auto close duplicate tabs option"
+  },
+  "enableSmoothScroll": {
+    "message": "Enable Smooth Scroll",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Settings Applied",
+    "description": "Save settings button"
+  },
+  "reset": {
+    "message": "Reset",
+    "description": "Reset settings button"
+  },
+  "settingsSaved": {
+    "message": "Settings Applied",
+    "description": "Settings saved notification"
+  },
+  "settingsReset": {
+    "message": "Reset Complete",
+    "description": "Settings reset notification"
+  },
+  "resetting": {
+    "message": "Resetting...",
+    "description": "Resetting notification"
+  },
+  "loadError": {
+    "message": "Failed to Load Settings",
+    "description": "Load settings error notification"
+  },
+  "saveError": {
+    "message": "Failed to Save Settings",
+    "description": "Save settings error notification"
+  },
+  "resetError": {
+    "message": "Failed to Reset Settings",
+    "description": "Reset settings error notification"
+  },
+  "themeLight": {
+    "message": "Light",
+    "description": "Light theme"
+  },
+  "themeDark": {
+    "message": "Dark",
+    "description": "Dark theme"
+  },
+  "buyMeACoffee": {
+    "message": "Buy me a coffee",
+    "description": "Donation button"
+  },
+  "toggleTheme": {
+    "message": "Toggle theme",
+    "description": "Toggle theme button"
+  },
+  "toggleLanguage": {
+    "message": "Toggle language",
+    "description": "Toggle language button"
+  },
+  "donationTooltip": {
+    "message": "If you like this work, please support me. Thanks :)",
+    "description": "Donation tooltip"
+  },
+  "rightButtonHint": {
+    "message": "Hold right mouse button",
+    "description": "Right mouse button hint"
+  },
+  "leftButtonHint": {
+    "message": "Hold left mouse button",
+    "description": "Left mouse button hint"
+  },
+  "foregroundAction": {
+    "message": "Open in Foreground",
+    "description": "Open in foreground action"
+  },
+  "backgroundAction": {
+    "message": "Open in Background",
+    "description": "Open in background action"
+  },
+  "dragSearchEngine": {
+    "message": "Drag Search Engine URL",
+    "description": "Drag search engine URL setting"
+  },
+  "linkPreview": {
+    "message": "Popup View",
+    "description": "Popup view title"
+  },
+  "quickNavTooltip": {
+    "message": "Left click: Go to {next} | Right click: Go to {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Hover + Key to Show Popup",
+    "description": "Popup view hint"
+  },
+  "enableLinkPreview": {
+    "message": "Enable Popup View",
+    "description": "Enable popup view option"
+  },
+  "enableTextSearchPreview": {
+    "message": "Enable Text Selection Search",
+    "description": "Enable text selection search option"
+  },
+  "modifierKey": {
+    "message": "Trigger Key",
+    "description": "Trigger key setting"
+  },
+  "controlKey": {
+    "message": "Ctrl Key",
+    "description": "Ctrl key option"
+  },
+  "altKey": {
+    "message": "Alt Key",
+    "description": "Alt key option"
+  },
+  "shiftKey": {
+    "message": "Shift Key",
+    "description": "Shift key option"
+  },
+  "noKey": {
+    "message": "No Key Required",
+    "description": "No key required option"
+  },
+  "previewDelay": {
+    "message": "Popup Delay (ms)",
+    "description": "Popup delay setting"
+  },
+  "maxPreviewWindows": {
+    "message": "Max Popup Windows",
+    "description": "Max popup windows setting"
+  },
+  "previewWidth": {
+    "message": "Window Width",
+    "description": "Window width setting"
+  },
+  "previewHeight": {
+    "message": "Window Height",
+    "description": "Window height setting"
+  },
+  "previewPosition": {
+    "message": "Window Position",
+    "description": "Window position setting"
+  },
+  "cursorPosition": {
+    "message": "Cursor Position",
+    "description": "Cursor position option"
+  },
+  "centerScreen": {
+    "message": "Center of Screen",
+    "description": "Center of screen option"
+  },
+  "cornerScreen": {
+    "message": "Corner of Screen",
+    "description": "Corner of screen option"
+  },
+  "searchEngine": {
+    "message": "Popup Search Engine URL",
+    "description": "Popup search engine URL setting"
+  },
+  "searchEngineExamples": {
+    "message": "Use {q} for search term, example format:",
+    "description": "Search engine examples description"
+  },
+  "googleExample": {
+    "message": "Google Search: https://www.google.com/search?q={q}",
+    "description": "Google search example"
+  },
+  "googleTranslateExample": {
+    "message": "Google Translate: https://translate.google.com/?sl=auto&tl=zh-CN&text={q}&op=translate",
+    "description": "Google translate example"
+  },
+  "localSearchExample": {
+    "message": "DuckDuckGo Search: https://duckduckgo.com/?q={q}",
+    "description": "Local search example"
+  },
+  "bingExample": {
+    "message": "Bing Search: https://www.bing.com/search?q={q}",
+    "description": "Bing search example"
+  },
+  "wheelTip": {
+    "message": "Use mouse wheel to adjust value",
+    "description": "Wheel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "When using a trigger key, max delay is limited to 300ms",
+    "description": "Modifier key delay tip"
+  },
+  "welcomeTitle": {
+    "message": "Welcome to Mouse Gesture Extension",
+    "description": "Welcome page title"
+  },
+  "welcomeDescription": {
+    "message": "Thank you for installing the Mouse Gesture Extension! This extension provides rich mouse gesture functionality, intelligent tab management, popup view capabilities, and enhanced visual experience to help you browse the web more efficiently. We have optimized the gesture recognition algorithm with increased fault tolerance, allowing gestures to be correctly recognized even when they are not perfectly drawn. The new popup view feature lets you view link content in popup windows without switching tabs. The extension also supports 29 languages and light/dark themes for a better user experience.",
+    "description": "Welcome page description"
+  },
+  "gesturesDescription": {
+    "message": "The following are preset mouse gestures that you can use by dragging with the right mouse button:",
+    "description": "Gestures description"
+  },
+  "extensionName": {
+    "message": "Mouse Gesture Extension",
+    "description": "Full extension name"
+  },
+  "coreFeatures": {
+    "message": "Core Features",
+    "description": "Core features title"
+  },
+  "utilitiesFeatures": {
+    "message": "Utility Tools",
+    "description": "Utilities features title"
+  },
+  "usageTips": {
+    "message": "Usage Tips",
+    "description": "Usage tips title"
+  },
+  "smartGestureRecognition": {
+    "message": "Smart gesture recognition: Correctly identifies gestures even when imperfect, works during page loading",
+    "description": "Smart gesture recognition description"
+  },
+  "tabManagementTitle": {
+    "message": "Tab Management",
+    "description": "Tab management title"
+  },
+  "tabManagementDesc": {
+    "message": ": Smart duplicate detection, optional auto-close, periodic memory optimization",
+    "description": "Tab management description"
+  },
+  "superDragTitle": {
+    "message": "Super Drag",
+    "description": "Super drag title"
+  },
+  "superDragDesc": {
+    "message": ": Drag links and images to new tabs, drag selected text to search",
+    "description": "Super drag description"
+  },
+  "linkPreviewTitle": {
+    "message": "Popup View",
+    "description": "Link preview title"
+  },
+  "linkPreviewDesc": {
+    "message": ": Hold modifier key (default: Shift) while hovering over links to preview target pages in popup windows",
+    "description": "Link preview description"
+  },
+  "textSelectionPreview": {
+    "message": "Select text and press modifier key to instantly search it in a popup window, with custom search engine support",
+    "description": "Text selection preview description"
+  },
+  "previewTip": {
+    "message": "You can open multiple popup windows simultaneously",
+    "description": "Preview tip"
+  },
+  "dragDirection": {
+    "message": "Customize the drag direction to determine the tab opening method: open in the background by default",
+    "description": "Drag direction description"
+  },
+  "debugPanelTitle": {
+    "message": "Mouse Gesture Debug Info",
+    "description": "Debug panel title"
+  },
+  "debugPanelDesc": {
+    "message": ": Press Alt+D to open, analyze gesture information in real-time, maintains state",
+    "description": "Debug panel description"
+  },
+  "oneClickCopy": {
+    "message": "One-click copy of debug information for easy sharing, with multi-language support",
+    "description": "One click copy description"
+  },
+  "mediaPreview": {
+    "message": "Enhanced media preview: Improved image hover effects and optimized video poster images",
+    "description": "Media preview description"
+  },
+  "adaptiveTheme": {
+    "message": "Adaptive themes: Adjusts visual style based on page background, supports light/dark mode",
+    "description": "Adaptive theme description"
+  },
+  "gestureTrail": {
+    "message": "Gesture trails displayed on screen with customizable color and width",
+    "description": "Gesture trail description"
+  },
+  "clickIcon": {
+    "message": "Click extension icon to enable/disable features, set language, theme and more",
+    "description": "Click icon description"
+  },
+  "languageSupport": {
+    "message": "Supports 29 languages, automatically adapts to browser language",
+    "description": "Language support description"
+  },
+  "enableAutoClose": {
+    "message": "Enable auto-close duplicate tabs feature to significantly reduce browser resource usage",
+    "description": "Enable auto close description"
+  },
+  "rightClickMacLinux": {
+    "message": "On Linux and macOS systems, double right-click to show browser context menu",
+    "description": "Right click mac linux tip"
+  },
+  "duplicateTab": {
+    "message": "Duplicate tab",
+    "description": "Duplicate tab"
+  },
+  "duplicateTabsDetected": {
+    "message": "Found $1 duplicate tabs",
+    "description": "Duplicate tabs detected notification title"
+  },
+  "duplicateTabsCount": {
+    "message": "There are $1 duplicate tabs",
+    "description": "Duplicate tabs count message"
+  },
+  "duplicateTabsSingle": {
+    "message": "There is 1 duplicate tab",
+    "description": "Single duplicate tab message"
+  },
+  "autoClosedTabs": {
+    "message": "Automatically closed $1 duplicate tabs",
+    "description": "Auto closed tabs notification"
+  },
+  "closeBtn": {
+    "message": "Close Duplicates",
+    "description": "Close duplicates button"
+  },
+  "ignoreBtn": {
+    "message": "Ignore",
+    "description": "Ignore button"
+  },
+  "untitledTab": {
+    "message": "Untitled tab",
+    "description": "Untitled tab"
+  },
+  "morePages": {
+    "message": "...and $1 more pages",
+    "description": "More pages tip"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Error showing duplicate tabs notification:",
+    "description": "Error showing duplicate tabs notification"
+  },
+  "errorSendCloseRequest": {
+    "message": "Error sending close request:",
+    "description": "Error sending close request"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Error closing duplicate tabs:",
+    "description": "Error closing duplicate tabs"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Error sending ignore request:",
+    "description": "Error sending ignore request"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Error ignoring duplicate tabs:",
+    "description": "Error ignoring duplicate tabs"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Error updating debug panel:",
+    "description": "Error updating debug panel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Error detecting background color:",
+    "description": "Error detecting background color"
+  },
+  "errorDetectImageBorder": {
+    "message": "Error detecting image border radius:",
+    "description": "Error detecting image border radius"
+  },
+  "errorSetMutationObserver": {
+    "message": "Error setting mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Error checking element visibility:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Error processing border radius:",
+    "description": "Error processing border radius"
+  },
+  "errorDetectImageBackground": {
+    "message": "Error detecting image background:",
+    "description": "Error detecting image background"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Error showing auto-close success notification:",
+    "description": "Error showing auto-close success notification"
+  },
+  "noForwardPage": {
+    "message": "No forward page in history",
+    "description": "No forward page message"
+  },
+  "noBackPage": {
+    "message": "No previous page in history",
+    "description": "No back page message"
+  },
+  "navigationFailed": {
+    "message": "Navigation failed",
+    "description": "Navigation failed message"
+  },
+  "tryingNextPage": {
+    "message": "Trying next page...",
+    "description": "Trying next page message"
+  },
+  "nextPageSuccess": {
+    "message": "Navigated to next page",
+    "description": "Next page success message"
+  },
+  "noNextPage": {
+    "message": "No next page link found",
+    "description": "No next page link message"
+  },
+  "invalidGesture": {
+    "message": "Invalid Gesture",
+    "description": "Invalid gesture message"
+  },
+  "nextPage": {
+    "message": "Next Page",
+    "description": "Next page action"
+  },
+  "errorReadPixel": {
+    "message": "Error reading pixel:",
+    "description": "Error reading pixel message"
+  },
+  "errorCanvasRead": {
+    "message": "Error reading canvas:",
+    "description": "Error reading canvas message"
+  },
+  "errorCanvasDraw": {
+    "message": "Error drawing on canvas:",
+    "description": "Error drawing on canvas message"
+  },
+  "errorAccessIframe": {
+    "message": "Error accessing iframe:",
+    "description": "Error accessing iframe message"
+  },
+  "errorMutationObserver": {
+    "message": "Error setting mutation observer:",
+    "description": "Error setting mutation observer"
+  },
+  "errorCheckVisibility": {
+    "message": "Error checking element visibility:",
+    "description": "Error checking element visibility"
+  },
+  "errorProcessCorners": {
+    "message": "Error processing corners:",
+    "description": "Error processing corners"
+  },
+  "languageChanged": {
+    "message": "Language changed from $1 to $2",
+    "description": "Language change notification"
+  },
+  "switchedToChinese": {
+    "message": "Switched to Chinese",
+    "description": "Switched to Chinese notification"
+  },
+  "switchedToEnglish": {
+    "message": "Switched to English",
+    "description": "Switched to English notification"
+  },
+  "debugSystemSettings": {
+    "message": "System Settings",
+    "description": "Debug panel system settings section"
+  },
+  "debugAngleThreshold": {
+    "message": "Angle Threshold",
+    "description": "Debug panel angle threshold setting"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Direction Change Threshold",
+    "description": "Debug panel direction change threshold setting"
+  },
+  "debugMinGestureDistance": {
+    "message": "Min Gesture Distance",
+    "description": "Debug panel minimum gesture distance setting"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Min Direction Segment Length",
+    "description": "Debug panel minimum direction segment length setting"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Min Gesture Complexity",
+    "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Latest Gesture Info",
+    "description": "Debug panel latest gesture info section"
+  },
+  "debugPoints": {
+    "message": "Points",
+    "description": "Debug panel points count"
+  },
+  "debugSimplifiedAfter": {
+    "message": "after simplification",
+    "description": "Debug panel simplified after text"
+  },
+  "debugTotalDistance": {
+    "message": "Total Distance",
+    "description": "Debug panel total distance"
+  },
+  "debugDirectionRecognition": {
+    "message": "Direction Recognition",
+    "description": "Debug panel direction recognition section"
+  },
+  "debugOriginalDirections": {
+    "message": "Original Directions",
+    "description": "Debug panel original directions"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Repetitive Pattern Detected",
+    "description": "Debug panel repetitive pattern detected"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Repetitive Pattern Type",
+    "description": "Debug panel repetitive pattern type"
+  },
+  "debugDirectionMerging": {
+    "message": "Direction Merging",
+    "description": "Debug panel direction merging section"
+  },
+  "debugMergedDirections": {
+    "message": "Merged Directions",
+    "description": "Debug panel merged directions"
+  },
+  "debugDirectionDistances": {
+    "message": "Direction Distances",
+    "description": "Debug panel direction distances"
+  },
+  "debugFinalResult": {
+    "message": "Final Result",
+    "description": "Debug panel final result section"
+  },
+  "debugRecognizedGesture": {
+    "message": "Recognized Gesture",
+    "description": "Debug panel recognized gesture"
+  },
+  "debugSimilarity": {
+    "message": "Similarity",
+    "description": "Debug panel similarity"
+  },
+  "debugYes": {
+    "message": "Yes",
+    "description": "Debug panel yes"
+  },
+  "debugNo": {
+    "message": "No",
+    "description": "Debug panel no"
+  },
+  "debugNone": {
+    "message": "None",
+    "description": "Debug panel none"
+  },
+  "debugInvalidGesture": {
+    "message": "Invalid Gesture",
+    "description": "Debug panel invalid gesture"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Waiting for gesture data...",
+    "description": "Debug panel waiting for gesture data"
+  },
+  "debugCopyButton": {
+    "message": "Copy Info",
+    "description": "Debug panel copy button"
+  },
+  "debugCopySuccess": {
+    "message": "Copied to clipboard!",
+    "description": "Debug panel copy success message"
+  },
+  "debugCopyFailed": {
+    "message": "Copy failed, please select and copy manually",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Search: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Popup Blocked",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Please allow popups for this site to enable link preview functionality.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Gesture mode ready",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...and $1 more pages",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Support the author by purchasing via this site/link",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Show Tab Count Badge",
+    "description": "Show tab count badge setting"
+  }
+}

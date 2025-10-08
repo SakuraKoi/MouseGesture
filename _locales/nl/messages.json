@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Muisgebaren",
+    "description": "De naam van de extensie"
+  },
+  "extDesc": {
+    "message": "Een Chrome/Edge extensie die muisgebaren, super drag functionaliteit en popup view ondersteunt",
+    "description": "De beschrijving van de extensie"
+  },
+  "title": {
+    "message": "Muisgebaren",
+    "description": "Extensie titel"
+  },
+  "builtInGestures": {
+    "message": "Ingebouwde Gebaren",
+    "description": "Ingebouwde gebaren titel"
+  },
+  "superDragFeature": {
+    "message": "Super Drag Functie",
+    "description": "Super drag functie titel"
+  },
+  "dragUp": {
+    "message": "Sleep Omhoog",
+    "description": "Sleep omhoog actie"
+  },
+  "dragRight": {
+    "message": "Sleep Rechts",
+    "description": "Sleep rechts actie"
+  },
+  "dragDown": {
+    "message": "Sleep Omlaag",
+    "description": "Sleep omlaag actie"
+  },
+  "dragLeft": {
+    "message": "Sleep Links",
+    "description": "Sleep links actie"
+  },
+  "openInForeground": {
+    "message": "Open Link op Voorgrond",
+    "description": "Open link op voorgrond"
+  },
+  "openInBackground": {
+    "message": "Open Link op Achtergrond",
+    "description": "Open link op achtergrond"
+  },
+  "superDragDescription": {
+    "message": "Super Sleep functie werkt voor links, afbeeldingen en geselecteerde tekst. Wanneer geselecteerde tekst een URL is, opent het als een link; anders wordt het gezocht. Sleeprichting bepaalt hoe nieuwe tabbladen worden geopend.",
+    "description": "Beschrijving super sleep functie"
+  },
+  "left": {
+    "message": "Links",
+    "description": "Richting links"
+  },
+  "right": {
+    "message": "Rechts",
+    "description": "Richting rechts"
+  },
+  "up": {
+    "message": "Omhoog",
+    "description": "Richting omhoog"
+  },
+  "down": {
+    "message": "Omlaag",
+    "description": "Richting omlaag"
+  },
+  "downThenRight": {
+    "message": "Omlaag dan Rechts",
+    "description": "Gebaar omlaag dan rechts"
+  },
+  "leftThenUp": {
+    "message": "Links dan Omhoog",
+    "description": "Gebaar links dan omhoog"
+  },
+  "rightThenUp": {
+    "message": "Rechts dan Omhoog",
+    "description": "Gebaar rechts dan omhoog"
+  },
+  "rightThenDown": {
+    "message": "Rechts dan Omlaag",
+    "description": "Gebaar rechts dan omlaag"
+  },
+  "upThenLeft": {
+    "message": "Omhoog dan Links",
+    "description": "Gebaar omhoog dan links"
+  },
+  "upThenRight": {
+    "message": "Omhoog dan Rechts",
+    "description": "Gebaar omhoog dan rechts"
+  },
+  "downThenLeft": {
+    "message": "Omlaag dan Links",
+    "description": "Gebaar omlaag dan links"
+  },
+  "leftThenDown": {
+    "message": "Links dan Omlaag",
+    "description": "Gebaar links dan omlaag"
+  },
+  "upThenDown": {
+    "message": "Omhoog dan Omlaag",
+    "description": "Gebaar omhoog dan omlaag"
+  },
+  "downThenUp": {
+    "message": "Omlaag dan Omhoog",
+    "description": "Gebaar omlaag dan omhoog"
+  },
+  "leftThenRight": {
+    "message": "Links dan Rechts",
+    "description": "Gebaar links dan rechts"
+  },
+  "rightThenLeft": {
+    "message": "Rechts dan Links",
+    "description": "Gebaar rechts dan links"
+  },
+  "back": {
+    "message": "Ga Terug",
+    "description": "Terug actie"
+  },
+  "forward": {
+    "message": "Ga Vooruit",
+    "description": "Vooruit actie"
+  },
+  "scrollUp": {
+    "message": "Scroll Omhoog",
+    "description": "Scroll omhoog actie"
+  },
+  "scrollDown": {
+    "message": "Scroll Omlaag",
+    "description": "Scroll omlaag actie"
+  },
+  "scrollLeft": {
+    "message": "Naar links scrollen",
+    "description": "Scroll left action"
+  },
+  "scrollRight": {
+    "message": "Naar rechts scrollen",
+    "description": "Scroll right action"
+  },
+  "forceRefresh": {
+    "message": "Geforceerd vernieuwen",
+    "description": "Force refresh action"
+  },
+  "closeTab": {
+    "message": "Sluit Tabblad",
+    "description": "Sluit tabblad actie"
+  },
+  "reopenTab": {
+    "message": "Gesloten Tabblad Heropenen",
+    "description": "Gesloten tabblad heropenen actie"
+  },
+  "newTab": {
+    "message": "Nieuw Tabblad",
+    "description": "Nieuw tabblad actie"
+  },
+  "refresh": {
+    "message": "Verversen",
+    "description": "Verversen actie"
+  },
+  "prevTab": {
+    "message": "Vorig Tabblad",
+    "description": "Vorig tabblad actie"
+  },
+  "nextTab": {
+    "message": "Volgend Tabblad",
+    "description": "Volgend tabblad actie"
+  },
+  "stopLoading": {
+    "message": "Stop Laden",
+    "description": "Actie stop laden"
+  },
+  "closeAllTabs": {
+    "message": "Sluit Alle Tabbladen",
+    "description": "Actie sluit alle tabbladen"
+  },
+  "scrollToBottom": {
+    "message": "Scroll naar Beneden",
+    "description": "Actie scroll naar beneden"
+  },
+  "scrollToTop": {
+    "message": "Scroll naar Boven",
+    "description": "Actie scroll naar boven"
+  },
+  "scrollToLeft": {
+    "message": "Scroll naar linkerkant",
+    "description": "Scroll to left edge action"
+  },
+  "scrollToRight": {
+    "message": "Scroll naar rechterkant",
+    "description": "Scroll to right edge action"
+  },
+  "noAction": {
+    "message": "Geen Actie",
+    "description": "No action option"
+  },
+  "newWindow": {
+    "message": "Nieuw Venster",
+    "description": "New window action"
+  },
+  "newInPrivateWindow": {
+    "message": "Nieuw Privévenster",
+    "description": "New private window action"
+  },
+  "closeOtherTabs": {
+    "message": "Andere Tabbladen Sluiten",
+    "description": "Close other tabs action"
+  },
+  "closeTabsToRight": {
+    "message": "Tabbladen Rechts Sluiten",
+    "description": "Close tabs to right action"
+  },
+  "toggleFullscreen": {
+    "message": "Volledig Scherm Schakelen",
+    "description": "Toggle fullscreen action"
+  },
+  "closeTabsToLeft": {
+    "message": "Tabbladen Links Sluiten",
+    "description": "Close tabs to left action"
+  },
+  "reloadAllTabs": {
+    "message": "Alle Tabbladen Herladen",
+    "description": "Reload all tabs action"
+  },
+  "togglePinTab": {
+    "message": "Tabblad Vastzetten/Losmaken",
+    "description": "Pin/unpin tab action"
+  },
+  "toggleMuteTab": {
+    "message": "Tabblad Dempen/Demping Opheffen",
+    "description": "Mute/unmute tab action"
+  },
+  "muteOtherTabs": {
+    "message": "Andere Tabbladen Dempen",
+    "description": "Mute other tabs action"
+  },
+  "toggleMaximize": {
+    "message": "Venster Maximaliseren/Herstellen",
+    "description": "Maximize/restore window action"
+  },
+  "minimizeWindow": {
+    "message": "Venster Minimaliseren",
+    "description": "Minimize window action"
+  },
+  "settings": {
+    "message": "Instellingen",
+    "description": "Instellingen titel"
+  },
+  "enableGesture": {
+    "message": "Muisgebaren Inschakelen",
+    "description": "Muisgebaren inschakelen optie"
+  },
+  "showGestureTrail": {
+    "message": "Gebarenspoor Tonen",
+    "description": "Gebarenspoor tonen optie"
+  },
+  "showGestureHint": {
+    "message": "Gebarenhint Tonen",
+    "description": "Gebarenhint tonen optie"
+  },
+  "trailColor": {
+    "message": "Spoorkleur",
+    "description": "Spoorkleur optie"
+  },
+  "trailWidth": {
+    "message": "Spoorbreedte",
+    "description": "Spoorbreedte optie"
+  },
+  "enableSuperDrag": {
+    "message": "Super Drag Inschakelen",
+    "description": "Super drag inschakelen optie"
+  },
+  "enableDragTextSearch": {
+    "message": "Tekst Slepen Zoeken Inschakelen",
+    "description": "Tekst slepen zoeken inschakelen optie"
+  },
+  "enableImagePreview": {
+    "message": "Afbeeldingsvoorbeeld Inschakelen",
+    "description": "Afbeeldingsvoorbeeld inschakelen optie"
+  },
+  "enableDuplicateCheck": {
+    "message": "Dubbele Tabbladen Detecteren",
+    "description": "Dubbele tabbladen detecteren optie"
+  },
+  "autoCloseDuplicates": {
+    "message": "Dubbele Tabbladen Automatisch Sluiten",
+    "description": "Dubbele tabbladen automatisch sluiten optie"
+  },
+  "enableSmoothScroll": {
+    "message": "Vloeiend scrollen inschakelen",
+    "description": "Enable smooth scrolling for gesture actions"
+  },
+  "save": {
+    "message": "Instellingen Toegepast",
+    "description": "Instellingen opslaan knop"
+  },
+  "reset": {
+    "message": "Herstellen",
+    "description": "Instellingen herstellen knop"
+  },
+  "settingsSaved": {
+    "message": "Instellingen Toegepast",
+    "description": "Instellingen opgeslagen melding"
+  },
+  "settingsReset": {
+    "message": "Herstel Voltooid",
+    "description": "Instellingen hersteld melding"
+  },
+  "resetting": {
+    "message": "Herstellen...",
+    "description": "Herstelmelding"
+  },
+  "loadError": {
+    "message": "Instellingen Laden Mislukt",
+    "description": "Instellingen laden foutmelding"
+  },
+  "saveError": {
+    "message": "Instellingen Opslaan Mislukt",
+    "description": "Instellingen opslaan foutmelding"
+  },
+  "resetError": {
+    "message": "Instellingen Herstellen Mislukt",
+    "description": "Instellingen herstellen foutmelding"
+  },
+  "themeLight": {
+    "message": "Licht",
+    "description": "Licht thema"
+  },
+  "themeDark": {
+    "message": "Donker",
+    "description": "Donker thema"
+  },
+  "buyMeACoffee": {
+    "message": "Koop mij een koffie",
+    "description": "Donatie knop"
+  },
+  "toggleTheme": {
+    "message": "Thema Wisselen",
+    "description": "Thema wissel knop"
+  },
+  "toggleLanguage": {
+    "message": "Taal Wisselen",
+    "description": "Taal wissel knop"
+  },
+  "donationTooltip": {
+    "message": "Als je dit werk leuk vindt, steun me alsjeblieft. Bedankt :)",
+    "description": "Donatie tooltip"
+  },
+  "rightButtonHint": {
+    "message": "Houd rechtermuisknop ingedrukt",
+    "description": "Rechtermuisknop hint"
+  },
+  "leftButtonHint": {
+    "message": "Houd linkermuisknop ingedrukt",
+    "description": "Linkermuisknop hint"
+  },
+  "foregroundAction": {
+    "message": "Open op Voorgrond",
+    "description": "Open op voorgrond actie"
+  },
+  "backgroundAction": {
+    "message": "Open op Achtergrond",
+    "description": "Open op achtergrond actie"
+  },
+  "dragSearchEngine": {
+    "message": "Sleep Zoekmachine URL",
+    "description": "Instelling sleep zoekmachine URL"
+  },
+  "linkPreview": {
+    "message": "Popup Weergave",
+    "description": "Titel popup weergave"
+  },
+  "quickNavTooltip": {
+    "message": "Rechts: {next} | Links: {prev}",
+    "description": "Quick navigation hover tooltip"
+  },
+  "linkPreviewHint": {
+    "message": "Zweef + Toets om Popup te Tonen",
+    "description": "Hint popup weergave"
+  },
+  "enableLinkPreview": {
+    "message": "Popup Weergave Inschakelen",
+    "description": "Optie popup weergave inschakelen"
+  },
+  "enableTextSearchPreview": {
+    "message": "Tekstselectie Zoeken Inschakelen",
+    "description": "Optie tekstselectie zoeken inschakelen"
+  },
+  "modifierKey": {
+    "message": "Trigger Toets",
+    "description": "Instelling trigger toets"
+  },
+  "controlKey": {
+    "message": "Ctrl Toets",
+    "description": "Optie Ctrl toets"
+  },
+  "altKey": {
+    "message": "Alt Toets",
+    "description": "Optie Alt toets"
+  },
+  "shiftKey": {
+    "message": "Shift Toets",
+    "description": "Optie Shift toets"
+  },
+  "noKey": {
+    "message": "Geen Toets Vereist",
+    "description": "Optie geen toets vereist"
+  },
+  "previewDelay": {
+    "message": "Popup Vertraging (ms)",
+    "description": "Instelling popup vertraging"
+  },
+  "maxPreviewWindows": {
+    "message": "Maximaal Popup Vensters",
+    "description": "Instelling maximaal popup vensters"
+  },
+  "previewWidth": {
+    "message": "Vensterbreedte",
+    "description": "Instelling vensterbreedte"
+  },
+  "previewHeight": {
+    "message": "Vensterhoogte",
+    "description": "Instelling vensterhoogte"
+  },
+  "previewPosition": {
+    "message": "Vensterpositie",
+    "description": "Instelling vensterpositie"
+  },
+  "cursorPosition": {
+    "message": "Cursorpositie",
+    "description": "Optie cursorpositie"
+  },
+  "centerScreen": {
+    "message": "Midden Scherm",
+    "description": "Optie midden scherm"
+  },
+  "cornerScreen": {
+    "message": "Hoek Scherm",
+    "description": "Optie hoek scherm"
+  },
+  "searchEngine": {
+    "message": "Popup Zoekmachine URL",
+    "description": "Instelling popup zoekmachine URL"
+  },
+  "searchEngineExamples": {
+    "message": "Gebruik {q} voor zoekterm, voorbeeldformaat:",
+    "description": "Beschrijving zoekmachine voorbeelden"
+  },
+  "googleExample": {
+    "message": "Google Zoeken: https://www.google.nl/search?q={q}",
+    "description": "Google zoeken voorbeeld"
+  },
+  "googleTranslateExample": {
+    "message": "Google Vertalen: https://translate.google.nl/?sl=auto&tl=nl&text={q}&op=translate",
+    "description": "Google Vertalen voorbeeld"
+  },
+  "localSearchExample": {
+    "message": "Startpagina Zoeken: https://www.startpagina.nl/zoeken/?q={q}",
+    "description": "Voorbeeld van lokale zoek URL"
+  },
+  "bingExample": {
+    "message": "Bing Zoeken: https://www.bing.com/search?q={q}&setlang=nl",
+    "description": "Bing zoeken voorbeeld"
+  },
+  "wheelTip": {
+    "message": "Gebruik muiswiel om waarde aan te passen",
+    "description": "Wiel tip"
+  },
+  "modifierKeyDelayTip": {
+    "message": "Bij gebruik van een trigger toets is de maximale vertraging beperkt tot 300ms",
+    "description": "Modifier toets vertraging tip"
+  },
+  "welcomeTitle": {
+    "message": "Welkom bij Muisgebaren Extensie",
+    "description": "Welkomstpagina titel"
+  },
+  "welcomeDescription": {
+    "message": "Bedankt voor het installeren van de Muisgebaar Extensie! Deze extensie biedt rijke muisgebaar functionaliteit, intelligente tabbladenbeheer, popup weergave mogelijkheden en verbeterde visuele ervaring om u te helpen efficiënter te browsen op het web. We hebben het gebaarherkenningsalgoritme geoptimaliseerd met verhoogde fouttolerantie, waardoor gebaren correct kunnen worden herkend, zelfs wanneer ze niet perfect zijn getekend. De nieuwe popup venster functie stelt u in staat om linkinhoud in popup vensters te bekijken zonder van tabbladen te wisselen. De extensie ondersteunt ook 29 talen en lichte/donkere thema's voor een betere gebruikerservaring.",
+    "description": "Welkomstpagina beschrijving"
+  },
+  "gesturesDescription": {
+    "message": "De volgende zijn vooraf ingestelde muisgebaren die je kunt gebruiken door te slepen met de rechtermuisknop:",
+    "description": "Gebaren beschrijving"
+  },
+  "extensionName": {
+    "message": "Muisgebaren Extensie",
+    "description": "Volledige extensie naam"
+  },
+  "coreFeatures": {
+    "message": "Kernfuncties",
+    "description": "Kernfuncties titel"
+  },
+  "utilitiesFeatures": {
+    "message": "Hulpprogramma's",
+    "description": "Hulpprogramma's titel"
+  },
+  "usageTips": {
+    "message": "Gebruikstips",
+    "description": "Gebruikstips titel"
+  },
+  "smartGestureRecognition": {
+    "message": "Slimme gebaarherkenning: Herkent gebaren correct zelfs als ze onvolmaakt zijn, werkt tijdens het laden van pagina's",
+    "description": "Beschrijving slimme gebaarherkenning"
+  },
+  "tabManagementTitle": {
+    "message": "Tabbladbeheer",
+    "description": "Titel tabbladbeheer"
+  },
+  "tabManagementDesc": {
+    "message": ": Slimme detectie van duplicaten, optioneel automatisch sluiten, periodieke geheugenoptimalisatie",
+    "description": "Beschrijving tabbladbeheer"
+  },
+  "superDragTitle": {
+    "message": "Super Slepen",
+    "description": "Titel super slepen"
+  },
+  "superDragDesc": {
+    "message": ": Sleep links en afbeeldingen naar nieuwe tabbladen, sleep geselecteerde tekst om te zoeken",
+    "description": "Beschrijving super slepen"
+  },
+  "linkPreviewTitle": {
+    "message": "Popup Weergave",
+    "description": "Titel linkvoorvertoning"
+  },
+  "linkPreviewDesc": {
+    "message": ": Houd modificatietoets (standaard: Shift) ingedrukt terwijl je over links zweeft om doelpagina's te bekijken in popup vensters",
+    "description": "Beschrijving linkvoorvertoning"
+  },
+  "textSelectionPreview": {
+    "message": "Selecteer tekst en druk op de modificatietoets om deze direct te zoeken in een popup venster, met ondersteuning voor aangepaste zoekmachines",
+    "description": "Beschrijving tekstselectie voorvertoning"
+  },
+  "previewTip": {
+    "message": "Je kunt meerdere popup vensters tegelijkertijd openen",
+    "description": "Voorvertoning tip"
+  },
+  "dragDirection": {
+    "message": "Pas de sleeprichting aan om de tabblad openmethode te bepalen: standaard op achtergrond openen",
+    "description": "Beschrijving sleeprichting"
+  },
+  "debugPanelTitle": {
+    "message": "Muisgebaar Debug Informatie",
+    "description": "Titel debug paneel"
+  },
+  "debugPanelDesc": {
+    "message": ": Druk op Alt+D om te openen, analyseer gebaar informatie in real-time, behoudt status",
+    "description": "Beschrijving debug paneel"
+  },
+  "oneClickCopy": {
+    "message": "Eén-klik kopiëren van debug informatie voor eenvoudig delen, met ondersteuning voor meerdere talen",
+    "description": "Beschrijving één-klik kopiëren"
+  },
+  "mediaPreview": {
+    "message": "Verbeterde media voorvertoning: Verbeterde afbeelding zweef effecten en geoptimaliseerde video poster afbeeldingen",
+    "description": "Beschrijving media voorvertoning"
+  },
+  "adaptiveTheme": {
+    "message": "Adaptieve thema's: Past visuele stijl aan op basis van pagina achtergrond, ondersteunt licht/donker modus",
+    "description": "Beschrijving adaptief thema"
+  },
+  "gestureTrail": {
+    "message": "Gebarensporen weergegeven op scherm met aanpasbare kleur en breedte",
+    "description": "Beschrijving gebarenspoor"
+  },
+  "clickIcon": {
+    "message": "Klik op het extensie icoon om functies in/uit te schakelen, taal in te stellen, thema en meer",
+    "description": "Beschrijving klik icoon"
+  },
+  "languageSupport": {
+    "message": "Ondersteunt 29 talen, past automatisch aan aan browser taal",
+    "description": "Beschrijving taalondersteuning"
+  },
+  "enableAutoClose": {
+    "message": "Schakel automatisch sluiten van dubbele tabbladen in om browser brongebruik aanzienlijk te verminderen",
+    "description": "Beschrijving automatisch sluiten inschakelen"
+  },
+  "rightClickMacLinux": {
+    "message": "Op Linux en macOS systemen, dubbel rechtsklikken om het browser contextmenu te tonen",
+    "description": "Tip voor rechtsklikken op Mac/Linux"
+  },
+  "duplicateTab": {
+    "message": "Dubbel tabblad",
+    "description": "Dubbel tabblad"
+  },
+  "duplicateTabsDetected": {
+    "message": "$1 dubbele tabbladen gevonden",
+    "description": "Titel melding dubbele tabbladen gedetecteerd"
+  },
+  "duplicateTabsCount": {
+    "message": "Er zijn $1 dubbele tabbladen",
+    "description": "Bericht aantal dubbele tabbladen"
+  },
+  "duplicateTabsSingle": {
+    "message": "Er is 1 dubbel tabblad",
+    "description": "Bericht enkel dubbel tabblad"
+  },
+  "autoClosedTabs": {
+    "message": "Automatisch $1 dubbele tabbladen gesloten",
+    "description": "Melding automatisch gesloten tabbladen"
+  },
+  "closeBtn": {
+    "message": "Sluit Duplicaten",
+    "description": "Knop duplicaten sluiten"
+  },
+  "ignoreBtn": {
+    "message": "Negeren",
+    "description": "Negeren knop"
+  },
+  "untitledTab": {
+    "message": "Naamloos tabblad",
+    "description": "Naamloos tabblad"
+  },
+  "morePages": {
+    "message": "...en $1 meer pagina's",
+    "description": "Tip meer pagina's"
+  },
+  "errorShowDuplicateTabs": {
+    "message": "Fout bij tonen van dubbele tabbladen melding:",
+    "description": "Foutmelding tonen dubbele tabbladen"
+  },
+  "errorSendCloseRequest": {
+    "message": "Fout bij verzenden van sluit verzoek:",
+    "description": "Foutmelding verzenden sluit verzoek"
+  },
+  "errorCloseDuplicateTabs": {
+    "message": "Fout bij sluiten van dubbele tabbladen:",
+    "description": "Foutmelding sluiten dubbele tabbladen"
+  },
+  "errorSendIgnoreRequest": {
+    "message": "Fout bij verzenden van negeer verzoek:",
+    "description": "Foutmelding verzenden negeer verzoek"
+  },
+  "errorIgnoreDuplicateTabs": {
+    "message": "Fout bij negeren van dubbele tabbladen:",
+    "description": "Foutmelding negeren dubbele tabbladen"
+  },
+  "errorUpdateDebugPanel": {
+    "message": "Fout bij bijwerken van debug paneel:",
+    "description": "Foutmelding bijwerken debug paneel"
+  },
+  "errorDetectBackgroundColor": {
+    "message": "Fout bij detecteren van achtergrondkleur:",
+    "description": "Foutmelding detecteren achtergrondkleur"
+  },
+  "errorDetectImageBorder": {
+    "message": "Fout bij detecteren van afbeelding randradius:",
+    "description": "Foutmelding detecteren afbeelding randradius"
+  },
+  "errorSetMutationObserver": {
+    "message": "Fout bij instellen van mutatie observer:",
+    "description": "Foutmelding instellen mutatie observer"
+  },
+  "errorCheckElementVisibility": {
+    "message": "Fout bij controleren van element zichtbaarheid:",
+    "description": "Foutmelding controleren element zichtbaarheid"
+  },
+  "errorProcessBorderRadius": {
+    "message": "Fout bij verwerken van randradius:",
+    "description": "Foutmelding verwerken randradius"
+  },
+  "errorDetectImageBackground": {
+    "message": "Fout bij detecteren van afbeelding achtergrond:",
+    "description": "Foutmelding detecteren afbeelding achtergrond"
+  },
+  "errorShowAutoCloseNotification": {
+    "message": "Fout bij tonen van automatisch sluiten succes melding:",
+    "description": "Foutmelding tonen automatisch sluiten succes"
+  },
+  "noForwardPage": {
+    "message": "Geen volgende pagina in geschiedenis",
+    "description": "Bericht geen volgende pagina"
+  },
+  "noBackPage": {
+    "message": "Geen vorige pagina in geschiedenis",
+    "description": "Bericht geen vorige pagina"
+  },
+  "navigationFailed": {
+    "message": "Navigatie mislukt",
+    "description": "Bericht navigatie mislukt"
+  },
+  "tryingNextPage": {
+    "message": "Volgende pagina proberen...",
+    "description": "Bericht volgende pagina proberen"
+  },
+  "nextPageSuccess": {
+    "message": "Genavigeerd naar volgende pagina",
+    "description": "Bericht volgende pagina succes"
+  },
+  "noNextPage": {
+    "message": "Geen volgende pagina link gevonden",
+    "description": "Bericht geen volgende pagina link"
+  },
+  "invalidGesture": {
+    "message": "Ongeldig Gebaar",
+    "description": "Bericht ongeldig gebaar"
+  },
+  "nextPage": {
+    "message": "Volgende Pagina",
+    "description": "Actie volgende pagina"
+  },
+  "errorReadPixel": {
+    "message": "Fout bij lezen van pixel:",
+    "description": "Foutmelding lezen pixel"
+  },
+  "errorCanvasRead": {
+    "message": "Fout bij lezen van canvas:",
+    "description": "Foutmelding lezen canvas"
+  },
+  "errorCanvasDraw": {
+    "message": "Fout bij tekenen op canvas:",
+    "description": "Foutmelding tekenen canvas"
+  },
+  "errorAccessIframe": {
+    "message": "Fout bij toegang tot iframe:",
+    "description": "Foutmelding toegang iframe"
+  },
+  "errorMutationObserver": {
+    "message": "Fout bij instellen van mutatie observer:",
+    "description": "Foutmelding instellen mutatie observer"
+  },
+  "errorCheckVisibility": {
+    "message": "Fout bij controleren van element zichtbaarheid:",
+    "description": "Foutmelding controleren zichtbaarheid"
+  },
+  "errorProcessCorners": {
+    "message": "Fout bij verwerken van hoeken:",
+    "description": "Foutmelding verwerken hoeken"
+  },
+  "languageChanged": {
+    "message": "Taal gewijzigd van $1 naar $2",
+    "description": "Melding taal gewijzigd"
+  },
+  "switchedToChinese": {
+    "message": "Gewisseld naar Chinees",
+    "description": "Melding gewisseld naar Chinees"
+  },
+  "switchedToEnglish": {
+    "message": "Gewisseld naar Engels",
+    "description": "Melding gewisseld naar Engels"
+  },
+  "debugSystemSettings": {
+    "message": "Systeeminstellingen",
+    "description": "Debug paneel systeeminstellingen sectie"
+  },
+  "debugAngleThreshold": {
+    "message": "Hoekdrempel",
+    "description": "Debug paneel hoekdrempel instelling"
+  },
+  "debugDirectionChangeThreshold": {
+    "message": "Richtingverandering Drempel",
+    "description": "Debug paneel richtingverandering drempel instelling"
+  },
+  "debugMinGestureDistance": {
+    "message": "Minimale Gebaar Afstand",
+    "description": "Debug paneel minimale gebaar afstand instelling"
+  },
+  "debugMinDirectionSegmentLength": {
+    "message": "Minimale Richting Segment Lengte",
+    "description": "Debug paneel minimale richting segment lengte instelling"
+  },
+  "debugMinGestureComplexity": {
+    "message": "Minimale Gebaar Complexiteit",
+    "description": "Debug paneel minimale gebaar complexiteit instelling"
+  },
+  "debugLatestGestureInfo": {
+    "message": "Laatste Gebaar Informatie",
+    "description": "Debug paneel laatste gebaar informatie sectie"
+  },
+  "debugPoints": {
+    "message": "Punten",
+    "description": "Aantal punten debug paneel"
+  },
+  "debugSimplifiedAfter": {
+    "message": "na vereenvoudiging",
+    "description": "Debug paneel vereenvoudigd na tekst"
+  },
+  "debugTotalDistance": {
+    "message": "Totale Afstand",
+    "description": "Debug paneel totale afstand"
+  },
+  "debugDirectionRecognition": {
+    "message": "Richting Herkenning",
+    "description": "Debug paneel richting herkenning sectie"
+  },
+  "debugOriginalDirections": {
+    "message": "Oorspronkelijke Richtingen",
+    "description": "Debug paneel oorspronkelijke richtingen"
+  },
+  "debugRepetitivePatternDetected": {
+    "message": "Herhalend Patroon Gedetecteerd",
+    "description": "Debug paneel herhalend patroon gedetecteerd"
+  },
+  "debugRepetitivePatternType": {
+    "message": "Herhalend Patroon Type",
+    "description": "Debug paneel herhalend patroon type"
+  },
+  "debugDirectionMerging": {
+    "message": "Richting Samenvoegen",
+    "description": "Debug paneel richting samenvoegen sectie"
+  },
+  "debugMergedDirections": {
+    "message": "Samengevoegde Richtingen",
+    "description": "Debug paneel samengevoegde richtingen"
+  },
+  "debugDirectionDistances": {
+    "message": "Richting Afstanden",
+    "description": "Debug paneel richting afstanden"
+  },
+  "debugFinalResult": {
+    "message": "Eindresultaat",
+    "description": "Debug paneel eindresultaat sectie"
+  },
+  "debugRecognizedGesture": {
+    "message": "Herkend Gebaar",
+    "description": "Debug paneel herkend gebaar"
+  },
+  "debugSimilarity": {
+    "message": "Gelijkenis",
+    "description": "Debug paneel gelijkenis"
+  },
+  "debugYes": {
+    "message": "Ja",
+    "description": "Debug paneel ja"
+  },
+  "debugNo": {
+    "message": "Nee",
+    "description": "Debug paneel nee"
+  },
+  "debugNone": {
+    "message": "Geen",
+    "description": "Debug paneel geen"
+  },
+  "debugInvalidGesture": {
+    "message": "Ongeldige Beweging",
+    "description": "Debug paneel ongeldige beweging"
+  },
+  "debugWaitingForGestureData": {
+    "message": "Wachten op gebaar gegevens...",
+    "description": "Debug paneel wachten op gebaar gegevens"
+  },
+  "debugCopyButton": {
+    "message": "Kopieer Debug Info",
+    "description": "Debug paneel kopieer knop"
+  },
+  "debugCopySuccess": {
+    "message": "Gekopieerd naar klembord!",
+    "description": "Debug paneel kopieer succes bericht"
+  },
+  "debugCopyFailed": {
+    "message": "Kopiëren mislukt, selecteer en kopieer handmatig",
+    "description": "Copy failed message"
+  },
+  "searchPrefix": {
+    "message": "Zoeken: ",
+    "description": "Search prefix for text selection"
+  },
+  "popupBlocked": {
+    "message": "Popup Geblokkeerd",
+    "description": "Popup blocked notification title"
+  },
+  "allowPopupsMessage": {
+    "message": "Sta popups toe voor deze site om de linkvoorvertoningsfunctie in te schakelen.",
+    "description": "Allow popups message"
+  },
+  "gestureReady": {
+    "message": "Gebarenmodus gereed",
+    "description": "Gesture ready notification"
+  },
+  "moreTabsHidden": {
+    "message": "...en nog $1 pagina's",
+    "description": "More tabs hidden message"
+  },
+  "likeSupportAuthor": {
+    "message": "Steun de auteur door te kopen via deze link",
+    "description": "Support author tip"
+  },
+  "showTabCountBadge": {
+    "message": "Toon Tab Aantal",
+    "description": "Show tab count badge option"
+  }
+}
