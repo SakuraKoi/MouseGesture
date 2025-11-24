@@ -40,7 +40,7 @@ function cachedQuerySelector(selector) {
   const element = document.querySelector(selector);
   if (element) {
     domCache.set(selector, element);
-    
+
     // 限制缓存大小，防止内存泄漏
     if (domCache.size > CONFIG.CACHE_MAX_SIZE) {
       const firstKey = domCache.keys().next().value;
@@ -55,13 +55,13 @@ const eventListeners = new Map();
 
 function addManagedEventListener(element, event, handler, options = {}) {
   const key = `${element.constructor.name}_${event}_${handler.name || 'anonymous'}`;
-  
+
   // 如果已存在相同的监听器，先移除
   if (eventListeners.has(key)) {
     const { elem, evt, hdlr } = eventListeners.get(key);
     elem.removeEventListener(evt, hdlr, options);
   }
-  
+
   // 添加新的监听器
   element.addEventListener(event, handler, options);
   eventListeners.set(key, { elem: element, evt: event, hdlr: handler, opts: options });
@@ -125,12 +125,12 @@ const CommonUtils = {
   isValidLink(link) {
     return link && link.href && !link.href.toLowerCase().startsWith('javascript:');
   },
-  
+
   // 统一的元素可见性检查
   isElementVisible(element) {
     return element && element.offsetWidth > 0 && element.offsetHeight > 0;
   },
-  
+
   // 统一的安全执行函数
   safeExecute(fn, context = 'Unknown', fallbackValue = null) {
     try {
@@ -140,7 +140,7 @@ const CommonUtils = {
       return fallbackValue;
     }
   },
-  
+
   // 统一的DOM操作函数
   safeRemoveElement(element) {
     if (element && element.parentNode) {
@@ -154,14 +154,14 @@ const CommonUtils = {
     }
     return false;
   },
-  
+
   // 统一的延迟执行函数
   delayedExecute(fn, delay = CONFIG.NAVIGATION_DELAY, context = 'Unknown') {
     return setTimeout(() => {
       this.safeExecute(fn, context);
     }, delay);
   },
-  
+
   // 统一的元素查找函数
   findElementWithValidation(selectors, validator = this.isElementVisible) {
     for (const selector of selectors) {
@@ -172,12 +172,12 @@ const CommonUtils = {
     }
     return null;
   },
-  
+
   // 统一的事件处理函数
   createDebouncedHandler(handler, delay = CONFIG.PERFORMANCE_THROTTLE) {
     return debounce(handler, delay);
   },
-  
+
   // 统一的URL标准化函数
   normalizeUrl(url) {
     if (!url) return '';
@@ -199,26 +199,26 @@ const easingCache = new Map();
 function performCustomEasingScrollTo(element, targetPosition, duration, easing, isHorizontal) {
   const startPosition = isHorizontal ? element.scrollLeft : element.scrollTop;
   const startTime = performance.now();
-  
+
   function animate(currentTime) {
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / duration, 1);
-    
+
     // 应用缓动函数
     const easedProgress = applyEasing(progress, easing);
     const currentPosition = startPosition + (targetPosition - startPosition) * easedProgress;
-    
+
     if (isHorizontal) {
       element.scrollLeft = currentPosition;
     } else {
       element.scrollTop = currentPosition;
     }
-    
+
     if (progress < 1) {
       requestAnimationFrame(animate);
     }
   }
-  
+
   requestAnimationFrame(animate);
 }
 
@@ -229,9 +229,9 @@ function applyEasing(t, easing) {
   if (easingCache.has(cacheKey)) {
     return easingCache.get(cacheKey);
   }
-  
+
   let result;
-  
+
   switch (easing) {
     case 'linear':
       result = t;
@@ -253,16 +253,16 @@ function applyEasing(t, easing) {
         result = t; // 默认线性
       }
   }
-  
+
   // 缓存结果
   easingCache.set(cacheKey, result);
-  
+
   // 限制缓存大小
   if (easingCache.size > 1000) {
     const firstKey = easingCache.keys().next().value;
     easingCache.delete(firstKey);
   }
-  
+
   return result;
 }
 
@@ -271,24 +271,24 @@ function applyCubicBezier(t, bezierString) {
   // 解析贝塞尔曲线参数
   const match = bezierString.match(/cubic-bezier\(([^)]+)\)/);
   if (!match) return t;
-  
+
   const coords = match[1].split(',').map(Number);
   if (coords.length !== 4) return t;
-  
+
   const [x1, y1, x2, y2] = coords;
-  
+
   // 使用牛顿法求解贝塞尔曲线
   let currentT = t;
   for (let i = 0; i < 5; i++) {
     const currentX = cubicBezierX(currentT, x1, x2);
     const derivative = cubicBezierDerivative(currentT, x1, x2);
-    
+
     if (Math.abs(derivative) < 1e-6) break;
-    
+
     currentT = currentT - (currentX - t) / derivative;
     currentT = Math.max(0, Math.min(1, currentT));
   }
-  
+
   return cubicBezierY(currentT, y1, y2);
 }
 
@@ -311,10 +311,10 @@ function cubicBezierDerivative(t, x1, x2) {
 function shouldUseNativeSmoothScroll() {
   // 检查网站是否有自定义的滚动行为
   const hasCustomScrollBehavior = detectCustomScrollBehavior();
-  
+
   // 检查网站是否使用了现代CSS滚动行为
   const hasModernScrollBehavior = detectModernScrollBehavior();
-  
+
   return hasCustomScrollBehavior || hasModernScrollBehavior;
 }
 
@@ -322,10 +322,10 @@ function shouldUseNativeSmoothScroll() {
 function detectCustomScrollBehavior() {
   try {
     // 检查是否有自定义的滚动事件监听器
-    const hasScrollListeners = window.onscroll !== null || 
+    const hasScrollListeners = window.onscroll !== null ||
                               document.onscroll !== null ||
                               document.addEventListener.toString().includes('scroll');
-    
+
     // 检查是否有自定义的CSS滚动行为
     const styleSheets = document.styleSheets;
     for (let i = 0; i < styleSheets.length; i++) {
@@ -347,7 +347,7 @@ function detectCustomScrollBehavior() {
         continue;
       }
     }
-    
+
     // 检查是否有JavaScript滚动库
     const scrollLibraries = [
       'smooth-scroll',
@@ -418,14 +418,14 @@ function detectCustomScrollBehavior() {
       'jquery.locomotive-scroll',
       'jquery.smooth-scroll'
     ];
-    
+
     for (const lib of scrollLibraries) {
-      if (window[lib] || document.querySelector(`[data-${lib}]`) || 
+      if (window[lib] || document.querySelector(`[data-${lib}]`) ||
           document.querySelector(`.${lib}`) || document.querySelector(`#${lib}`)) {
         return true;
       }
     }
-    
+
     return hasScrollListeners;
   } catch (e) {
     return false;
@@ -438,22 +438,22 @@ function detectModernScrollBehavior() {
     // 检查根元素的滚动行为
     const htmlScrollBehavior = getComputedStyle(document.documentElement).scrollBehavior;
     const bodyScrollBehavior = getComputedStyle(document.body).scrollBehavior;
-    
+
     if (htmlScrollBehavior === 'smooth' || bodyScrollBehavior === 'smooth') {
       return true;
     }
-    
+
     // 检查是否有CSS变量定义滚动行为
     const htmlStyle = getComputedStyle(document.documentElement);
     const bodyStyle = getComputedStyle(document.body);
-    
+
     const htmlScrollBehaviorVar = htmlStyle.getPropertyValue('--scroll-behavior');
     const bodyScrollBehaviorVar = bodyStyle.getPropertyValue('--scroll-behavior');
-    
+
     if (htmlScrollBehaviorVar === 'smooth' || bodyScrollBehaviorVar === 'smooth') {
       return true;
     }
-    
+
     // 检查是否有CSS @property定义
     const styleSheets = document.styleSheets;
     for (let i = 0; i < styleSheets.length; i++) {
@@ -461,7 +461,7 @@ function detectModernScrollBehavior() {
         const rules = styleSheets[i].cssRules || styleSheets[i].rules;
         for (let j = 0; j < rules.length; j++) {
           const rule = rules[j];
-          if (rule.type === CSSRule.KEYFRAMES_RULE || 
+          if (rule.type === CSSRule.KEYFRAMES_RULE ||
               (rule.cssText && rule.cssText.includes('@property'))) {
             return true;
           }
@@ -470,7 +470,7 @@ function detectModernScrollBehavior() {
         continue;
       }
     }
-    
+
     return false;
   } catch (e) {
     return false;
@@ -496,34 +496,34 @@ const isLinuxOS = (() => {
 // 检查元素是否为文本输入框
 function isTextInputElement(element) {
   if (!element) return false;
-  
+
   try {
     // 检查元素标签名
     const tagName = element.tagName?.toLowerCase();
     if (!tagName) return false;
-    
+
     // 直接的文本输入元素
     if (tagName === 'input') {
       const inputType = (element.getAttribute('type') || '').toLowerCase();
       // 排除不是文本输入的input类型
-      const nonTextTypes = ['button', 'checkbox', 'color', 'file', 'hidden', 'image', 
+      const nonTextTypes = ['button', 'checkbox', 'color', 'file', 'hidden', 'image',
                             'radio', 'range', 'reset', 'submit'];
       return !nonTextTypes.includes(inputType);
     }
-    
+
     // 文本区域
     if (tagName === 'textarea') return true;
-    
+
     // 可编辑内容
     if (element.isContentEditable) return true;
-    
+
     // 具有可编辑角色的元素
     const role = element.getAttribute('role');
     if (role === 'textbox' || role === 'combobox' || role === 'searchbox') return true;
-    
+
     // 检查contenteditable属性
     if (element.getAttribute('contenteditable') === 'true') return true;
-    
+
     return false;
   } catch (error) {
     // 出错时安全返回false
@@ -656,22 +656,22 @@ function showDuplicateTabsNotification(data) {
     if (existingContainer) {
       document.body.removeChild(existingContainer);
     }
-    
+
     // 获取当前语言设置
     const currentLang = settings.language || 'en';
     const isEnglish = currentLang === 'en';
-    
+
     // 文本翻译
     const texts = {
-      title: getI18nMessage('duplicateTabsDetected', [data.count.toString()], 
+      title: getI18nMessage('duplicateTabsDetected', [data.count.toString()],
           `Found ${data.count} duplicate tab${data.count > 1 ? 's' : ''}`),
-      moreTabs: getI18nMessage('moreTabsHidden', [`${data.titles.length - 5}`], 
+      moreTabs: getI18nMessage('moreTabsHidden', [`${data.titles.length - 5}`],
           `...and ${data.titles.length - 5} more pages`),
       noUrl: getI18nMessage('duplicateTab', 'Duplicate tab'),
       closeBtn: getI18nMessage('closeBtn', 'Close Duplicates'),
       ignoreBtn: getI18nMessage('ignoreBtn', 'Ignore')
     };
-    
+
     // 创建通知容器
     const container = document.createElement('div');
     container.id = 'mouse-gesture-notification-container';
@@ -690,7 +690,7 @@ function showDuplicateTabsNotification(data) {
     container.style.margin = '0';
     container.style.border = 'none';
     container.style.background = 'none';
-    
+
     // 创建通知框 - 使用现代化渐变背景
     const notification = document.createElement('div');
     notification.style.background = 'linear-gradient(135deg, rgba(55, 55, 80, 0.92) 0%, rgba(40, 40, 65, 0.94) 100%)';
@@ -707,7 +707,7 @@ function showDuplicateTabsNotification(data) {
     notification.style.boxSizing = 'border-box';
     notification.style.width = '100%';
     notification.style.margin = '0';
-    
+
     // 创建一个更可爱的图标 - 缩小尺寸
     const icon = document.createElement('div');
     // 使用更可爱的表情符号组合
@@ -726,14 +726,14 @@ function showDuplicateTabsNotification(data) {
     icon.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.05) 100%)';
     icon.style.boxShadow = 'inset 0 1px 1px rgba(255, 255, 255, 0.1)';
     icon.style.flexShrink = '0';
-    
+
     // 信息容器
     const content = document.createElement('div');
     content.style.flexGrow = '1';
     content.style.flexShrink = '1';
     content.style.minWidth = '0';
     content.style.boxSizing = 'border-box';
-    
+
     // 消息标题 - 更时尚的字体和样式
     const title = document.createElement('div');
     title.textContent = data.summary || texts.title;
@@ -746,7 +746,7 @@ function showDuplicateTabsNotification(data) {
     title.style.boxSizing = 'border-box';
     title.style.width = '100%';
     title.style.padding = '0';
-    
+
     // 创建URL列表容器
     const urlListContainer = document.createElement('div');
     urlListContainer.style.fontSize = '13px';
@@ -761,7 +761,7 @@ function showDuplicateTabsNotification(data) {
     urlListContainer.style.scrollbarColor = 'rgba(255,255,255,0.2) transparent';
     urlListContainer.style.boxSizing = 'border-box';
     urlListContainer.style.width = '100%';
-    
+
     // 为Webkit浏览器定义滚动条样式
     const scrollbarStyle = document.createElement('style');
     scrollbarStyle.textContent = `
@@ -778,13 +778,13 @@ function showDuplicateTabsNotification(data) {
     `;
     document.head.appendChild(scrollbarStyle);
     urlListContainer.classList.add('url-list');
-    
+
     // 显示URL标题，每行一个
     if (data.titles && data.titles.length > 0) {
       // 最多显示5个URL
       const maxUrlsToShow = 5;
       const titlesToShow = data.titles.slice(0, maxUrlsToShow);
-      
+
       titlesToShow.forEach((titleText, index) => {
         const urlItem = document.createElement('div');
         urlItem.style.cssText = `
@@ -795,7 +795,7 @@ function showDuplicateTabsNotification(data) {
           width: 100% !important;
           padding: 0 !important;
         `;
-        
+
         // 添加小圆点作为前缀
         const bullet = document.createElement('span');
         bullet.textContent = '•';
@@ -806,7 +806,7 @@ function showDuplicateTabsNotification(data) {
           line-height: 1 !important;
           flex-shrink: 0 !important;
         `;
-        
+
         // URL标题容器，添加文本截断
         const urlTitle = document.createElement('span');
         urlTitle.textContent = titleText;
@@ -821,12 +821,12 @@ function showDuplicateTabsNotification(data) {
           min-width: 0 !important;
           box-sizing: border-box !important;
         `;
-        
+
         urlItem.appendChild(bullet);
         urlItem.appendChild(urlTitle);
         urlListContainer.appendChild(urlItem);
       });
-      
+
       // 如果有更多URL没有显示，添加提示
       if (data.titles.length > maxUrlsToShow) {
         const moreUrls = document.createElement('div');
@@ -853,7 +853,7 @@ function showDuplicateTabsNotification(data) {
       `;
       urlListContainer.appendChild(noUrlMessage);
     }
-    
+
     // 按钮容器 - 更美观的布局
     const buttons = document.createElement('div');
     buttons.style.display = 'flex';
@@ -863,7 +863,7 @@ function showDuplicateTabsNotification(data) {
     buttons.style.boxSizing = 'border-box';
     buttons.style.width = '100%';
     buttons.style.padding = '0';
-    
+
     // 忽略按钮 - 半透明+玻璃效果
     const ignoreBtn = document.createElement('button');
     ignoreBtn.textContent = texts.ignoreBtn;
@@ -885,23 +885,23 @@ function showDuplicateTabsNotification(data) {
     ignoreBtn.style.minHeight = 'auto';
     ignoreBtn.style.lineHeight = 'normal';
     ignoreBtn.style.outline = 'none';
-    
+
     // 修复鼠标悬停样式问题
     ignoreBtn.addEventListener('mouseover', () => {
       ignoreBtn.style.background = 'rgba(255, 255, 255, 0.2)';
       ignoreBtn.style.transform = 'translateY(-2px)';
     });
-    
+
     ignoreBtn.addEventListener('mouseout', () => {
       ignoreBtn.style.background = 'rgba(255, 255, 255, 0.12)';
       ignoreBtn.style.transform = 'translateY(0)';
     });
-    
+
     ignoreBtn.onclick = () => {
       ignoreDuplicateTabs(data.notificationId);
       document.body.removeChild(container);
     };
-    
+
     // 关闭重复标签按钮 - 渐变粉红色
     const closeBtn = document.createElement('button');
     closeBtn.textContent = texts.closeBtn;
@@ -923,25 +923,25 @@ function showDuplicateTabsNotification(data) {
     closeBtn.style.minHeight = 'auto';
     closeBtn.style.lineHeight = 'normal';
     closeBtn.style.outline = 'none';
-    
+
     // 修复鼠标悬停样式问题
     closeBtn.addEventListener('mouseover', () => {
       closeBtn.style.transform = 'translateY(-2px)';
       closeBtn.style.boxShadow = '0 6px 16px rgba(255, 94, 138, 0.35)';
       closeBtn.style.background = 'linear-gradient(to right, #FF5183, #FF78A1)';
     });
-    
+
     closeBtn.addEventListener('mouseout', () => {
       closeBtn.style.transform = 'translateY(0)';
       closeBtn.style.boxShadow = '0 4px 12px rgba(255, 94, 138, 0.25)';
       closeBtn.style.background = 'linear-gradient(to right, #FF5E8A, #FF82A9)';
     });
-    
+
     closeBtn.onclick = () => {
       closeDuplicateTabs(data.notificationId);
       document.body.removeChild(container);
     };
-    
+
     // 组装通知
     content.appendChild(title);
     content.appendChild(urlListContainer);
@@ -951,27 +951,27 @@ function showDuplicateTabsNotification(data) {
     notification.appendChild(icon);
     notification.appendChild(content);
     container.appendChild(notification);
-    
+
     // 确保body存在
     if (!document.body) {
       console.log('文档body不存在，无法显示通知');
       return;
     }
-    
+
     // 添加到页面
     document.body.appendChild(container);
-    
+
     // 淡入效果 - 带有轻微的弹性效果
   setTimeout(() => {
       container.style.opacity = '1';
       container.style.transform = 'translate(-50%, -5px)';
-      
+
       // 稍后恢复正常位置，产生弹性效果
       setTimeout(() => {
         container.style.transform = 'translate(-50%, 0)';
       }, 180);
     }, 10);
-    
+
     // 8秒后自动淡出（时间延长）
     setTimeout(() => {
       try {
@@ -1007,7 +1007,7 @@ function closeDuplicateTabs(notificationId) {
         console.error('发送关闭请求错误:', chrome.runtime.lastError.message);
         return;
       }
-      
+
       console.log('关闭重复标签页响应:', response);
     });
   } catch (e) {
@@ -1027,7 +1027,7 @@ function ignoreDuplicateTabs(notificationId) {
         console.error('发送忽略请求错误:', chrome.runtime.lastError.message);
         return;
       }
-      
+
       console.log('忽略重复标签页响应:', response);
     });
   } catch (e) {
@@ -1039,10 +1039,10 @@ function ignoreDuplicateTabs(notificationId) {
 function isValidUrl(text) {
   // 简单URL格式验证
   if (!text) return false;
-  
+
   // 去除首尾空格
   text = text.trim();
-  
+
   // 先检查是否是纯数字或带小数点的数字（排除IP地址格式）
   // 这将匹配如 8.8, 8.8.8, 1.23.45 等纯数字和小数
   if (/^[0-9.]+$/.test(text)) {
@@ -1053,7 +1053,7 @@ function isValidUrl(text) {
       return false;
     }
   }
-  
+
   // 如果已经包含协议，直接验证
   if (text.startsWith('http://') || text.startsWith('https://') || text.startsWith('ftp://')) {
     try {
@@ -1063,7 +1063,7 @@ function isValidUrl(text) {
       return false;
     }
   }
-  
+
   // 检查常见域名格式
   const domainRegex = /^(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+(\.[a-zA-Z]{2,})?([\/\?#].*)?$/;
   return domainRegex.test(text);
@@ -1072,7 +1072,7 @@ function isValidUrl(text) {
 // 安全地发送消息到扩展
 function safeSendMessage(message) {
   if (!isExtensionValid) return Promise.resolve({success: false, error: 'Extension context invalidated'});
-  
+
   return new Promise((resolve) => {
     try {
       chrome.runtime.sendMessage(message, (response) => {
@@ -1099,9 +1099,10 @@ function safeSendMessage(message) {
 // 加载设置
 function loadSettings() {
   if (!isExtensionValid) return;
-  
+
   try {
     chrome.storage.sync.get({
+      blacklists: [],
       enableGesture: true,
       showGestureTrail: true,
       showGestureHint: true,
@@ -1119,7 +1120,7 @@ function loadSettings() {
       dragLeftAction: 'background',
       dragSearchEngine: 'https://www.google.com/search?q={q}', // 添加超级拖拽搜索引擎URL设置
       language: getBrowserLanguage(), // 使用浏览器语言代替硬编码的'zh'
-      
+
       // 手势动作自定义设置
       gestureLeftAction: 'goBack',
       gestureRightAction: 'forward',
@@ -1142,10 +1143,16 @@ function loadSettings() {
         console.log('加载设置错误:', chrome.runtime.lastError.message);
         return;
       }
-      
+
       // 直接更新设置，不再检查语言是否变化，也不显示提示
       settings = loadedSettings;
-      
+
+      let isBlacklisted = checkBlacklisted(location.hostname, settings.blacklists);
+
+      settings.enableGesture = settings.enableGesture && !isBlacklisted;
+      settings.enableSuperDrag = settings.enableSuperDrag && !isBlacklisted;
+      settings.enableImagePreview = settings.enableImagePreview && !isBlacklisted;
+
       // 如果手势被禁用，确保清理任何现有的手势状态
       if (!settings.enableGesture) {
         clearGestureCanvas();
@@ -1164,7 +1171,7 @@ function loadSettings() {
 function getBrowserLanguage() {
   // 获取浏览器语言设置
   const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-  
+
   // 支持的语言列表及其对应的locale映射
   const languageMap = {
     'zh_CN': 'zh_CN',
@@ -1200,18 +1207,18 @@ function getBrowserLanguage() {
     'fi': 'fi',
     'et': 'et'
   };
-  
+
   // 精确匹配完整locale
   if (languageMap[browserLang]) {
     return languageMap[browserLang];
   }
-  
+
   // 匹配语言代码前缀
   const langPrefix = browserLang.split('-')[0];
   if (languageMap[langPrefix]) {
     return languageMap[langPrefix];
   }
-  
+
   // 默认使用英文
   return 'en_US';
 }
@@ -1222,14 +1229,14 @@ function getI18nMessage(messageName, substitutionsOrFallback = '', fallback = ''
     // 检查第二个参数是否为替换数组
     let substitutions = [];
     let actualFallback = '';
-    
+
     if (Array.isArray(substitutionsOrFallback)) {
       substitutions = substitutionsOrFallback;
       actualFallback = fallback;
     } else {
       actualFallback = substitutionsOrFallback;
     }
-    
+
     const message = chrome.i18n.getMessage(messageName, substitutions);
     return message || actualFallback;
   } catch (error) {
@@ -1250,7 +1257,7 @@ function resetGestureState() {
 function resetGestureAfterAction(immediate = false) {
   // 重置手势状态
   resetGestureState();
-  
+
   // 清理手势画布
   if (immediate) {
     // 立即清理画布
@@ -1275,7 +1282,7 @@ function createGestureCanvas() {
   canvas.style.zIndex = '2147483647'; // 使用最大z-index值
   canvas.style.pointerEvents = 'none'; // 确保画布不会捕获鼠标事件
   canvas.style.display = 'block'; // 确保画布始终显示
-  
+
   // 将画布添加到body的最前面
   if (document.body) {
     if (document.body.firstChild) {
@@ -1300,7 +1307,7 @@ function createGestureCanvas() {
       }, 100);
     }
   }
-  
+
   return canvas;
 }
 
@@ -1316,21 +1323,21 @@ function initGestureCanvas() {
       console.log('移除画布错误:', e.message);
     }
   }
-  
+
   // 如果不显示手势轨迹，只初始化手势点数组
   if (!settings.showGestureTrail) {
     gestureCanvas = null;
     gestureContext = null;
     return;
   }
-  
+
   gestureCanvas = createGestureCanvas();
   gestureContext = gestureCanvas.getContext('2d');
-  
+
   // 启用抗锯齿
   gestureContext.imageSmoothingEnabled = true;
   gestureContext.imageSmoothingQuality = 'high';
-  
+
   // 设置基本样式
   gestureContext.strokeStyle = settings.trailColor;
   gestureContext.lineWidth = settings.trailWidth;
@@ -1367,14 +1374,14 @@ function getElementPosition(element) {
 function drawGesture(x, y) {
   // 添加当前点到手势点数组
   gesturePoints.push({ x: x, y: y });
-  
+
   // 如果不显示轨迹或没有上下文，直接返回
   if (!settings.showGestureTrail || !gestureContext) return;
-  
+
   try {
     // 清除画布
     gestureContext.clearRect(0, 0, gestureCanvas.width, gestureCanvas.height);
-    
+
     // 如果点数太少，直接绘制直线
     if (gesturePoints.length < 3) {
       gestureContext.beginPath();
@@ -1383,18 +1390,18 @@ function drawGesture(x, y) {
       gestureContext.stroke();
       return;
     }
-    
+
     // 使用贝塞尔曲线绘制平滑轨迹
     gestureContext.beginPath();
     gestureContext.moveTo(gesturePoints[0].x, gesturePoints[0].y);
-    
+
     // 计算控制点
     for (let i = 1; i < gesturePoints.length - 2; i++) {
       const xc = (gesturePoints[i].x + gesturePoints[i + 1].x) / 2;
       const yc = (gesturePoints[i].y + gesturePoints[i + 1].y) / 2;
       gestureContext.quadraticCurveTo(gesturePoints[i].x, gesturePoints[i].y, xc, yc);
     }
-    
+
     // 处理最后两个点
     const last = gesturePoints.length - 2;
     gestureContext.quadraticCurveTo(
@@ -1403,13 +1410,13 @@ function drawGesture(x, y) {
       gesturePoints[last + 1].x,
       gesturePoints[last + 1].y
     );
-    
+
     // 设置基本样式
     gestureContext.strokeStyle = settings.trailColor;
     gestureContext.lineWidth = settings.trailWidth;
     gestureContext.lineCap = 'round';
     gestureContext.lineJoin = 'round';
-    
+
     // 绘制轨迹
     gestureContext.stroke();
   } catch (e) {
@@ -1420,31 +1427,31 @@ function drawGesture(x, y) {
 // 简化手势点，去除冗余点
 function simplifyGesturePoints(points) {
   if (points.length <= 2) return points;
-  
+
   // 进一步应用Douglas-Peucker算法简化曲线
   const simplified = [];
-  
+
   // 计算点到直线的距离
   const lineDistance = (p, a, b) => {
     const d1 = Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2));
     if (d1 === 0) return Math.sqrt(Math.pow(p.x - a.x, 2) + Math.pow(p.y - a.y, 2));
-    
+
     const t = ((p.x - a.x) * (b.x - a.x) + (p.y - a.y) * (b.y - a.y)) / (d1 * d1);
-    
+
     if (t < 0) return Math.sqrt(Math.pow(p.x - a.x, 2) + Math.pow(p.y - a.y, 2));
     if (t > 1) return Math.sqrt(Math.pow(p.x - b.x, 2) + Math.pow(p.y - b.y, 2));
-    
+
     return Math.sqrt(
-      Math.pow(p.x - (a.x + t * (b.x - a.x)), 2) + 
+      Math.pow(p.x - (a.x + t * (b.x - a.x)), 2) +
       Math.pow(p.y - (a.y + t * (b.y - a.y)), 2)
     );
   };
-  
+
   // Douglas-Peucker递归实现
   const douglasPeucker = (start, end, epsilon, pointList) => {
     let maxDist = 0;
     let maxDistIndex = 0;
-    
+
     for (let i = start + 1; i < end; i++) {
       const dist = lineDistance(points[i], points[start], points[end]);
       if (dist > maxDist) {
@@ -1452,25 +1459,25 @@ function simplifyGesturePoints(points) {
         maxDistIndex = i;
       }
     }
-    
+
     // 如果最大距离大于阈值，则继续递归简化
     if (maxDist > epsilon) {
       // 分治简化曲线
       const leftResults = douglasPeucker(start, maxDistIndex, epsilon, pointList);
       // 不重复添加中间点
       const rightResults = douglasPeucker(maxDistIndex, end, epsilon, pointList);
-      
+
       return leftResults.concat(rightResults.slice(1));
     } else {
       // 如果所有点都足够接近直线，则只保留端点
       return [points[start], points[end]];
     }
   };
-  
+
   // 检测手势是否有乱画模式
   const detectScribbling = (pts) => {
     if (pts.length < 10) return false;
-    
+
     // 计算路径的总长度
     let totalLength = 0;
     for (let i = 1; i < pts.length; i++) {
@@ -1478,37 +1485,37 @@ function simplifyGesturePoints(points) {
       const dy = pts[i].y - pts[i-1].y;
       totalLength += Math.sqrt(dx*dx + dy*dy);
     }
-    
+
     // 计算起点到终点的直线距离
     const startToEndDistance = Math.sqrt(
-      Math.pow(pts[pts.length-1].x - pts[0].x, 2) + 
+      Math.pow(pts[pts.length-1].x - pts[0].x, 2) +
       Math.pow(pts[pts.length-1].y - pts[0].y, 2)
     );
-    
+
     // 进一步放宽乱画判定比例，从3.0增加到3.5
     const scribblingThreshold = 3.5;
-    
+
     // 检测重复模式的存在
     let hasRepetitivePattern = false;
-    
+
     // 检测方法1：计算点之间的方向变化
     let directionChanges = 0;
     let consistentDirectionRuns = 0;
-    
+
     for (let i = 2; i < pts.length; i++) {
       const dx1 = pts[i-1].x - pts[i-2].x;
       const dy1 = pts[i-1].y - pts[i-2].y;
       const dx2 = pts[i].x - pts[i-1].x;
       const dy2 = pts[i].y - pts[i-1].y;
-      
+
       // 计算两段线段的夹角
       const dot = dx1 * dx2 + dy1 * dy2;
       const mag1 = Math.sqrt(dx1 * dx1 + dy1 * dy1);
       const mag2 = Math.sqrt(dx2 * dx2 + dy2 * dy2);
-      
+
       if (mag1 > 0 && mag2 > 0) {
         const cosTheta = dot / (mag1 * mag2);
-        
+
         // 方向变化大于60度视为方向变化
         if (cosTheta < 0.5) {
           directionChanges++;
@@ -1518,10 +1525,10 @@ function simplifyGesturePoints(points) {
         }
       }
     }
-    
+
     // 检测方法2：基于起点-终点距离与点数量的比例
     const pointDensity = pts.length / startToEndDistance;
-    
+
     // 如果符合以下条件之一，可能是有意的重复模式而非乱画：
     // 1. 起点到终点距离适中，且方向变化有规律性
     // 2. 点密度适中（太高则可能是乱画）
@@ -1531,21 +1538,21 @@ function simplifyGesturePoints(points) {
         (consistentDirectionRuns > pts.length / 5)) {
       hasRepetitivePattern = true;
     }
-    
+
     // 如果是明显的Z字形或N字形模式（常见的重复轨迹），特殊处理
-    if (directionChanges >= 3 && 
-        directionChanges <= 6 && 
+    if (directionChanges >= 3 &&
+        directionChanges <= 6 &&
         startToEndDistance > 50 &&
         totalLength / startToEndDistance < 4.5) {
       hasRepetitivePattern = true;
     }
-    
+
     // 只有当同时满足：1.长度比例超过阈值 2.不是明显的重复模式 3.起点终点距离较近，才判断为乱画
-    return (totalLength > startToEndDistance * scribblingThreshold) && 
-           !hasRepetitivePattern && 
+    return (totalLength > startToEndDistance * scribblingThreshold) &&
+           !hasRepetitivePattern &&
            startToEndDistance < 120;
   };
-  
+
   // 如果检测到乱画模式，并且合理的距离内有大量点，则可能是用户在乱画
   const isScribbling = detectScribbling(points);
   if (isScribbling && points.length > 15) {
@@ -1555,7 +1562,7 @@ function simplifyGesturePoints(points) {
     simplified.push({x: points[points.length-1].x, y: points[points.length-1].y, isScribbling: true});
     return simplified;
   }
-  
+
   // 执行Douglas-Peucker算法，epsilon值控制简化程度
   // 较小的值会保留更多的点，较大的值会简化得更厉害
   const epsilon = minDirectionSegmentLength / 2; // 使用方向段长度的一半作为阈值
@@ -1591,7 +1598,7 @@ try {
 } catch (e) {}
 
 // 添加调试信息收集函数
-function collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+function collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern,
                           repeatingPattern, mergedDirections, finalGesture, similarity, directionDistances) {
   // 收集所有调试信息
   lastDebugInfo = {
@@ -1607,7 +1614,7 @@ function collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, h
     finalGesture: finalGesture,
     similarity: similarity ? Math.round(similarity * 100) / 100 : 0
   };
-  
+
   // 如果调试面板可见，更新显示
   if (isDebugPanelVisible && debugPanel) {
     updateDebugPanel();
@@ -1625,7 +1632,7 @@ function initDebugPanel() {
   if (debugPanel && document.body.contains(debugPanel)) {
     document.body.removeChild(debugPanel);
   }
-  
+
   // 创建新的调试面板
   debugPanel = document.createElement('div');
   debugPanel.id = 'mouseGestureDebugPanel';
@@ -1648,7 +1655,7 @@ function initDebugPanel() {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(102, 126, 234, 0.15);
     letter-spacing: 0.3px;
   `;
-  
+
   // 添加标题和关闭按钮
   const header = document.createElement('div');
   header.style.cssText = `
@@ -1659,7 +1666,7 @@ function initDebugPanel() {
     padding-bottom: 8px;
     margin-bottom: 12px;
   `;
-  
+
   const title = document.createElement('div');
   title.textContent = getDebugPanelText('panelTitle');
   title.style.cssText = `
@@ -1671,11 +1678,11 @@ function initDebugPanel() {
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
     font-size: 13px;
   `;
-  
+
   const controls = document.createElement('div');
   controls.style.display = 'flex';
   controls.style.gap = '8px';
-  
+
   const copyButton = document.createElement('button');
   copyButton.textContent = '📋';
   copyButton.title = getDebugPanelText('copyButton');
@@ -1697,7 +1704,7 @@ function initDebugPanel() {
     copyButton.style.color = '#64c8eb';
   };
   copyButton.onclick = copyDebugInfo;
-  
+
   const closeButton = document.createElement('button');
   closeButton.textContent = '×';
   closeButton.style.cssText = `
@@ -1718,19 +1725,19 @@ function initDebugPanel() {
     closeButton.style.color = '#fc8181';
   };
   closeButton.onclick = toggleDebugPanel;
-  
+
   controls.appendChild(copyButton);
   controls.appendChild(closeButton);
-  
+
   header.appendChild(title);
   header.appendChild(controls);
   debugPanel.appendChild(header);
-  
+
   // 添加内容区域
   const content = document.createElement('div');
   content.id = 'mouseGestureDebugContent';
   debugPanel.appendChild(content);
-  
+
   // 添加消息提示区域
   const messageArea = document.createElement('div');
   messageArea.id = 'mouseGestureDebugMessage';
@@ -1746,10 +1753,10 @@ function initDebugPanel() {
     font-size: 11px;
   `;
   debugPanel.appendChild(messageArea);
-  
+
   // 最后添加到文档
   document.body.appendChild(debugPanel);
-  
+
   // 更新显示
   updateDebugPanel();
 }
@@ -1775,10 +1782,10 @@ function copyDebugInfo() {
     showDebugMessage(getDebugPanelText('waitingForGestureData'), false);
     return;
   }
-  
+
   // 格式化调试信息为纯文本
   const textInfo = formatDebugInfoForCopy(currentLang);
-  
+
   try {
     // 创建临时文本区域
     const textarea = document.createElement('textarea');
@@ -1788,7 +1795,7 @@ function copyDebugInfo() {
     textarea.style.top = '-9999px';
     document.body.appendChild(textarea);
     textarea.select();
-    
+
     // 尝试使用execCommand复制
     let success = false;
     try {
@@ -1796,7 +1803,7 @@ function copyDebugInfo() {
     } catch (e) {
       success = false;
     }
-    
+
     // 如果execCommand失败，尝试使用Clipboard API
     if (!success && navigator.clipboard) {
       navigator.clipboard.writeText(textInfo)
@@ -1811,7 +1818,7 @@ function copyDebugInfo() {
     } else {
       showDebugMessage(getDebugPanelText('copyFailed'), false);
     }
-    
+
     // 清理
     document.body.removeChild(textarea);
   } catch (e) {
@@ -1829,10 +1836,10 @@ function formatDebugInfoForCopy(lang) {
     up: getI18nMessage('up'),
     down: getI18nMessage('down')
   };
-  
+
   let result = `===== ${getDebugPanelText('panelTitle')} =====\n`;
   result += `${getDebugPanelText('latestGestureInfo')} (${lastDebugInfo.timestamp})\n\n`;
-  
+
   // 系统设置
   result += `${getDebugPanelText('systemSettings')}:\n`;
   result += `- ${getDebugPanelText('angleThreshold')}: ${angleThreshold}\n`;
@@ -1840,19 +1847,19 @@ function formatDebugInfoForCopy(lang) {
   result += `- ${getDebugPanelText('minGestureDistance')}: ${minGestureDistance}\n`;
   result += `- ${getDebugPanelText('minDirectionSegmentLength')}: ${minDirectionSegmentLength}\n`;
   result += `- ${getDebugPanelText('minGestureComplexity')}: ${minGestureComplexity}\n\n`;
-  
+
   // 手势信息
   result += `${getDebugPanelText('points')}: ${lastDebugInfo.pointsCount} → ${lastDebugInfo.simplifiedPointsCount} (${getDebugPanelText('simplifiedAfter')})\n`;
   result += `${getDebugPanelText('totalDistance')}: ${lastDebugInfo.totalDistance}px\n\n`;
-  
+
   // 方向识别
   result += `${getDebugPanelText('directionRecognition')}:\n`;
   if (lastDebugInfo.originalDirections && lastDebugInfo.originalDirections.length > 0) {
     const original = lastDebugInfo.originalDirections.map((d, i) => {
       const dirName = dirs[d] || d;
       // 添加距离信息
-      const distance = lastDebugInfo.directionDistances && lastDebugInfo.directionDistances[i] 
-        ? `(${lastDebugInfo.directionDistances[i]}px)` 
+      const distance = lastDebugInfo.directionDistances && lastDebugInfo.directionDistances[i]
+        ? `(${lastDebugInfo.directionDistances[i]}px)`
         : '';
       return `${dirName}${distance}`;
     }).join(' → ');
@@ -1862,7 +1869,7 @@ function formatDebugInfoForCopy(lang) {
   }
   result += `- ${getDebugPanelText('repetitivePatternDetected')}: ${lastDebugInfo.hasRepetitivePattern ? getDebugPanelText('yes') : getDebugPanelText('no')}\n`;
   result += `- ${getDebugPanelText('repetitivePatternType')}: ${lastDebugInfo.repeatingPattern || getDebugPanelText('none')}\n\n`;
-  
+
   // 方向合并
   result += `${getDebugPanelText('directionMerging')}:\n`;
   if (lastDebugInfo.mergedDirections && lastDebugInfo.mergedDirections.length > 0) {
@@ -1872,12 +1879,12 @@ function formatDebugInfoForCopy(lang) {
     result += `- ${getDebugPanelText('mergedDirections')}: ${getDebugPanelText('none')}\n`;
   }
   result += '\n';
-  
+
   // 最终结果
   result += `${getDebugPanelText('finalResult')}:\n`;
   result += `- ${getDebugPanelText('recognizedGesture')}: ${lastDebugInfo.finalGesture || getDebugPanelText('invalidGesture')}\n`;
   result += `- ${getDebugPanelText('similarity')}: ${lastDebugInfo.similarity}\n`;
-  
+
   return result;
 }
 
@@ -1885,7 +1892,7 @@ function formatDebugInfoForCopy(lang) {
 function showDebugMessage(message, isSuccess) {
   const messageArea = debugPanel.querySelector('#mouseGestureDebugMessage');
   if (!messageArea) return;
-  
+
   // 设置消息样式
   messageArea.style.backgroundColor = isSuccess ? 'rgba(52, 211, 153, 0.15)' : 'rgba(248, 113, 113, 0.15)';
   messageArea.style.color = isSuccess ? '#4ade80' : '#f87171';
@@ -1893,13 +1900,13 @@ function showDebugMessage(message, isSuccess) {
   messageArea.style.display = 'block';
   messageArea.style.padding = '6px';
   messageArea.textContent = message;
-  
+
   // 显示消息
   setTimeout(() => {
     messageArea.style.opacity = '1';
     messageArea.style.transform = 'translateY(0)';
   }, 10);
-  
+
   // 3秒后淡出
   setTimeout(() => {
     messageArea.style.opacity = '0';
@@ -1914,10 +1921,10 @@ function showDebugMessage(message, isSuccess) {
 function updateDebugPanel() {
   try {
     if (!debugPanel) return;
-    
+
     const content = debugPanel.querySelector('#mouseGestureDebugContent');
     if (!content) return;
-    
+
     // 显示系统设置
     let html = `
       <div style="margin-bottom: 12px;">
@@ -1945,7 +1952,7 @@ function updateDebugPanel() {
         </div>
       </div>
     `;
-    
+
     // 显示最新手势信息
     if (lastDebugInfo && Object.keys(lastDebugInfo).length > 0) {
       html += `
@@ -2063,7 +2070,7 @@ function updateDebugPanel() {
     } else {
       html += `<div style="color: #94a3b8; font-style: italic; text-align: center; padding: 20px 0;">${getDebugPanelText('waitingForGestureData')}</div>`;
     }
-    
+
     content.innerHTML = html;
   } catch (e) {
     console.error('更新调试面板内容时出错:', e.message);
@@ -2083,7 +2090,7 @@ function formatDirections(directions, lang, distances) {
   if (!directions || directions.length === 0) {
     return `<span style="color: #94a3b8; font-style: italic;">${getDebugPanelText('none')}</span>`;
   }
-  
+
   // 方向颜色映射
   const directionColors = {
     'left': '#60a5fa',  // 蓝色
@@ -2091,7 +2098,7 @@ function formatDirections(directions, lang, distances) {
     'up': '#34d399',    // 绿色
     'down': '#fbbf24'   // 黄色
   };
-  
+
   // 方向图标映射
   const directionIcons = {
     'left': '←',
@@ -2099,7 +2106,7 @@ function formatDirections(directions, lang, distances) {
     'up': '↑',
     'down': '↓'
   };
-  
+
   // 构建方向显示
   let result = '';
   for (let i = 0; i < directions.length; i++) {
@@ -2108,32 +2115,32 @@ function formatDirections(directions, lang, distances) {
     const directionName = getI18nMessage(direction, direction);
     const color = directionColors[direction] || '#94a3b8';
     const icon = directionIcons[direction] || '•';
-    
+
     // 添加方向距离信息
     const distanceInfo = distances && distances[i] ? ` <span style="color: #94a3b8; font-size: 10px;">(${distances[i]}px)</span>` : '';
-    
+
     result += `<span style="color: ${color}; font-weight: 600;">${icon} ${directionName}${distanceInfo}</span>`;
-    
+
     // 添加箭头分隔符，但不在最后一个方向后添加
     if (i < directions.length - 1) {
       result += ` <span style="color: #64748b;">→</span> `;
     }
   }
-  
+
   return result;
 }
 
 // 切换调试面板显示状态
 function toggleDebugPanel() {
   isDebugPanelVisible = !isDebugPanelVisible;
-  
+
   // 保存面板显示状态到localStorage
   try {
     localStorage.setItem('mouseGestureDebugPanelVisible', isDebugPanelVisible ? 'true' : 'false');
   } catch (e) {
     console.log('保存调试面板状态错误:', e.message);
   }
-  
+
   if (isDebugPanelVisible) {
     if (!debugPanel || !document.body.contains(debugPanel)) {
       initDebugPanel();
@@ -2161,33 +2168,33 @@ document.addEventListener('keydown', function(e) {
 // 优化手势识别算法
 function recognizeGesture() {
   if (gesturePoints.length < 2) return '';
-  
+
   // 简化手势点
   const simplifiedPoints = simplifyGesturePoints(gesturePoints);
-  
+
   // 如果简化后的点太少，不识别为手势
   if (simplifiedPoints.length < 2) return '';
-  
+
   // 检查是否有乱画标记
   if (simplifiedPoints.length === 2 && simplifiedPoints[1].isScribbling) {
     // 如果检测到乱画，直接返回空
     return '';
   }
-  
+
   // 识别每段的方向
   const directions = [];
   const directionDistances = []; // 添加存储方向距离的数组
   let totalDistance = 0;
-  
+
   for (let i = 1; i < simplifiedPoints.length; i++) {
     const prev = simplifiedPoints[i - 1];
     const curr = simplifiedPoints[i];
     const dx = curr.x - prev.x;
     const dy = curr.y - prev.y;
     const distance = Math.sqrt(dx * dx + dy * dy);
-    
+
     totalDistance += distance;
-    
+
     // 使用角度阈值判断方向，更严格的判断标准
     if (Math.abs(dx) > Math.abs(dy) * angleThreshold) {
       // 水平方向
@@ -2201,27 +2208,27 @@ function recognizeGesture() {
       directionDistances.push(Math.round(distance)); // 记录该方向的距离
     }
   }
-  
+
   // 如果总距离太短，不识别为手势
   if (totalDistance < minGestureDistance * 1.5) return '';
-  
+
   // 如果没有识别出方向，返回空
   if (directions.length === 0) return '';
-  
+
   // 计算手势复杂度 - 检测乱画手势
   let directionChanges = 0;
   let prevDirection = directions[0];
   let sequentialRepetitions = 0; // 用于检测连续重复的模式
   let lastDirectionPair = ''; // 上一个方向对
   let directionPairs = []; // 存储所有方向对
-  
+
   for (let i = 1; i < directions.length; i++) {
     if (directions[i] !== prevDirection) {
       // 存储当前方向对
       if (i > 1) {
         directionPairs.push(prevDirection + '-' + directions[i]);
       }
-        
+
       // 检测是否形成了重复模式（如 up-down-up-down）
       const currentPair = prevDirection + '-' + directions[i];
       if (lastDirectionPair === currentPair) {
@@ -2229,22 +2236,22 @@ function recognizeGesture() {
       } else {
         lastDirectionPair = currentPair;
       }
-        
+
       directionChanges++;
       prevDirection = directions[i];
     }
   }
-  
+
   // 检测是否存在重复模式
   let hasRepetitivePattern = sequentialRepetitions >= 1; // 检测连续的重复对
-  
+
   // 检测非连续的重复模式，例如"上下左上下右"中的两个"上下"
   if (!hasRepetitivePattern && directionPairs.length >= 3) {
     const pairCounts = {};
     for (const pair of directionPairs) {
       pairCounts[pair] = (pairCounts[pair] || 0) + 1;
     }
-    
+
     // 如果任何方向对出现超过一次，认为存在重复模式
     for (const pair in pairCounts) {
       if (pairCounts[pair] > 1) {
@@ -2253,12 +2260,12 @@ function recognizeGesture() {
       }
     }
   }
-  
+
   // 特殊检测：zigzag模式 (上下上下或左右左右)
   let repeatingPattern = '';
   if (!hasRepetitivePattern && directions.length >= 4) {
     let isZigzagPattern = false;
-    
+
     // 检查特定的重复模式
     const zigzagPatterns = [
       ['left', 'right'], // 左右左右...
@@ -2266,11 +2273,11 @@ function recognizeGesture() {
       ['up', 'down'],    // 上下上下...
       ['down', 'up']     // 下上下上...
     ];
-    
+
     for (const pattern of zigzagPatterns) {
       let matchCount = 0;
       let totalCheck = 0;
-      
+
       for (let i = 0; i < directions.length - 1; i += 2) {
         if (i + 1 < directions.length) {
           totalCheck++;
@@ -2279,7 +2286,7 @@ function recognizeGesture() {
           }
         }
       }
-      
+
       // 如果有超过50%的匹配，认为是重复模式
       if (totalCheck > 0 && matchCount / totalCheck > 0.5) {
         isZigzagPattern = true;
@@ -2288,26 +2295,26 @@ function recognizeGesture() {
         break;
       }
     }
-    
+
     if (isZigzagPattern) {
       hasRepetitivePattern = true;
     }
   }
-  
+
   // 如果方向变化次数过多且总距离不大，且不是重复模式，认为是乱画
   if (directionChanges > minGestureComplexity && !hasRepetitivePattern) {
     if (totalDistance < 200 || directions.length > 20) {
       return ''; // 乱画手势直接返回空
     }
   }
-  
+
   // 合并相同的连续方向，允许少量抖动
   const mergedDirections = [];
   let currentDirection = directions[0];
   let directionCount = 1;
   let maxCount = 1;
   let hasDirectionChanges = false; // 标记是否有方向变化
-  
+
   // 首先检测是否存在反复的方向变化模式
   // 例如：左右左右或上下上下
   let repeatingFlag = false;
@@ -2315,16 +2322,16 @@ function recognizeGesture() {
     // 检查交替出现的模式
     let alternatingCount = 0;
     for (let i = 0; i < directions.length - 2; i += 2) {
-      if (directions[i] === directions[i+2] && 
+      if (directions[i] === directions[i+2] &&
           directions[i+1] && directions[i] !== directions[i+1]) {
         alternatingCount++;
       }
     }
-    
+
     // 如果有多次交替出现，认为是重复手势
     repeatingFlag = alternatingCount >= 1;
   }
-  
+
   // 如果检测到重复模式，使用更宽松的方向合并策略
   if (repeatingFlag) {
     // 对于重复模式，不做过度合并，而是保留方向变化
@@ -2358,27 +2365,27 @@ function recognizeGesture() {
         hasDirectionChanges = true;
     }
   }
-  
+
     // 添加最后一个方向，更宽松的标准
     if (directionCount >= maxCount * directionChangeThreshold / 2 || mergedDirections.length === 0) {
   mergedDirections.push(currentDirection);
     }
   }
-  
+
   // 检查合并后的方向数量，如果超过两个不同方向，则识别为无效手势
   if (mergedDirections.length > 2) {
     console.log('检测到超过两个不同方向的手势，识别为无效手势:', mergedDirections.join(' then '));
-    collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+    collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern,
                     repeatingPattern, mergedDirections, '', 0, directionDistances);
     return ''; // 超过两个方向的手势视为无效
   }
-  
+
   // 特殊处理重复的左右或上下模式
   if (hasRepetitivePattern && mergedDirections.length >= 2) {
     // 保留重复左右或上下的模式，不要简化为单一方向
     const firstTwo = mergedDirections.slice(0, 2);
     const pattern = firstTwo.join('-');
-    
+
     // 检查是否为左右、右左、上下、下上模式
     const repeatingPatterns = ['left-right', 'right-left', 'up-down', 'down-up'];
     if (repeatingPatterns.includes(pattern)) {
@@ -2389,16 +2396,16 @@ function recognizeGesture() {
         const patternLength = Math.min(4, Math.floor(mergedDirections.length / 2) * 2);
         mergedDirections.splice(patternLength);
       }
-      
+
       // 收集调试信息
-      collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+      collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern,
                       repeatingPattern, mergedDirections, mergedDirections.join(' then '), 1.0, directionDistances);
-      
+
       // 返回这个重复模式的字符串表示
       return mergedDirections.join(' then ');
     }
   }
-  
+
   // 如果合并后的方向大于2个，且包含关闭标签页的子模式，则提高判断标准
   if (mergedDirections.length > 2) {
     const closeTabPatterns = [['down', 'right'], ['left', 'right']];
@@ -2409,7 +2416,7 @@ function recognizeGesture() {
           matchFound = true;
           // 对于多于2个方向的手势，如包含关闭标签页模式，需要更严格的判定
           if (totalDistance < 120) {
-            collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+            collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern,
                             repeatingPattern, mergedDirections, '', 0, directionDistances);
             return ''; // 距离太短，不认为是关闭标签页的手势
           }
@@ -2419,7 +2426,7 @@ function recognizeGesture() {
       if (matchFound) break;
     }
   }
-  
+
   // 特殊处理上下/下上手势，确保它们被正确识别
   if (mergedDirections.length === 2) {
     // 上下手势 - 添加更严格的判断逻辑
@@ -2427,51 +2434,51 @@ function recognizeGesture() {
       // 检查第一个方向的占比，如果上占比明显大，则强化识别为上下
       const startIndex = 0;
       const dirChanges = [];
-      
+
       // 找出所有方向变化点
       for (let i = 1; i < directions.length; i++) {
         if (directions[i] !== directions[i-1]) {
           dirChanges.push(i);
         }
       }
-      
+
       // 只有一个方向变化点且方向从上变为下
       if (dirChanges.length === 1 && directions[0] === 'up' && directions[dirChanges[0]] === 'down') {
         const upPortion = dirChanges[0] / directions.length;
         // 如果上方向占比超过40%，则确认为上下手势
         if (upPortion >= 0.4) {
           console.log('明确识别为上下手势，上方向占比:', upPortion);
-          collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+          collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern,
                           repeatingPattern, mergedDirections, 'up then down', 1.0, directionDistances);
           return 'up then down';
         }
       }
-      
+
       // 如果有多个方向变化点，分析主要方向
       if (dirChanges.length > 1) {
         let upCount = 0;
         let downCount = 0;
-        
+
         // 统计各方向的点数
         for (let i = 0; i < directions.length; i++) {
           if (directions[i] === 'up') upCount++;
           else if (directions[i] === 'down') downCount++;
         }
-        
+
         // 确保上方向的点多于下方向，增强上下识别准确性
         if (upCount > downCount * 0.7) {
           console.log('多方向变化中识别为上下手势, 上点数:', upCount, '下点数:', downCount);
-          collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+          collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern,
                           repeatingPattern, mergedDirections, 'up then down', 1.0, directionDistances);
           return 'up then down';
         }
       }
-      
+
       // 检查上下距离比例
       let upDistance = 0;
       let downDistance = 0;
       let firstDirectionChange = -1;
-      
+
       // 找到第一个方向变化点
       for (let i = 1; i < directions.length; i++) {
         if (directions[i] !== directions[0]) {
@@ -2479,7 +2486,7 @@ function recognizeGesture() {
           break;
         }
       }
-      
+
       if (firstDirectionChange > 0) {
         // 计算上方向和下方向的距离
         for (let i = 0; i < firstDirectionChange; i++) {
@@ -2487,35 +2494,35 @@ function recognizeGesture() {
             upDistance += directionDistances[i];
           }
         }
-        
+
         for (let i = firstDirectionChange; i < directions.length; i++) {
           if (i < directionDistances.length) {
             downDistance += directionDistances[i];
           }
         }
-        
+
         // 如果上方向的距离显著大于下方向，增强识别为"上下"的置信度
         if (upDistance > downDistance * 0.7) {
           console.log('增强识别上下手势, 上距离:', upDistance, '下距离:', downDistance);
-          collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+          collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern,
                           repeatingPattern, mergedDirections, 'up then down', 1.0, directionDistances);
           return 'up then down';
         }
       } else {
         // 如果没有找到方向变化点，仍然返回合并后的方向
-        collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+        collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern,
                         repeatingPattern, mergedDirections, 'up then down', 1.0, directionDistances);
         return 'up then down';
       }
     }
-    
+
     // 下上手势 - 添加更严格的判断逻辑
     if (mergedDirections[0] === 'down' && mergedDirections[1] === 'up') {
       // 检查下上距离比例
       let downDistance = 0;
       let upDistance = 0;
       let firstDirectionChange = -1;
-      
+
       // 找到第一个方向变化点
       for (let i = 1; i < directions.length; i++) {
         if (directions[i] !== directions[0]) {
@@ -2523,7 +2530,7 @@ function recognizeGesture() {
           break;
         }
       }
-      
+
       if (firstDirectionChange > 0) {
         // 计算下方向和上方向的距离
         for (let i = 0; i < firstDirectionChange; i++) {
@@ -2531,29 +2538,29 @@ function recognizeGesture() {
             downDistance += directionDistances[i];
           }
         }
-        
+
         for (let i = firstDirectionChange; i < directions.length; i++) {
           if (i < directionDistances.length) {
             upDistance += directionDistances[i];
           }
         }
-        
+
         // 如果下方向的距离显著大于上方向，增强识别为"下上"的置信度
         if (downDistance > upDistance * 0.8) {
           console.log('增强识别下上手势, 下距离:', downDistance, '上距离:', upDistance);
-          collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+          collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern,
                           repeatingPattern, mergedDirections, 'down then up', 1.0, directionDistances);
           return 'down then up';
         }
       } else {
         // 如果没有找到方向变化点，仍然返回合并后的方向
-        collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+        collectDebugInfo(directions, simplifiedPoints, totalDistance, hasRepetitivePattern,
                         repeatingPattern, mergedDirections, 'down then up', 1.0, directionDistances);
         return 'down then up';
       }
     }
   }
-  
+
   // 检查是否是有效的手势组合
   const gesture = mergedDirections.join(' then ');
   const validGestures = [
@@ -2565,46 +2572,46 @@ function recognizeGesture() {
     'right then right', // 添加新的手势：右右 = 下一页
     'scrollLeft', 'scrollRight', 'forceRefresh'
   ];
-  
+
   // 使用模糊匹配来提高识别率
-  const result = findBestMatch(gesture, validGestures, directions, 
-                              simplifiedPoints, totalDistance, hasRepetitivePattern, 
+  const result = findBestMatch(gesture, validGestures, directions,
+                              simplifiedPoints, totalDistance, hasRepetitivePattern,
                               repeatingPattern, mergedDirections, directionDistances);
   return result;
 }
 
 // 改进模糊匹配函数
-function findBestMatch(gesture, validGestures, originalDirections, simplifiedPoints, 
+function findBestMatch(gesture, validGestures, originalDirections, simplifiedPoints,
                       totalDistance, hasRepetitivePattern, repeatingPattern, mergedDirections, directionDistances) {
   // 如果完全匹配，直接返回
   if (validGestures.includes(gesture)) {
-    collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+    collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern,
                     repeatingPattern, mergedDirections, gesture, 1.0, directionDistances);
     return gesture;
   }
-  
+
   // 分解手势为方向数组
   const gestureDirections = gesture.split(' then ');
-  
+
   // 如果只有一个方向，只匹配基本方向
   if (gestureDirections.length === 1) {
     if (validGestures.includes(gestureDirections[0])) {
-      collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+      collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern,
                       repeatingPattern, mergedDirections, gestureDirections[0], 1.0, directionDistances);
       return gestureDirections[0];
     }
-    collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+    collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern,
                     repeatingPattern, mergedDirections, '', 0, directionDistances);
     return '';
   }
-  
+
   // 对于复合手势，查找最接近的有效手势
   let bestMatch = '';
   let maxSimilarity = 0;
-  
+
   // 首先检查是否是常见的重复方向模式
-  const isRepeatingPattern = 
-    gestureDirections.length >= 4 && 
+  const isRepeatingPattern =
+    gestureDirections.length >= 4 &&
     (
       // 左右重复模式
       (gestureDirections[0] === 'left' && gestureDirections[1] === 'right' &&
@@ -2624,64 +2631,64 @@ function findBestMatch(gesture, validGestures, originalDirections, simplifiedPoi
   if (isRepeatingPattern) {
     const corePattern = gestureDirections.slice(0, 2).join(' then ');
     console.log('识别到重复方向模式，使用核心模式:', corePattern);
-    
+
     // 检查核心模式是否是有效手势
     if (validGestures.includes(corePattern)) {
-      collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+      collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern,
                       repeatingPattern, mergedDirections, corePattern, 0.95, directionDistances);
       return corePattern;
     }
   }
-  
+
   // 进一步降低相似性阈值来提高识别率
   const similarityThreshold = gestureDirections.length <= 2 ? 0.82 : 0.65;
-  
+
   // 为关闭标签页相关手势设置较高的相似度阈值，但不要太高以避免过度抑制
   const closeTabGestures = ['down then right', 'left then right'];
   const closeTabThreshold = 0.92; // 从0.95降低到0.92，仍然高于普通手势但更容易识别
-  
+
   // 对于可能包含重复模式的手势，进一步优化识别
   let hasAdvancedRepetitivePattern = false;
   let isComplexPattern = false;
-  
+
   // 检测是否有重复模式
   if (gestureDirections.length >= 4) {
     // 检查是否有重复模式 (例如 ABAB 模式)
     for (let i = 0; i < gestureDirections.length - 3; i++) {
-      if (gestureDirections[i] === gestureDirections[i+2] && 
+      if (gestureDirections[i] === gestureDirections[i+2] &&
           gestureDirections[i+1] === gestureDirections[i+3]) {
         hasAdvancedRepetitivePattern = true;
         break;
       }
     }
-    
+
     // 特殊检测：zigzag模式 (例如 ABABAB...)
     let zigzagCount = 0;
     for (let i = 0; i < gestureDirections.length - 2; i++) {
-      if (gestureDirections[i] === gestureDirections[i+2] && 
+      if (gestureDirections[i] === gestureDirections[i+2] &&
           gestureDirections[i] !== gestureDirections[i+1]) {
         zigzagCount++;
       }
     }
-    
+
     isComplexPattern = zigzagCount > 1 || gestureDirections.length > 5;
   }
-  
+
   // 设置不同类型手势的相似度阈值
   const repetitivePatternThreshold = 0.6; // 降低重复模式的阈值
   const complexPatternThreshold = 0.55; // 更复杂模式可使用更低的阈值
-  
+
   // 尝试提取重复轨迹中的关键方向模式
   let simplifiedPattern = [];
   if (hasAdvancedRepetitivePattern && gestureDirections.length > 3) {
     // 提取前2-4个方向作为核心模式
     const corePatternLength = Math.min(4, gestureDirections.length);
     simplifiedPattern = gestureDirections.slice(0, corePatternLength);
-    
+
     // 对每个有效手势检查此简化模式
     for (const validGesture of validGestures) {
       const validDirections = validGesture.split(' then ');
-      
+
       if (validDirections.length <= simplifiedPattern.length) {
         let matches = 0;
         for (let i = 0; i < validDirections.length; i++) {
@@ -2689,26 +2696,26 @@ function findBestMatch(gesture, validGestures, originalDirections, simplifiedPoi
             matches++;
           }
         }
-        
+
         // 如果开头的关键方向匹配度高，就视为可能的匹配
         if (matches === validDirections.length) {
-          collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+          collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern,
                           repeatingPattern, mergedDirections, validGesture, 0.9, directionDistances);
           return validGesture; // 直接返回此手势
         }
       }
     }
   }
-  
+
   for (const validGesture of validGestures) {
     const validDirections = validGesture.split(' then ');
-    
+
     // 只比较相同长度的手势
     if (validDirections.length === gestureDirections.length) {
       let similarity = 0;
       let matches = 0;
       let importance = 1.0; // 权重因子
-      
+
       // 计算方向匹配度，第一个方向和最后一个方向更重要
       for (let i = 0; i < gestureDirections.length; i++) {
         // 第一个和最后一个方向的权重更高
@@ -2717,53 +2724,53 @@ function findBestMatch(gesture, validGestures, originalDirections, simplifiedPoi
         } else {
           importance = 1.0;
         }
-        
+
         if (gestureDirections[i] === validDirections[i]) {
           matches++;
           similarity += importance;
         }
       }
-      
+
       // 计算相似度百分比，考虑权重
       const maxPossibleSimilarity = gestureDirections.length + 0.5 * (gestureDirections.length < 3 ? 2 : 2);
       similarity = similarity / maxPossibleSimilarity;
-      
+
       // 获取当前手势需要达到的相似度阈值
       let currentThreshold = similarityThreshold;
-      
+
       // 如果是关闭标签页相关手势，使用更高的相似度要求
       if (closeTabGestures.includes(validGesture)) {
         currentThreshold = closeTabThreshold;
       }
-      
+
       // 如果检测到重复模式，且当前手势不是关闭标签页，使用更低的阈值
       else if (hasRepetitivePattern && !closeTabGestures.includes(validGesture)) {
         currentThreshold = repetitivePatternThreshold;
-        
+
         // 对于更复杂的模式使用更低的阈值
         if (isComplexPattern) {
           currentThreshold = complexPatternThreshold;
         }
       }
-      
+
       // 上下和下上手势特殊处理，适当放宽匹配要求
       if ((validGesture === 'up then down' || validGesture === 'down then up')) {
         if (matches < gestureDirections.length * 0.7) {  // 从0.8降低到0.7
         continue; // 跳过这个匹配
         }
       }
-      
+
       // 为重复轨迹手势的匹配提供额外的容错处理
       if (hasRepetitivePattern && gestureDirections.length > 5) {
         // 对于长重复轨迹，如果起始方向匹配，给予额外加分
-        if (gestureDirections[0] === validDirections[0] && 
-            (validDirections.length == 1 || 
+        if (gestureDirections[0] === validDirections[0] &&
+            (validDirections.length == 1 ||
              (validDirections.length > 1 && gestureDirections[1] === validDirections[1]))) {
           // 给相似度额外加分，但不超过1
           similarity = Math.min(1.0, similarity + 0.15);
         }
       }
-      
+
       // 如果相似度超过阈值，更新最佳匹配
       if (similarity > maxSimilarity && similarity >= currentThreshold) {
         maxSimilarity = similarity;
@@ -2771,11 +2778,11 @@ function findBestMatch(gesture, validGestures, originalDirections, simplifiedPoi
       }
     }
   }
-  
+
   // 存储调试信息
-  collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern, 
+  collectDebugInfo(originalDirections, simplifiedPoints, totalDistance, hasRepetitivePattern,
                   repeatingPattern, mergedDirections, bestMatch, maxSimilarity, directionDistances);
-  
+
   return bestMatch;
 }
 
@@ -2783,20 +2790,20 @@ function findBestMatch(gesture, validGestures, originalDirections, simplifiedPoi
 function showGestureHint(action) {
   // 如果手势提示被禁用或document.body不存在，直接返回
   if (!settings.showGestureHint || !document.body) return;
-  
+
   // 获取当前语言设置
   let currentLang = getBrowserLanguage();
-  
+
   // 检查是否需要节流
   const currentTime = Date.now();
   if (currentTime - lastHintTime < hintThrottleDelay && action === lastHintAction) {
     return;
   }
-  
+
   // 更新最后提示时间和动作
   lastHintTime = currentTime;
   lastHintAction = action;
-  
+
   // 如果提示元素存在，先清除它
   if (gestureHint && document.body.contains(gestureHint)) {
     // 清除任何现有的淡出定时器
@@ -2806,22 +2813,22 @@ function showGestureHint(action) {
     document.body.removeChild(gestureHint);
     gestureHint = null;
   }
-  
+
   // 获取动作显示文本
   let actionText = action;
   let actionKey = '';
-  
+
   // 检查是否是带有滚动信息的滚动动作 (格式：滚动操作 (100px, 10%))
   const scrollUpText = getGestureTranslations().scrollUp || '向上滚动';
   const scrollDownText = getGestureTranslations().scrollDown || '向下滚动';
   const scrollLeftText = getGestureTranslations().scrollLeft || '向左滚动';
   const scrollRightText = getGestureTranslations().scrollRight || '向右滚动';
-  
-  const isScrollActionWithInfo = (action.includes(scrollUpText) || action.includes(scrollDownText) || 
-                                 action.includes(scrollLeftText) || action.includes(scrollRightText)) && 
-                               action.includes('px') && 
+
+  const isScrollActionWithInfo = (action.includes(scrollUpText) || action.includes(scrollDownText) ||
+                                 action.includes(scrollLeftText) || action.includes(scrollRightText)) &&
+                               action.includes('px') &&
                                action.includes('%');
-  
+
   if (isScrollActionWithInfo) {
     // 如果是带信息的滚动动作，提取基本动作类型
     if (action.includes(scrollUpText)) {
@@ -2843,7 +2850,7 @@ function showGestureHint(action) {
         break;
       }
     }
-  
+
     // 如果找不到actionKey，可能是因为语言刚切换，尝试从其他语言翻译
     if (!actionKey) {
       // 尝试反向查找英文翻译
@@ -2859,17 +2866,17 @@ function showGestureHint(action) {
       }
     }
   }
-  
+
   // 检查是否是无效手势提示
   const isInvalidGesture = actionKey === 'invalidGesture';
-  
+
   // 检查是否是滚动相关提示 (带有px和百分比的格式)
   const isScrollAction = action.includes('px') && action.includes('%');
-  
+
   // 映射动作到图标字符
   let iconText = '';
   let iconColor = '#ffffff';
-  
+
   // 首先尝试通过动作键匹配
   switch (actionKey) {
     case 'back':
@@ -3052,10 +3059,10 @@ function showGestureHint(action) {
         iconColor = '#ffffff';
       }
   }
-  
+
   // 创建新的提示元素
   gestureHint = document.createElement('div');
-  
+
   // 设置基本样式
   gestureHint.style.position = 'fixed';
   gestureHint.style.left = '50%';
@@ -3064,7 +3071,7 @@ function showGestureHint(action) {
   // 增强透明效果 - 提高透明度
   gestureHint.style.backgroundColor = 'rgba(0, 0, 0, 0.35)'; // 从0.45改为0.35，进一步增加透明度
   gestureHint.style.color = 'white';
-  gestureHint.style.padding = '5px 10px 5px 4px'; 
+  gestureHint.style.padding = '5px 10px 5px 4px';
   gestureHint.style.borderRadius = '22px';
   gestureHint.style.fontSize = '13px';
   gestureHint.style.fontWeight = '500';
@@ -3091,7 +3098,7 @@ function showGestureHint(action) {
   gestureHint.style.height = 'auto';
   gestureHint.style.margin = '0';
   gestureHint.style.opacity = '0';
-  
+
   // 创建图标和文本容器
   const icon = document.createElement('span');
   icon.style.marginRight = '6px';
@@ -3112,7 +3119,7 @@ function showGestureHint(action) {
   icon.textContent = iconText;
   icon.style.color = iconColor;
   gestureHint.appendChild(icon);
-  
+
   const text = document.createElement('span');
   text.style.verticalAlign = 'middle';
   text.style.opacity = '0';
@@ -3136,7 +3143,7 @@ function showGestureHint(action) {
   // 也可以检测页面背景颜色
   let pageBgColor = window.getComputedStyle(document.body).backgroundColor;
   const isLightBg = isLightBackground(pageBgColor);
-  
+
   // 如果是亮色背景，调整提示框样式
   if (isLightBg && !isDarkMode) {
     gestureHint.style.backgroundColor = 'rgba(255, 255, 255, 0.65)'; // 从0.75降低到0.65，增加透明度
@@ -3148,26 +3155,26 @@ function showGestureHint(action) {
     icon.style.backgroundColor = 'rgba(0, 0, 0, 0.03)'; // 从0.04降低到0.03，增加透明度
     icon.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.08)'; // 减轻阴影
   }
-  
+
   // 添加到页面
   document.body.appendChild(gestureHint);
-  
+
   // 重置淡出定时器
   if (gestureHint.fadeOutTimer) {
     clearTimeout(gestureHint.fadeOutTimer);
   }
-  
+
   // 使用requestAnimationFrame在下一帧渲染前设置不透明度，确保过渡效果生效
   requestAnimationFrame(() => {
     // 检查元素是否仍然存在于DOM中
     if (gestureHint && document.body.contains(gestureHint)) {
       gestureHint.style.opacity = '1';
       gestureHint.style.transform = 'translateX(-50%) translateY(0)';
-      
+
       // 等DOM更新后再添加子元素动画
       requestAnimationFrame(() => {
         // 再次检查所有元素是否仍然存在
-        if (gestureHint && document.body.contains(gestureHint) && 
+        if (gestureHint && document.body.contains(gestureHint) &&
             icon && text) {
           icon.style.transform = 'scale(1)';
           text.style.opacity = '1';
@@ -3176,20 +3183,20 @@ function showGestureHint(action) {
       });
     }
   });
-  
+
   // 设置提示显示时间
   let displayDuration = 800; // 默认显示时间：800毫秒
-  
+
   // 无效手势提示显示时间短一些
   if (isInvalidGesture) {
     displayDuration = 350; // 无效手势提示只显示350毫秒
   }
-  
+
   // 滚动动作提示显示时间长一些
   if (isScrollAction) {
     displayDuration = 1000; // 滚动动作提示显示1000毫秒
   }
-  
+
   // 设置定时器移除提示
   // 保存定时器引用，避免直接操作可能已经不存在的对象
   const timerRef = setTimeout(() => {
@@ -3198,7 +3205,7 @@ function showGestureHint(action) {
         // 平滑淡出
         gestureHint.style.opacity = '0';
         gestureHint.style.transform = 'translateX(-50%) translateY(20px)';
-        
+
         // 等待过渡完成后移除元素
         setTimeout(() => {
           try {
@@ -3226,7 +3233,7 @@ function showGestureHint(action) {
       gestureHint = null;
     }
   }, displayDuration);
-  
+
   // 只有当元素仍然存在时才设置定时器引用
   if (gestureHint) {
     gestureHint.fadeOutTimer = timerRef;
@@ -3247,7 +3254,7 @@ function isLightBackground(color) {
         const brightness = Math.sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);
         return brightness > 127.5; // 如果亮度大于127.5认为是亮色背景
       }
-    } 
+    }
     // 如果颜色是rgb格式
     else if (color.startsWith('rgb')) {
       const parts = color.match(/rgb?\((\d+),\s*(\d+),\s*(\d+)\)/);
@@ -3290,28 +3297,28 @@ function getCustomGestureAction(gesture) {
     'left then right': 'gestureLeftThenRightAction',
     'right then left': 'gestureRightThenLeftAction'
   };
-  
+
   const settingKey = gestureToSetting[gesture];
   if (!settingKey) return null;
-  
+
   // 从设置中获取自定义动作
   return settings[settingKey] || null;
 }
 
 function executeGestureAction(gesture) {
   if (!isExtensionValid) return;
-  
+
   // 获取当前语言
   const currentLang = settings.language || 'zh';
-  
+
   // 获取自定义手势动作
   const customAction = getCustomGestureAction(gesture);
-  
+
   // 如果没有自定义动作或设置为"无操作"，直接返回
   if (!customAction || customAction === 'noAction') {
     return;
   }
-  
+
 
   // 定义一个函数来统一处理动作执行完后的手势重置
   const resetGestureAfterAction = (isInstantReset = false) => {
@@ -3323,7 +3330,7 @@ function executeGestureAction(gesture) {
       lastGestureEndTime = Date.now();
       clearGestureCanvas(); // 清除手势画布
       resetGestureState();
-      
+
       // 在YouTube网站上，额外确保右键状态被重置
       const isYouTube = window.location.hostname.includes('youtube.com');
       if (isYouTube) {
@@ -3331,7 +3338,7 @@ function executeGestureAction(gesture) {
       }
     }
   };
-  
+
   // 执行自定义手势动作
   executeCustomGestureAction(customAction, gesture, resetGestureAfterAction);
 }
@@ -3628,7 +3635,7 @@ function handleMouseDown(e) {
     // 保存鼠标按下位置（无论是左键还是右键）
     mouseDownPosition = { x: e.clientX, y: e.clientY };
     mouseCurrentPosition = { x: e.clientX, y: e.clientY };
-    
+
     // 处理左键按下时可能是拖拽操作的情况
     if (e.button === 0) { // 左键
       // 检查是否点击在链接上
@@ -3636,39 +3643,39 @@ function handleMouseDown(e) {
       while (linkElement && linkElement.tagName !== 'A' && linkElement !== document.body) {
         linkElement = linkElement.parentElement;
       }
-      
+
       // 如果是链接元素且超级拖拽功能已启用，记录为潜在拖拽链接
       // 但不阻止默认行为，这样拖拽可以正常开始
-      if (linkElement && linkElement.tagName === 'A' && linkElement.href && 
+      if (linkElement && linkElement.tagName === 'A' && linkElement.href &&
           isExtensionValid && settings.enableSuperDrag) {
-        
+
         potentialDragLink = linkElement;
-        
+
         // 不再阻止默认行为和设置延迟点击计时器
         // 删除了相关代码，允许正常的拖放操作开始
       }
     }
-    
+
     // 以下是原有的右键按下逻辑
     // 只处理右键
     // 在Mac系统上按Ctrl+左键也被当作右键点击（模拟右键点击）
     const isMacRightClick = isMacOS && e.button === 0 && e.ctrlKey;
     if (e.button !== 2 && !isMacRightClick) return;
-    
+
     // 检查扩展是否有效
     if (!isExtensionValid) {
       checkExtensionValidity();
       return;
     }
-    
+
     // 检查鼠标手势功能是否启用
     if (!settings || !settings.enableGesture) {
       return;
     }
-    
+
     // 记录右键按下状态
     isRightMouseDown = true;
-    
+
     // 记录起始点，但还不启动手势
     gestureStartX = e.clientX;
     gestureStartY = e.clientY;
@@ -3684,13 +3691,13 @@ function handleMouseMove(e) {
   try {
     // 更新当前鼠标位置
     mouseCurrentPosition = { x: e.clientX, y: e.clientY };
-    
+
     // 如果有潜在的拖拽链接，检查是否移动距离足够判定为拖拽
     if (potentialDragLink) {
       const dx = mouseCurrentPosition.x - mouseDownPosition.x;
       const dy = mouseCurrentPosition.y - mouseDownPosition.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
-      
+
       // 如果移动距离超过阈值，认为是拖拽操作，取消点击计时器
       if (distance >= dragDistanceThreshold) {
         if (linkClickPending) {
@@ -3699,48 +3706,48 @@ function handleMouseMove(e) {
         }
       }
     }
-    
+
     // 以下是原有的右键手势逻辑
     // 如果右键没有按下，不处理
     if (!isRightMouseDown) return;
-    
+
     // 检查扩展是否有效
     if (!isExtensionValid) {
       checkExtensionValidity();
       return;
     }
-    
+
     // 检查鼠标手势功能是否启用
     if (!settings || !settings.enableGesture) {
       return;
     }
-    
+
     // 获取鼠标相对于视口的位置
     const viewportX = e.clientX;
     const viewportY = e.clientY;
-    
+
     // 计算移动距离
     const dx = viewportX - gestureStartX;
     const dy = viewportY - gestureStartY;
     const distance = Math.sqrt(dx * dx + dy * dy);
-    
+
     // 如果移动距离超过阈值，开始手势
     if (!isGestureInProgress && distance >= minMovementToStartGesture) {
       isGestureInProgress = true;
       initGestureCanvas();
     }
-    
+
     if (isGestureInProgress) {
       // 绘制手势轨迹
       drawGesture(viewportX, viewportY);
-      
+
       // 动态识别手势并显示提示
       const currentGesture = recognizeGesture();
       if (currentGesture) {
         // 将手势映射到动作键
         let actionKey = '';
         let actionText = ''; // 用于存储完整的提示文本，包括距离和百分比
-        
+
         switch (currentGesture) {
           case 'left':
             actionKey = 'back';
@@ -3803,20 +3810,20 @@ function handleMouseMove(e) {
             actionKey = 'forceRefresh';
             break;
         }
-        
+
         // 如果找到了匹配的手势，获取用户设置的自定义动作并显示相应的提示
         if (actionKey) {
           // 获取用户设置的自定义动作
           const customAction = getCustomGestureAction(currentGesture);
-          
+
           // 如果没有自定义动作或设置为"无操作"，不显示提示
           if (!customAction || customAction === 'noAction') {
             return;
           }
-          
+
           // 根据自定义动作生成提示文本
           let actionText = '';
-          
+
           switch (customAction) {
             case 'newWindow':
               actionText = getGestureTranslations().newWindow;
@@ -3957,7 +3964,7 @@ function handleMouseMove(e) {
                 actionText = getGestureTranslations()[actionKey];
               }
           }
-          
+
           // 只有当动作改变时才显示新提示
           if (actionText && actionText !== lastHintAction) {
             showGestureHint(actionText);
@@ -3971,14 +3978,14 @@ function handleMouseMove(e) {
           const dy = gesturePoints[i].y - gesturePoints[i-1].y;
           totalDistance += Math.sqrt(dx * dx + dy * dy);
         }
-        
+
         // 只有当总距离达到最小手势距离要求时才显示无效手势提示
         // 并且确保手势仍在进行中（防止在动作执行后的微小鼠标移动触发无效手势提示）
         if (totalDistance >= minGestureDistance * 1.5 && isGestureInProgress) {
           // 无效手势显示
           const currentLang = settings.language || 'zh';
           const invalidText = getGestureTranslations().invalidGesture;
-          
+
           // 只有当上一个提示不是无效手势时才显示
           if (lastHintAction !== invalidText) {
             showGestureHint(invalidText);
@@ -4004,67 +4011,67 @@ function handleMouseUp(e) {
       const dx = mouseCurrentPosition.x - mouseDownPosition.x;
       const dy = mouseCurrentPosition.y - mouseDownPosition.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
-      
+
       // 如果移动距离超过阈值，认为是拖拽而非点击，清除计时器
       if (distance >= dragDistanceThreshold && linkClickPending) {
         clearTimeout(linkClickPending);
         linkClickPending = null;
       }
-      
+
       // 短距离移动不处理，让默认点击行为发生
     }
-    
+
     // 在鼠标释放时，重置潜在拖拽链接
     potentialDragLink = null;
-    
+
     // 在Mac系统上，Ctrl+左键被当作右键，所以需要对其进行特殊处理
     const isMacRightClick = isMacOS && e.button === 0 && e.ctrlKey;
-    
+
     // 只处理右键释放
     // 注意：在某些情况下，e.button可能是undefined，所以需要特殊处理
     if (e.button !== 2 && e.button !== undefined && !isMacRightClick) return;
-    
+
     isRightMouseDown = false;
-    
+
     // 检查鼠标手势功能是否启用
     if (!settings || !settings.enableGesture) {
       return;
     }
-    
+
     // 检查是否是纯粹的点击（几乎没有移动鼠标）
     if ((isMacOS || isLinuxOS) && !isGestureInProgress) {
       // 如果鼠标几乎没有移动（距离小于阈值），并且不是在手势模式下
-      if (gesturePoints.length <= 1 || 
-          (gesturePoints.length === 2 && 
-           Math.abs(gesturePoints[0].x - gesturePoints[1].x) < 5 && 
+      if (gesturePoints.length <= 1 ||
+          (gesturePoints.length === 2 &&
+           Math.abs(gesturePoints[0].x - gesturePoints[1].x) < 5 &&
            Math.abs(gesturePoints[0].y - gesturePoints[1].y) < 5)) {
-        
+
         // 记录手势结束时间，用于后续双击检测
         lastGestureEndTime = Date.now();
-        
+
         // 单击右键，不执行任何手势操作，保留时间戳用于双击检测
         resetGestureState();
         return;
       }
     }
-    
+
     // 如果不是手势，则清除状态
     if (!isGestureInProgress) {
       resetGestureState();
       return;
     }
-    
+
     // 设置手势完成标记
     isGestureInProgress = false;
-    
+
     // 记录手势结束时间
     lastGestureEndTime = Date.now();
-    
+
     // 最后一次识别手势结果
     const finalGesture = recognizeGesture();
     lastHintAction = ''; // 清除提示操作
     clearGestureCanvas(); // 清除手势绘制
-    
+
     // 执行手势操作
     if (finalGesture) {
       executeGestureAction(finalGesture);
@@ -4084,14 +4091,14 @@ function handleMouseUp(e) {
 function handleDragStart(e) {
   // 首先检查扩展是否有效和超级拖拽功能是否启用
   if (!isExtensionValid || !settings.enableSuperDrag) return;
-  
+
   // 如果有正在等待的链接点击，立即取消它
   // 因为拖拽事件已经开始，说明用户的意图是拖拽而非点击
   if (linkClickPending) {
     clearTimeout(linkClickPending);
     linkClickPending = null;
   }
-  
+
   // 初始化拖拽操作信息
   dragInfo = {
     startX: e.clientX,
@@ -4105,22 +4112,22 @@ function handleDragStart(e) {
     time: Date.now(),
     savedSelection: null
   };
-  
+
   // 检查是否已选中文本，优先处理选中文本
   const selection = window.getSelection();
   const selectedText = selection.toString().trim();
-  
+
   // 如果有选中文本，则优先使用文本拖拽，无论是否在链接上
   if (selectedText) {
     dragInfo.type = 'text';
     dragInfo.text = selectedText;
-    
+
     // 保存用户选择，防止Linux和macOS上拖拽时失去焦点
     if (isLinuxOS || isMacOS) {
       // 由于Linux和macOS系统在拖拽时通常会清除文本选择，这里保存选择状态
       dragInfo.savedSelection = selectedText;
     }
-    
+
     // 检查选中的文本是否为链接
     if (isValidUrl(selectedText)) {
       // 作为链接处理
@@ -4129,19 +4136,19 @@ function handleDragStart(e) {
       if (!url.startsWith('http://') && !url.startsWith('https://') && !url.startsWith('ftp://')) {
         url = 'https://' + url;
       }
-      
+
       dragInfo.type = 'link';
       dragInfo.url = url;
       dragInfo.text = selectedText;
     }
-    
+
     e.dataTransfer.setData('text/plain', selectedText);
-    
+
     // 开始监听拖拽移动事件
     document.addEventListener('dragover', handleDragMove, { capture: true, passive: true });
     return;
   }
-  
+
   // 检查拖拽目标是否为图片
   if (e.target.tagName === 'IMG') {
     // 如果是从图片开始拖拽
@@ -4150,61 +4157,61 @@ function handleDragStart(e) {
     if (e.target.alt) {
       dragInfo.text = e.target.alt;
     }
-    
+
     e.dataTransfer.setData('text/plain', e.target.src);
-    
+
     // 开始监听拖拽移动事件
     document.addEventListener('dragover', handleDragMove, { capture: true, passive: true });
     return;
   }
-  
+
   // 检查拖拽目标是否为链接或位于链接内
   let linkElement = e.target;
   while (linkElement && linkElement.tagName !== 'A' && linkElement !== document.body) {
     linkElement = linkElement.parentElement;
   }
-  
+
   // 如果是潜在的拖拽链接，优先使用它
   if (potentialDragLink && potentialDragLink.href) {
     linkElement = potentialDragLink;
     potentialDragLink = null; // 清除潜在拖拽链接，避免干扰后续操作
   }
-  
+
   if (linkElement && linkElement.tagName === 'A' && linkElement.href) {
     // 拖拽开始于链接元素
     dragInfo.type = 'link';
     dragInfo.url = linkElement.href;
-    
+
     // 如果链接有文本内容，也保存下来
     dragInfo.text = linkElement.textContent.trim() || linkElement.href;
-    
+
     e.dataTransfer.setData('text/plain', linkElement.href);
-    
+
     // 开始监听拖拽移动事件
     document.addEventListener('dragover', handleDragMove, { capture: true, passive: true });
     return;
   }
-  
+
   // 如果不是链接、图片或选中文本，则检查是否为可拖拽的纯文本
   let elementText = '';
-  
+
   // 尝试获取元素的文本内容
   if (e.target.textContent) {
     elementText = e.target.textContent.trim();
   }
-  
+
   // 如果有文本内容，设置为文本拖拽
   if (elementText) {
     dragInfo.type = 'text';
     dragInfo.text = elementText;
-    
+
     e.dataTransfer.setData('text/plain', elementText);
-    
+
     // 开始监听拖拽移动事件
     document.addEventListener('dragover', handleDragMove, { capture: true, passive: true });
     return;
   }
-  
+
   // 如果没有任何有效内容，重置拖拽信息
   resetDragInfo();
 }
@@ -4214,7 +4221,7 @@ function handleDragMove(moveEvent) {
   // 计算拖拽方向
   const dx = moveEvent.clientX - dragInfo.startX;
   const dy = moveEvent.clientY - dragInfo.startY;
-  
+
   // 确定主要拖拽方向
   if (Math.abs(dx) > Math.abs(dy)) {
     // 水平方向为主
@@ -4229,20 +4236,20 @@ function handleDragMove(moveEvent) {
 function handleDragEnd(e) {
   // 移除事件监听
   document.removeEventListener('dragover', handleDragMove, { capture: true, passive: true });
-  
+
   // 检查是否有有效的拖拽方向和内容
   if (!dragInfo.direction) {
     resetDragInfo();
     return;
   }
-  
+
   // 检查拖拽是否从文本输入框开始
   if (dragInfo.target && isTextInputElement(dragInfo.target)) {
     // 如果拖拽开始于文本输入框，不执行任何超级拖拽操作
     resetDragInfo();
     return;
   }
-  
+
   // 检查拖拽释放的目标是否为文本输入框
   try {
     // 获取当前光标位置下的元素及其父元素
@@ -4252,7 +4259,7 @@ function handleDragEnd(e) {
       let currentElement = elementUnderCursor;
       const maxDepth = 5; // 限制向上查找的层数，避免过度递归
       let depth = 0;
-      
+
       while (currentElement && depth < maxDepth) {
         if (isTextInputElement(currentElement)) {
           // 如果拖拽释放到文本输入框上，不执行搜索操作，允许默认的文本拖放行为
@@ -4268,7 +4275,7 @@ function handleDragEnd(e) {
     // 错误处理，继续执行原有逻辑
     console.log('检查拖拽释放目标时出错:', error.message);
   }
-  
+
   // 对于Linux和macOS系统，如果文本焦点丢失，使用之前保存的文本
   if ((isLinuxOS || isMacOS) && dragInfo.savedSelection && dragInfo.type === 'text') {
     // 使用之前保存的文本，不需要重新获取选择内容
@@ -4277,7 +4284,7 @@ function handleDragEnd(e) {
     resetDragInfo();
     return;
   }
-  
+
   // 获取当前拖拽方向的操作设置
   let actionType = 'none';
   switch (dragInfo.direction) {
@@ -4294,14 +4301,14 @@ function handleDragEnd(e) {
       actionType = settings.dragLeftAction || 'background';
       break;
   }
-  
+
   // 如果操作类型为'none'，不执行任何操作
   if (actionType === 'none') {
     console.log(`拖拽方向 ${dragInfo.direction} 设置为不执行操作`);
     resetDragInfo();
     return;
   }
-  
+
   // 根据类型和设置的操作类型决定打开方式
   switch (dragInfo.type) {
     case 'link':
@@ -4316,7 +4323,7 @@ function handleDragEnd(e) {
         });
       }
       break;
-    
+
     case 'image':
       if (actionType === 'foreground') {
         // 前台打开图片
@@ -4329,7 +4336,7 @@ function handleDragEnd(e) {
         });
       }
       break;
-    
+
     case 'text':
       // 检查是否启用了拖拽文本搜索功能
       if (settings.enableDragTextSearch) {
@@ -4344,7 +4351,7 @@ function handleDragEnd(e) {
       }
       break;
   }
-  
+
   // 重置拖拽信息
   resetDragInfo();
 }
@@ -4363,16 +4370,16 @@ function handleDragLeave(e) {
 function showGestureReadyHint() {
   try {
     const hintText = getI18nMessage('gestureReady', 'Gesture mode ready');
-    
+
     // 使用现有的showGestureHint函数显示提示
     showGestureHint(hintText);
-    
+
     // 添加特殊的视觉效果以区分普通提示
     if (gestureHint) {
       // 添加特殊的边框和背景色以区分
       gestureHint.style.borderColor = '#00b3ff';
       gestureHint.style.backgroundColor = 'rgba(0, 179, 255, 0.15)';
-      
+
       // 短暂的闪烁动画
       setTimeout(() => {
         if (gestureHint && document.body.contains(gestureHint)) {
@@ -4396,58 +4403,58 @@ function handleContextMenu(e) {
   if (!settings || !settings.enableGesture) {
     return;
   }
-  
+
   // 在macOS和Linux系统上，实现单击右键用于手势，双击右键显示菜单（逻辑反转）
   if ((isMacOS || isLinuxOS) && !isGestureInProgress) {
     // 如果鼠标几乎没有移动（认为是单击而非拖拽）
-    if (gesturePoints.length <= 1 || 
-        (gesturePoints.length === 2 && 
-         Math.abs(gesturePoints[0].x - gesturePoints[1].x) < 5 && 
+    if (gesturePoints.length <= 1 ||
+        (gesturePoints.length === 2 &&
+         Math.abs(gesturePoints[0].x - gesturePoints[1].x) < 5 &&
          Math.abs(gesturePoints[0].y - gesturePoints[1].y) < 5)) {
-      
+
       // 检测是否在短时间内有两次右键点击（双击右键）
       const currentTime = Date.now();
       const timeSinceLastRightClick = currentTime - lastGestureEndTime;
-      
+
       // 如果是双击右键（300ms内的两次点击）
       if (lastGestureEndTime > 0 && timeSinceLastRightClick < 300) {
         // 是双击右键，允许显示浏览器上下文菜单
-        
+
         // 重要：重置所有手势相关状态，防止同时触发手势操作
         isRightMouseDown = false;
         isGestureInProgress = false;
         resetGestureState();
         clearGestureCanvas();
-        
+
         return true;
       } else {
         // 是单击右键，阻止菜单显示，准备进入手势模式
         e.preventDefault();
-        
+
         // 将isRightMouseDown设为true，使下一次鼠标移动可以启动手势
         isRightMouseDown = true;
-        
+
         // 更新起始点，以便于下一次鼠标移动时计算手势
         gestureStartX = e.clientX;
         gestureStartY = e.clientY;
         gesturePoints = [{ x: e.clientX, y: e.clientY }];
-        
+
         return false;
       }
     }
   }
-  
+
   // 如果右键按下或手势进行中，阻止右键菜单
   if (isRightMouseDown || isGestureInProgress) {
     e.preventDefault();
     return false;
   }
-  
+
   // 检查是否是手势释放后的右键菜单事件
   const currentTime = Date.now();
   const isYouTube = window.location.hostname.includes('youtube.com');
   const timeThreshold = isYouTube ? 300 : 200; // YouTube上给更多时间
-  
+
   if (currentTime - lastGestureEndTime < timeThreshold) {
     e.preventDefault();
     return false;
@@ -4470,7 +4477,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       sendResponse({ success: false, error: 'Extension context invalidated' });
       return true;
     }
-    
+
     if (message.action === 'showDuplicateTabsNotification') {
       // 显示重复标签页通知
       showDuplicateTabsNotification(message.data);
@@ -4478,28 +4485,28 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     } else if (message.action === 'scrollUp') {
       // 使用动态距离向上滚动，如果未提供则使用默认值100
       const scrollDistance = message.distance || 100;
-      
+
       // 改进的滚动方法，支持视频网站的特殊滚动容器
       const scrollSuccessful = performScroll(-scrollDistance);
       sendResponse({ success: scrollSuccessful });
     } else if (message.action === 'scrollDown') {
       // 使用动态距离向下滚动，如果未提供则使用默认值100
       const scrollDistance = message.distance || 100;
-      
+
       // 改进的滚动方法，支持视频网站的特殊滚动容器
       const scrollSuccessful = performScroll(scrollDistance);
       sendResponse({ success: scrollSuccessful });
     } else if (message.action === 'scrollLeft') {
       // 使用动态距离向左滚动，如果未提供则使用默认值100
       const scrollDistance = message.distance || 100;
-      
+
       // 水平滚动方法
       const scrollSuccessful = performHorizontalScroll(-scrollDistance);
       sendResponse({ success: scrollSuccessful });
     } else if (message.action === 'scrollRight') {
       // 使用动态距离向右滚动，如果未提供则使用默认值100
       const scrollDistance = message.distance || 100;
-      
+
       // 水平滚动方法
       const scrollSuccessful = performHorizontalScroll(scrollDistance);
       sendResponse({ success: scrollSuccessful });
@@ -4534,13 +4541,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     } else if (message.action === 'languageChanged') {
       // 特殊的语言变更消息，执行语言变更操作并显示提示
       const newLanguage = message.language;
-      
+
       // 保存旧语言设置，用于比较
       const oldLanguage = settings ? settings.language : null;
-      
+
       // 加载新的设置，并标记这是一个语言变更事件
       loadSettingsWithLanguageChange(newLanguage);
-      
+
       sendResponse({ success: true });
     } else if (message.action === 'checkExtensionValid') {
       // 检查扩展是否有效
@@ -4554,13 +4561,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       // 处理导航失败消息
       const currentLang = settings.language || 'zh';
       let errorText = '';
-      
+
       // 根据操作类型显示不同的错误提示
       if (message.operation === 'forward') {
         // 前进失败时，先显示没有可前进页面的提示（0ms关闭显示）
         errorText = getNavigationErrorTranslations().noForwardPage;
         showGestureHint(errorText);
-        
+
         // 短暂延迟后尝试查找并跳转到下一页
         setTimeout(() => {
           tryNavigateToNextPage();
@@ -4572,7 +4579,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         errorText = getNavigationErrorTranslations().navigationFailed;
         showGestureHint(errorText);
       }
-      
+
       sendResponse({ success: true });
     } else if (message.action === 'showAutoCloseSuccessNotification') {
       // 显示自动关闭成功的通知
@@ -4598,15 +4605,15 @@ function performHorizontalScroll(distance) {
     const direction = distance > 0 ? 1 : -1;
     // 获取有效滚动距离(取绝对值后应用)
     const scrollAmount = Math.min(Math.abs(distance), 300) * direction;
-    
+
     // 检查是否启用平滑滚动
     const useSmoothScroll = settings.enableSmoothScroll;
-    
+
     // 检查是否是YouTube网站
     const isYouTube = window.location.hostname.includes('youtube.com');
     if (isYouTube) {
       console.log('在YouTube上执行水平滚动，距离:', scrollAmount, '平滑滚动:', useSmoothScroll);
-      
+
       // 对YouTube使用优化的水平滚动方法，减少延迟
       try {
         // 对于小距离滚动，直接使用原生滚动以提高响应速度
@@ -4614,14 +4621,14 @@ function performHorizontalScroll(distance) {
           window.scrollBy(scrollAmount, 0);
           return true;
         }
-        
+
         // 对于大距离滚动，使用原生滚动
         if (useSmoothScroll) {
           window.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         } else {
           window.scrollBy(scrollAmount, 0);
         }
-        
+
         // 如果页面级滚动不够，再尝试主容器（但只尝试一个，使用缓存）
         const ytdApp = getYouTubeScrollContainer();
         if (ytdApp && Math.abs(scrollAmount) > 100) {
@@ -4631,7 +4638,7 @@ function performHorizontalScroll(distance) {
             ytdApp.scrollBy(scrollAmount, 0);
           }
         }
-        
+
       } catch (error) {
         console.log('YouTube特定水平滚动失败，使用备用方法');
         if (useSmoothScroll) {
@@ -4642,11 +4649,11 @@ function performHorizontalScroll(distance) {
       }
       return true;
     }
-    
+
     // 非YouTube网站的处理
     // 获取可滚动容器
     const scrollContainer = findScrollableContainer();
-    
+
     if (scrollContainer) {
       // 执行滚动
       if (scrollContainer === document.documentElement || scrollContainer === document.body) {
@@ -4662,7 +4669,7 @@ function performHorizontalScroll(distance) {
           scrollContainer.scrollBy(scrollAmount, 0);
         }
       }
-      
+
       return true;
     } else {
       // 如果没有找到特定容器，使用window滚动
@@ -4700,7 +4707,7 @@ function getYouTubeScrollContainer() {
   if (cachedYouTubeScrollContainer && (now - lastYouTubeContainerCheck) < 5000) {
     return cachedYouTubeScrollContainer;
   }
-  
+
   // 重新查找容器
   const ytdApp = document.querySelector('ytd-app');
   if (ytdApp) {
@@ -4708,7 +4715,7 @@ function getYouTubeScrollContainer() {
     lastYouTubeContainerCheck = now;
     return ytdApp;
   }
-  
+
   cachedYouTubeScrollContainer = null;
   lastYouTubeContainerCheck = now;
   return null;
@@ -4721,15 +4728,15 @@ function performScroll(distance) {
     const direction = distance > 0 ? 1 : -1;
     // 获取有效滚动距离(取绝对值后应用)
     const scrollAmount = Math.min(Math.abs(distance), 300) * direction;
-    
+
     // 检查是否启用平滑滚动
     const useSmoothScroll = settings.enableSmoothScroll;
-    
+
     // 检查是否是YouTube网站
     const isYouTube = window.location.hostname.includes('youtube.com');
     if (isYouTube) {
       console.log('在YouTube上执行普通滚动，距离:', scrollAmount, '平滑滚动:', useSmoothScroll);
-      
+
       // 对YouTube使用优化的滚动方法，减少延迟
       try {
         // 对于小距离滚动，直接使用原生滚动以提高响应速度
@@ -4737,14 +4744,14 @@ function performScroll(distance) {
           window.scrollBy(0, scrollAmount);
           return true;
         }
-        
+
         // 对于大距离滚动，使用原生滚动
         if (useSmoothScroll) {
           window.scrollBy({ top: scrollAmount, behavior: 'smooth' });
         } else {
           window.scrollBy(0, scrollAmount);
         }
-        
+
         // 如果页面级滚动不够，再尝试主容器（但只尝试一个，使用缓存）
         const ytdApp = getYouTubeScrollContainer();
         if (ytdApp && Math.abs(scrollAmount) > 100) {
@@ -4754,7 +4761,7 @@ function performScroll(distance) {
             ytdApp.scrollBy(0, scrollAmount);
           }
         }
-        
+
         // 显示滚动提示，移除YouTube标识
         // 注释掉以下两行：executeGestureAction已经显示了带有距离和百分比的提示
         // const actionKey = direction > 0 ? 'scrollDown' : 'scrollUp';
@@ -4771,11 +4778,11 @@ function performScroll(distance) {
       }
       return true;
     }
-    
+
     // 非YouTube网站的处理
     // 获取可滚动容器
     const scrollContainer = findScrollableContainer();
-    
+
     if (scrollContainer) {
       // 执行滚动
       if (scrollContainer === document.documentElement || scrollContainer === document.body) {
@@ -4791,7 +4798,7 @@ function performScroll(distance) {
           scrollContainer.scrollBy(0, scrollAmount);
         }
       }
-      
+
       // 显示滚动提示 - 移除容器信息
       // 注释掉以下两行：executeGestureAction已经显示了带有距离和百分比的提示
       // const actionKey = direction > 0 ? 'scrollDown' : 'scrollUp';
@@ -4978,7 +4985,7 @@ function getYouTubeMainScrollable() {
 function findScrollableContainer() {
   // 特殊网站处理 - 基于域名的特定选择器
   const hostname = window.location.hostname;
-  
+
   // 网站模式配置 - 使用通配符匹配支持更多网站
   const sitePatterns = [
     // YouTube及其相关域名
@@ -5127,18 +5134,18 @@ function findScrollableContainer() {
       ]
     }
   ];
-  
+
   // 通配符匹配函数
   const matchPattern = (pattern, text) => {
     // 转换通配符为正则表达式
     const regexPattern = pattern
       .replace(/\./g, '\\.')  // 转义点号
       .replace(/\*/g, '.*');  // 星号转换为正则通配符
-    
+
     const regex = new RegExp(`^${regexPattern}$`);
     return regex.test(text);
   };
-  
+
   // 检查域名是否匹配任何配置的模式
   const findMatchingPatterns = (hostname) => {
     return sitePatterns.filter(site => {
@@ -5146,42 +5153,42 @@ function findScrollableContainer() {
       if (matchPattern(site.pattern, hostname)) {
         return true;
       }
-      
+
       // 尝试匹配不带www的域名
       const domainWithoutWww = hostname.replace(/^www\./, '');
       if (domainWithoutWww !== hostname && matchPattern(site.pattern, domainWithoutWww)) {
         return true;
       }
-      
+
       // 或者检查域名是否包含模式
       // 将"*"通配符删除，使用简单的includes检查
       const simplifiedPattern = site.pattern.replace(/\*/g, '');
       return simplifiedPattern && hostname.includes(simplifiedPattern);
     });
   };
-  
+
   // 获取手势起始点，优先使用这个位置来确定滚动容器
   let gestureStartElement = null;
   if (gesturePoints && gesturePoints.length > 0) {
     const gestureStartX = gesturePoints[0].x;
     const gestureStartY = gesturePoints[0].y;
     gestureStartElement = document.elementFromPoint(gestureStartX, gestureStartY);
-    
+
     if (gestureStartElement) {
-      console.log('手势起始点在元素:', gestureStartElement.tagName, 
+      console.log('手势起始点在元素:', gestureStartElement.tagName,
                 gestureStartElement.id || gestureStartElement.className);
     }
   }
-  
+
   // 如果手势起始点在特定元素上，优先查找它的可滚动父容器
   if (gestureStartElement) {
     let container = gestureStartElement;
     let depth = 0;
     const maxDepth = 5;
-    
+
     while (container && container !== document.body && container !== document.documentElement && depth < maxDepth) {
       if (isElementScrollable(container)) {
-        console.log('在手势起始位置找到滚动容器:', container.tagName, 
+        console.log('在手势起始位置找到滚动容器:', container.tagName,
                    container.id || container.className);
         return container;
       }
@@ -5189,11 +5196,11 @@ function findScrollableContainer() {
       depth++;
     }
   }
-  
+
   // 查找匹配的网站模式
   const matchedSites = findMatchingPatterns(hostname);
   console.log('匹配到的网站模式:', matchedSites.length > 0 ? matchedSites.map(s => s.pattern).join(', ') : '无');
-  
+
   // 如果找到匹配的网站，尝试使用其特定选择器
   if (matchedSites.length > 0) {
     // 遍历所有匹配的网站模式
@@ -5209,7 +5216,7 @@ function findScrollableContainer() {
           }
         }
       }
-      
+
       // 尝试网站特定选择器
       if (site.selectors) {
         for (const selector of site.selectors) {
@@ -5220,7 +5227,7 @@ function findScrollableContainer() {
           }
         }
       }
-      
+
       // 尝试通用选择器（如果有）
       if (site.genericSelectors) {
         for (const selector of site.genericSelectors) {
@@ -5234,7 +5241,7 @@ function findScrollableContainer() {
         }
       }
     }
-    
+
     // 如果以上都没找到，但有匹配的网站，可能是新版页面结构
     // 我们仍然尝试使用document.documentElement，而不是寻找其他容器
     console.log('识别到特定网站但未找到匹配的滚动容器，使用文档根元素');
@@ -5242,7 +5249,7 @@ function findScrollableContainer() {
       return document.documentElement;
     }
   }
-  
+
   // 通用选择器 - 已知的视频网站主滚动容器选择器
   const knownScrollSelectors = [
     // 通用视频网站常用的滚动容器class
@@ -5269,7 +5276,7 @@ function findScrollableContainer() {
     '.media-content',
     '.feed-container'
   ];
-  
+
   // 先尝试已知的选择器
   for (const selector of knownScrollSelectors) {
     const element = document.querySelector(selector);
@@ -5278,7 +5285,7 @@ function findScrollableContainer() {
       return element;
     }
   }
-  
+
   // 如果没有找到已知的滚动容器，尝试检测页面中的滚动容器
   return detectScrollableContainer();
 }
@@ -5289,27 +5296,27 @@ function detectScrollableContainer() {
   if (isElementScrollable(document.documentElement)) {
     return document.documentElement;
   }
-  
+
   // 然后检查body元素是否可滚动
   if (isElementScrollable(document.body)) {
     return document.body;
   }
-  
+
   // 使用手势起始点来确定最适合的滚动容器
   // 如果手势起始点可用，则优先从该点寻找可滚动容器
   if (gesturePoints && gesturePoints.length > 0) {
     const gestureStartX = gesturePoints[0].x;
     const gestureStartY = gesturePoints[0].y;
-    
+
     // 从手势起始点获取元素
     const elementAtGestureStart = document.elementFromPoint(gestureStartX, gestureStartY);
-    
+
     if (elementAtGestureStart) {
       // 向上查找可能的滚动容器
       let container = elementAtGestureStart;
       let depth = 0;
       const maxDepth = 5; // 限制向上查找深度
-      
+
       while (container && container !== document.body && container !== document.documentElement && depth < maxDepth) {
         if (isElementScrollable(container)) {
           const rect = container.getBoundingClientRect();
@@ -5324,7 +5331,7 @@ function detectScrollableContainer() {
       }
     }
   }
-  
+
   // 优先检查这些常见的主内容容器
   const mainContentSelectors = [
     'main',
@@ -5335,7 +5342,7 @@ function detectScrollableContainer() {
     '.app',
     '.main-content'
   ];
-  
+
   for (const selector of mainContentSelectors) {
     const elements = document.querySelectorAll(selector);
     for (const element of elements) {
@@ -5345,12 +5352,12 @@ function detectScrollableContainer() {
       }
     }
   }
-  
+
   // 尝试查找视口中心和下半部分的可滚动元素
   const viewportHeight = window.innerHeight;
   const viewportWidth = window.innerWidth;
   const viewportCenter = { x: viewportWidth / 2, y: viewportHeight / 2 };
-  
+
   // 在视口中心点和下半部分寻找元素
   // 优先在中心区域检查，避免导航栏等边缘元素
   for (let y = viewportCenter.y; y < viewportHeight * 0.9; y += 50) {
@@ -5361,7 +5368,7 @@ function detectScrollableContainer() {
       let depth = 0;
       // 限制向上查找的深度，以避免到达顶层容器
       const maxDepth = 5;
-      
+
       while (container && container !== document.body && container !== document.documentElement && depth < maxDepth) {
         if (isElementScrollable(container)) {
           const rect = container.getBoundingClientRect();
@@ -5375,17 +5382,17 @@ function detectScrollableContainer() {
       }
     }
   }
-  
+
   // 如果在中心区域没找到，检查整个文档中的大型可滚动元素
   const allElements = document.querySelectorAll('*');
   let bestContainer = null;
   let maxArea = 0;
-  
+
   for (const element of allElements) {
     if (isElementScrollable(element)) {
       const rect = element.getBoundingClientRect();
       const area = rect.width * rect.height;
-      
+
       // 找出最大的可滚动区域，但避免整个文档
       if (area > maxArea && element !== document.documentElement && element !== document.body) {
         // 额外检查：确保元素不是左侧导航栏或其他辅助UI
@@ -5399,11 +5406,11 @@ function detectScrollableContainer() {
       }
     }
   }
-  
+
   if (bestContainer) {
     return bestContainer;
   }
-  
+
   // 默认返回document.scrollingElement
   return document.scrollingElement || document.documentElement;
 }
@@ -5411,42 +5418,42 @@ function detectScrollableContainer() {
 // 检查元素是否可滚动
 function isElementScrollable(element) {
   if (!element) return false;
-  
+
   try {
     // 检查文档根或body元素（这些总是可滚动的）
     if (element === document.documentElement || element === document.body) {
       return element.scrollHeight > element.clientHeight;
     }
-    
+
     const style = window.getComputedStyle(element);
-    
+
     // 检查常见的可滚动样式
-    const hasScrollableStyle = 
-      style.overflow === 'auto' || 
-      style.overflow === 'scroll' || 
-      style.overflowY === 'auto' || 
+    const hasScrollableStyle =
+      style.overflow === 'auto' ||
+      style.overflow === 'scroll' ||
+      style.overflowY === 'auto' ||
       style.overflowY === 'scroll';
-    
+
     // 有些元素即使是overflow:hidden，但内容超出也可以滚动
-    const potentiallyScrollableWithHidden = 
-      style.overflow === 'hidden' || 
+    const potentiallyScrollableWithHidden =
+      style.overflow === 'hidden' ||
       style.overflowY === 'hidden';
-    
+
     // 检查元素内容是否超出容器高度
     const hasScrollHeight = element.scrollHeight > element.clientHeight;
-    
+
     // 额外检查：避免选择太小的容器
     const rect = element.getBoundingClientRect();
-    
+
     // 检查特殊角色属性
     const role = element.getAttribute('role');
-    const isScrollableRole = role === 'scrollbar' || role === 'listbox' || 
+    const isScrollableRole = role === 'scrollbar' || role === 'listbox' ||
                             role === 'grid' || role === 'tree';
-    
+
     // 检查常见的可滚动类名
     const className = element.className || '';
     const hasScrollableClass = /\b(scroll|scrollable|overflow|content)\b/i.test(className);
-    
+
     // 为特殊元素调整大小要求
     let isLargeEnough = true;
     if (isScrollableRole || hasScrollableClass) {
@@ -5456,30 +5463,30 @@ function isElementScrollable(element) {
       // 对于普通元素，保持较严格的大小要求
       isLargeEnough = rect.width > 200 && rect.height > 100;
     }
-    
+
     // 检查是否在视口内
-    const isInViewport = 
+    const isInViewport =
       rect.top < window.innerHeight &&
-      rect.left < window.innerWidth && 
-      rect.bottom > 0 && 
+      rect.left < window.innerWidth &&
+      rect.bottom > 0 &&
       rect.right > 0;
-    
+
     // 普通滚动条件
     if (hasScrollableStyle && hasScrollHeight && isLargeEnough && isInViewport) {
       return true;
     }
-    
+
     // 特殊处理：即使overflow:hidden，但内容超出且有明确滚动特征的元素
-    if (potentiallyScrollableWithHidden && hasScrollHeight && 
+    if (potentiallyScrollableWithHidden && hasScrollHeight &&
         (isScrollableRole || hasScrollableClass) && isInViewport) {
       return true;
     }
-    
+
     // 特殊处理：无样式但有明显滚动特征的元素
     if (hasScrollHeight && isScrollableRole && isLargeEnough && isInViewport) {
       return true;
     }
-    
+
     return false;
   } catch (error) {
     // 如果获取样式出错，默认返回false
@@ -5490,7 +5497,7 @@ function isElementScrollable(element) {
 // 专门处理语言变更的函数
 function loadSettingsWithLanguageChange(newLanguage) {
   if (!isExtensionValid) return;
-  
+
   try {
     chrome.storage.sync.get({
       enableGesture: true,
@@ -5513,41 +5520,41 @@ function loadSettingsWithLanguageChange(newLanguage) {
         console.log(getI18nMessage('errorLoadSettings'), chrome.runtime.lastError.message);
         return;
       }
-      
+
       // 保存旧语言设置，用于比较
       const oldLanguage = settings ? settings.language : null;
-      
+
       // 更新设置
       settings = loadedSettings;
-      
+
       // 重置上一次提示的动作以确保下次显示提示时使用新语言
       lastHintAction = '';
-      
+
       // 如果当前有显示的提示，移除它
       if (gestureHint && document.body.contains(gestureHint)) {
         document.body.removeChild(gestureHint);
         gestureHint = null;
       }
-      
+
       // 显示语言已变更提示
       if (oldLanguage && oldLanguage !== newLanguage) {
         // 重置上一次提示的动作以确保下次显示提示时使用新语言
         lastHintAction = '';
         console.log(getI18nMessage('languageChanged', [oldLanguage, newLanguage]));
-        
+
         // 如果当前有显示的提示，移除它
         if (gestureHint && document.body.contains(gestureHint)) {
           document.body.removeChild(gestureHint);
           gestureHint = null;
         }
-        
+
         // 立即显示一个临时的语言切换提示，帮助用户确认语言已经切换
         const tempMsg = newLanguage === 'zh' ? getI18nMessage('switchedToChinese') : getI18nMessage('switchedToEnglish');
         setTimeout(() => {
           showGestureHint(tempMsg);
         }, 100); // 短暂延迟确保DOM已更新
       }
-      
+
       // 如果手势被禁用，确保清理任何现有的手势状态
       if (!settings.enableGesture) {
         clearGestureCanvas();
@@ -5568,7 +5575,7 @@ loadSettings();
 // 定期检查扩展上下文是否有效
 function checkExtensionValidity() {
   if (!isExtensionValid) return;
-  
+
   try {
     // 尝试发送一个简单的消息来检查扩展上下文
     chrome.runtime.sendMessage({ action: 'ping' }, (response) => {
@@ -5607,7 +5614,7 @@ function createImagePreview() {
   preview.style.opacity = '0';
   preview.style.border = 'none';
   preview.style.overflow = 'hidden'; // 确保内容不会溢出边界
-  
+
   const img = document.createElement('img');
   img.style.display = 'block';
   img.style.objectFit = 'contain';
@@ -5616,7 +5623,7 @@ function createImagePreview() {
   img.style.maxHeight = '100%';
   // 不预设背景色，而是在检测后动态设置
   preview.appendChild(img);
-  
+
   document.body.appendChild(preview);
   return preview;
 }
@@ -5635,7 +5642,7 @@ function hideImagePreview(immediate = false) {
       imagePreview._mutationObserver.disconnect();
       imagePreview._mutationObserver = null;
     }
-    
+
     if (immediate) {
       // 立即隐藏，用于滚动时立即关闭
       imagePreview.style.display = 'none';
@@ -5669,35 +5676,35 @@ function showImagePreview(e, imgElement) {
   if (isPageScrolling) {
     return;
   }
-  
+
   if (!imagePreview) {
     imagePreview = createImagePreview();
   }
-  
+
   const preview = imagePreview;
   const img = preview.querySelector('img');
-  
+
   // 设置图片源
   img.src = imgElement.src;
-  
+
   // 获取原始图片元素，可能是事件触发源
   const originalImgElement = (e && e.target && e.target.tagName === 'IMG') ? e.target : imgElement;
-  
+
   // 存储当前触发预览的元素，以便后续检查
   preview._currentTriggerElement = originalImgElement;
-  
+
   // 检测原始图片的圆角并应用到预览
   if (originalImgElement && originalImgElement.getBoundingClientRect) {
     try {
       // 获取原始图片的计算样式
       const imgStyle = window.getComputedStyle(originalImgElement);
-      
+
       // 处理可能的复杂圆角值（例如：10px 20px 30px 40px）
       const borderRadius = imgStyle.borderRadius || '0';
-      
+
       // 检测是否为圆形图片
       const isCircular = detectCircularImage(originalImgElement, imgStyle);
-      
+
       if (isCircular) {
         // 圆形图片
         img.style.borderRadius = '50%';
@@ -5724,7 +5731,7 @@ function showImagePreview(e, imgElement) {
     preview.style.borderRadius = '0';
     img.onload = applyPreviewLayout;
   }
-  
+
   // 清除任何现有的检查间隔和观察器
   if (preview._visibilityCheckInterval) {
     clearInterval(preview._visibilityCheckInterval);
@@ -5734,7 +5741,7 @@ function showImagePreview(e, imgElement) {
     preview._mutationObserver.disconnect();
     preview._mutationObserver = null;
   }
-  
+
   // 设置元素变化观察器，当触发预览的元素被移除时自动隐藏预览
   if (originalImgElement && originalImgElement.parentNode && typeof MutationObserver !== 'undefined') {
     try {
@@ -5745,7 +5752,7 @@ function showImagePreview(e, imgElement) {
           if (mutation.type === 'childList' && mutation.removedNodes.length > 0) {
             // 检查移除的节点是否包含原始图片元素
             for (const node of mutation.removedNodes) {
-              if (node === originalImgElement || 
+              if (node === originalImgElement ||
                   (node.contains && node.contains(originalImgElement))) {
                 hideImagePreview();
                 return;
@@ -5753,9 +5760,9 @@ function showImagePreview(e, imgElement) {
             }
           }
           // 检查元素属性变化（如隐藏）
-          if (mutation.type === 'attributes' && 
-              (mutation.attributeName === 'style' || 
-               mutation.attributeName === 'class' || 
+          if (mutation.type === 'attributes' &&
+              (mutation.attributeName === 'style' ||
+               mutation.attributeName === 'class' ||
                mutation.attributeName === 'hidden')) {
             if (!isElementVisible(originalImgElement)) {
               hideImagePreview();
@@ -5764,14 +5771,14 @@ function showImagePreview(e, imgElement) {
           }
         }
       });
-      
+
       // 开始观察包含原始元素的父元素
       preview._mutationObserver.observe(originalImgElement.parentNode, {
         childList: true,       // 监视子节点的添加或删除
         attributes: true,      // 监视属性更改
         subtree: false         // 不监视后代
       });
-      
+
       // 同时监视原始元素本身的属性变化
       preview._mutationObserver.observe(originalImgElement, {
         attributes: true,      // 监视属性更改
@@ -5781,7 +5788,7 @@ function showImagePreview(e, imgElement) {
       console.error(getI18nMessage('errorMutationObserver'), err);
     }
   }
-  
+
   // 添加定期检查，确保当元素不再可见时隐藏预览
   preview._visibilityCheckInterval = setInterval(() => {
     // 仅在预览可见时进行检查
@@ -5798,52 +5805,52 @@ function showImagePreview(e, imgElement) {
       preview._visibilityCheckInterval = null;
     }
   }, 500); // 每500毫秒检查一次
-  
+
   // 检测元素是否在视图中并可见
   function isElementVisible(el) {
     if (!el || !el.getBoundingClientRect) return false;
-    
+
     try {
       // 检查元素是否连接到DOM
       if (!document.body.contains(el)) return false;
-      
+
       // 获取元素的计算样式
       const style = window.getComputedStyle(el);
-      
+
       // 检查元素是否通过CSS隐藏
-      if (style.display === 'none' || style.visibility === 'hidden' || 
+      if (style.display === 'none' || style.visibility === 'hidden' ||
           style.opacity === '0') {
         return false;
       }
-      
+
       // 获取元素的尺寸和位置
       const rect = el.getBoundingClientRect();
-      
+
       // 检查元素是否有尺寸
       if (rect.width === 0 || rect.height === 0) {
         return false;
       }
-      
+
       // 检查元素是否在视口内（至少部分可见）
-      if (rect.right < 0 || rect.bottom < 0 || 
+      if (rect.right < 0 || rect.bottom < 0 ||
           rect.left > window.innerWidth || rect.top > window.innerHeight) {
         return false;
       }
-      
+
       return true;
     } catch (e) {
       console.error(getI18nMessage('errorCheckVisibility'), e);
       return false;
     }
   }
-  
+
   // 检测图片是否为圆形
   function detectCircularImage(element, style) {
     // 检查是否有50%或100%的border-radius
     if (style.borderRadius.includes('50%') || style.borderRadius === '100%') {
       return true;
     }
-    
+
     // 检查宽高是否相等，且圆角值大于或等于宽度的一半
     if (style.width !== 'auto' && style.height !== 'auto' && style.width === style.height) {
       const width = parseFloat(style.width);
@@ -5853,17 +5860,17 @@ function showImagePreview(e, imgElement) {
         const match = val.match(/^(\d+(?:\.\d+)?)/);
         return match ? parseFloat(match[1]) : 0;
       });
-      
+
       // 如果所有圆角值都大于等于宽度的一半
-      const isAllCornersRounded = radiusValues.length > 0 && 
+      const isAllCornersRounded = radiusValues.length > 0 &&
         radiusValues.every(value => value >= width / 2);
-      
+
       return isAllCornersRounded;
     }
-    
+
     return false;
   }
-  
+
   // 处理圆角矩形图片
   function processRoundedCorners(img, preview, originalElement, borderRadiusValue) {
   img.onload = function() {
@@ -5871,17 +5878,17 @@ function showImagePreview(e, imgElement) {
         const origRect = originalElement.getBoundingClientRect();
         const previewWidth = img.width;
         const previewHeight = img.height;
-        
+
         // 检测原始图片是否有透明部分或者是否为透明背景
         detectImageBackground(img, originalElement).then(backgroundColor => {
           // 应用检测到的背景色
           img.style.backgroundColor = backgroundColor;
-          
+
           // 计算缩放比例
           const widthRatio = previewWidth / origRect.width;
           const heightRatio = previewHeight / origRect.height;
           const scaleFactor = Math.max(widthRatio, heightRatio);
-          
+
           // 处理不同格式的圆角值
           if (borderRadiusValue.includes(' ')) {
             // 多值圆角（例如：10px 20px 30px 40px）
@@ -5897,7 +5904,7 @@ function showImagePreview(e, imgElement) {
                 return Math.round(numVal * scaleFactor) + (unit || 'px');
               }
             });
-            
+
             // 应用缩放后的圆角值
             const scaledBorderRadius = scaledValues.join(' ');
             img.style.borderRadius = scaledBorderRadius;
@@ -5914,11 +5921,11 @@ function showImagePreview(e, imgElement) {
               const unit = borderRadiusValue.replace(/[\d.]/g, '');
               radiusValue = Math.round(numValue * scaleFactor) + (unit || 'px');
             }
-            
+
             img.style.borderRadius = radiusValue;
             preview.style.borderRadius = radiusValue;
           }
-          
+
           // 继续执行原有的加载逻辑
           applyPreviewLayout();
         }).catch(() => {
@@ -5927,7 +5934,7 @@ function showImagePreview(e, imgElement) {
           applyPreviewRadius();
           applyPreviewLayout();
         });
-        
+
         // 封装圆角应用逻辑以便重用
         function applyPreviewRadius() {
           // 处理不同格式的圆角值
@@ -5945,7 +5952,7 @@ function showImagePreview(e, imgElement) {
                 return Math.round(numVal * scaleFactor) + (unit || 'px');
               }
             });
-            
+
             // 应用缩放后的圆角值
             const scaledBorderRadius = scaledValues.join(' ');
             img.style.borderRadius = scaledBorderRadius;
@@ -5962,7 +5969,7 @@ function showImagePreview(e, imgElement) {
               const unit = borderRadiusValue.replace(/[\d.]/g, '');
               radiusValue = Math.round(numValue * scaleFactor) + (unit || 'px');
             }
-            
+
             img.style.borderRadius = radiusValue;
             preview.style.borderRadius = radiusValue;
           }
@@ -5974,39 +5981,39 @@ function showImagePreview(e, imgElement) {
         applyPreviewLayout();
       }
     };
-    
+
     // 检测图片背景色的函数
     function detectImageBackground(imgElement, originalElement) {
       return new Promise((resolve) => {
         try {
           // 检查页面是否为深色模式
           const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-          
+
           // 默认采用透明背景
           let backgroundColor = 'transparent';
-          
+
           // 尝试获取原始元素的背景色
           if (originalElement && originalElement.tagName === 'IMG') {
             // 1. 首先检查元素计算样式
             const elementStyle = window.getComputedStyle(originalElement);
             const parentStyle = window.getComputedStyle(originalElement.parentElement);
             const bodyStyle = window.getComputedStyle(document.body);
-            
+
             // 2. 检查元素是否有明确的背景色
-            if (elementStyle.backgroundColor && 
-                elementStyle.backgroundColor !== 'rgba(0, 0, 0, 0)' && 
+            if (elementStyle.backgroundColor &&
+                elementStyle.backgroundColor !== 'rgba(0, 0, 0, 0)' &&
                 elementStyle.backgroundColor !== 'transparent') {
               backgroundColor = elementStyle.backgroundColor;
-            } 
+            }
             // 3. 检查父元素背景色
-            else if (parentStyle.backgroundColor && 
-                     parentStyle.backgroundColor !== 'rgba(0, 0, 0, 0)' && 
+            else if (parentStyle.backgroundColor &&
+                     parentStyle.backgroundColor !== 'rgba(0, 0, 0, 0)' &&
                      parentStyle.backgroundColor !== 'transparent') {
               backgroundColor = parentStyle.backgroundColor;
             }
             // 4. 使用body背景色
-            else if (bodyStyle.backgroundColor && 
-                     bodyStyle.backgroundColor !== 'rgba(0, 0, 0, 0)' && 
+            else if (bodyStyle.backgroundColor &&
+                     bodyStyle.backgroundColor !== 'rgba(0, 0, 0, 0)' &&
                      bodyStyle.backgroundColor !== 'transparent') {
               backgroundColor = bodyStyle.backgroundColor;
             }
@@ -6015,7 +6022,7 @@ function showImagePreview(e, imgElement) {
               backgroundColor = isDarkMode ? '#121212' : 'transparent';
             }
           }
-          
+
           // 检查是否可以使用Canvas进行像素分析
           // 跨域图片无法进行像素分析，直接使用预设背景色
           if (isImageCrossOrigin(imgElement)) {
@@ -6026,27 +6033,27 @@ function showImagePreview(e, imgElement) {
             resolve(backgroundColor);
             return;
           }
-          
+
           // 检测图片是否有透明部分，需要使用canvas
           const canvas = document.createElement('canvas');
           const ctx = canvas.getContext('2d', { willReadFrequently: true });
-          
+
           // 仅针对已加载的图片进行分析
           if (imgElement.complete && imgElement.naturalWidth > 0) {
             try {
               // 设置canvas尺寸
               canvas.width = imgElement.naturalWidth;
               canvas.height = imgElement.naturalHeight;
-              
+
               // 尝试绘制图片到canvas
               ctx.drawImage(imgElement, 0, 0);
-              
+
               // 尝试读取像素数据（可能会因跨域限制而失败）
               try {
                 // 分析策略：先检查透明度，再采样边缘颜色
                 let hasTransparency = false;
                 let dominantEdgeColor = null;
-                
+
                 // 1. 检查透明度（四角和中心点）
                 const checkPoints = [
                   {x: 0, y: 0},  // 左上
@@ -6055,21 +6062,21 @@ function showImagePreview(e, imgElement) {
                   {x: canvas.width - 1, y: canvas.height - 1},  // 右下
                   {x: Math.floor(canvas.width/2), y: Math.floor(canvas.height/2)}  // 中心
                 ];
-                
+
                 // 记录边缘颜色的数组
                 const edgeColors = [];
-                
+
                 for (const point of checkPoints) {
                   try {
                     const pixel = ctx.getImageData(point.x, point.y, 1, 1).data;
-                    
+
                     // 检查透明度
                     if (pixel[3] < 255) {
                       hasTransparency = true;
                     }
-                    
+
                     // 收集非透明的边缘颜色（只收集四个角落点）
-                    if (point.x === 0 || point.x === canvas.width - 1 || 
+                    if (point.x === 0 || point.x === canvas.width - 1 ||
                         point.y === 0 || point.y === canvas.height - 1) {
                       if (pixel[3] > 200) { // 只考虑几乎不透明的像素
                         edgeColors.push({
@@ -6086,7 +6093,7 @@ function showImagePreview(e, imgElement) {
                     continue;
                   }
                 }
-                
+
                 // 2. 如果图片有透明部分，我们可能需要一个背景色
                 if (hasTransparency) {
                   // 如果有足够的边缘颜色样本，使用其平均值
@@ -6100,12 +6107,12 @@ function showImagePreview(e, imgElement) {
                         a: acc.a + color.a
                       };
                     }, {r: 0, g: 0, b: 0, a: 0});
-                    
+
                     avgColor.r = Math.round(avgColor.r / edgeColors.length);
                     avgColor.g = Math.round(avgColor.g / edgeColors.length);
                     avgColor.b = Math.round(avgColor.b / edgeColors.length);
                     avgColor.a = Math.round(avgColor.a / edgeColors.length);
-                    
+
                     dominantEdgeColor = `rgba(${avgColor.r},${avgColor.g},${avgColor.b},1)`;
                     backgroundColor = dominantEdgeColor;
                   } else {
@@ -6142,7 +6149,7 @@ function showImagePreview(e, imgElement) {
               }
             }
           }
-          
+
           resolve(backgroundColor);
         } catch (e) {
           console.error(getI18nMessage('errorDetectBackgroundColor'), e.message || e);
@@ -6151,12 +6158,12 @@ function showImagePreview(e, imgElement) {
           resolve(isDark ? '#121212' : 'transparent');
         }
       });
-      
+
       // 检测页面整体是否为深色
       function isPageDark() {
         try {
           const bodyColor = window.getComputedStyle(document.body).backgroundColor;
-          
+
           // 如果body没有背景色，检查html元素
           if (!bodyColor || bodyColor === 'rgba(0, 0, 0, 0)' || bodyColor === 'transparent') {
             const htmlColor = window.getComputedStyle(document.documentElement).backgroundColor;
@@ -6165,25 +6172,25 @@ function showImagePreview(e, imgElement) {
             }
             return !isLightBackground(htmlColor);
           }
-          
+
           return !isLightBackground(bodyColor);
         } catch (e) {
           return false; // 出错时假设不是暗色
         }
       }
-      
+
       // 检测图片是否跨域
       function isImageCrossOrigin(img) {
         if (!img || !img.src) return false;
-        
+
         try {
           // 获取当前域名
           const currentDomain = window.location.hostname;
-          
+
           // 解析图片URL的域名
           const imgUrl = new URL(img.src);
           const imgDomain = imgUrl.hostname;
-          
+
           // 检查是否为跨域图片
           return imgDomain !== currentDomain &&
                  imgDomain !== '' &&
@@ -6195,61 +6202,61 @@ function showImagePreview(e, imgElement) {
       }
     }
   }
-  
+
   // 提取原先img.onload中的布局逻辑为一个单独的函数
   function applyPreviewLayout() {
     // 获取图片原始尺寸
     const originalWidth = img.naturalWidth;
     const originalHeight = img.naturalHeight;
-    
+
     // 计算最大显示尺寸（考虑屏幕大小的限制）
     const maxWidth = window.innerWidth * 0.98;
     const maxHeight = window.innerHeight * 0.98;
-    
+
     // 保持宽高比的情况下计算适合的尺寸
     let displayWidth = originalWidth;
     let displayHeight = originalHeight;
-    
+
     // 如果图片尺寸超过最大限制，按比例缩小
     if (displayWidth > maxWidth || displayHeight > maxHeight) {
       const widthRatio = maxWidth / displayWidth;
       const heightRatio = maxHeight / displayHeight;
       const ratio = Math.min(widthRatio, heightRatio);
-      
+
       displayWidth = Math.floor(displayWidth * ratio);
       displayHeight = Math.floor(displayHeight * ratio);
     }
-    
+
     // 设置图片显示尺寸
     img.style.width = displayWidth + 'px';
     img.style.height = displayHeight + 'px';
-    
+
     // 计算预览窗口位置，根据鼠标位置智能调整
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
-    
+
     // 默认位置：鼠标右下方
     let left = e.clientX + 20;
     let top = e.clientY + 20;
-    
+
     // 根据鼠标在屏幕上的位置调整预览位置
     if (e.clientX > viewportWidth / 2) {
       left = e.clientX - displayWidth - 20;
     }
-    
+
     if (e.clientY > viewportHeight / 2) {
       top = e.clientY - displayHeight - 20;
     }
-    
+
     // 最终边界检查，确保预览完全在可视区域内
     left = Math.max(10, Math.min(left, viewportWidth - displayWidth - 20));
     top = Math.max(10, Math.min(top, viewportHeight - displayHeight - 20));
-    
+
     // 应用位置
     preview.style.left = left + 'px';
     preview.style.top = top + 'px';
     preview.style.display = 'block';
-    
+
     // 使用淡入效果显示
     requestAnimationFrame(() => {
       preview.style.opacity = '1';
@@ -6273,7 +6280,7 @@ function getVideoPosterUrl(videoElement) {
   if (videoElement.poster) {
     return videoElement.poster;
   }
-  
+
   // 检查data-poster或其他常见的自定义属性
   const customPosterAttributes = ['data-poster', 'data-thumbnail', 'data-preview'];
   for (const attr of customPosterAttributes) {
@@ -6282,7 +6289,7 @@ function getVideoPosterUrl(videoElement) {
       return posterUrl;
     }
   }
-  
+
   // 尝试从父元素或相邻元素查找预览图
   const parent = videoElement.parentElement;
   if (parent) {
@@ -6292,7 +6299,7 @@ function getVideoPosterUrl(videoElement) {
       return nearbyImg.src;
     }
   }
-  
+
   return null;
 }
 
@@ -6303,24 +6310,24 @@ function handleImageMouseOver(e) {
     console.log('图片预览功能已禁用');
     return;
   }
-  
+
   // 如果页面正在滚动中，不显示图片预览
   if (isPageScrolling) {
     console.log('页面正在滚动中，跳过图片预览', { isPageScrolling });
     return;
   }
-  
+
   // 如果滚动停止后还在额外延迟期间，不显示图片预览
   if (scrollPreviewDelayTimer) {
     console.log('滚动停止后的额外延迟期间，跳过图片预览');
     return;
   }
-  
+
   console.log('开始处理图片预览，滚动状态:', { isPageScrolling, hasPreviewDelay: !!scrollPreviewDelayTimer });
-  
+
   let previewUrl = null;
   let imgElement = null;
-  
+
   if (target.tagName === 'IMG') {
     previewUrl = target.src;
     imgElement = target;
@@ -6340,7 +6347,7 @@ function handleImageMouseOver(e) {
       previewUrl = href;
     }
   }
-  
+
   if (previewUrl) {
     console.log('准备显示图片预览:', previewUrl);
     // 清除任何现有的预览隐藏定时器
@@ -6348,14 +6355,14 @@ function handleImageMouseOver(e) {
       clearTimeout(target._hidePreviewTimer);
       target._hidePreviewTimer = null;
     }
-    
+
     // 对于非IMG元素的情况，创建一个虚拟元素
     if (!imgElement) {
       imgElement = { src: previewUrl };
     }
-    
+
     showImagePreview(e, imgElement);
-    
+
     // 移除之前的事件监听器
     if (target._mouseMoveHandler) {
       target.removeEventListener('mousemove', target._mouseMoveHandler);
@@ -6363,30 +6370,30 @@ function handleImageMouseOver(e) {
     if (target._mouseOutHandler) {
       target.removeEventListener('mouseout', target._mouseOutHandler);
     }
-    
+
     // 创建新的事件处理函数
     target._mouseMoveHandler = (moveEvent) => {
       if (target._hidePreviewTimer) {
         clearTimeout(target._hidePreviewTimer);
         target._hidePreviewTimer = null;
       }
-      
+
       // 只有在鼠标移动超过阈值距离时才更新预览位置
       const dx = moveEvent.clientX - e.clientX;
       const dy = moveEvent.clientY - e.clientY;
       const distance = Math.sqrt(dx * dx + dy * dy);
-      
+
       if (distance > 5) {
         showImagePreview(moveEvent, imgElement);
       }
     };
-    
+
     target._mouseOutHandler = () => {
       // 添加延迟，防止鼠标快速移动导致的闪烁
       target._hidePreviewTimer = setTimeout(() => {
         hideImagePreview();
         target._hidePreviewTimer = null;
-        
+
         // 清理事件监听器
         if (target._mouseMoveHandler) {
           target.removeEventListener('mousemove', target._mouseMoveHandler);
@@ -6398,7 +6405,7 @@ function handleImageMouseOver(e) {
         }
       }, 100);
     };
-    
+
     // 添加新的事件监听器
     target.addEventListener('mousemove', target._mouseMoveHandler);
     target.addEventListener('mouseout', target._mouseOutHandler);
@@ -6416,7 +6423,7 @@ function registerEventListeners() {
     window.addEventListener('mouseup', handleMouseUp, { capture: true, passive: false });
     window.addEventListener('contextmenu', handleContextMenu, { capture: true, passive: false });
     window.addEventListener('scroll', handlePageScroll, { passive: true });
-    
+
     // 为Mac系统特别添加键盘事件监听，以检测Ctrl键状态
     if (isMacOS) {
       window.addEventListener('keydown', (e) => {
@@ -6424,21 +6431,21 @@ function registerEventListeners() {
           // 暂不做任何操作，为后续可能的扩展预留
         }
       }, { capture: true, passive: true });
-      
+
       window.addEventListener('keyup', (e) => {
         if (e.key === 'Control') {
           // 如果在Mac上松开Ctrl键，并且手势正在进行中，则模拟右键释放
           if (isRightMouseDown || isGestureInProgress) {
             isRightMouseDown = false;
-            
+
             if (isGestureInProgress) {
               isGestureInProgress = false;
               lastGestureEndTime = Date.now();
               lastHintAction = '';
-              
+
               const gesture = recognizeGesture();
               clearGestureCanvas();
-              
+
               if (gesture) {
                 executeGestureAction(gesture);
               } else {
@@ -6449,14 +6456,14 @@ function registerEventListeners() {
         }
       }, { capture: true, passive: true });
     }
-    
+
     window.addEventListener('dragstart', handleDragStart, { capture: false, passive: false });
     window.addEventListener('dragend', handleDragEnd, { capture: false, passive: false });
     window.addEventListener('drop', handleDrop, { capture: false, passive: false });
     window.addEventListener('dragleave', handleDragLeave, { capture: false, passive: false });
     window.addEventListener('resize', handleResize, { capture: false, passive: true });
     window.addEventListener('mouseover', handleImageMouseOver, { capture: true, passive: true });
-    
+
     // 为所有 iframe 添加事件监听器
     const handleIframes = () => {
       const iframes = document.getElementsByTagName('iframe');
@@ -6467,7 +6474,7 @@ function registerEventListeners() {
           iframe.contentWindow.addEventListener('mouseup', handleMouseUp, { capture: true, passive: false });
           iframe.contentWindow.addEventListener('contextmenu', handleContextMenu, { capture: true, passive: false });
           iframe.contentWindow.addEventListener('scroll', handlePageScroll, { passive: true });
-          
+
           // 为Mac系统特别添加键盘事件监听
           if (isMacOS) {
             iframe.contentWindow.addEventListener('keydown', (e) => {
@@ -6475,20 +6482,20 @@ function registerEventListeners() {
                 // 暂不做任何操作
               }
             }, { capture: true, passive: true });
-            
+
             iframe.contentWindow.addEventListener('keyup', (e) => {
               if (e.key === 'Control') {
                 if (isRightMouseDown || isGestureInProgress) {
                   isRightMouseDown = false;
-                  
+
                   if (isGestureInProgress) {
                     isGestureInProgress = false;
                     lastGestureEndTime = Date.now();
                     lastHintAction = '';
-                    
+
                     const gesture = recognizeGesture();
                     clearGestureCanvas();
-                    
+
                     if (gesture) {
                       executeGestureAction(gesture);
                     } else {
@@ -6507,7 +6514,7 @@ function registerEventListeners() {
 
     // 立即处理现有的iframe
     handleIframes();
-    
+
     // 监听DOM变化以处理新添加的iframe和图片
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
@@ -6526,7 +6533,7 @@ function registerEventListeners() {
                 console.log('检测到容器中的新图片元素:', img.src);
               });
             }
-            
+
             if (node.tagName === 'IFRAME') {
               try {
                 node.contentWindow.addEventListener('mousedown', handleMouseDown, { capture: true, passive: false });
@@ -6534,7 +6541,7 @@ function registerEventListeners() {
                 node.contentWindow.addEventListener('mouseup', handleMouseUp, { capture: true, passive: false });
                 node.contentWindow.addEventListener('contextmenu', handleContextMenu, { capture: true, passive: false });
                 node.contentWindow.addEventListener('scroll', handlePageScroll, { passive: true });
-                
+
                 // 为Mac系统特别添加键盘事件监听
                 if (isMacOS) {
                   node.contentWindow.addEventListener('keydown', (e) => {
@@ -6542,20 +6549,20 @@ function registerEventListeners() {
                       // 暂不做任何操作
                     }
                   }, { capture: true, passive: true });
-                  
+
                   node.contentWindow.addEventListener('keyup', (e) => {
                     if (e.key === 'Control') {
                       if (isRightMouseDown || isGestureInProgress) {
                         isRightMouseDown = false;
-                        
+
                         if (isGestureInProgress) {
                           isGestureInProgress = false;
                           lastGestureEndTime = Date.now();
                           lastHintAction = '';
-                          
+
                           const gesture = recognizeGesture();
                           clearGestureCanvas();
-                          
+
                           if (gesture) {
                             executeGestureAction(gesture);
                           } else {
@@ -6592,13 +6599,13 @@ function initialize() {
   try {
     // 加载设置
     loadSettings();
-    
+
     // 注册事件监听器
     registerEventListeners();
-    
+
     // 检查扩展有效性
     checkExtensionValidity();
-    
+
     // 检查并初始化调试面板状态
     initDebugPanelState();
   } catch (e) {
@@ -6641,10 +6648,10 @@ function resetDragInfo() {
     type: '',
     savedSelection: false
   };
-} 
+}
 
 // 页面加载时初始化
-document.addEventListener('DOMContentLoaded', initialize); 
+document.addEventListener('DOMContentLoaded', initialize);
 
 // 添加一个新函数用于显示自动关闭重复标签页的成功通知
 function showAutoCloseSuccessNotification(data) {
@@ -6654,18 +6661,18 @@ function showAutoCloseSuccessNotification(data) {
     if (existingContainer) {
       document.body.removeChild(existingContainer);
     }
-    
+
     // 获取当前语言设置
     const currentLang = settings.language || 'zh';
     const isEnglish = currentLang === 'en';
-    
+
     // 文本翻译
     const texts = {
-      title: isEnglish 
-        ? `Auto-closed ${data.count} duplicate tab${data.count > 1 ? 's' : ''}` 
+      title: isEnglish
+        ? `Auto-closed ${data.count} duplicate tab${data.count > 1 ? 's' : ''}`
         : `已自动关闭${data.count}个重复标签页`
     };
-    
+
     // 创建通知容器
     const container = document.createElement('div');
     container.id = 'mouse-gesture-notification-container';
@@ -6679,7 +6686,7 @@ function showAutoCloseSuccessNotification(data) {
     container.style.filter = 'drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15))';
     container.style.maxWidth = '420px';
     container.style.width = 'calc(100% - 40px)';
-    
+
     // 创建通知框 - 使用现代化渐变背景（成功样式）
     const notification = document.createElement('div');
     notification.style.background = 'linear-gradient(135deg, rgba(46, 125, 100, 0.92) 0%, rgba(35, 105, 85, 0.94) 100%)';
@@ -6692,7 +6699,7 @@ function showAutoCloseSuccessNotification(data) {
     notification.style.backdropFilter = 'blur(12px)';
     notification.style.border = '1px solid rgba(255, 255, 255, 0.08)';
     notification.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
-    
+
     // 创建成功图标 - 缩小尺寸
     const icon = document.createElement('div');
     icon.innerHTML = '✅';
@@ -6707,11 +6714,11 @@ function showAutoCloseSuccessNotification(data) {
     icon.style.borderRadius = '10px'; // 从12px减小到10px
     icon.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.05) 100%)';
     icon.style.boxShadow = 'inset 0 1px 1px rgba(255, 255, 255, 0.1)';
-    
+
     // 信息容器
     const content = document.createElement('div');
     content.style.flexGrow = '1';
-    
+
     // 成功消息标题
     const title = document.createElement('div');
     title.textContent = texts.title;
@@ -6721,31 +6728,31 @@ function showAutoCloseSuccessNotification(data) {
     title.style.letterSpacing = '0.3px';
     title.style.color = '#FFFFFF';
     title.style.textShadow = '0 1px 2px rgba(0, 0, 0, 0.1)';
-    
+
     // 创建URL列表容器
     const urlListContainer = document.createElement('div');
     urlListContainer.style.fontSize = '13px';
     urlListContainer.style.lineHeight = '1.5';
     urlListContainer.style.color = '#f0fff5';
     urlListContainer.style.opacity = '0.9';
-    
+
     // 显示已关闭的标签页标题，最多3个
     if (data.titles && data.titles.length > 0) {
       // 简单显示已关闭的标签
       const maxTitlesToShow = Math.min(data.titles.length, 3);
-      
+
       for (let i = 0; i < maxTitlesToShow; i++) {
         const urlItem = document.createElement('div');
         urlItem.style.display = 'flex';
         urlItem.style.alignItems = 'center';
-        
+
         // 添加小圆点作为前缀
         const bullet = document.createElement('span');
         bullet.textContent = '•';
         bullet.style.color = '#8EEDC7';
         bullet.style.marginRight = '6px';
         bullet.style.fontSize = '16px';
-        
+
         // URL标题
         const urlTitle = document.createElement('span');
         urlTitle.textContent = data.titles[i];
@@ -6753,13 +6760,13 @@ function showAutoCloseSuccessNotification(data) {
         urlTitle.style.overflow = 'hidden';
         urlTitle.style.textOverflow = 'ellipsis';
         urlTitle.style.maxWidth = '300px';
-        
+
         urlItem.appendChild(bullet);
         urlItem.appendChild(urlTitle);
         urlListContainer.appendChild(urlItem);
       }
     }
-    
+
     // 组装通知
     content.appendChild(title);
     if (data.titles && data.titles.length > 0) {
@@ -6768,27 +6775,27 @@ function showAutoCloseSuccessNotification(data) {
     notification.appendChild(icon);
     notification.appendChild(content);
     container.appendChild(notification);
-    
+
     // 确保body存在
     if (!document.body) {
       console.log('文档body不存在，无法显示通知');
       return;
     }
-    
+
     // 添加到页面
     document.body.appendChild(container);
-    
+
     // 淡入效果
     setTimeout(() => {
       container.style.opacity = '1';
       container.style.transform = 'translate(-50%, -5px)';
-      
+
       // 稍后恢复正常位置，产生弹性效果
       setTimeout(() => {
         container.style.transform = 'translate(-50%, 0)';
       }, 180);
     }, 10);
-    
+
     // 4秒后自动淡出（比普通通知更短）
     setTimeout(() => {
       try {
@@ -6810,7 +6817,7 @@ function showAutoCloseSuccessNotification(data) {
   } catch (e) {
     console.error('显示自动关闭成功通知错误:', e.message);
   }
-} 
+}
 
 // 监听从popup.js发送来的设置更新消息
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
@@ -6818,37 +6825,37 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     try {
       // 保存旧的语言设置用于比较
       const oldLanguage = settings ? settings.language : null;
-      
+
       // 重新加载设置
       loadSettings();
       console.log('收到设置更新消息，已重新加载设置');
-      
+
       // 特殊处理语言变更情况
       if (oldLanguage && oldLanguage !== settings.language) {
         console.log('语言已从', oldLanguage, '更改为', settings.language);
         // 强制重置手势提示状态
         lastHintAction = '';
-        
+
         // 如果当前有显示的提示，立即移除它
         if (gestureHint && document.body.contains(gestureHint)) {
           document.body.removeChild(gestureHint);
           gestureHint = null;
         }
       }
-      
+
       // 如果有必要，在设置更新后刷新某些UI元素或状态
       if (gestureCanvas && settings.enableGesture) {
         // 更新与手势相关的状态
         updateGestureCanvasSettings();
       }
-      
+
       // 返回成功响应
       if (sendResponse) {
         sendResponse({ status: "success" });
       }
     } catch (error) {
       console.log('处理设置更新消息时出错:', error.message);
-      
+
       // 即使出错也返回响应
       if (sendResponse) {
         sendResponse({ status: "error", message: error.message });
@@ -6864,17 +6871,17 @@ function updateGestureCanvasSettings() {
     gestureContext.strokeStyle = settings.trailColor || '#FF0000';
     gestureContext.lineWidth = settings.trailWidth || 3;
   }
-} 
+}
 
 // 查找页面中的"下一页"链接
 // 优化策略：优先使用URL构造的链接，避免JavaScript URL报错
 // 优先级排序：
 // 1. URL参数构造 (最可靠)
-// 2. URL路径构造 
+// 2. URL路径构造
 // 3. offset/limit参数构造
 // 4. rel="next"链接
 // 5. 文本匹配链接
-// 6. CSS类匹配链接  
+// 6. CSS类匹配链接
 // 7. 图标匹配链接
 // 8. 分页容器链接
 // 所有策略都会过滤JavaScript URL以避免CSP错误
@@ -6902,7 +6909,7 @@ function findNextPageLink() {
       return googleNext;
     }
   }
-  
+
   // 优先策略1：从URL参数构造下一页链接（最可靠的方法）
   // 如果URL中包含页码参数(如page=2, p=3等)，尝试构造下一页URL
   const urlParams = new URLSearchParams(window.location.search);
@@ -6910,12 +6917,12 @@ function findNextPageLink() {
     'page', 'p', 'pg', 'paged', 'pagenum', 'pn', 'cpage', 'current', 'pages', 'pageid',
     'pageIndex', 'pageNo', 'pageNumber', 'offset', 'start', 'from', 'begin'
   ];
-  
+
   for (const pattern of pagePatterns) {
     if (urlParams.has(pattern)) {
       const currentPageStr = urlParams.get(pattern);
       const currentPage = parseInt(currentPageStr);
-      
+
       if (!isNaN(currentPage) && currentPage > 0) {
         // 验证下一页是否合理（不超过常见的最大页数）
         const nextPage = currentPage + 1;
@@ -6923,9 +6930,9 @@ function findNextPageLink() {
           // 构造下一页URL
           const nextUrl = new URL(window.location.href);
           nextUrl.searchParams.set(pattern, nextPage.toString());
-          
+
           console.log(`从URL参数构造下一页: ${pattern}=${currentPage} -> ${nextPage}`);
-          
+
           // 创建虚拟链接，标记为高优先级
           const virtualLink = document.createElement('a');
           virtualLink.href = nextUrl.href;
@@ -6936,7 +6943,7 @@ function findNextPageLink() {
       }
     }
   }
-  
+
   // 优先策略2：检查URL路径中的数字模式
   // 例如 /article/123/ -> /article/124/, /post/456.html -> /post/457.html
   const pathPatterns = [
@@ -6950,7 +6957,7 @@ function findNextPageLink() {
     /\/page-?(\d+)/i,                 // /page123 或 /page-123
     /\/p(\d+)/i                       // /p123
   ];
-  
+
   for (const pattern of pathPatterns) {
     const pathMatch = window.location.pathname.match(pattern);
     if (pathMatch) {
@@ -6960,9 +6967,9 @@ function findNextPageLink() {
         const nextPath = window.location.pathname.replace(pattern, (match) => {
           return match.replace(currentNum.toString(), nextNum.toString());
         });
-        
+
         console.log(`从URL路径构造下一页: ${currentNum} -> ${nextNum}`);
-        
+
         // 创建虚拟链接
         const virtualLink = document.createElement('a');
         virtualLink.href = window.location.origin + nextPath + window.location.search + window.location.hash;
@@ -6972,19 +6979,19 @@ function findNextPageLink() {
       }
     }
   }
-  
-  // 优先策略3：检查URL中的其他数字模式 
+
+  // 优先策略3：检查URL中的其他数字模式
   // 例如查询参数中的offset、start等
   const offsetPatterns = ['offset', 'start', 'from', 'begin', 'skip'];
   const limitPatterns = ['limit', 'size', 'count', 'per_page', 'perpage', 'pagesize'];
-  
+
   for (const offsetPattern of offsetPatterns) {
     if (urlParams.has(offsetPattern)) {
       const currentOffset = parseInt(urlParams.get(offsetPattern));
       if (!isNaN(currentOffset) && currentOffset >= 0) {
         // 尝试找到对应的limit参数
         let increment = 10; // 默认增量
-        
+
         for (const limitPattern of limitPatterns) {
           if (urlParams.has(limitPattern)) {
             const limit = parseInt(urlParams.get(limitPattern));
@@ -6994,14 +7001,14 @@ function findNextPageLink() {
             }
           }
         }
-        
+
         const nextOffset = currentOffset + increment;
         if (nextOffset < 100000) { // 防止过大的offset
           const nextUrl = new URL(window.location.href);
           nextUrl.searchParams.set(offsetPattern, nextOffset.toString());
-          
+
           console.log(`从offset参数构造下一页: ${offsetPattern}=${currentOffset} -> ${nextOffset}`);
-          
+
           const virtualLink = document.createElement('a');
           virtualLink.href = nextUrl.href;
           virtualLink._constructedFromUrl = true;
@@ -7014,9 +7021,9 @@ function findNextPageLink() {
 
   // 匹配常见的"下一页"文本模式（中文和英文）
   const nextPageTexts = [
-    '下一页', '下一张', '下一章', '下一篇', '下一条', '下一项', 
-    '下一頁', '下頁', '后一页', '后页', '后一张', '后一篇', '后一章', 
-    '下一部', '下一节', '下一卷', '下一话', '下一集', '下一幕', '下个', 
+    '下一页', '下一张', '下一章', '下一篇', '下一条', '下一项',
+    '下一頁', '下頁', '后一页', '后页', '后一张', '后一篇', '后一章',
+    '下一部', '下一节', '下一卷', '下一话', '下一集', '下一幕', '下个',
     'next page', 'next', '>', '>>', '→', '»', 'Next', 'NEXT', 'forward',
     'Forward', 'more', 'More', 'continue', 'Continue', 'Next Article',
     'older', 'Older', 'newer', 'Newer', 'Show more', '继续阅读', '阅读全文',
@@ -7025,7 +7032,7 @@ function findNextPageLink() {
 
   // 匹配常见的下一页class和id模式
   const nextPageClasses = [
-    'next', 'next-page', 'nextPage', 'pagination-next', 'next-btn', 
+    'next', 'next-page', 'nextPage', 'pagination-next', 'next-btn',
     'nextBtn', 'btn-next', 'pager-next', 'pagination-item-next', 'page-next',
     'next-link', 'nextLink', 'page-next-link', 'pagenext', 'pagination-next',
     'pagination__next', 'navigation-next', 'nav-next', 'page-nav-next',
@@ -7038,7 +7045,7 @@ function findNextPageLink() {
 
   // 匹配常见的下一页svg/icon类名或属性
   const nextPageIconClasses = [
-    'icon-next', 'next-icon', 'icon-arrow-right', 'icon-chevron-right', 
+    'icon-next', 'next-icon', 'icon-arrow-right', 'icon-chevron-right',
     'icon-forward', 'arrow-right-icon', 'chevron-right-icon', 'icon-angle-right',
     'pagination-next-icon', 'right-arrow-icon', 'right-chevron'
   ];
@@ -7068,20 +7075,20 @@ function findNextPageLink() {
   // 策略5: 查找带有明显下一页文本的<a>, <button>, <div>, <span>元素
   // 首先收集所有候选元素，然后按优先级排序
   const candidateLinks = [];
-  
+
   for (const text of nextPageTexts) {
     // 精确匹配文本内容的链接或按钮元素
     const exactElements = Array.from(document.querySelectorAll('a, button, div[role="button"], span[role="button"]')).filter(el => {
       // 过滤掉隐藏元素
       if (el.offsetWidth === 0 && el.offsetHeight === 0) return false;
-      
+
       const trimmedText = el.textContent.trim();
-      return trimmedText === text || 
-             el.title.trim() === text || 
+      return trimmedText === text ||
+             el.title.trim() === text ||
              el.getAttribute('aria-label') === text ||
              el.getAttribute('alt') === text;
     });
-    
+
     for (const el of exactElements) {
       // 如果是链接元素，检查并添加到候选列表
       if (el.tagName === 'A' && el.href) {
@@ -7094,12 +7101,12 @@ function findNextPageLink() {
         }
         continue;
       }
-      
+
       // 对于非链接元素，尝试查找它的父元素或子元素中的链接
       // 1. 检查父元素
       let parent = el.parentElement;
       for (let i = 0; i < 3 && parent; i++) { // 向上查找最多3层
-        if (parent.tagName === 'A' && parent.href && 
+        if (parent.tagName === 'A' && parent.href &&
             !parent.href.toLowerCase().startsWith('javascript:')) {
           candidateLinks.push({
             element: parent,
@@ -7110,7 +7117,7 @@ function findNextPageLink() {
         }
         parent = parent.parentElement;
       }
-      
+
       // 2. 检查子元素
       const childLink = el.querySelector('a[href]');
       if (childLink && !childLink.href.toLowerCase().startsWith('javascript:')) {
@@ -7121,7 +7128,7 @@ function findNextPageLink() {
         });
         continue;
       }
-      
+
       // 3. 如果是按钮或可点击div，创建一个虚拟链接（最低优先级）
       if (el.tagName === 'BUTTON' || el.getAttribute('role') === 'button') {
         candidateLinks.push({
@@ -7131,19 +7138,19 @@ function findNextPageLink() {
         });
       }
     }
-    
+
     // 包含文本内容的元素（优先级稍低）
     const containsElements = Array.from(document.querySelectorAll('a, button, div[role="button"], span[role="button"]')).filter(el => {
       // 过滤掉隐藏元素
       if (el.offsetWidth === 0 && el.offsetHeight === 0) return false;
-      
+
       const trimmedText = el.textContent.trim();
-      return trimmedText.includes(text) || 
-             (el.title && el.title.trim().includes(text)) || 
+      return trimmedText.includes(text) ||
+             (el.title && el.title.trim().includes(text)) ||
              (el.getAttribute('aria-label') && el.getAttribute('aria-label').includes(text)) ||
              (el.getAttribute('alt') && el.getAttribute('alt').includes(text));
     });
-    
+
     for (const el of containsElements) {
       // 处理方式与精确匹配相同，但优先级稍低
       if (el.tagName === 'A' && el.href) {
@@ -7156,10 +7163,10 @@ function findNextPageLink() {
         }
         continue;
       }
-      
+
       let parent = el.parentElement;
       for (let i = 0; i < 3 && parent; i++) {
-        if (parent.tagName === 'A' && parent.href && 
+        if (parent.tagName === 'A' && parent.href &&
             !parent.href.toLowerCase().startsWith('javascript:')) {
           candidateLinks.push({
             element: parent,
@@ -7170,7 +7177,7 @@ function findNextPageLink() {
         }
         parent = parent.parentElement;
       }
-      
+
       const childLink = el.querySelector('a[href]');
       if (childLink && !childLink.href.toLowerCase().startsWith('javascript:')) {
         candidateLinks.push({
@@ -7180,7 +7187,7 @@ function findNextPageLink() {
         });
         continue;
       }
-      
+
       if (el.tagName === 'BUTTON' || el.getAttribute('role') === 'button') {
         candidateLinks.push({
           element: el,
@@ -7190,15 +7197,15 @@ function findNextPageLink() {
       }
     }
   }
-  
+
   // 如果找到了候选链接，返回优先级最高的
   if (candidateLinks.length > 0) {
     // 按优先级排序（数字越小优先级越高）
     candidateLinks.sort((a, b) => a.priority - b.priority);
     const bestCandidate = candidateLinks[0];
-    
+
     console.log(`找到文本匹配链接，优先级: ${bestCandidate.priority}, 类型: ${bestCandidate.type}`);
-    
+
     if (bestCandidate.type === 'button_element' || bestCandidate.type === 'contains_button_element') {
       // 为按钮元素创建虚拟链接
       const virtualLink = document.createElement('a');
@@ -7213,15 +7220,15 @@ function findNextPageLink() {
 
   // 策略6：查找带有典型class或id的元素
   const classCandidates = [];
-  
+
   for (const className of nextPageClasses) {
     // 查找class或id包含该模式的元素
     const classElements = document.querySelectorAll(
-      `a.${className}, a[id*="${className}"], [class*="${className}"] a, ` + 
+      `a.${className}, a[id*="${className}"], [class*="${className}"] a, ` +
       `button.${className}, button[id*="${className}"], [class*="${className}"] button, ` +
       `div[role="button"].${className}, div[role="button"][id*="${className}"], [class*="${className}"] div[role="button"]`
     );
-    
+
     for (const el of classElements) {
       if (el.tagName === 'A' && el.href) {
         if (!el.href.toLowerCase().startsWith('javascript:')) {
@@ -7233,10 +7240,10 @@ function findNextPageLink() {
         }
         continue;
       }
-      
+
       let parent = el.parentElement;
       for (let i = 0; i < 3 && parent; i++) {
-        if (parent.tagName === 'A' && parent.href && 
+        if (parent.tagName === 'A' && parent.href &&
             !parent.href.toLowerCase().startsWith('javascript:')) {
           classCandidates.push({
             element: parent,
@@ -7247,7 +7254,7 @@ function findNextPageLink() {
         }
         parent = parent.parentElement;
       }
-      
+
       const childLink = el.querySelector('a[href]');
       if (childLink && !childLink.href.toLowerCase().startsWith('javascript:')) {
         classCandidates.push({
@@ -7257,7 +7264,7 @@ function findNextPageLink() {
         });
         continue;
       }
-      
+
       if (el.tagName === 'BUTTON' || el.getAttribute('role') === 'button') {
         classCandidates.push({
           element: el,
@@ -7267,14 +7274,14 @@ function findNextPageLink() {
       }
     }
   }
-  
+
   // 如果找到了基于CSS类的候选链接，返回优先级最高的
   if (classCandidates.length > 0) {
     classCandidates.sort((a, b) => a.priority - b.priority);
     const bestCandidate = classCandidates[0];
-    
+
     console.log(`找到CSS类匹配链接，优先级: ${bestCandidate.priority}, 类型: ${bestCandidate.type}`);
-    
+
     if (bestCandidate.type === 'class_button_element') {
       const virtualLink = document.createElement('a');
       virtualLink.href = "#";
@@ -7287,14 +7294,14 @@ function findNextPageLink() {
 
   // 策略7：查找包含下一页图标的元素
   const iconCandidates = [];
-  
+
   for (const iconClass of nextPageIconClasses) {
     const iconElements = document.querySelectorAll(
       `[class*="${iconClass}"], [id*="${iconClass}"], ` +
       `a i[class*="next"], a i[class*="right"], a span[class*="next"], a span[class*="right"], ` +
       `button i[class*="next"], button i[class*="right"], button span[class*="next"], button span[class*="right"]`
     );
-    
+
     for (const iconEl of iconElements) {
       // 检查自身或最近的父元素是否为链接
       let current = iconEl;
@@ -7309,7 +7316,7 @@ function findNextPageLink() {
           }
           break;
         }
-        
+
         // 检查是否是按钮或可点击div
         if (current.tagName === 'BUTTON' || current.getAttribute('role') === 'button') {
           iconCandidates.push({
@@ -7319,19 +7326,19 @@ function findNextPageLink() {
           });
           break;
         }
-        
+
         current = current.parentElement;
       }
     }
   }
-  
+
   // 如果找到了基于图标的候选链接，返回优先级最高的
   if (iconCandidates.length > 0) {
     iconCandidates.sort((a, b) => a.priority - b.priority);
     const bestCandidate = iconCandidates[0];
-    
+
     console.log(`找到图标匹配链接，优先级: ${bestCandidate.priority}, 类型: ${bestCandidate.type}`);
-    
+
     if (bestCandidate.type === 'icon_button_element') {
       const virtualLink = document.createElement('a');
       virtualLink.href = "#";
@@ -7365,25 +7372,25 @@ function findNextPageLink() {
       '[class*="current"], [class*="active"], [class*="selected"], ' +
       'span.page, em.page, strong.page'
     );
-    
+
     if (currentPageElement) {
       // 找到当前元素后的下一个<a>元素
       let nextElement = currentPageElement.nextElementSibling;
       while (nextElement) {
-        if (nextElement.tagName === 'A' && nextElement.href && 
+        if (nextElement.tagName === 'A' && nextElement.href &&
             !nextElement.href.toLowerCase().startsWith('javascript:')) {
           console.log('在分页容器中找到下一页链接:', nextElement.href);
           return nextElement;
         }
         nextElement = nextElement.nextElementSibling;
       }
-      
+
       // 如果当前页是在一个列表项中，尝试找到下一个列表项中的链接
       if (currentPageElement.tagName === 'LI' || currentPageElement.parentElement.tagName === 'LI') {
-        const parentLi = currentPageElement.tagName === 'LI' ? 
-                          currentPageElement : 
+        const parentLi = currentPageElement.tagName === 'LI' ?
+                          currentPageElement :
                           currentPageElement.parentElement;
-        
+
         const nextLi = parentLi.nextElementSibling;
         if (nextLi) {
           const link = nextLi.querySelector('a');
@@ -7393,7 +7400,7 @@ function findNextPageLink() {
           }
         }
       }
-      
+
       // 检查当前元素的父元素的下一个兄弟元素
       if (currentPageElement.parentElement) {
         const nextSibling = currentPageElement.parentElement.nextElementSibling;
@@ -7417,35 +7424,35 @@ function findNextPageLink() {
 function tryNavigateToNextPage() {
   // 获取当前语言
   const currentLang = settings.language || 'zh';
-  
+
   // 显示正在尝试查找下一页的提示
   showGestureHint(getNavigationErrorTranslations().tryingNextPage);
-  
+
   // 查找下一页链接
   const nextPageLink = findNextPageLink();
   lastTriedNextPageLink = nextPageLink; // 记录上次尝试的链接
-  
+
   if (!nextPageLink || !nextPageLink.href) {
     // 如果没有找到下一页链接，显示提示
     showGestureHint(getNavigationErrorTranslations().noNextPage);
     return false;
   }
-  
+
   // 显示成功找到下一页的提示
   showGestureHint(getNavigationErrorTranslations().nextPageSuccess);
-  
+
   // 优先级1: 检查是否为JavaScript URL，避免CSP错误和安全问题
   if (nextPageLink.href.toLowerCase().startsWith('javascript:')) {
     console.log('检测到JavaScript URL，出于安全原因跳过:', nextPageLink.href);
     showGestureHint(getNavigationErrorTranslations().navigationError);
     return false;
   }
-  
+
   // 优先级2: 检查是否为无效的URL协议
   try {
     const urlObj = new URL(nextPageLink.href, window.location.origin);
     const protocol = urlObj.protocol.toLowerCase();
-    
+
     // 仅允许安全的URL协议
     if (!['http:', 'https:', 'file:'].includes(protocol)) {
       console.log('检测到不支持的URL协议:', protocol, nextPageLink.href);
@@ -7457,7 +7464,7 @@ function tryNavigateToNextPage() {
     showGestureHint(getNavigationErrorTranslations().navigationError);
     return false;
   }
-  
+
   // 优先级3: 优先使用URL导航（避免JavaScript执行）
   // 延迟导航以确保提示显示完成
   setTimeout(() => {
@@ -7468,38 +7475,38 @@ function tryNavigateToNextPage() {
         window.location.href = nextPageLink.href;
         return;
       }
-      
+
       // 如果是普通链接元素，检查是否有外部链接属性
       if (nextPageLink.tagName === 'A') {
         // 检查是否为外部链接
-        if (nextPageLink.target === '_blank' || 
+        if (nextPageLink.target === '_blank' ||
             nextPageLink.getAttribute('rel') === 'external' ||
             nextPageLink.getAttribute('rel') === 'noopener') {
           console.log('打开外部链接:', nextPageLink.href);
           window.open(nextPageLink.href, '_blank', 'noopener,noreferrer');
           return;
         }
-        
+
         // 对于普通链接，优先使用URL导航而不是点击事件
         console.log('使用URL导航 (普通链接):', nextPageLink.href);
         window.location.href = nextPageLink.href;
         return;
       }
-      
+
       // 优先级4: 只有在必要时才使用点击事件（如按钮元素）
       if (nextPageLink._originalElement) {
         const originalEl = nextPageLink._originalElement;
-        
+
         // 再次检查原始元素是否是链接
-        if (originalEl.tagName === 'A' && originalEl.href && 
+        if (originalEl.tagName === 'A' && originalEl.href &&
             !originalEl.href.toLowerCase().startsWith('javascript:')) {
           console.log('使用原始链接URL导航:', originalEl.href);
           window.location.href = originalEl.href;
           return;
         }
-        
+
         // 只有在原始元素是按钮或其他交互元素时才使用点击
-        if (originalEl.tagName === 'BUTTON' || 
+        if (originalEl.tagName === 'BUTTON' ||
             originalEl.getAttribute('role') === 'button' ||
             originalEl.tagName === 'INPUT') {
           console.log('点击按钮元素:', originalEl);
@@ -7507,17 +7514,17 @@ function tryNavigateToNextPage() {
           return;
         }
       }
-      
+
       // 最后的备选方案：尝试常规URL导航
       console.log('使用备选URL导航:', nextPageLink.href);
       window.location.href = nextPageLink.href;
-      
+
     } catch (e) {
       console.log('导航到下一页时出错:', e.message);
-      
+
       // 错误处理：只有在确保不是JavaScript URL的情况下才尝试备选导航
       try {
-        if (nextPageLink.href && 
+        if (nextPageLink.href &&
             !nextPageLink.href.toLowerCase().startsWith('javascript:') &&
             (nextPageLink.href.startsWith('http') || nextPageLink.href.startsWith('/'))) {
           console.log('尝试备选导航方案:', nextPageLink.href);
@@ -7531,7 +7538,7 @@ function tryNavigateToNextPage() {
       }
     }
   }, CONFIG.NAVIGATION_DELAY); // 延迟导航
-  
+
   return true;
 }
 
@@ -7597,7 +7604,7 @@ const handleWindowResize = CommonUtils.createDebouncedHandler(() => {
   if (imagePreview && imagePreview.style.opacity !== '0') {
     CommonUtils.safeExecute(() => hideImagePreview(true), 'hideImagePreview');
   }
-  
+
   // 清理DOM缓存，因为窗口大小变化可能影响元素位置
   domCache.clear();
 }, 100); // 窗口大小变化使用更短的防抖时间
