@@ -50,7 +50,7 @@
   --header-height: 40px;
   --section-radius: 12px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   /* 修改过渡效果，排除边框过渡 */
   transition: color 0.5s ease, background-color 0.5s ease;
 }
@@ -73,7 +73,7 @@
   --success-bg: #0a3d2e; /* 稍微柔和的成功背景 */
   --error-bg: #6b1d1d; /* 稍微柔和的错误背景 */
   --gesture-item-border: rgba(45, 45, 45, 0.7); /* 手势项边框颜色变量与边框颜色统一，添加透明度 */
-  
+
   /* 添加字体渲染优化参数，减轻深色主题下的字体渲染问题 */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -89,11 +89,15 @@ body {
   transition: background-color 0.5s ease, color 0.5s ease; /* 排除边框过渡 */
 }
 
+.mt {
+  margin-top: 0.25em;
+}
+
 .container {
   width: 420px;
   padding: 10px 12px;
   border-radius: 16px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05),
               0 5px 10px -5px rgba(0, 0, 0, 0.01);
 }
 
@@ -341,7 +345,7 @@ h2:active {
   align-items: center;
   padding: 8px 4px;
   /* 预设所有边框为透明或固定颜色，避免闪现 */
-  border-bottom: 1px solid var(--border-color); 
+  border-bottom: 1px solid var(--border-color);
   border-left: 1px solid transparent; /* 预设透明边框，避免切换时闪现 */
   /* 修改过渡效果，从主题切换过渡中分离出边框变化 */
   transition: background-color 0.3s ease, padding 0.3s ease, transform 0.3s ease;
@@ -2067,9 +2071,9 @@ button:hover::before {
 }
 
 /* 暗色主题下的文本颜色调整 */
-[data-theme="dark"] .direction-arrow, 
-[data-theme="dark"] .first-direction, 
-[data-theme="dark"] .second-direction, 
+[data-theme="dark"] .direction-arrow,
+[data-theme="dark"] .first-direction,
+[data-theme="dark"] .second-direction,
 [data-theme="dark"] .drag-direction {
   color: #ffffff;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
@@ -2235,8 +2239,8 @@ button:hover::before {
 }
 
 /* 深色主题下的图标和动画效果优化 */
-[data-theme="dark"] .direction-arrow, 
-[data-theme="dark"] .first-direction, 
+[data-theme="dark"] .direction-arrow,
+[data-theme="dark"] .first-direction,
 [data-theme="dark"] .second-direction {
   color: rgba(255, 255, 255, 0.9);
   filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
@@ -2264,12 +2268,12 @@ button:hover::before {
   color: #ffcc00; /* 更亮的黄色 */
 }
 
-[data-theme="dark"] .icon-close, 
+[data-theme="dark"] .icon-close,
 [data-theme="dark"] .icon-close-all {
   color: #ff6060; /* 更亮的关闭红色 */
 }
 
-[data-theme="dark"] .icon-reopen, 
+[data-theme="dark"] .icon-reopen,
 [data-theme="dark"] .icon-new-tab {
   color: #8c68cd; /* 更亮的紫色 */
 }
@@ -2278,7 +2282,7 @@ button:hover::before {
   color: #26c6da; /* 更亮的青色 */
 }
 
-[data-theme="dark"] .icon-prev, 
+[data-theme="dark"] .icon-prev,
 [data-theme="dark"] .icon-next {
   color: #5c7cff; /* 更亮的蓝色 */
 }
@@ -2287,7 +2291,7 @@ button:hover::before {
   color: #ff5252; /* 更亮的停止红色 */
 }
 
-[data-theme="dark"] .icon-bottom, 
+[data-theme="dark"] .icon-bottom,
 [data-theme="dark"] .icon-top {
   color: #bf8c60; /* 更亮的棕色 */
 }
@@ -2875,7 +2879,7 @@ input[type="range"].wheel-adjusted {
   transition: var(--transition);
 }
 
-.search-engine-input:hover, 
+.search-engine-input:hover,
 .search-engine-input:focus {
   border-color: var(--button-bg);
   outline: none;

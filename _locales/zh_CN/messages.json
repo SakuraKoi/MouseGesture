@@ -16,7 +16,7 @@
     "description": "内置手势标题"
   },
   "superDragFeature": {
-    "message": "超级拖拽功能",
+    "message": "超级拖拽",
     "description": "超级拖拽功能标题"
   },
   "dragUp": {
@@ -360,7 +360,7 @@
     "description": "后台打开操作"
   },
   "dragSearchEngine": {
-    "message": "拖拽搜索引擎URL",
+    "message": "搜索引擎",
     "description": "拖拽搜索引擎URL设置"
   },
   "linkPreview": {
